@@ -50,7 +50,7 @@ public class PromptsManager : MonoBehaviour
         {
             int randomIndex = Random.Range(0, prompts.Count);
             Prompt randomPrompt = new Prompt(prompts[randomIndex]);
-            randomPrompt.timerMax = 20f;
+            randomPrompt.timerMax = 30f + Random.Range(-5f, 10f);
             randomPrompt.timer = randomPrompt.timerMax;
             return randomPrompt;
         }
