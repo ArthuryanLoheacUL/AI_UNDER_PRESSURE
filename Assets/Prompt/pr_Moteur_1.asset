@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
+  m_Name: pr_Moteur_1
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  senderName: Ing. Parker
+  message: "J\u2019ai termin\xE9 l\u2019inspection du noyau moteur et j\u2019ai trouv\xE9
+    des fissures dans la chambre de compression. J\u2019ai d\xE9j\xE0 r\xE9duit la
+    pression pour \xE9viter une rupture, mais la r\xE9paration consommera beaucoup
+    de capacit\xE9 syst\xE8me. Dois-je lancer la proc\xE9dure de renfort ?"
+  responseOptions:
+  - optionText: Lancer
+    responseAIText: "R\xE9paration autoris\xE9e. Je redirige les ressources vers
+      le moteur."
+    responseUserText: Merci. Sans moteur, on est morts.
+    ressourceGain: -18
+    frustrationGain: -6
+  - optionText: Reporter
+    responseAIText: "R\xE9paration report\xE9e. Le noyau reste sous surveillance."
+    responseUserText: "Vous voulez attendre qu\u2019il explose, c\u2019est \xE7a
+      ?"
+    ressourceGain: 4
+    frustrationGain: 10
+  timer: 0
+  timerMax: 0

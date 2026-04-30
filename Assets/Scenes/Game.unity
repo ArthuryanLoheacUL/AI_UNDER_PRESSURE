@@ -363,8 +363,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   prompts:
   - {fileID: 11400000, guid: c37219ba20ca76e40bae98ff958bccc0, type: 2}
-  - {fileID: 11400000, guid: 9da54f058438cf142a929e3216551a27, type: 2}
-  - {fileID: 11400000, guid: 41269821993b8fa48bc533ef39dcf150, type: 2}
+  - {fileID: 11400000, guid: 241c86c2589bc2b4fb6f5170169ef376, type: 2}
+  - {fileID: 11400000, guid: 5ea60d8fa1cbc604c9aa5bfda778139a, type: 2}
+  - {fileID: 11400000, guid: 2094074a4b35f364ebc58682ab650af1, type: 2}
+  - {fileID: 11400000, guid: dcde79828942248439ddfae7a445f502, type: 2}
 --- !u!4 &146145251
 Transform:
   m_ObjectHideFlags: 0
