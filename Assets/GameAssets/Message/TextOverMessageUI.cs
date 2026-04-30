@@ -5,8 +5,16 @@ public class TextOverMessageUI : MonoBehaviour
 {
     public TMP_Text textOverMessageText;
 
+    string normalText = "AAA >> ";
+
     public void SetTextOverMessage(string sender, bool isWaiting)
     {
-        textOverMessageText.text = sender.ToUpper() + " >> " + (isWaiting ? "[EN ATTENTE]" : "");
+        normalText = sender.ToUpper() + " >> ";
+        textOverMessageText.text = normalText + (isWaiting ? "[EN ATTENTE]" : "");
+    }
+
+    public void SetNormalTextOverMessage()
+    {
+        textOverMessageText.text = normalText;
     }
 }

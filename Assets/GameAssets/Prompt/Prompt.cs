@@ -7,6 +7,8 @@ public class Prompt : ScriptableObject
     public struct ResponseOption
     {
         public string optionText;
+        public string responseAIText;
+        public string responseUserText;
     }
 
     public string senderName;

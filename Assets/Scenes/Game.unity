@@ -478,9 +478,10 @@ GameObject:
   - component: {fileID: 448272786}
   - component: {fileID: 448272787}
   - component: {fileID: 448272789}
+  - component: {fileID: 448272790}
   m_Layer: 5
   m_Name: Messages
-  m_TagString: Untagged
+  m_TagString: MessagesBar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -543,6 +544,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 448272785}
   m_CullTransparentMesh: 1
+--- !u!114 &448272790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 448272785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 375940ff04e839a4893729ba495a39fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  messageParent: {fileID: 450556653}
+  messageUserPrefab: {fileID: 6572803823376705729, guid: 7dfa13361fb7cc749b4c17e20a7f9938, type: 3}
+  messageUserCurrentPrefab: {fileID: 1194366162924097118, guid: 4f361f17d34a5bc4bb965f27aaef321e, type: 3}
+  messageAIPrefab: {fileID: 1862423397879854193, guid: c6e08f88d54592e478460b2b98aa7e14, type: 3}
+  timeIndicatorPrefab: {fileID: 2664732718338829920, guid: 4d037ca1a88acdf4cb72e86855e5946c, type: 3}
+  nameSenderPrefab: {fileID: 1624333167344287866, guid: a302db01662a6a348bed49eaf1e0b309, type: 3}
 --- !u!1 &450556652
 GameObject:
   m_ObjectHideFlags: 0
@@ -1820,7 +1839,7 @@ MonoBehaviour:
     m_Bottom: 0
   m_ChildAlignment: 3
   m_Spacing: 20
-  m_ChildForceExpandWidth: 1
+  m_ChildForceExpandWidth: 0
   m_ChildForceExpandHeight: 1
   m_ChildControlWidth: 0
   m_ChildControlHeight: 1

@@ -1,3 +1,4 @@
+using System.Linq;
 using UnityEngine;
 
 public class MessageSetupManager : MonoBehaviour
@@ -12,6 +13,10 @@ public class MessageSetupManager : MonoBehaviour
     public GameObject timeIndicatorPrefab;
     public GameObject nameSenderPrefab;
 
+    [Header("Debug Previous Active")]
+    private TextOverMessageUI prevActiveOverText;
+    private GameObject prevActiveMessageUser;
+
     public void SetupMessage(Prompt prompt)
     {
         // Clear existing messages
@@ -21,6 +26,44 @@ public class MessageSetupManager : MonoBehaviour
         }
 
         SetupMessageWainting(prompt);
+    }
+
+    public void AddResponseAI(Prompt prompt, int selectedResponseIndex)
+    {
+        CreateMessageAICore(prompt, selectedResponseIndex);
+        if (prevActiveOverText != null)
+        {
+            prevActiveOverText.SetNormalTextOverMessage();
+        }
+    }
+
+    public void AddResponseUser(Prompt prompt, int selectedResponseIndex)
+    {
+        CreateMessageUserCore(prompt);
+        if (prevActiveOverText != null)
+        {
+            prevActiveOverText.SetNormalTextOverMessage();
+        }
+    }
+
+    void ReplaceMessageUserCurrentWithMessageUser()
+    {
+        if (prevActiveMessageUser != null)
+        {
+            string message = prevActiveMessageUser.GetComponent<MessageUI>().GetMessage();
+            Vector3 position = prevActiveMessageUser.transform.position;
+            Quaternion rotation = prevActiveMessageUser.transform.rotation;
+            int siblingIndex = prevActiveMessageUser.transform.GetSiblingIndex();
+            Destroy(prevActiveMessageUser);
+            GameObject messageGO  = Instantiate(messageUserPrefab, position, rotation, messageParent);
+            messageGO.transform.SetSiblingIndex(siblingIndex);
+            MessageUI messageUI = messageGO.GetComponent<MessageUI>();
+            if (messageUI != null)
+            {
+                messageUI.SetMessage(message);
+            }
+            prevActiveMessageUser = null;
+        }
     }
 
     void SetupMessageWainting(Prompt prompt)
@@ -37,6 +80,7 @@ public class MessageSetupManager : MonoBehaviour
         TextOverMessageUI nameSenderUI = nameSenderGO.GetComponent<TextOverMessageUI>();
         if (nameSenderUI != null)
         {
+            prevActiveOverText = nameSenderUI;
             nameSenderUI.SetTextOverMessage(prompt.senderName, true);
         }
     }
@@ -60,7 +104,32 @@ public class MessageSetupManager : MonoBehaviour
         MessageUI messageUI = messageGO.GetComponent<MessageUI>();
         if (messageUI != null)
         {
+            prevActiveMessageUser = messageGO;
             messageUI.SetMessage(prompt.message);
         }
     }
+    void CreateMessageAICore(Prompt prompt, int selectedResponseIndex)
+    {
+        // Create new message based on the prompt's sender
+        GameObject messageGO  = Instantiate(messageAIPrefab, messageParent);
+
+        MessageUI messageUI = messageGO.GetComponent<MessageUI>();
+        if (messageUI != null)
+        {
+            messageUI.SetMessage(prompt.responseOptions[selectedResponseIndex - 1].responseAIText);
+        }
+    }
+
+    void CreateMessageUserCore(Prompt prompt)
+    {
+        // Create new message based on the prompt's sender
+        GameObject messageGO  = Instantiate(messageUserPrefab, messageParent);
+
+        MessageUI messageUI = messageGO.GetComponent<MessageUI>();
+        if (messageUI != null)
+        {
+            messageUI.SetMessage(prompt.responseOptions.Last().responseUserText);
+        }
+    }
+    
 }

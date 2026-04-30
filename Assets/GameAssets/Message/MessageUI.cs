@@ -9,4 +9,9 @@ public class MessageUI : MonoBehaviour
     {
         messageText.text = message;
     }
+
+    public string GetMessage()
+    {
+        return messageText.text;
+    }
 }
