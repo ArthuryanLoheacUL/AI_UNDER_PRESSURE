@@ -18,6 +18,12 @@ MonoBehaviour:
   - optionText: OUI
     responseAIText: 
     responseUserText: 
+    ressourceGain: -3
+    frustrationGain: 0
   - optionText: NON
     responseAIText: NON AI
     responseUserText: 
+    ressourceGain: 0
+    frustrationGain: 10
+  timer: 0
+  timerMax: 0

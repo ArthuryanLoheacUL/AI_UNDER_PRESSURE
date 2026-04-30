@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections.Generic;
 using System.Collections;
+using Unity.VisualScripting.FullSerializer;
 
 [RequireComponent(typeof(SetupPromptManagement))]
 public class PromptsManager : MonoBehaviour
@@ -12,6 +13,9 @@ public class PromptsManager : MonoBehaviour
 
     private NotificationsManager notificationBar;
     private SetupPromptManagement setupPrompt;
+
+    private float timeNextPrompt = 0f;
+    private float timeBetweenPrompts = 10f;
 
     void Awake()
     {
@@ -45,7 +49,10 @@ public class PromptsManager : MonoBehaviour
         if (prompts.Count > 0)
         {
             int randomIndex = Random.Range(0, prompts.Count);
-            return prompts[randomIndex];
+            Prompt randomPrompt = new Prompt(prompts[randomIndex]);
+            randomPrompt.timerMax = 30f + Random.Range(-5f, 10f);
+            randomPrompt.timer = randomPrompt.timerMax;
+            return randomPrompt;
         }
         return null;
     }
@@ -61,9 +68,10 @@ public class PromptsManager : MonoBehaviour
             }
         }
         NextPrompt();
+        timeNextPrompt = timeBetweenPrompts;
     }
 
-    void RefreshNotifications(Prompt currentPrompt = null)
+    void RefreshNotifications()
     {
         if (notificationBar != null)
         {
@@ -93,7 +101,7 @@ public class PromptsManager : MonoBehaviour
                 setupPrompt.SetupPrompt(prompt, ResponseToCurrentPrompt);
             }
         }
-        RefreshNotifications(prompt);
+        RefreshNotifications();
     }
 
     public void ResponseToCurrentPrompt(int selectedResponseIndex)
@@ -122,6 +130,66 @@ public class PromptsManager : MonoBehaviour
             yield return new WaitForSeconds(_delay);        
         }
         NextPrompt();
+    }
+
+    void Update()
+    {
+        CheckOutdatedPrompts();
+        timeNextPrompt -= Time.deltaTime;
+        if (timeNextPrompt <= 0f)
+        {
+            timeNextPrompt = timeBetweenPrompts;
+            Prompt randomPrompt = GetRandomPrompt();
+            if (randomPrompt != null)
+            {
+                AddPromptToQueue(randomPrompt);
+                RefreshNotifications();
+            }
+        }
+    }
+
+    void CheckOutdatedPrompts()
+    {
+        bool edited = false;
+        for (int i = 0; i < queuePrompts.Count; i++)
+        {
+            queuePrompts[i].timer -= Time.deltaTime;
+            if (queuePrompts[i].timer <= 0f)
+            {
+                queuePrompts.RemoveAt(i);
+                RessourceManager.Instance.UpdateFrustration(10);
+                i--;
+                edited = true;
+            }
+        }
+        if (currentPrompt != null)
+        {
+            currentPrompt.timer -= Time.deltaTime;
+            if (currentPrompt.timer <= 0f)
+            {
+                currentPrompt = null;
+                RessourceManager.Instance.UpdateFrustration(10);
+                edited = true;
+            }
+        }
+        if (currentPrompt == null)
+        {
+            NextPrompt();
+        }
+        if (edited)
+            RefreshNotifications();
+    }
+
+    void SetMinimumQueuePrompts(int minimum)
+    {
+        for (int i = queuePrompts.Count; i < minimum; i++)
+        {
+            Prompt randomPrompt = GetRandomPrompt();
+            if (randomPrompt != null)
+            {
+                AddPromptToQueue(randomPrompt);
+            }
+        }
     }
 
 }
