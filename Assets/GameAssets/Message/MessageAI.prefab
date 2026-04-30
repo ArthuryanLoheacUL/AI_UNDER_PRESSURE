@@ -184,6 +184,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1107016418607138860}
   - component: {fileID: 8229645949400670538}
+  - component: {fileID: 3480688041065496603}
   m_Layer: 5
   m_Name: MessageAI
   m_TagString: Untagged
@@ -237,6 +238,19 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!114 &3480688041065496603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1862423397879854193}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c95fce80d5ae1104cacdbce2d122eb0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MessageUI
+  messageText: {fileID: 5613815772939561328}
 --- !u!1 &2008326097422781511
 GameObject:
   m_ObjectHideFlags: 0

@@ -85,6 +85,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4056429317496294756}
   - component: {fileID: 7218992853790299557}
+  - component: {fileID: 1361834462114217723}
   m_Layer: 5
   m_Name: MessageUserCurrent
   m_TagString: Untagged
@@ -138,6 +139,19 @@ MonoBehaviour:
   m_ChildScaleWidth: 1
   m_ChildScaleHeight: 1
   m_ReverseArrangement: 0
+--- !u!114 &1361834462114217723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1194366162924097118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c95fce80d5ae1104cacdbce2d122eb0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  messageText: {fileID: 8521964965759939071}
 --- !u!1 &1762618858875268512
 GameObject:
   m_ObjectHideFlags: 0
