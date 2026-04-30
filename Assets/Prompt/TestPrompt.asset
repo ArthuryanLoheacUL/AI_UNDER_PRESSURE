@@ -18,6 +18,12 @@ MonoBehaviour:
   - optionText: OUI
     responseAIText: BIP BAP BOUP
     responseUserText: User oui
+    ressourceGain: 0
+    frustrationGain: -5
   - optionText: NON
     responseAIText: BOUP BOUP
     responseUserText: "User non non non t'es m\xE9chant"
+    ressourceGain: 0
+    frustrationGain: 10
+  timer: 0
+  timerMax: 0

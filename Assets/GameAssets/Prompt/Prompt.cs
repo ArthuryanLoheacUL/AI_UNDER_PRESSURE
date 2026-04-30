@@ -19,4 +19,20 @@ public class Prompt : ScriptableObject
     public string senderName;
     public string message;
     public ResponseOption[] responseOptions;
+
+    [HideInInspector] public float timer = 0f;
+    [HideInInspector] public float timerMax = 0f;
+
+    public Prompt(Prompt other)
+    {
+        senderName = other.senderName;
+        message = other.message;
+        responseOptions = new ResponseOption[other.responseOptions.Length];
+        for (int i = 0; i < other.responseOptions.Length; i++)
+        {
+            responseOptions[i] = other.responseOptions[i];
+        }
+        timer = 0f;
+        timerMax = 0f;
+    }
 }
