@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections.Generic;
+using System.Collections;
 
 [RequireComponent(typeof(SetupPromptManagement))]
 public class PromptsManager : MonoBehaviour
@@ -7,6 +8,8 @@ public class PromptsManager : MonoBehaviour
     public List<Prompt> prompts;
 
     private List<Prompt> queuePrompts = new List<Prompt>();
+    private Prompt currentPrompt;
+
     private NotificationsManager notificationBar;
     private SetupPromptManagement setupPrompt;
 
@@ -58,14 +61,19 @@ public class PromptsManager : MonoBehaviour
             }
         }
         NextPrompt();
-        RefreshNotifications();
     }
 
-    void RefreshNotifications()
+    void RefreshNotifications(Prompt currentPrompt = null)
     {
         if (notificationBar != null)
         {
-            notificationBar.RefreshNotifications(queuePrompts);
+            List<Prompt> currentQueuePrompts = new List<Prompt>(queuePrompts);
+            if (currentPrompt != null)
+            {
+                currentQueuePrompts.Insert(0, currentPrompt);
+            }
+
+            notificationBar.RefreshNotifications(currentQueuePrompts);
         }
     }
 
@@ -74,8 +82,43 @@ public class PromptsManager : MonoBehaviour
         Prompt prompt = PopPromptFromQueue();
         if (prompt != null)
         {
-            setupPrompt.SetupPrompt(prompt);
+            currentPrompt = prompt;
+            setupPrompt.SetupPrompt(prompt, ResponseToCurrentPrompt);
+        } else
+        {
+            prompt = GetRandomPrompt();
+            if (prompt != null)
+            {
+                currentPrompt = prompt;
+                setupPrompt.SetupPrompt(prompt, ResponseToCurrentPrompt);
+            }
         }
+        RefreshNotifications(prompt);
+    }
+
+    public void ResponseToCurrentPrompt(int selectedResponseIndex)
+    {
+        StartCoroutine(NextPromptWithDelay(selectedResponseIndex)); // Delay before showing the next prompt
+    }
+
+    IEnumerator NextPromptWithDelay(int selectedResponseIndex = 0)
+    {
+        bool hasAIResponse = currentPrompt.responseOptions[selectedResponseIndex - 1].responseAIText != "";
+        bool hasUserResponse = currentPrompt.responseOptions[selectedResponseIndex - 1].responseUserText != "";
+
+        float _delay = 1.25f; // Adjust the delay as needed
+
+        if (hasAIResponse)
+        {
+            setupPrompt.NextAIPrompt(currentPrompt, selectedResponseIndex);
+            yield return new WaitForSeconds(_delay);        
+        }
+        if (hasUserResponse)
+        {
+            setupPrompt.NextUserPrompt(currentPrompt, selectedResponseIndex);
+            yield return new WaitForSeconds(_delay);        
+        }
+        NextPrompt();
     }
 
 }

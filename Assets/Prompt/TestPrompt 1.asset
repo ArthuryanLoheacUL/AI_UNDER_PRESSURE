@@ -16,3 +16,5 @@ MonoBehaviour:
   message: Nan En fait ca va
   responseOptions:
   - optionText: OK
+    responseAIText: OK AI
+    responseUserText: OK USER

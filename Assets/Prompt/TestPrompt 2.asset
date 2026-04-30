@@ -16,4 +16,8 @@ MonoBehaviour:
   message: "Besoin de renfort sur la base a\xE9rienne"
   responseOptions:
   - optionText: OUI
+    responseAIText: 
+    responseUserText: 
   - optionText: NON
+    responseAIText: NON AI
+    responseUserText: 

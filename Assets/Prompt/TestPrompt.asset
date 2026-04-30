@@ -16,4 +16,8 @@ MonoBehaviour:
   message: Appelle de detresse help svp
   responseOptions:
   - optionText: OUI
+    responseAIText: BIP BAP BOUP
+    responseUserText: User oui
   - optionText: NON
+    responseAIText: BOUP BOUP
+    responseUserText: "User non non non t'es m\xE9chant"
