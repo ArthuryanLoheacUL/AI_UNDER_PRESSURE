@@ -15,15 +15,13 @@ public class ButtonsSetup : MonoBehaviour
             Destroy(child.gameObject);
         }
 
-        int _indexResponse = 0;
         // Create new buttons based on the prompt's response options
         foreach (var responseOption in prompt.responseOptions)
         {
             GameObject buttonGO = Instantiate(buttonPrefab, parentButtons);
             ButtonResponseUI buttonResponseUI = buttonGO.GetComponent<ButtonResponseUI>();
-            buttonResponseUI.SetResponse(responseOption.optionText, 0);
-            buttonGO.GetComponent<Button>().onClick.AddListener(() => onResponseSelected(_indexResponse));
-            _indexResponse++;
+            buttonResponseUI.SetResponse(responseOption.optionText, responseOption.ressourceGain);
+            buttonGO.GetComponent<Button>().onClick.AddListener(() => onResponseSelected(Array.IndexOf(prompt.responseOptions, responseOption)));
         }
     }
 

@@ -4,12 +4,26 @@ using UnityEngine.UI;
 
 public class RessourceManager : MonoBehaviour
 {
+    public static RessourceManager Instance { get; private set; }
+
     [HideInInspector] public int ressourceValue = 50;
     [HideInInspector] public int frustrationValue = 0;
 
     public Slider frustrationSlider;
     public TMP_Text frustrationText;
     public TMP_Text ressourceText;
+
+    void Awake()
+    {
+        if (Instance != null && Instance != this)
+        {
+            Destroy(gameObject);
+        }
+        else
+        {
+            Instance = this;
+        }
+    }
 
     void Start()
     {
@@ -31,15 +45,15 @@ public class RessourceManager : MonoBehaviour
         ressourceText.text = ressourceValue.ToString();
     }
 
-    void UpdateFrustration()
-    {
-        frustrationSlider.value = frustrationValue / 100f;
-        frustrationText.text = frustrationValue.ToString() + "%";
-    }
-
     public void UpdateFrustration(int amount)
     {
         frustrationValue = Mathf.Clamp(frustrationValue + amount, 0, 100);
         UpdateFrustration();
+    }
+
+    void UpdateFrustration()
+    {
+        frustrationSlider.value = frustrationValue / 100f;
+        frustrationText.text = frustrationValue.ToString() + "%";
     }
 }
