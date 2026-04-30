@@ -98,13 +98,16 @@ public class PromptsManager : MonoBehaviour
 
     public void ResponseToCurrentPrompt(int selectedResponseIndex)
     {
+        RessourceManager.Instance.UpdateRessource(currentPrompt.responseOptions[selectedResponseIndex].ressourceGain);
+        RessourceManager.Instance.UpdateFrustration(currentPrompt.responseOptions[selectedResponseIndex].frustrationGain);
+
         StartCoroutine(NextPromptWithDelay(selectedResponseIndex)); // Delay before showing the next prompt
     }
 
     IEnumerator NextPromptWithDelay(int selectedResponseIndex = 0)
     {
-        bool hasAIResponse = currentPrompt.responseOptions[selectedResponseIndex - 1].responseAIText != "";
-        bool hasUserResponse = currentPrompt.responseOptions[selectedResponseIndex - 1].responseUserText != "";
+        bool hasAIResponse = currentPrompt.responseOptions[selectedResponseIndex].responseAIText != "";
+        bool hasUserResponse = currentPrompt.responseOptions[selectedResponseIndex].responseUserText != "";
 
         float _delay = 1.25f; // Adjust the delay as needed
 

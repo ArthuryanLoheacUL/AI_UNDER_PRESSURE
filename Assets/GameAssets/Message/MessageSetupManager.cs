@@ -116,7 +116,7 @@ public class MessageSetupManager : MonoBehaviour
         MessageUI messageUI = messageGO.GetComponent<MessageUI>();
         if (messageUI != null)
         {
-            messageUI.SetMessage(prompt.responseOptions[selectedResponseIndex - 1].responseAIText);
+            messageUI.SetMessage(prompt.responseOptions[selectedResponseIndex].responseAIText);
         }
     }
 
