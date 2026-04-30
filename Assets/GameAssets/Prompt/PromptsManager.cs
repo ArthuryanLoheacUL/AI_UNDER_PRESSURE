@@ -1,15 +1,18 @@
 using UnityEngine;
 using System.Collections.Generic;
 
+[RequireComponent(typeof(SetupPromptManagement))]
 public class PromptsManager : MonoBehaviour
 {
     public List<Prompt> prompts;
 
     private List<Prompt> queuePrompts = new List<Prompt>();
     private NotificationsManager notificationBar;
+    private SetupPromptManagement setupPrompt;
 
     void Awake()
     {
+        setupPrompt = GetComponent<SetupPromptManagement>();
         notificationBar = GameObject.FindGameObjectWithTag("NotificationsBar").GetComponent<NotificationsManager>();
     }
 
@@ -54,6 +57,7 @@ public class PromptsManager : MonoBehaviour
                 AddPromptToQueue(randomPrompt);
             }
         }
+        NextPrompt();
         RefreshNotifications();
     }
 
@@ -62,6 +66,15 @@ public class PromptsManager : MonoBehaviour
         if (notificationBar != null)
         {
             notificationBar.RefreshNotifications(queuePrompts);
+        }
+    }
+
+    void NextPrompt()
+    {
+        Prompt prompt = PopPromptFromQueue();
+        if (prompt != null)
+        {
+            setupPrompt.SetupPrompt(prompt);
         }
     }
 
