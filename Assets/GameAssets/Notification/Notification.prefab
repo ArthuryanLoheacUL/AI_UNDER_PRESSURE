@@ -525,6 +525,7 @@ GameObject:
   - component: {fileID: 8812699172358906011}
   - component: {fileID: 6995950610650199822}
   - component: {fileID: 4393737440997499610}
+  - component: {fileID: 971645341061958242}
   m_Layer: 5
   m_Name: Notification
   m_TagString: Untagged
@@ -607,6 +608,20 @@ MonoBehaviour:
   m_EffectColor: {r: 0.24313727, g: 0.3019608, b: 0.14117648, a: 1}
   m_EffectDistance: {x: 3, y: -2}
   m_UseGraphicAlpha: 1
+--- !u!114 &971645341061958242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5869102031965512228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3de76dec91b3b0b4684f2a6fbff772be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NotificationUI
+  senderNameText: {fileID: 1655665421559032449}
+  messageText: {fileID: 4855224963739124552}
 --- !u!1 &6262579813646362281
 GameObject:
   m_ObjectHideFlags: 0
