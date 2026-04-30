@@ -149,7 +149,7 @@ GameObject:
   - component: {fileID: 131831357565495675}
   - component: {fileID: 8133196071148940082}
   m_Layer: 5
-  m_Name: TextOverMessage
+  m_Name: pTextOverMessage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -105,7 +105,7 @@ public class MessageSetupManager : MonoBehaviour
         if (messageUI != null)
         {
             prevActiveMessageUser = messageGO;
-            messageUI.SetMessage(prompt.message);
+            messageUI.SetMessage(prompt.message, prompt.timer);
         }
     }
     void CreateMessageAICore(Prompt prompt, int selectedResponseIndex)

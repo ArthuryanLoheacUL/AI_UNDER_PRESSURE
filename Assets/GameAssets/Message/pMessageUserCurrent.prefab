@@ -87,7 +87,7 @@ GameObject:
   - component: {fileID: 7218992853790299557}
   - component: {fileID: 1361834462114217723}
   m_Layer: 5
-  m_Name: MessageUserCurrent
+  m_Name: pMessageUserCurrent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -152,6 +152,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   messageText: {fileID: 8521964965759939071}
+  timerText: {fileID: 614203219428057373}
 --- !u!1 &1762618858875268512
 GameObject:
   m_ObjectHideFlags: 0
