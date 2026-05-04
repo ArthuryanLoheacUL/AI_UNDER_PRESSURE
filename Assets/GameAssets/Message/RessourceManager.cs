@@ -56,4 +56,14 @@ public class RessourceManager : MonoBehaviour
         frustrationSlider.SetFrustration(frustrationValue / 100f);
         frustrationText.text = frustrationValue.ToString() + "%";
     }
+
+    public int GetFrustration()
+    {
+        return frustrationValue;
+    }
+
+    public int GetRessource()
+    {
+        return ressourceValue;
+    }
 }

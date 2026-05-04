@@ -96,6 +96,14 @@ public class PromptsManager : MonoBehaviour
             Prompt randomPrompt = new Prompt(availablePrompts[randomIndex]);
             randomPrompt.timerMax = 30f + Random.Range(-5f, 10f);
             randomPrompt.timer = randomPrompt.timerMax;
+
+            // Chance to make prompt urgent based on current frustration level
+            float frustrationChance = RessourceManager.Instance.GetFrustration() / 100f; // Assuming frustration is 0-100
+            if (Random.value < frustrationChance)
+            {
+                randomPrompt.isUrgent = true;
+            }
+
             return randomPrompt;
         }
         return null;
