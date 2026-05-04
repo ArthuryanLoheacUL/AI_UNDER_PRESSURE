@@ -15,6 +15,7 @@ public class MessageUI : MonoBehaviour
     {
         messageText.text = message;
         timer = time;
+        this.isUrgent = isUrgent;
         if (timerContainer != null)
             timerContainer.SetActive(isUrgent);
         if (lineContainer != null)

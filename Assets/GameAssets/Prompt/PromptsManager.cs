@@ -9,6 +9,8 @@ public class PromptsManager : MonoBehaviour
     public List<Prompt> prompts;
 
     private List<Prompt> queuePrompts = new List<Prompt>();
+    private List<Prompt> prevPrompts = new List<Prompt>();
+
     private Prompt currentPrompt;
 
     private NotificationsManager notificationBar;
@@ -65,8 +67,33 @@ public class PromptsManager : MonoBehaviour
     {
         if (prompts.Count > 0)
         {
-            int randomIndex = Random.Range(0, prompts.Count);
-            Prompt randomPrompt = new Prompt(prompts[randomIndex]);
+            // Filter out prompts from the last 5 played prompts
+            List<Prompt> availablePrompts = new List<Prompt>();
+            foreach (var prompt in prompts)
+            {
+                bool isInRecent = false;
+                foreach (var recentPrompt in prevPrompts)
+                {
+                    if (prompt.message == recentPrompt.message && prompt.senderName == recentPrompt.senderName)
+                    {
+                        isInRecent = true;
+                        break;
+                    }
+                }
+                if (!isInRecent)
+                {
+                    availablePrompts.Add(prompt);
+                }
+            }
+
+            // If all prompts are in recent, allow all prompts
+            if (availablePrompts.Count == 0)
+            {
+                availablePrompts = new List<Prompt>(prompts);
+            }
+
+            int randomIndex = Random.Range(0, availablePrompts.Count);
+            Prompt randomPrompt = new Prompt(availablePrompts[randomIndex]);
             randomPrompt.timerMax = 30f + Random.Range(-5f, 10f);
             randomPrompt.timer = randomPrompt.timerMax;
             return randomPrompt;
@@ -104,6 +131,16 @@ public class PromptsManager : MonoBehaviour
 
     void NextPrompt()
     {
+        // Add current prompt to recent prompts history (max 5)
+        if (currentPrompt != null)
+        {
+            prevPrompts.Insert(0, currentPrompt);
+            if (prevPrompts.Count > 5)
+            {
+                prevPrompts.RemoveAt(prevPrompts.Count - 1);
+            }
+        }
+
         Prompt prompt = PopPromptFromQueue();
         if (prompt != null)
         {

@@ -34,8 +34,12 @@ public class Prompt : ScriptableObject
         for (int i = 0; i < other.responseOptions.Length; i++)
         {
             responseOptions[i] = other.responseOptions[i];
+            responseOptions[i].addedPrompts = other.responseOptions[i].addedPrompts;
+            responseOptions[i].addedDirectPrompts = other.responseOptions[i].addedDirectPrompts;
         }
         timer = 0f;
         timerMax = 0f;
+        isUnique = other.isUnique;
+        isUrgent = other.isUrgent;
     }
 }
