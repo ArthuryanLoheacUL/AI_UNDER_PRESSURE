@@ -15,16 +15,20 @@ MonoBehaviour:
   senderName: Nav. Korr
   message: "Les coordonn\xE9es changent l\xE9g\xE8rement toutes seules. Les \xE9carts
     sont faibles mais constants."
+  isUnique: 0
+  isUrgent: 1
   responseOptions:
   - optionText: Corriger
-    responseAIText: "Correction effectu\xE9e."
     responseUserText: 
     ressourceGain: -9
     frustrationGain: -5
+    addedPrompts: []
+    addedDirectPrompts: []
   - optionText: Laisser
-    responseAIText: Aucun recalibrage.
     responseUserText: "\xC7a me pla\xEEt pas."
     ressourceGain: 5
     frustrationGain: 8
+    addedPrompts: []
+    addedDirectPrompts: []
   timer: 0
   timerMax: 0

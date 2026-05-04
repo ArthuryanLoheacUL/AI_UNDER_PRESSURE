@@ -353,7 +353,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   responseText: {fileID: 5993516486364897752}
   valueIndicator: {fileID: 968616603473684428}
+  valueIndicatorSprite: {fileID: 9091544013863961837}
   valueIndicatorText: {fileID: 2032492024443279659}
+  colorNegative: {r: 0.6862745, g: 0.19215688, b: 0.08235294, a: 1}
 --- !u!1 &4675680570288381090
 GameObject:
   m_ObjectHideFlags: 0
