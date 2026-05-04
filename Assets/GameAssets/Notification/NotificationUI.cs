@@ -9,6 +9,18 @@ public class NotificationUI : MonoBehaviour
 
     public Slider timerSlider;
 
+    [Header("Colors Time Close")]
+    public Image backgroundImage;
+    public Color BackColorTimeClose;
+    public Outline outline;
+    public Color outlineColorTimeClose;
+    public TMP_Text[] textsTimeClose;
+    public Color senderNameTextColorTimeClose;
+    public Color fillColorTimeClose;
+    public Image timerBackgroundImage;
+    public Color backgroundColorTimeClose;
+
+
     float timer;
     float timerMax;
 
@@ -30,6 +42,18 @@ public class NotificationUI : MonoBehaviour
         {
             timer -= Time.deltaTime;
             timerSlider.value = timer / timerMax;
+        }
+        if (timer <= timerMax * 0.25f)
+        {
+            backgroundImage.color = BackColorTimeClose;
+            outline.effectColor = outlineColorTimeClose;
+            senderNameText.color = senderNameTextColorTimeClose;
+            foreach (TMP_Text text in textsTimeClose)
+            {
+                text.color = senderNameTextColorTimeClose;
+            }
+            timerSlider.fillRect.GetComponent<Image>().color = fillColorTimeClose;
+            timerBackgroundImage.color = backgroundColorTimeClose;
         }
     }
 }

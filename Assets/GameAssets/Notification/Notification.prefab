@@ -486,6 +486,17 @@ MonoBehaviour:
   senderNameText: {fileID: 1655665421559032449}
   messageText: {fileID: 4855224963739124552}
   timerSlider: {fileID: 8825704053948611789}
+  backgroundImage: {fileID: 6995950610650199822}
+  BackColorTimeClose: {r: 0.07058824, g: 0.03137255, b: 0.023529414, a: 1}
+  outline: {fileID: 4393737440997499610}
+  outlineColorTimeClose: {r: 0.3803922, g: 0.13725491, b: 0.039215688, a: 1}
+  textsTimeClose:
+  - {fileID: 1655665421559032449}
+  - {fileID: 4855224963739124552}
+  senderNameTextColorTimeClose: {r: 0.6862745, g: 0.19215688, b: 0.08235294, a: 1}
+  fillColorTimeClose: {r: 0.3803922, g: 0.13725491, b: 0.039215688, a: 1}
+  timerBackgroundImage: {fileID: 1999486420580795553}
+  backgroundColorTimeClose: {r: 0.15686275, g: 0.0627451, b: 0.027450982, a: 1}
 --- !u!1 &6262579813646362281
 GameObject:
   m_ObjectHideFlags: 0
