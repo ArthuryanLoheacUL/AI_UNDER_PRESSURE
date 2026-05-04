@@ -19,6 +19,7 @@ public class SetupPromptManagement : MonoBehaviour
 
         if (messageSetupManager != null)
             messageSetupManager.SetupMessage(prompt);
+        SoundEffectManager.Instance.PlaySoundEffectRandomPitch("MessageIn");
     }
 
     public void NextAIPrompt(Prompt prompt, int selectedResponseIndex)
@@ -28,6 +29,7 @@ public class SetupPromptManagement : MonoBehaviour
 
         if (messageSetupManager != null)
             messageSetupManager.AddResponseAI(prompt, selectedResponseIndex);
+        SoundEffectManager.Instance.PlaySoundEffectRandomPitch("MessageOut");
     }
 
     public void NextUserPrompt(Prompt prompt, int selectedResponseIndex)
@@ -37,5 +39,6 @@ public class SetupPromptManagement : MonoBehaviour
 
         if (messageSetupManager != null)
             messageSetupManager.AddResponseUser(prompt, selectedResponseIndex);
+        SoundEffectManager.Instance.PlaySoundEffectRandomPitch("MessageIn");
     }
 }

@@ -1650,6 +1650,60 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 948705127}
   m_CullTransparentMesh: 1
+--- !u!1 &1037180379
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1037180381}
+  - component: {fileID: 1037180380}
+  m_Layer: 0
+  m_Name: SoundEffectManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1037180380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1037180379}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5892278775c28b147b9fc545b7ba10b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  soundEffectList:
+  - name: Notif
+    clip: {fileID: 8300000, guid: 893854404bf857c4ba2b186aa427b96f, type: 3}
+    volume: 0.2
+  - name: MessageIn
+    clip: {fileID: 8300000, guid: 950b6fed6834bac4aba5cb67f9112b5d, type: 3}
+    volume: 0.2
+  - name: MessageOut
+    clip: {fileID: 8300000, guid: 523d63b675ee95c408da6b71ec24515b, type: 3}
+    volume: 0.2
+--- !u!4 &1037180381
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1037180379}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.05088, y: 2.12346, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1053474460
 GameObject:
   m_ObjectHideFlags: 0
@@ -3071,3 +3125,4 @@ SceneRoots:
   - {fileID: 1499550629}
   - {fileID: 146145251}
   - {fileID: 1577398957}
+  - {fileID: 1037180381}

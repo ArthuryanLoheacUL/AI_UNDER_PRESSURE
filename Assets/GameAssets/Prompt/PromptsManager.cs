@@ -23,9 +23,16 @@ public class PromptsManager : MonoBehaviour
         notificationBar = GameObject.FindGameObjectWithTag("NotificationsBar").GetComponent<NotificationsManager>();
     }
 
+    void NotifyNewPrompt()
+    {
+        Debug.Log("New prompt added to queue. Total prompts in queue: " + queuePrompts.Count);
+        SoundEffectManager.Instance.PlaySoundEffectRandomPitch("Notif");
+    }
+
     public void AddPromptToQueue(Prompt prompt)
     {
         queuePrompts.Add(prompt);
+        NotifyNewPrompt();
     }
 
     public Prompt PopPromptFromQueue()

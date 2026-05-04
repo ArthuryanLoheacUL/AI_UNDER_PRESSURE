@@ -354,8 +354,8 @@ MonoBehaviour:
     m_TextWithWhitespace: "Simulator\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 2875
-    y: 79
+    x: 956
+    y: 24
     width: 526
     height: 851
   m_SerializedDataModeController:
@@ -387,7 +387,7 @@ MonoBehaviour:
   m_UseMipMap: 0
   m_SimulatorState:
     controlPanelVisible: 0
-    controlPanelWidth: 0
+    controlPanelWidth: NaN
     controlPanelFoldoutKeys:
     - UnityEditor.AdaptivePerformance.Editor.AdaptivePerformanceUIExtension
     - UnityEditor.DeviceSimulation.ApplicationSettingsPlugin
@@ -400,7 +400,7 @@ MonoBehaviour:
     - '{"m_SerializationStates":{"thermalFoldout":false,"performanceFoldout":false,"developerFoldout":false,"indexerFoldout":false,"scalersFoldout":false,"deviceSettingsFoldout":false}}'
     - '{}'
     - '{}'
-    scale: 34
+    scale: 10
     fitToScreenEnabled: 1
     rotationDegree: 0
     highlightSafeAreaEnabled: 0
@@ -8699,8 +8699,8 @@ MonoBehaviour:
     m_TextWithWhitespace: "UnityEditor.MainToolbarWindow\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 1920
-    y: 43
+    x: 0
+    y: 0
     width: 1920
     height: 36
   m_SerializedDataModeController:
@@ -8979,8 +8979,8 @@ MonoBehaviour:
     m_TextWithWhitespace: "Hierarchy\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 1920
-    y: 79
+    x: 0
+    y: 24
     width: 309
     height: 851
   m_SerializedDataModeController:
@@ -8999,12 +8999,7 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs:
-      - m_Data: -174116
-      - m_Data: 118704
-      - m_Data: 118708
-      - m_Data: 118700
-      - m_Data: 118696
+      m_SelectedIDs: []
       m_LastClickedID:
         m_Data: 0
       m_ExpandedIDs:
@@ -9155,8 +9150,8 @@ MonoBehaviour:
     m_TextWithWhitespace: "Scene\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 2230
-    y: 79
+    x: 311
+    y: 24
     width: 643
     height: 851
   m_SerializedDataModeController:
@@ -9922,8 +9917,8 @@ MonoBehaviour:
     m_TextWithWhitespace: "Project\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 1920
-    y: 956
+    x: 0
+    y: 901
     width: 1482
     height: 30
   m_SerializedDataModeController:
@@ -9974,10 +9969,7 @@ MonoBehaviour:
       m_Data: 89602
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 74952
-    - m_Data: 75824
-    - m_Data: 75828
-    - m_Data: 1000000000
+    - m_Data: 50160
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -10010,7 +10002,7 @@ MonoBehaviour:
       m_Data: 0
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 74952
+    - m_Data: 50160
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -10184,7 +10176,7 @@ MonoBehaviour:
     m_DynamicPanelBehavior: 0
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: -174116
+  m_LastSelectedObjectID: 0
 --- !u!114 &23
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -10206,8 +10198,8 @@ MonoBehaviour:
     m_TextWithWhitespace: "Inspector\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 3403
-    y: 79
+    x: 1484
+    y: 24
     width: 436
     height: 907
   m_SerializedDataModeController:
@@ -10223,8 +10215,7 @@ MonoBehaviour:
     m_DynamicPanelContainerData: []
     m_OverlaysVisible: 1
     m_DynamicPanelBehavior: 0
-  m_ObjectsLockedBeforeSerialization:
-  - {fileID: 0}
+  m_ObjectsLockedBeforeSerialization: []
   m_InstanceIDsLockedBeforeSerialization: b2b90100
   m_PreviewResizer:
     m_CachedPref: -265
@@ -10235,5 +10226,5 @@ MonoBehaviour:
   m_GlobalObjectId: 
   m_InspectorMode: 0
   m_LockTracker:
-    m_IsLocked: 1
+    m_IsLocked: 0
   m_PreviewWindow: {fileID: 0}
