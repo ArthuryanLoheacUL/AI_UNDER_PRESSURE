@@ -16,6 +16,7 @@ public class PromptsManager : MonoBehaviour
 
     private float timeNextPrompt = 0f;
     private float timeBetweenPrompts = 10f;
+    public int startPrompts = 1;
 
     void Awake()
     {
@@ -25,13 +26,22 @@ public class PromptsManager : MonoBehaviour
 
     void NotifyNewPrompt()
     {
-        Debug.Log("New prompt added to queue. Total prompts in queue: " + queuePrompts.Count);
         SoundEffectManager.Instance.PlaySoundEffectRandomPitch("Notif");
     }
 
     public void AddPromptToQueue(Prompt prompt)
     {
-        queuePrompts.Add(prompt);
+        if (prompt.isUrgent)
+        {
+            queuePrompts.Insert(0, prompt);
+        } else
+        {
+            queuePrompts.Add(prompt);        
+        }
+        if (prompt.isUnique)
+        {
+            prompts.RemoveAll(p => p.message == prompt.message && p.senderName == prompt.senderName);
+        }
         NotifyNewPrompt();
     }
 
@@ -66,7 +76,7 @@ public class PromptsManager : MonoBehaviour
 
     void Start()
     {
-        for (int i = 0; i < 5; i++)
+        for (int i = 0; i < startPrompts; i++)
         {
             Prompt randomPrompt = GetRandomPrompt();
             if (randomPrompt != null)
@@ -116,25 +126,41 @@ public class PromptsManager : MonoBehaviour
         RessourceManager.Instance.UpdateRessource(currentPrompt.responseOptions[selectedResponseIndex].ressourceGain);
         RessourceManager.Instance.UpdateFrustration(currentPrompt.responseOptions[selectedResponseIndex].frustrationGain);
 
+        if (currentPrompt.responseOptions[selectedResponseIndex].addedPrompts != null)
+        {
+            foreach (var addedPrompt in currentPrompt.responseOptions[selectedResponseIndex].addedPrompts)
+            {
+                prompts.Add(addedPrompt);
+            }
+        }
+        if (currentPrompt.responseOptions[selectedResponseIndex].addedDirectPrompts != null)
+        {
+            foreach (var addedDirectPrompt in currentPrompt.responseOptions[selectedResponseIndex].addedDirectPrompts)
+            {
+                AddPromptToQueue(addedDirectPrompt);
+            }
+        }
+
         StartCoroutine(NextPromptWithDelay(selectedResponseIndex)); // Delay before showing the next prompt
     }
 
     IEnumerator NextPromptWithDelay(int selectedResponseIndex = 0)
     {
-        bool hasAIResponse = currentPrompt.responseOptions[selectedResponseIndex].responseAIText != "";
+        bool hasAIResponse = currentPrompt.responseOptions[selectedResponseIndex].optionText != "";
         bool hasUserResponse = currentPrompt.responseOptions[selectedResponseIndex].responseUserText != "";
+        bool hasBoth = hasAIResponse && hasUserResponse;
 
         float _delay = 1.25f; // Adjust the delay as needed
 
         if (hasAIResponse)
         {
             setupPrompt.NextAIPrompt(currentPrompt, selectedResponseIndex);
-            yield return new WaitForSeconds(_delay);        
+            yield return new WaitForSeconds(_delay - (hasBoth ? 0.4f : 0f));        
         }
         if (hasUserResponse)
         {
             setupPrompt.NextUserPrompt(currentPrompt, selectedResponseIndex);
-            yield return new WaitForSeconds(_delay);        
+            yield return new WaitForSeconds(_delay + (hasBoth ? 0.4f : 0f));        
         }
         NextPrompt();
     }
@@ -161,7 +187,7 @@ public class PromptsManager : MonoBehaviour
         for (int i = 0; i < queuePrompts.Count; i++)
         {
             queuePrompts[i].timer -= Time.deltaTime;
-            if (queuePrompts[i].timer <= 0f)
+            if (queuePrompts[i].timer <= 0f && queuePrompts[i].isUrgent)
             {
                 queuePrompts.RemoveAt(i);
                 RessourceManager.Instance.UpdateFrustration(10);
@@ -172,7 +198,7 @@ public class PromptsManager : MonoBehaviour
         if (currentPrompt != null)
         {
             currentPrompt.timer -= Time.deltaTime;
-            if (currentPrompt.timer <= 0f)
+            if (currentPrompt.timer <= 0f && currentPrompt.isUrgent)
             {
                 currentPrompt = null;
                 RessourceManager.Instance.UpdateFrustration(10);

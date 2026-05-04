@@ -5,13 +5,20 @@ public class MessageUI : MonoBehaviour
 {
     public TMP_Text messageText;
     public TMP_Text timerText;
+    public GameObject timerContainer;
+    public GameObject lineContainer;
 
     float timer = -1f;
+    bool isUrgent = false;
 
-    public void SetMessage(string message, float time = -1f)
+    public void SetMessage(string message, float time = -1f, bool isUrgent = false)
     {
         messageText.text = message;
         timer = time;
+        if (timerContainer != null)
+            timerContainer.SetActive(isUrgent);
+        if (lineContainer != null)
+            lineContainer.SetActive(isUrgent);
     }
 
     public string GetMessage()

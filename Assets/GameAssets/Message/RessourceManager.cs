@@ -9,7 +9,7 @@ public class RessourceManager : MonoBehaviour
     [HideInInspector] public int ressourceValue = 50;
     [HideInInspector] public int frustrationValue = 0;
 
-    public Slider frustrationSlider;
+    public FrustrationBar frustrationSlider;
     public TMP_Text frustrationText;
     public TMP_Text ressourceText;
 
@@ -53,7 +53,7 @@ public class RessourceManager : MonoBehaviour
 
     void UpdateFrustration()
     {
-        frustrationSlider.value = frustrationValue / 100f;
+        frustrationSlider.SetFrustration(frustrationValue / 100f);
         frustrationText.text = frustrationValue.ToString() + "%";
     }
 }

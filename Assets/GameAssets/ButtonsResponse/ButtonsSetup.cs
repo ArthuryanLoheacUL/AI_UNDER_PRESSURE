@@ -22,6 +22,10 @@ public class ButtonsSetup : MonoBehaviour
             ButtonResponseUI buttonResponseUI = buttonGO.GetComponent<ButtonResponseUI>();
             buttonResponseUI.SetResponse(responseOption.optionText, responseOption.ressourceGain);
             buttonGO.GetComponent<Button>().onClick.AddListener(() => onResponseSelected(Array.IndexOf(prompt.responseOptions, responseOption)));
+            if (responseOption.ressourceGain > 0)
+                buttonGO.GetComponent<Button>().interactable = true;
+            else
+                buttonGO.GetComponent<Button>().interactable = RessourceManager.Instance.ressourceValue >= -responseOption.ressourceGain;
         }
     }
 

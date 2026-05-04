@@ -8,16 +8,19 @@ public class Prompt : ScriptableObject
     {
         [Header("Texts")]
         public string optionText;
-        public string responseAIText;
         public string responseUserText;
 
         [Header("Values")]
         public int ressourceGain;
         public int frustrationGain;
+        public Prompt[] addedPrompts;
+        public Prompt[] addedDirectPrompts;
     }
 
     public string senderName;
     public string message;
+    public bool isUnique;
+    public bool isUrgent;
     public ResponseOption[] responseOptions;
 
     [HideInInspector] public float timer = 0f;

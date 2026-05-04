@@ -153,6 +153,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   messageText: {fileID: 8521964965759939071}
   timerText: {fileID: 614203219428057373}
+  timerContainer: {fileID: 1762618858875268512}
+  lineContainer: {fileID: 1092841312599498294}
 --- !u!1 &1762618858875268512
 GameObject:
   m_ObjectHideFlags: 0

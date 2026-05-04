@@ -39,7 +39,7 @@ public class MessageSetupManager : MonoBehaviour
 
     public void AddResponseUser(Prompt prompt, int selectedResponseIndex)
     {
-        CreateMessageUserCore(prompt);
+        CreateMessageUserCore(prompt, selectedResponseIndex);
         if (prevActiveOverText != null)
         {
             prevActiveOverText.SetNormalTextOverMessage();
@@ -105,7 +105,7 @@ public class MessageSetupManager : MonoBehaviour
         if (messageUI != null)
         {
             prevActiveMessageUser = messageGO;
-            messageUI.SetMessage(prompt.message, prompt.timer);
+            messageUI.SetMessage(prompt.message, prompt.timer, prompt.isUrgent);
         }
     }
     void CreateMessageAICore(Prompt prompt, int selectedResponseIndex)
@@ -116,11 +116,11 @@ public class MessageSetupManager : MonoBehaviour
         MessageUI messageUI = messageGO.GetComponent<MessageUI>();
         if (messageUI != null)
         {
-            messageUI.SetMessage(prompt.responseOptions[selectedResponseIndex].responseAIText);
+            messageUI.SetMessage(prompt.responseOptions[selectedResponseIndex].optionText);
         }
     }
 
-    void CreateMessageUserCore(Prompt prompt)
+    void CreateMessageUserCore(Prompt prompt, int selectedResponseIndex)
     {
         // Create new message based on the prompt's sender
         GameObject messageGO  = Instantiate(messageUserPrefab, messageParent);
@@ -128,7 +128,7 @@ public class MessageSetupManager : MonoBehaviour
         MessageUI messageUI = messageGO.GetComponent<MessageUI>();
         if (messageUI != null)
         {
-            messageUI.SetMessage(prompt.responseOptions.Last().responseUserText);
+            messageUI.SetMessage(prompt.responseOptions[selectedResponseIndex].responseUserText);
         }
     }
     

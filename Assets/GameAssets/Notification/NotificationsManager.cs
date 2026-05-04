@@ -24,7 +24,7 @@ public class NotificationsManager : MonoBehaviour
             Prompt prompt = prompts[i];
             GameObject notificationGO = Instantiate(notificationPrefab, notificationsContainer);
             NotificationUI notificationUI = notificationGO.GetComponent<NotificationUI>();
-            notificationUI.SetNotification(prompt.senderName, prompt.message, prompt.timer, prompt.timerMax);
+            notificationUI.SetNotification(prompt);
         }
 
         // Show "more" indicator if there are more than 3 notifications

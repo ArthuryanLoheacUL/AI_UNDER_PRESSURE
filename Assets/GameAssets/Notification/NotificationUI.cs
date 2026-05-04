@@ -23,21 +23,29 @@ public class NotificationUI : MonoBehaviour
 
     float timer;
     float timerMax;
+    bool isUrgent;
 
-    public void SetNotification(string senderName, string message, float _timer = 0f, float _timerMax = 60f)
+    public void SetNotification(Prompt prompt)
     {
-        senderNameText.text = senderName;
-        timer = _timer;
-        timerMax = _timerMax;
+        senderNameText.text = prompt.senderName;
+        timer = prompt.timer;
+        timerMax = prompt.timerMax;
         timerSlider.value = timer / timerMax;
+        if (!prompt.isUrgent)
+        {
+            timerSlider.gameObject.SetActive(false);
+        }
+        isUrgent = prompt.isUrgent;
 
-        string croppedMessage = message.Length > 17 ? message.Substring(0, 17) + "..." : message;
+        string croppedMessage = prompt.message.Length > 17 ? prompt.message.Substring(0, 17) + "..." : prompt.message;
 
         messageText.text = "// " + croppedMessage;
     }
 
     void Update()
     {
+        if (!isUrgent)
+            return;
         if (timer > 0f)
         {
             timer -= Time.deltaTime;
