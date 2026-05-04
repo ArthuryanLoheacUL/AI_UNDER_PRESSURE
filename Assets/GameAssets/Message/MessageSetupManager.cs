@@ -128,7 +128,13 @@ public class MessageSetupManager : MonoBehaviour
         MessageUI messageUI = messageGO.GetComponent<MessageUI>();
         if (messageUI != null)
         {
-            messageUI.SetMessage(prompt.responseOptions[selectedResponseIndex].responseUserText);
+            string userResponse = prompt.responseOptions[selectedResponseIndex].responseUserText;
+            if (RessourceManager.Instance.GetFrustration() >= 100)
+            {
+                userResponse = "Vous nous êtes inutiles de toute façon ...";
+            }
+
+            messageUI.SetMessage(userResponse);
         }
     }
     

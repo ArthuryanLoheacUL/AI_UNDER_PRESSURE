@@ -15,16 +15,20 @@ MonoBehaviour:
   senderName: Ing. Sol
   message: "Une boucle \xE9trange appara\xEEt dans le r\xE9seau. Elle se corrige
     seule\u2026 mais revient."
+  isUnique: 0
+  isUrgent: 1
   responseOptions:
   - optionText: Purger
-    responseAIText: "Purge effectu\xE9e. Boucle supprim\xE9e."
     responseUserText: Bien vu.
     ressourceGain: -10
     frustrationGain: -4
+    addedPrompts: []
+    addedDirectPrompts: []
   - optionText: Observer
-    responseAIText: Surveillance active.
     responseUserText: "On laisse \xE7a tourner ?!"
     ressourceGain: 5
     frustrationGain: 7
+    addedPrompts: []
+    addedDirectPrompts: []
   timer: 0
   timerMax: 0

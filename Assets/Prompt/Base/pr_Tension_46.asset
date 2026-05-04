@@ -14,16 +14,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Prompt
   senderName: Sec. Mara
   message: "Deux membres de l\u2019\xE9quipage ont failli en venir aux mains."
+  isUnique: 0
+  isUrgent: 1
   responseOptions:
   - optionText: Intervenir
-    responseAIText: "Conflit d\xE9samorc\xE9."
     responseUserText: 
     ressourceGain: -6
     frustrationGain: -7
+    addedPrompts: []
+    addedDirectPrompts: []
   - optionText: Ignorer
-    responseAIText: Aucun encadrement.
     responseUserText: "\xC7a va exploser."
     ressourceGain: 4
     frustrationGain: 12
+    addedPrompts: []
+    addedDirectPrompts: []
   timer: 0
   timerMax: 0
