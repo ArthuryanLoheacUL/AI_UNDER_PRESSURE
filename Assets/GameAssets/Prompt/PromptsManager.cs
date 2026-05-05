@@ -222,7 +222,7 @@ public class PromptsManager : MonoBehaviour
             bool inRecent = false;
             foreach (var recent in prevPrompts)
             {
-                if (SameIdentity(wp.prompt, recent))
+                if (wp.prompt.message == recent.message)
                 {
                     inRecent = true;
                     break;
