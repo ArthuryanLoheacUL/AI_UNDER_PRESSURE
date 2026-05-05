@@ -54,6 +54,9 @@ public class PromptsManager : MonoBehaviour
     private NotificationsManager notificationBar;
     private SetupPromptManagement setupPrompt;
 
+    public GameObject loadingScreen;
+    public float loadingScreenDuration = 1f;
+
     private float timeNextPrompt = 0f;
     private bool isGameOver = false;
 
@@ -326,6 +329,23 @@ public class PromptsManager : MonoBehaviour
         return null;
     }
 
+    IEnumerator NextPromptWithDelay(Prompt prompt)
+    {
+        if (currentPrompt && currentPrompt.senderName == prompt.senderName)
+        {
+            // If the next prompt is from the same sender, we skip the loading screen and just update the message.
+            setupPrompt.SetupPrompt(prompt, ResponseToCurrentPrompt, GetSavedPromptsForSender(prompt.senderName));
+            RefreshNotifications();
+            yield break;
+        }
+        setupPrompt.ClearPrompt();
+        loadingScreen.SetActive(true);
+        yield return new WaitForSeconds(loadingScreenDuration);
+        loadingScreen.SetActive(false);
+        setupPrompt.SetupPrompt(prompt, ResponseToCurrentPrompt, GetSavedPromptsForSender(prompt.senderName));
+        RefreshNotifications();
+    }
+
     void NextPrompt()
     {
         SaveCurrentPrompt();
@@ -341,9 +361,9 @@ public class PromptsManager : MonoBehaviour
 
         if (prompt != null)
         {
-            currentPrompt = prompt;
             if (!string.IsNullOrEmpty(prompt.chainTag)) activeChains.Add(prompt.chainTag);
-            setupPrompt.SetupPrompt(prompt, ResponseToCurrentPrompt, GetSavedPromptsForSender(prompt.senderName));
+            StartCoroutine(NextPromptWithDelay(prompt));
+            currentPrompt = prompt;
         }
         RefreshNotifications();
     }
@@ -420,10 +440,7 @@ public class PromptsManager : MonoBehaviour
             yield return new WaitForSeconds(_delay + (hasBoth ? 0.4f : 0f));
         }
 
-        // Game over is driven by bonheur only. Ressources can be 0 (terrible
-        // for the crew) but it's a "drained-not-dead" state, not a hard end.
         bool gameOverByGauges = RessourceManager.Instance.IsBonheurDead();
-
         if (gameOverByGauges || currentPrompt.responseOptions[selectedResponseIndex].isGameOverResponse)
         {
             isGameOver = true;

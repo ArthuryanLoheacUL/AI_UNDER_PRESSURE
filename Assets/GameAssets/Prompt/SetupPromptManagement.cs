@@ -43,6 +43,15 @@ public class SetupPromptManagement : MonoBehaviour
         SoundEffectManager.Instance.PlaySoundEffectRandomPitch("MessageIn");
     }
 
+    public void ClearPrompt()
+    {
+        if (buttonsSetup != null)
+            buttonsSetup.ClearButtons();
+
+        if (messageSetupManager != null)
+            messageSetupManager.ClearMessages();
+    }
+
     public void SetupGameOverButtons()
     {
         if (buttonsSetup != null)

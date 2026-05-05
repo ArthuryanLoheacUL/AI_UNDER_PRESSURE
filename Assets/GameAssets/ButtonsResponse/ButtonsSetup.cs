@@ -39,6 +39,14 @@ public class ButtonsSetup : MonoBehaviour
         }
     }
 
+    public void ClearButtons()
+    {
+        foreach (Transform child in parentButtons)
+        {
+            Destroy(child.gameObject);
+        }
+    }
+
     public void SetupGameOverButtons()
     {
         // Clear existing buttons

@@ -41,6 +41,14 @@ public class MessageSetupManager : MonoBehaviour
         SetupMessageWainting(prompt);
     }
 
+    public void ClearMessages()
+    {
+        foreach (Transform child in messageParent)
+        {
+            Destroy(child.gameObject);
+        }
+    }
+
     public void AddResponseAI(Prompt prompt, int selectedResponseIndex)
     {
         CreateMessageAICore(prompt.responseOptions[selectedResponseIndex].optionText);
