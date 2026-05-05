@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
+  m_Name: pr_Plainte_006
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  senderName: Sec. Mara
+  message: "Les quartiers d'\xE9quipage sont \xE0 14 degr\xE9s. Ils dorment habill\xE9s. \xC7a commence \xE0 r\xE2ler s\xE9rieusement. Je peux remonter le chauffage, ou sortir les couvertures de r\xE9serve."
+  isUnique: 0
+  isUrgent: 0
+  responseOptions:
+  - optionText: "R\xE9chauffer"
+    responseUserText: "Climatisation ajust\xE9e."
+    ressourceGain: -5
+    frustrationGain: -5
+    addedPrompts: []
+    addedDirectPrompts: []
+  - optionText: Distribuer
+    responseUserText: Distribution de couvertures.
+    ressourceGain: -5
+    frustrationGain: 0
+    addedPrompts: []
+    addedDirectPrompts: []
+  timer: 0
+  timerMax: 0

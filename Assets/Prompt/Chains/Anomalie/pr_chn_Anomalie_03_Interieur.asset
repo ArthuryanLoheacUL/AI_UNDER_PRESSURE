@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
+  m_Name: pr_chn_Anomalie_03_Interieur
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  senderName: Dr. Iven
+  message: "On y est, MOTHER. \xC0 l'int\xE9rieur. Le temps... fait des choses bizarres
+    ici. Les horloges divergent entre les sections, l'\xE9cart se creuse. Faut tenir
+    le cap, ou sortir en urgence."
+  isUnique: 1
+  isUrgent: 1
+  responseOptions:
+  - optionText: Maintenir
+    responseUserText: Tenir le cap.
+    ressourceGain: 0
+    frustrationGain: 10
+    addedPrompts:
+    - prompt: {fileID: 11400000, guid: 068afd41d9d74e57ba49a022c46d3b6a, type: 2}
+      weight: 10
+    addedDirectPrompts: []
+  - optionText: "\xC9vader"
+    responseUserText: "Sortie d'urgence, man\u0153uvre d'\xE9vasion."
+    ressourceGain: -10
+    frustrationGain: 0
+    addedPrompts: []
+    addedDirectPrompts: []
+  timer: 0
+  timerMax: 0

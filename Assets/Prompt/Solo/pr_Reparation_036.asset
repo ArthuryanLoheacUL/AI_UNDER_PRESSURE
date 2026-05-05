@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
+  m_Name: pr_Reparation_036
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  senderName: Ing. Sol
+  message: "Bras manipulateur 2 hors service, v\xE9rin hydraulique fendu. On peut le r\xE9parer maintenant \u2014 j'ai les pi\xE8ces \u2014 ou bricoler avec le 3 jusqu'\xE0 la prochaine escale."
+  isUnique: 0
+  isUrgent: 0
+  responseOptions:
+  - optionText: "R\xE9parer"
+    responseUserText: "R\xE9pare-le proprement."
+    ressourceGain: -10
+    frustrationGain: -5
+    addedPrompts: []
+    addedDirectPrompts: []
+  - optionText: Substituer
+    responseUserText: "Substitution sur le 3, d\xE9brouille-toi."
+    ressourceGain: 0
+    frustrationGain: 5
+    addedPrompts: []
+    addedDirectPrompts: []
+  timer: 0
+  timerMax: 0

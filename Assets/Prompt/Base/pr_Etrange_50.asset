@@ -19,12 +19,12 @@ MonoBehaviour:
   - optionText: Examiner
     responseAIText: "\xC9valuation m\xE9dicale lanc\xE9e."
     responseUserText: "Bonne id\xE9e."
-    ressourceGain: -7
+    ressourceGain: -10
     frustrationGain: -5
   - optionText: Ignorer
     responseAIText: Aucun suivi.
     responseUserText: "On passe \xE0 c\xF4t\xE9 de quelques chose je pense ..."
-    ressourceGain: 3
-    frustrationGain: 9
+    ressourceGain: 5
+    frustrationGain: 10
   timer: 0
   timerMax: 0

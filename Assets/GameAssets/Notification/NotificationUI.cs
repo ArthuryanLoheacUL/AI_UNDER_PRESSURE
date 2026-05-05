@@ -24,6 +24,7 @@ public class NotificationUI : MonoBehaviour
     float timer;
     float timerMax;
     bool isUrgent;
+    int lastSecondTicked = -1;
 
     public void SetNotification(Prompt prompt)
     {
@@ -62,6 +63,12 @@ public class NotificationUI : MonoBehaviour
             }
             timerSlider.fillRect.GetComponent<Image>().color = fillColorTimeClose;
             timerBackgroundImage.color = backgroundColorTimeClose;
+        }
+        int seconds = Mathf.CeilToInt(timer);
+        if ((lastSecondTicked == -1 && seconds <= 5) || (seconds <= lastSecondTicked - 1 && lastSecondTicked > 0))
+        {
+            lastSecondTicked = seconds;
+            SoundEffectManager.Instance.PlaySoundEffectRandomPitch("Bip"); 
         }
     }
 }

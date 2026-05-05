@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
+  m_Name: pr_Vide_005
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  senderName: Nav. Eko
+  message: "Six jours de n\xE9ant absolu devant nous, MOTHER. Aucun astre, aucun signal, juste du noir. L'\xE9quipage va vriller s'ils n'ont rien \xE0 regarder."
+  isUnique: 0
+  isUrgent: 0
+  responseOptions:
+  - optionText: Divertir
+    responseUserText: "Cin\xE9 de bord et marathon de s\xE9ries."
+    ressourceGain: -5
+    frustrationGain: -10
+    addedPrompts: []
+    addedDirectPrompts: []
+  - optionText: Continuer
+    responseUserText: Routine standard, ils s'occuperont.
+    ressourceGain: 0
+    frustrationGain: 10
+    addedPrompts: []
+    addedDirectPrompts: []
+  timer: 0
+  timerMax: 0

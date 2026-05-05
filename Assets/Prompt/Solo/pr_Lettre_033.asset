@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
+  m_Name: pr_Lettre_033
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  senderName: Com. Zeth
+  message: "MOTHER, j'ai une lettre pour Korr. Sa m\xE8re est d\xE9c\xE9d\xE9e il y a six mois, sa famille vient seulement de pouvoir l'envoyer. Je peux lui transmettre tout de suite, ou attendre la fin de son quart."
+  isUnique: 1
+  isUrgent: 0
+  responseOptions:
+  - optionText: Transmettre
+    responseUserText: Tout de suite, elle a le droit de savoir.
+    ressourceGain: 0
+    frustrationGain: 10
+    addedPrompts: []
+    addedDirectPrompts: []
+  - optionText: Patienter
+    responseUserText: Fin de quart, plus humain.
+    ressourceGain: 0
+    frustrationGain: -5
+    addedPrompts: []
+    addedDirectPrompts: []
+  timer: 0
+  timerMax: 0

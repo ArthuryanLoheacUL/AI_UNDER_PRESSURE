@@ -19,12 +19,12 @@ MonoBehaviour:
   - optionText: Intervenir
     responseAIText: "Mesures apaisantes appliqu\xE9es."
     responseUserText: Merci.
-    ressourceGain: -7
-    frustrationGain: -6
+    ressourceGain: -10
+    frustrationGain: -5
   - optionText: Observer
     responseAIText: Surveillance passive.
     responseUserText: "\xC7a suffit pas..."
-    ressourceGain: 3
-    frustrationGain: 7
+    ressourceGain: 5
+    frustrationGain: 10
   timer: 0
   timerMax: 0

@@ -41,4 +41,10 @@ public class SetupPromptManagement : MonoBehaviour
             messageSetupManager.AddResponseUser(prompt, selectedResponseIndex);
         SoundEffectManager.Instance.PlaySoundEffectRandomPitch("MessageIn");
     }
+
+    public void SetupGameOverButtons()
+    {
+        if (buttonsSetup != null)
+            buttonsSetup.SetupGameOverButtons();
+    }
 }

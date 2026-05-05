@@ -20,14 +20,14 @@ MonoBehaviour:
   - optionText: Lire
     responseUserText: On ouvre le message.
     ressourceGain: -5
-    frustrationGain: 7
+    frustrationGain: 10
     addedPrompts: []
     addedDirectPrompts:
     - {fileID: 11400000, guid: dece8797e04d1774f90805ea6a47007a, type: 2}
   - optionText: Supprimer
     responseUserText: "On efface \xE7a."
-    ressourceGain: 2
-    frustrationGain: -3
+    ressourceGain: 5
+    frustrationGain: -5
     addedPrompts: []
     addedDirectPrompts: []
   timer: 0

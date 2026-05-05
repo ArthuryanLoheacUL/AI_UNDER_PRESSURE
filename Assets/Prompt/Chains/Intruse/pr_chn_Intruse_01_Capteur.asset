@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
+  m_Name: pr_chn_Intruse_01_Capteur
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  senderName: Sec. Mara
+  message: "Capteur de mouvement d\xE9clench\xE9 en zone E-9, MOTHER. Mes gars y
+    sont all\xE9s : rien. Cuve vide, pas de chaleur r\xE9siduelle, pas une trace.
+    Probablement un faux positif. Probablement."
+  isUnique: 0
+  isUrgent: 0
+  responseOptions:
+  - optionText: Patrouiller
+    responseUserText: "Patrouille arm\xE9e, par pr\xE9caution."
+    ressourceGain: -5
+    frustrationGain: 0
+    addedPrompts:
+    - prompt: {fileID: 11400000, guid: ed1f40e1092d45fb9d8b60f9d358d717, type: 2}
+      weight: 10
+    addedDirectPrompts: []
+  - optionText: Ignorer
+    responseUserText: Encore un capteur foireux.
+    ressourceGain: 0
+    frustrationGain: 5
+    addedPrompts:
+    - prompt: {fileID: 11400000, guid: e122c1dca64d44a8aba8917a3d2b9bb5, type: 2}
+      weight: 10
+    addedDirectPrompts: []
+  timer: 0
+  timerMax: 0

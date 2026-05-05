@@ -21,14 +21,14 @@ MonoBehaviour:
   - optionText: Observer
     responseUserText: "On garde un \u0153il dessus."
     ressourceGain: 0
-    frustrationGain: 6
+    frustrationGain: 10
     addedPrompts:
     - {fileID: 11400000, guid: a0c14975deee6ba42b8f90106cd5c70d, type: 2}
     addedDirectPrompts: []
   - optionText: "\xC9clairer"
     responseUserText: "On inonde la zone de lumi\xE8re."
-    ressourceGain: -6
-    frustrationGain: -4
+    ressourceGain: -5
+    frustrationGain: -5
     addedPrompts: []
     addedDirectPrompts:
     - {fileID: 11400000, guid: 97f6a03b3b3802a4a9e2609a479de5d4, type: 2}

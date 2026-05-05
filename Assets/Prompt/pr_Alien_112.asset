@@ -21,13 +21,13 @@ MonoBehaviour:
   - optionText: Observer
     responseUserText: "On garde un \u0153il dessus."
     ressourceGain: 0
-    frustrationGain: 6
+    frustrationGain: 10
     addedPrompts: []
     addedDirectPrompts: []
   - optionText: Observer
-    responseUserText: 
+    responseUserText:
     ressourceGain: 0
-    frustrationGain: 0
+    frustrationGain: 5
     addedPrompts: []
     addedDirectPrompts: []
   timer: 0

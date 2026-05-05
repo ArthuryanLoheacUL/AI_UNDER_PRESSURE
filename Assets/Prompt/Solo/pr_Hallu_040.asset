@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
+  m_Name: pr_Hallu_040
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  senderName: Med. Rho
+  message: "MOTHER. Le Capt. Ilya m'a parl\xE9 hors-soin. Il dit avoir vu sa fille dans le couloir. Sa fille d\xE9c\xE9d\xE9e. Elle est en cryo, \xE0 bord, mais elle dort encore. Il me l'a dit en confidence."
+  isUnique: 0
+  isUrgent: 0
+  responseOptions:
+  - optionText: Examiner
+    responseUserText: "Examen approfondi, en discr\xE9tion."
+    ressourceGain: -10
+    frustrationGain: -5
+    addedPrompts: []
+    addedDirectPrompts: []
+  - optionText: Minimiser
+    responseUserText: "Stress de commandement, \xE7a passe."
+    ressourceGain: 0
+    frustrationGain: 5
+    addedPrompts: []
+    addedDirectPrompts: []
+  timer: 0
+  timerMax: 0

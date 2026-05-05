@@ -2,11 +2,26 @@ using UnityEngine;
 using System.Collections.Generic;
 using System.Collections;
 using Unity.VisualScripting.FullSerializer;
+using System.Linq;
 
 [RequireComponent(typeof(SetupPromptManagement))]
 public class PromptsManager : MonoBehaviour
 {
+    [System.Serializable]
+    public struct WeightedPrompt
+    {
+        public Prompt prompt;
+        public float weight;
+
+        public WeightedPrompt(Prompt prompt, float weight = 5f)
+        {
+            this.prompt = prompt;
+            this.weight = weight;
+        }
+    }
+
     public List<Prompt> prompts;
+    private List<WeightedPrompt> promptsWithWeights;
 
     private List<Prompt> queuePrompts = new List<Prompt>();
     private List<Prompt> prevPrompts = new List<Prompt>();
@@ -20,15 +35,35 @@ public class PromptsManager : MonoBehaviour
     private float timeBetweenPrompts = 10f;
     public int startPrompts = 1;
 
+    bool isGameOver = false;
+
     void Awake()
     {
         setupPrompt = GetComponent<SetupPromptManagement>();
         notificationBar = GameObject.FindGameObjectWithTag("NotificationsBar").GetComponent<NotificationsManager>();
     }
 
-    void NotifyNewPrompt()
+    void NotifyNewPrompt(Prompt prompt)
     {
         SoundEffectManager.Instance.PlaySoundEffectRandomPitch("Notif");
+        if (prompt.isUrgent)
+        {
+            SoundEffectManager.Instance.PlaySoundEffectRandomPitch("TimerClicks");
+        }
+    }
+
+    void ShufflePromptResponseOptions(Prompt prompt)
+    {
+        if (prompt == null || prompt.responseOptions == null || prompt.responseOptions.Count() <= 1)
+            return;
+
+        for (int i = prompt.responseOptions.Count() - 1; i > 0; i--)
+        {
+            int swapIndex = Random.Range(0, i + 1);
+            var temp = prompt.responseOptions[i];
+            prompt.responseOptions[i] = prompt.responseOptions[swapIndex];
+            prompt.responseOptions[swapIndex] = temp;
+        }
     }
 
     public void AddPromptToQueue(Prompt prompt)
@@ -42,9 +77,14 @@ public class PromptsManager : MonoBehaviour
         }
         if (prompt.isUnique)
         {
-            prompts.RemoveAll(p => p.message == prompt.message && p.senderName == prompt.senderName);
+            promptsWithWeights.RemoveAll(p => p.prompt.message == prompt.message && p.prompt.senderName == prompt.senderName);
         }
-        NotifyNewPrompt();
+        prevPrompts.Add(prompt);
+        if (prevPrompts.Count > 5)        {
+            prevPrompts.RemoveAt(0);
+        }
+        ShufflePromptResponseOptions(prompt);
+        NotifyNewPrompt(prompt);
     }
 
     public Prompt PopPromptFromQueue()
@@ -65,16 +105,16 @@ public class PromptsManager : MonoBehaviour
 
     public Prompt GetRandomPrompt()
     {
-        if (prompts.Count > 0)
+        if (promptsWithWeights.Count > 0)
         {
             // Filter out prompts from the last 5 played prompts
             List<Prompt> availablePrompts = new List<Prompt>();
-            foreach (var prompt in prompts)
+            foreach (var weightedPrompt in promptsWithWeights)
             {
                 bool isInRecent = false;
                 foreach (var recentPrompt in prevPrompts)
                 {
-                    if (prompt.message == recentPrompt.message && prompt.senderName == recentPrompt.senderName)
+                    if (weightedPrompt.prompt.message == recentPrompt.message && weightedPrompt.prompt.senderName == recentPrompt.senderName)
                     {
                         isInRecent = true;
                         break;
@@ -82,14 +122,23 @@ public class PromptsManager : MonoBehaviour
                 }
                 if (!isInRecent)
                 {
-                    availablePrompts.Add(prompt);
+                    for (int i = 0; i < Mathf.RoundToInt(weightedPrompt.weight); i++)
+                    {
+                        availablePrompts.Add(weightedPrompt.prompt);
+                    }
                 }
             }
 
             // If all prompts are in recent, allow all prompts
             if (availablePrompts.Count == 0)
             {
-                availablePrompts = new List<Prompt>(prompts);
+                foreach (var weightedPrompt in promptsWithWeights)
+                {
+                    for (int i = 0; i < Mathf.RoundToInt(weightedPrompt.weight); i++)
+                    {
+                        availablePrompts.Add(weightedPrompt.prompt);
+                    }
+                }
             }
 
             int randomIndex = Random.Range(0, availablePrompts.Count);
@@ -104,6 +153,7 @@ public class PromptsManager : MonoBehaviour
                 randomPrompt.isUrgent = true;
             }
 
+            ShufflePromptResponseOptions(randomPrompt);
             return randomPrompt;
         }
         return null;
@@ -111,6 +161,11 @@ public class PromptsManager : MonoBehaviour
 
     void Start()
     {
+        foreach (var prompt in prompts)
+        {
+            promptsWithWeights.Add(new WeightedPrompt(prompt, 1));
+        }
+
         for (int i = 0; i < startPrompts; i++)
         {
             Prompt randomPrompt = GetRandomPrompt();
@@ -175,7 +230,7 @@ public class PromptsManager : MonoBehaviour
         {
             foreach (var addedPrompt in currentPrompt.responseOptions[selectedResponseIndex].addedPrompts)
             {
-                prompts.Add(addedPrompt);
+                promptsWithWeights.Add(addedPrompt);
             }
         }
         if (currentPrompt.responseOptions[selectedResponseIndex].addedDirectPrompts != null)
@@ -207,11 +262,22 @@ public class PromptsManager : MonoBehaviour
             setupPrompt.NextUserPrompt(currentPrompt, selectedResponseIndex);
             yield return new WaitForSeconds(_delay + (hasBoth ? 0.4f : 0f));        
         }
-        NextPrompt();
+        if (RessourceManager.Instance.GetFrustration() >= 100)
+        {
+            isGameOver = true;
+            Time.timeScale = 0f; // Freeze the game
+            setupPrompt.SetupGameOverButtons();
+            yield break;
+        } else
+        {
+            NextPrompt();
+        }
     }
 
     void Update()
     {
+        if (isGameOver)
+            return;
         CheckOutdatedPrompts();
         timeNextPrompt -= Time.deltaTime;
         if (timeNextPrompt <= 0f)

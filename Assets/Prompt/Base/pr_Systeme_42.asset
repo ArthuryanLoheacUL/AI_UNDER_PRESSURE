@@ -21,13 +21,13 @@ MonoBehaviour:
   - optionText: Purger
     responseUserText: Bien vu.
     ressourceGain: -10
-    frustrationGain: -4
+    frustrationGain: -10
     addedPrompts: []
     addedDirectPrompts: []
   - optionText: Observer
     responseUserText: "On laisse \xE7a tourner ?!"
     ressourceGain: 5
-    frustrationGain: 7
+    frustrationGain: 15
     addedPrompts: []
     addedDirectPrompts: []
   timer: 0

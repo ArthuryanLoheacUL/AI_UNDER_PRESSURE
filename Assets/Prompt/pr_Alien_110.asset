@@ -19,14 +19,14 @@ MonoBehaviour:
   responseOptions:
   - optionText: Fuir
     responseUserText: On quitte la zone.
-    ressourceGain: -6
-    frustrationGain: -3
+    ressourceGain: -5
+    frustrationGain: -5
     addedPrompts: []
     addedDirectPrompts: []
   - optionText: Rester
     responseUserText: On tient position.
     ressourceGain: 0
-    frustrationGain: 11
+    frustrationGain: 15
     addedPrompts: []
     addedDirectPrompts: []
   timer: 0

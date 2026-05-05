@@ -20,14 +20,14 @@ MonoBehaviour:
   responseOptions:
   - optionText: "R\xE9unir"
     responseUserText: "Ils vont r\xE2ler."
-    ressourceGain: -6
-    frustrationGain: 5
+    ressourceGain: -10
+    frustrationGain: -5
     addedPrompts: []
     addedDirectPrompts: []
   - optionText: Laisser
     responseUserText: "Mauvaise id\xE9e..."
-    ressourceGain: 4
-    frustrationGain: 9
+    ressourceGain: 5
+    frustrationGain: 10
     addedPrompts: []
     addedDirectPrompts: []
   timer: 0

@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
+  m_Name: pr_chn_Mutinerie_02_Petition
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  senderName: Capt. Ilya Voss
+  message: "Une p\xE9tition circule, MOTHER. Sept signatures sur treize. Ils veulent
+    limiter ton autorit\xE9, te confier moins de d\xE9cisions. C'est pas une mutinerie,
+    mais c'est s\xE9rieux."
+  isUnique: 1
+  isUrgent: 0
+  responseOptions:
+  - optionText: "Conc\xE9der"
+    responseUserText: Concession publique, geste fort.
+    ressourceGain: 0
+    frustrationGain: -10
+    addedPrompts:
+    - prompt: {fileID: 11400000, guid: 4904974bc85a4940b643822f371a144d, type: 2}
+      weight: 10
+    addedDirectPrompts: []
+  - optionText: Refuser
+    responseUserText: Refus net, je tiens ma place.
+    ressourceGain: 0
+    frustrationGain: 15
+    addedPrompts:
+    - prompt: {fileID: 11400000, guid: 2893afe8ae604ec7ac9dc3b46a2bcfcf, type: 2}
+      weight: 10
+    addedDirectPrompts: []
+  timer: 0
+  timerMax: 0

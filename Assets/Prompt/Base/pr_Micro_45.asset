@@ -18,13 +18,13 @@ MonoBehaviour:
   responseOptions:
   - optionText: Optimiser
     responseAIText: "Optimisation appliqu\xE9e."
-    responseUserText: 
+    responseUserText:
     ressourceGain: -5
-    frustrationGain: -3
+    frustrationGain: -5
   - optionText: Ignorer
     responseAIText: Aucun changement.
     responseUserText: "\xC7a s\u2019accumule\u2026"
-    ressourceGain: 3
-    frustrationGain: 6
+    ressourceGain: 5
+    frustrationGain: 5
   timer: 0
   timerMax: 0

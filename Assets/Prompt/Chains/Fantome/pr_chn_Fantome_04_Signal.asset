@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
+  m_Name: pr_chn_Fantome_04_Signal
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  senderName: Com. Zeth
+  message: "Un signal vient de s'allumer dans l'\xE9pave, MOTHER. Automatique, faible.
+    Il est dirig\xE9. Vers nous. Je peux essayer de l'analyser, ou brouiller pour
+    qu'on disparaisse."
+  isUnique: 1
+  isUrgent: 0
+  responseOptions:
+  - optionText: Analyser
+    responseUserText: "Analyse compl\xE8te."
+    ressourceGain: -10
+    frustrationGain: 0
+    addedPrompts: []
+    addedDirectPrompts: []
+  - optionText: Brouiller
+    responseUserText: "Brouillage, on s'\xE9vanouit."
+    ressourceGain: -5
+    frustrationGain: 5
+    addedPrompts: []
+    addedDirectPrompts: []
+  timer: 0
+  timerMax: 0

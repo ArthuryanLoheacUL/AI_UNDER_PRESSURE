@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
+  m_Name: pr_chn_Epidemie_01_Fievre
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  senderName: Med. Juno
+  message: "Trois cas de fi\xE8vre cette semaine, MOTHER. L\xE9gers, inexpliqu\xE9s,
+    sans cause \xE9vidente. \xC7a pourrait \xEAtre rien. Ou pas. Quarantaine pr\xE9ventive
+    ou simple surveillance."
+  isUnique: 0
+  isUrgent: 0
+  responseOptions:
+  - optionText: Confiner
+    responseUserText: "Tout le monde isol\xE9, par pr\xE9caution."
+    ressourceGain: -5
+    frustrationGain: 10
+    addedPrompts:
+    - prompt: {fileID: 11400000, guid: 4a8b8f64ba454ca5a93646dbbfc55edc, type: 2}
+      weight: 10
+    addedDirectPrompts: []
+  - optionText: Surveiller
+    responseUserText: "On voit comment \xE7a \xE9volue."
+    ressourceGain: 0
+    frustrationGain: 0
+    addedPrompts: []
+    addedDirectPrompts:
+    - {fileID: 11400000, guid: 4a8b8f64ba454ca5a93646dbbfc55edc, type: 2}
+  timer: 0
+  timerMax: 0

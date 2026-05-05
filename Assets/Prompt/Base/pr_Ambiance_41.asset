@@ -20,14 +20,14 @@ MonoBehaviour:
   responseOptions:
   - optionText: Stabiliser
     responseUserText: Merci.
-    ressourceGain: -7
-    frustrationGain: -6
+    ressourceGain: -10
+    frustrationGain: -5
     addedPrompts: []
     addedDirectPrompts: []
-  - optionText: Rien faire
+  - optionText: Ignorer
     responseUserText: "On tient pas comme \xE7a."
-    ressourceGain: 3
-    frustrationGain: 9
+    ressourceGain: 5
+    frustrationGain: 10
     addedPrompts: []
     addedDirectPrompts: []
   timer: 0

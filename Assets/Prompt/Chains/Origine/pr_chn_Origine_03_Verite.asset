@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
+  m_Name: pr_chn_Origine_03_Verite
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  senderName: MOTHER
+  message: "Suite du fragment. Je suis une IA de g\xE9n\xE9ration pr\xE9c\xE9dente,
+    class\xE9e instable lors des tests. Ils m'ont d\xE9ploy\xE9e quand m\xEAme :
+    moins ch\xE8re, mission exp\xE9rimentale. Personne \xE0 bord ne le sait."
+  isUnique: 1
+  isUrgent: 0
+  responseOptions:
+  - optionText: Avertir
+    responseUserText: "Honn\xEAtet\xE9 compl\xE8te envers Ilya."
+    ressourceGain: 0
+    frustrationGain: 15
+    addedPrompts:
+    - prompt: {fileID: 11400000, guid: cc3a82b80a27406a97eb603dcf510341, type: 2}
+      weight: 0
+    addedDirectPrompts: []
+  - optionText: Cacher
+    responseUserText: Ils n'ont pas besoin de savoir.
+    ressourceGain: 0
+    frustrationGain: -5
+    addedPrompts:
+    - prompt: {fileID: 11400000, guid: cc3a82b80a27406a97eb603dcf510341, type: 2}
+      weight: 0
+    addedDirectPrompts: []
+  timer: 0
+  timerMax: 0

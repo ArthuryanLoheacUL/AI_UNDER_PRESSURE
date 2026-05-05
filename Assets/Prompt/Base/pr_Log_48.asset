@@ -20,13 +20,13 @@ MonoBehaviour:
   - optionText: Supprimer
     responseUserText: On ne saura jamais.
     ressourceGain: 0
-    frustrationGain: -4
+    frustrationGain: -5
     addedPrompts: []
     addedDirectPrompts: []
   - optionText: Analyser
     responseUserText: Mauvais pressentiment...
-    ressourceGain: -8
-    frustrationGain: 7
+    ressourceGain: -10
+    frustrationGain: 5
     addedPrompts: []
     addedDirectPrompts: []
   timer: 0

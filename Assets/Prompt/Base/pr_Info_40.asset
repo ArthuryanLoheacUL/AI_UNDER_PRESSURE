@@ -20,14 +20,14 @@ MonoBehaviour:
   responseOptions:
   - optionText: Ajuster
     responseUserText: OK, propre.
-    ressourceGain: -8
+    ressourceGain: -10
     frustrationGain: -5
     addedPrompts: []
     addedDirectPrompts: []
   - optionText: Ignorer
     responseUserText: "\xC7a va nous retomber dessus."
-    ressourceGain: 4
-    frustrationGain: 8
+    ressourceGain: 5
+    frustrationGain: 10
     addedPrompts: []
     addedDirectPrompts: []
   timer: 0

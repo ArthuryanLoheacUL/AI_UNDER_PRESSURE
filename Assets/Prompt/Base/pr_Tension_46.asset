@@ -18,15 +18,15 @@ MonoBehaviour:
   isUrgent: 1
   responseOptions:
   - optionText: Intervenir
-    responseUserText: 
-    ressourceGain: -6
-    frustrationGain: -7
+    responseUserText:
+    ressourceGain: -10
+    frustrationGain: -10
     addedPrompts: []
     addedDirectPrompts: []
   - optionText: Ignorer
     responseUserText: "\xC7a va exploser."
-    ressourceGain: 4
-    frustrationGain: 12
+    ressourceGain: 5
+    frustrationGain: 15
     addedPrompts: []
     addedDirectPrompts: []
   timer: 0

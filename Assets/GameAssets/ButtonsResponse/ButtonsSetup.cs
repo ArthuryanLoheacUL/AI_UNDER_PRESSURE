@@ -1,5 +1,7 @@
 using System;
+using Unity.VectorGraphics;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class ButtonsSetup : MonoBehaviour
@@ -35,5 +37,26 @@ public class ButtonsSetup : MonoBehaviour
         {
             child.gameObject.GetComponent<Button>().interactable = false;
         }
+    }
+
+    public void SetupGameOverButtons()
+    {
+        // Clear existing buttons
+        foreach (Transform child in parentButtons)
+        {
+            Destroy(child.gameObject);
+        }
+
+        // Create a single "Menu" button
+        GameObject buttonGO1 = Instantiate(buttonPrefab, parentButtons);
+        ButtonResponseUI buttonResponseUI1 = buttonGO1.GetComponent<ButtonResponseUI>();
+        buttonResponseUI1.SetResponse("Menu", 0);
+        buttonGO1.GetComponent<Button>().onClick.AddListener(() => SceneManager.LoadScene("Menu"));
+    
+        // Create a single "Restart" button
+        GameObject buttonGO2 = Instantiate(buttonPrefab, parentButtons);
+        ButtonResponseUI buttonResponseUI2 = buttonGO2.GetComponent<ButtonResponseUI>();
+        buttonResponseUI2.SetResponse("Restart", 0);
+        buttonGO2.GetComponent<Button>().onClick.AddListener(() => SceneManager.LoadScene("Game"));
     }
 }

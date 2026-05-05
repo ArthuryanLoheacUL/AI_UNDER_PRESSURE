@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
+  m_Name: pr_chn_Mutinerie_03_Meneur
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  senderName: Sec. Mara
+  message: "C'est Iven qui m\xE8ne, MOTHER. R\xE9unions discr\xE8tes en salle hydroponique,
+    jamais les m\xEAmes participants. Il pr\xE9pare quelque chose, mais je sais pas
+    encore quoi."
+  isUnique: 1
+  isUrgent: 0
+  responseOptions:
+  - optionText: Surveiller
+    responseUserText: Surveillance en sourdine.
+    ressourceGain: -5
+    frustrationGain: 0
+    addedPrompts:
+    - prompt: {fileID: 11400000, guid: 2893afe8ae604ec7ac9dc3b46a2bcfcf, type: 2}
+      weight: 10
+    addedDirectPrompts: []
+  - optionText: Confronter
+    responseUserText: Confrontation publique, maintenant.
+    ressourceGain: 0
+    frustrationGain: 10
+    addedPrompts: []
+    addedDirectPrompts:
+    - {fileID: 11400000, guid: 2893afe8ae604ec7ac9dc3b46a2bcfcf, type: 2}
+  timer: 0
+  timerMax: 0

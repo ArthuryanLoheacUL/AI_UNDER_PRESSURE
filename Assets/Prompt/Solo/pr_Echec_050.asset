@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
+  m_Name: pr_Echec_050
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  senderName: Ing. Sol
+  message: "MOTHER. J'ai foir\xE9 la maintenance du compresseur 4 ce matin. Il est mort, je l'ai bricol\xE9 pour qu'il tienne le quart. J'ai rien dit \xE0 Ilya. Aide-moi \xE0 arbitrer."
+  isUnique: 1
+  isUrgent: 0
+  responseOptions:
+  - optionText: Couvrir
+    responseUserText: On couvre, mais tu remplaces ce soir.
+    ressourceGain: -10
+    frustrationGain: -5
+    addedPrompts: []
+    addedDirectPrompts: []
+  - optionText: Rapporter
+    responseUserText: Ilya doit savoir, transparence.
+    ressourceGain: 0
+    frustrationGain: 10
+    addedPrompts: []
+    addedDirectPrompts: []
+  timer: 0
+  timerMax: 0

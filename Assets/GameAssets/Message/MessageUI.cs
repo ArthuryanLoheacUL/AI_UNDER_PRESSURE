@@ -10,6 +10,7 @@ public class MessageUI : MonoBehaviour
 
     float timer = -1f;
     bool isUrgent = false;
+    int lastSecondTicked = -1;
 
     public void SetMessage(string message, float time = -1f, bool isUrgent = false)
     {
@@ -29,12 +30,19 @@ public class MessageUI : MonoBehaviour
 
     void Update()
     {
+        if (!isUrgent)
+            return;
         if (timer > 0f && timerText != null)
         {
             timer -= Time.deltaTime;
             int minutes = Mathf.FloorToInt(timer / 60);
             int seconds = Mathf.CeilToInt(timer % 60);
             timerText.text = string.Format($"{minutes:0}:{seconds:00}");
+            if ((lastSecondTicked == -1 && seconds <= 10) || (seconds <= lastSecondTicked - 1 && lastSecondTicked > 0))
+            {
+                lastSecondTicked = seconds;
+                SoundEffectManager.Instance.PlaySoundEffectRandomPitch("Bip");
+            }
         }
     }
 }

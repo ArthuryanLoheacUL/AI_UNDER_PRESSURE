@@ -96,7 +96,7 @@ public class SoundEffectManager : MonoBehaviour
         }
     }
 
-    public void PlaySoundEffectRandomPitch(string name, float volume = 1.0f, float pitch = 1.0f, float deltaPitch = 0.2f)
+    public void PlaySoundEffectRandomPitch(string name, float volume = 1.0f, float pitch = 1.0f, float deltaPitch = 0.1f)
     {
         PlaySoundEffect(name, volume, pitch + Random.Range(-deltaPitch, deltaPitch));
     }

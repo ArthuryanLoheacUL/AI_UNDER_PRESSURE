@@ -19,15 +19,15 @@ MonoBehaviour:
   isUrgent: 1
   responseOptions:
   - optionText: Corriger
-    responseUserText: 
-    ressourceGain: -9
-    frustrationGain: -5
+    responseUserText:
+    ressourceGain: -10
+    frustrationGain: -10
     addedPrompts: []
     addedDirectPrompts: []
   - optionText: Laisser
     responseUserText: "\xC7a me pla\xEEt pas."
     ressourceGain: 5
-    frustrationGain: 8
+    frustrationGain: 15
     addedPrompts: []
     addedDirectPrompts: []
   timer: 0

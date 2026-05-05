@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
+  m_Name: pr_Reveil_013
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  senderName: Capt. Ilya Voss
+  message: "Un des colons a pay\xE9 pour une clause de r\xE9veil anticip\xE9 en cas d'\xE9v\xE9nement majeur. Sa famille insiste. Le contrat est l\xE9gal, mais on n'est pas vraiment en urgence."
+  isUnique: 0
+  isUrgent: 0
+  responseOptions:
+  - optionText: Respecter
+    responseUserText: Un contrat est un contrat.
+    ressourceGain: -10
+    frustrationGain: -5
+    addedPrompts: []
+    addedDirectPrompts: []
+  - optionText: Attendre
+    responseUserText: Ils attendront une vraie urgence.
+    ressourceGain: 0
+    frustrationGain: 5
+    addedPrompts: []
+    addedDirectPrompts: []
+  timer: 0
+  timerMax: 0

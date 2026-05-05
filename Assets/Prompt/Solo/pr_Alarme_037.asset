@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
+  m_Name: pr_Alarme_037
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  senderName: Sec. Mara
+  message: "Alarme intrusion en armurerie, MOTHER. Sixi\xE8me cette semaine, probablement un faux positif. Mais le protocole exige une v\xE9rif manuelle. J'y vais, ou tu coupes l'alarme."
+  isUnique: 0
+  isUrgent: 1
+  responseOptions:
+  - optionText: "V\xE9rifier"
+    responseUserText: "V\xE9rification, par s\xE9curit\xE9."
+    ressourceGain: -5
+    frustrationGain: -5
+    addedPrompts: []
+    addedDirectPrompts: []
+  - optionText: Annuler
+    responseUserText: "Alarme coup\xE9e, c'est encore un bug."
+    ressourceGain: 0
+    frustrationGain: 5
+    addedPrompts: []
+    addedDirectPrompts: []
+  timer: 0
+  timerMax: 0

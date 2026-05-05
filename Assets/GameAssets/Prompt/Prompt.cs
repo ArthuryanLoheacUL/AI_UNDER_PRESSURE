@@ -13,7 +13,7 @@ public class Prompt : ScriptableObject
         [Header("Values")]
         public int ressourceGain;
         public int frustrationGain;
-        public Prompt[] addedPrompts;
+        public PromptsManager.WeightedPrompt[] addedPrompts;
         public Prompt[] addedDirectPrompts;
     }
 

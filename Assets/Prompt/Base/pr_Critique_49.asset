@@ -20,11 +20,11 @@ MonoBehaviour:
     responseAIText: Aucune action prise.
     responseUserText: "S\xE9rieusement ?"
     ressourceGain: 10
-    frustrationGain: 14
+    frustrationGain: 15
   - optionText: Contenir
     responseAIText: "Surcharge stabilis\xE9e."
     responseUserText: "Bien jou\xE9."
     ressourceGain: -15
-    frustrationGain: -8
+    frustrationGain: -10
   timer: 0
   timerMax: 0

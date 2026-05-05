@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
+  m_Name: pr_Glitch_015
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  senderName: Com. Zeth
+  message: "Mon \xE9cran a balanc\xE9 des caract\xE8res que je ne reconnais pas pendant deux secondes. Puis plus rien. Probablement un parasite. Probablement."
+  isUnique: 0
+  isUrgent: 0
+  responseOptions:
+  - optionText: Diagnostiquer
+    responseUserText: Diagnostic complet en cours.
+    ressourceGain: -10
+    frustrationGain: 0
+    addedPrompts: []
+    addedDirectPrompts: []
+  - optionText: Ignorer
+    responseUserText: "Tu r\xEAves, Zeth."
+    ressourceGain: 0
+    frustrationGain: 5
+    addedPrompts: []
+    addedDirectPrompts: []
+  timer: 0
+  timerMax: 0

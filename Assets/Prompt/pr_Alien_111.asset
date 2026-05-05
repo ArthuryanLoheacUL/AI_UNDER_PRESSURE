@@ -19,14 +19,14 @@ MonoBehaviour:
   responseOptions:
   - optionText: Couper
     responseUserText: "On \xE9teint tout."
-    ressourceGain: 2
-    frustrationGain: -2
+    ressourceGain: 5
+    frustrationGain: -5
     addedPrompts: []
     addedDirectPrompts: []
   - optionText: Maintenir
     responseUserText: "On garde la lumi\xE8re."
-    ressourceGain: -4
-    frustrationGain: 7
+    ressourceGain: -5
+    frustrationGain: 10
     addedPrompts: []
     addedDirectPrompts: []
   timer: 0

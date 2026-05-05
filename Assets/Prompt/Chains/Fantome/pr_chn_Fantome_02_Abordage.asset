@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
+  m_Name: pr_chn_Fantome_02_Abordage
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  senderName: Capt. Ilya Voss
+  message: "On peut envoyer une \xE9quipe \xE0 bord, MOTHER. Pi\xE8ces de rechange,
+    donn\xE9es, peut-\xEAtre plus. Mais inconnu total \u2014 on sait pas ce qui s'est
+    pass\xE9. Ou on scanne \xE0 distance et on continue."
+  isUnique: 1
+  isUrgent: 0
+  responseOptions:
+  - optionText: Aborder
+    responseUserText: "\xC9quipe d'inspection en route."
+    ressourceGain: -10
+    frustrationGain: -5
+    addedPrompts: []
+    addedDirectPrompts:
+    - {fileID: 11400000, guid: a67e6af3883046c8845e66bdd92a5158, type: 2}
+  - optionText: Scanner
+    responseUserText: Scan distant, prudence.
+    ressourceGain: -5
+    frustrationGain: 5
+    addedPrompts:
+    - prompt: {fileID: 11400000, guid: a67e6af3883046c8845e66bdd92a5158, type: 2}
+      weight: 10
+    addedDirectPrompts: []
+  timer: 0
+  timerMax: 0

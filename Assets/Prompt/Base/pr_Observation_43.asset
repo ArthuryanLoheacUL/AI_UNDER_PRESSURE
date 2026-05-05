@@ -19,15 +19,15 @@ MonoBehaviour:
   isUrgent: 0
   responseOptions:
   - optionText: Isoler
-    responseUserText: 
-    ressourceGain: -9
-    frustrationGain: -6
+    responseUserText:
+    ressourceGain: -10
+    frustrationGain: -5
     addedPrompts: []
     addedDirectPrompts: []
   - optionText: Laisser
     responseUserText: "Vous \xEAtes s\xFBrs l\xE0 ?"
     ressourceGain: 0
-    frustrationGain: 8
+    frustrationGain: 10
     addedPrompts: []
     addedDirectPrompts: []
   timer: 0

@@ -19,12 +19,12 @@ MonoBehaviour:
   - optionText: "Pr\xE9parer"
     responseAIText: "Protocoles activ\xE9s."
     responseUserText: OK.
-    ressourceGain: -6
-    frustrationGain: -4
+    ressourceGain: -5
+    frustrationGain: -5
   - optionText: Ignorer
     responseAIText: Aucun protocole.
     responseUserText: Mauvais timing.
-    ressourceGain: 4
-    frustrationGain: 8
+    ressourceGain: 5
+    frustrationGain: 10
   timer: 0
   timerMax: 0

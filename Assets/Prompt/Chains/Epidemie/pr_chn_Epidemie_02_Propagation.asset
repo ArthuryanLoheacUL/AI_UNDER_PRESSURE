@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
+  m_Name: pr_chn_Epidemie_02_Propagation
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  senderName: Med. Juno
+  message: "Douze cas, MOTHER. Hallucinations l\xE9g\xE8res en plus de la fi\xE8vre.
+    \xC7a grimpe vite et je sais pas \xE0 quoi on a affaire. On peut sortir l'artillerie
+    m\xE9dicale ou tenir avec le standard."
+  isUnique: 1
+  isUrgent: 1
+  responseOptions:
+  - optionText: Soigner
+    responseUserText: Toute la pharmacie sur le pont.
+    ressourceGain: -15
+    frustrationGain: -5
+    addedPrompts: []
+    addedDirectPrompts: []
+  - optionText: Doser
+    responseUserText: "On \xE9conomise les stocks, dose standard."
+    ressourceGain: -5
+    frustrationGain: 10
+    addedPrompts:
+    - prompt: {fileID: 11400000, guid: 89a3ed4c70c24343ad87d309fe800f2f, type: 2}
+      weight: 10
+    addedDirectPrompts: []
+  timer: 0
+  timerMax: 0
