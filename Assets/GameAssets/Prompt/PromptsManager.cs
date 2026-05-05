@@ -20,8 +20,18 @@ public class PromptsManager : MonoBehaviour
         }
     }
 
+    public struct PromptSaved
+    {
+        public string time;
+        public string senderMessage;
+        public string IaMessage;
+        public string userResponse;
+        public string senderName;
+    }
+
     public List<Prompt> prompts;
     private List<WeightedPrompt> promptsWithWeights = new List<WeightedPrompt>();
+    private Dictionary<string, List<PromptSaved>> savedPrompts = new Dictionary<string, List<PromptSaved>>();
 
     private List<Prompt> queuePrompts = new List<Prompt>();
     private List<Prompt> prevPrompts = new List<Prompt>();
@@ -193,8 +203,41 @@ public class PromptsManager : MonoBehaviour
         }
     }
 
+    void SaveCurrentPrompt()
+    {
+        if (currentPrompt != null)
+        {
+            string key = currentPrompt.senderName;
+            if (!savedPrompts.ContainsKey(key))
+            {
+                savedPrompts[key] = new List<PromptSaved>();
+            }
+            PromptSaved promptSaved = new PromptSaved
+            {
+                time = System.DateTime.Now.ToString("HH:mm:ss"),
+                senderName = currentPrompt.senderName,
+                senderMessage = currentPrompt.message,
+                IaMessage = currentPrompt.responseOptions.Length > 0 ? currentPrompt.responseOptions[0].optionText : "",
+                userResponse = currentPrompt.responseOptions.Length > 0 ? currentPrompt.responseOptions[0].responseUserText : ""
+            };
+            savedPrompts[key].Add(promptSaved);
+        }
+    }
+
+    List<PromptSaved> GetSavedPromptsForSender(string senderName)
+    {
+        if (savedPrompts.ContainsKey(senderName))
+        {
+            return savedPrompts[senderName];
+        }
+        return null;
+    }
+
     void NextPrompt()
     {
+        // Save current prompt to saves
+        SaveCurrentPrompt();
+
         // Add current prompt to recent prompts history (max 5)
         if (currentPrompt != null)
         {
@@ -209,14 +252,14 @@ public class PromptsManager : MonoBehaviour
         if (prompt != null)
         {
             currentPrompt = prompt;
-            setupPrompt.SetupPrompt(prompt, ResponseToCurrentPrompt);
+            setupPrompt.SetupPrompt(prompt, ResponseToCurrentPrompt, GetSavedPromptsForSender(prompt.senderName));
         } else
         {
             prompt = GetRandomPrompt();
             if (prompt != null)
             {
                 currentPrompt = prompt;
-                setupPrompt.SetupPrompt(prompt, ResponseToCurrentPrompt);
+                setupPrompt.SetupPrompt(prompt, ResponseToCurrentPrompt, GetSavedPromptsForSender(prompt.senderName));
             }
         }
         RefreshNotifications();
@@ -225,7 +268,7 @@ public class PromptsManager : MonoBehaviour
     public void ResponseToCurrentPrompt(int selectedResponseIndex)
     {
         RessourceManager.Instance.UpdateRessource(currentPrompt.responseOptions[selectedResponseIndex].ressourceGain);
-        RessourceManager.Instance.UpdateFrustration(currentPrompt.responseOptions[selectedResponseIndex].frustrationGain);
+        RessourceManager.Instance.UpdateFrustration(currentPrompt.responseOptions[selectedResponseIndex].bonheurGain);
 
         if (currentPrompt.responseOptions[selectedResponseIndex].addedPrompts != null)
         {

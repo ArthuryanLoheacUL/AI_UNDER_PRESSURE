@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class SetupPromptManagement : MonoBehaviour
@@ -12,13 +13,13 @@ public class SetupPromptManagement : MonoBehaviour
         messageSetupManager = GameObject.FindGameObjectWithTag("MessagesBar")?.GetComponent<MessageSetupManager>();
     }
 
-    public void SetupPrompt(Prompt prompt, Action<int> onResponseSelected)
+    public void SetupPrompt(Prompt prompt, Action<int> onResponseSelected, List<PromptsManager.PromptSaved> savedPrompts = null)
     {
         if (buttonsSetup != null)
             buttonsSetup.SetupButtons(prompt, onResponseSelected);
 
         if (messageSetupManager != null)
-            messageSetupManager.SetupMessage(prompt);
+            messageSetupManager.SetupMessage(prompt, savedPrompts);
         SoundEffectManager.Instance.PlaySoundEffectRandomPitch("MessageIn");
     }
 

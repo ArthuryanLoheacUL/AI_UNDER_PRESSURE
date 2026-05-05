@@ -12,7 +12,7 @@ public class Prompt : ScriptableObject
 
         [Header("Values")]
         public int ressourceGain; // Value added to the resource level when this response is selected
-        public int frustrationGain; // Value added to the frustration level when this response is selected
+        public int bonheurGain; // Value added to the bonheur level when this response is selected
         [Header("Prompts")]
         public PromptsManager.WeightedPrompt[] addedPrompts; // Prompts added to the pool of possible prompts
         public Prompt[] addedDirectPrompts; // Prompts added directly to the queue, without going through the normal random selection process

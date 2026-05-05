@@ -1,5 +1,6 @@
 using System.Linq;
 using UnityEngine;
+using System.Collections.Generic;
 
 public class MessageSetupManager : MonoBehaviour
 {
@@ -17,7 +18,7 @@ public class MessageSetupManager : MonoBehaviour
     private TextOverMessageUI prevActiveOverText;
     private GameObject prevActiveMessageUser;
 
-    public void SetupMessage(Prompt prompt)
+    public void SetupMessage(Prompt prompt, List<PromptsManager.PromptSaved> savedPrompts = null)
     {
         // Clear existing messages
         foreach (Transform child in messageParent)
@@ -25,12 +26,24 @@ public class MessageSetupManager : MonoBehaviour
             Destroy(child.gameObject);
         }
 
+        if (savedPrompts != null)
+        {
+            foreach (var savedPrompt in savedPrompts)
+            {
+                CreateTimeIndicatorCore(savedPrompt.time);
+                CreateOverMessageCore(savedPrompt.senderName);
+                CreateMessageUserCore(savedPrompt.senderMessage, 0f, false);
+                CreateMessageAICore(savedPrompt.IaMessage);
+                CreateMessageUserCore(savedPrompt.userResponse, 0f, false);
+            }
+        }
+
         SetupMessageWainting(prompt);
     }
 
     public void AddResponseAI(Prompt prompt, int selectedResponseIndex)
     {
-        CreateMessageAICore(prompt, selectedResponseIndex);
+        CreateMessageAICore(prompt.responseOptions[selectedResponseIndex].optionText);
         if (prevActiveOverText != null)
         {
             prevActiveOverText.SetNormalTextOverMessage();
@@ -68,12 +81,12 @@ public class MessageSetupManager : MonoBehaviour
 
     void SetupMessageWainting(Prompt prompt)
     {
-        CreateTimeIndicatorCore(prompt);
-        CreateOverMessageCore(prompt);
-        CreateMessageCurrentUserCore(prompt);
+        CreateTimeIndicatorCore(System.DateTime.Now.ToString("HH:mm:ss"));
+        CreateOverMessageCore(prompt.senderName);
+        CreateMessageCurrentUserCore(prompt.message, prompt.timer, prompt.isUrgent);
     }
 
-    void CreateOverMessageCore(Prompt prompt)
+    void CreateOverMessageCore(string senderName)
     {
         // OVER NAME SENDER INDICATOR
         GameObject nameSenderGO = Instantiate(nameSenderPrefab, messageParent);
@@ -81,22 +94,22 @@ public class MessageSetupManager : MonoBehaviour
         if (nameSenderUI != null)
         {
             prevActiveOverText = nameSenderUI;
-            nameSenderUI.SetTextOverMessage(prompt.senderName, true);
+            nameSenderUI.SetTextOverMessage(senderName, true);
         }
     }
 
-    void CreateTimeIndicatorCore(Prompt prompt)
+    void CreateTimeIndicatorCore(string text)
     {
         // TIME INDICATOR
         GameObject timeIndicatorGO = Instantiate(timeIndicatorPrefab, messageParent);
         TimeIndicatorUI timeIndicatorUI = timeIndicatorGO.GetComponent<TimeIndicatorUI>();
         if (timeIndicatorUI != null)
         {
-            timeIndicatorUI.SetTimeIndicator();
+            timeIndicatorUI.SetTimeIndicator(text);
         }
     }
 
-    void CreateMessageCurrentUserCore(Prompt prompt)
+    void CreateMessageCurrentUserCore(string message, float timer = 0f, bool isUrgent = false)
     {
         // Create new message based on the prompt's sender
         GameObject messageGO  = Instantiate(messageUserCurrentPrefab, messageParent);
@@ -105,10 +118,10 @@ public class MessageSetupManager : MonoBehaviour
         if (messageUI != null)
         {
             prevActiveMessageUser = messageGO;
-            messageUI.SetMessage(prompt.message, prompt.timer, prompt.isUrgent);
+            messageUI.SetMessage(message, timer, isUrgent);
         }
     }
-    void CreateMessageAICore(Prompt prompt, int selectedResponseIndex)
+    void CreateMessageAICore(string text)
     {
         // Create new message based on the prompt's sender
         GameObject messageGO  = Instantiate(messageAIPrefab, messageParent);
@@ -116,7 +129,7 @@ public class MessageSetupManager : MonoBehaviour
         MessageUI messageUI = messageGO.GetComponent<MessageUI>();
         if (messageUI != null)
         {
-            messageUI.SetMessage(prompt.responseOptions[selectedResponseIndex].optionText);
+            messageUI.SetMessage(text);
         }
     }
 
@@ -139,6 +152,18 @@ public class MessageSetupManager : MonoBehaviour
             }
 
             messageUI.SetMessage(userResponse);
+        }
+    }
+
+    void CreateMessageUserCore(string userResponse, float timer = 0f, bool isUrgent = false)
+    {
+        // Create new message based on the prompt's sender
+        GameObject messageGO  = Instantiate(messageUserPrefab, messageParent);
+
+        MessageUI messageUI = messageGO.GetComponent<MessageUI>();
+        if (messageUI != null)
+        {
+            messageUI.SetMessage(userResponse, timer, isUrgent);
         }
     }
     

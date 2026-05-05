@@ -24,8 +24,8 @@ Tu n'as **aucune autorité hiérarchique** sur l'équipage humain. Mais tes déc
 
 ## L'équipage actif (13)
 
-- **Capt. Ilya Voss** — Capitaine. Autoritaire, juste, fatigué.
-- **Lt. Cmdr. Reyna** — Second.
+- **Capt. Ilya** — Capitaine. Autoritaire, juste, fatigué.
+- **Lt. Reyna** — Second.
 - **Dr. Vale** — Xénobiologiste. Curieuse jusqu'à l'imprudence.
 - **Dr. Iven** — Astrophysicien. Sceptique vis-à-vis des IA.
 - **Med. Juno** — Médecin chef. Pragmatique.
