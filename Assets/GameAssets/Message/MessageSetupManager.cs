@@ -131,7 +131,7 @@ public class MessageSetupManager : MonoBehaviour
             string userResponse = prompt.responseOptions[selectedResponseIndex].responseUserText;
             if (RessourceManager.Instance.GetFrustration() >= 100)
             {
-                userResponse = "Vous nous êtes inutiles de toute façon ...";
+                userResponse = "Vous êtes inutiles de toute façon ...";
             }
 
             messageUI.SetMessage(userResponse);
