@@ -801,7 +801,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: VAISSEAU_AI - SGT-A-54487-A-50
+  m_text: MOTHER - EXODE-VII-y2387
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2b9828281e563ff47a93dfab9cce387c, type: 2}
   m_sharedMaterial: {fileID: 4003083473723891081, guid: 2b9828281e563ff47a93dfab9cce387c, type: 2}
@@ -2062,8 +2062,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 122.69, y: 0}
-  m_SizeDelta: {x: 405.39, y: 20}
+  m_AnchoredPosition: {x: 95.85, y: 0}
+  m_SizeDelta: {x: 459.07, y: 22.65}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1073470105
 MonoBehaviour:
@@ -2961,8 +2961,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 122.69, y: 0}
-  m_SizeDelta: {x: 405.39, y: 20}
+  m_AnchoredPosition: {x: 95.85, y: 0}
+  m_SizeDelta: {x: 459.07, y: 22.65}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1813871531
 MonoBehaviour:
@@ -3072,7 +3072,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: FRUSTRATION EQUIPAGE
+  m_text: BONHEUR EQUIPAGE
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2b9828281e563ff47a93dfab9cce387c, type: 2}
   m_sharedMaterial: {fileID: 4003083473723891081, guid: 2b9828281e563ff47a93dfab9cce387c, type: 2}

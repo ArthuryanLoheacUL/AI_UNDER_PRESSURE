@@ -1665,8 +1665,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 122.69, y: 0}
-  m_SizeDelta: {x: 405.39, y: 20}
+  m_AnchoredPosition: {x: 91.79, y: 0}
+  m_SizeDelta: {x: 467.19, y: 23.05}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1073470105
 MonoBehaviour:
@@ -2469,7 +2469,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8521964965759939071, guid: 4f361f17d34a5bc4bb965f27aaef321e, type: 3}
       propertyPath: m_text
-      value: ARIA, on a besoin de toi pour cette mission.
+      value: MOTHER, on a besoin de toi pour cette mission.
       objectReference: {fileID: 0}
     - target: {fileID: 8933471746777993183, guid: 4f361f17d34a5bc4bb965f27aaef321e, type: 3}
       propertyPath: m_AnchorMax.y
@@ -2717,8 +2717,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 122.69, y: 0}
-  m_SizeDelta: {x: 405.39, y: 20}
+  m_AnchoredPosition: {x: 91.79, y: 0}
+  m_SizeDelta: {x: 467.19, y: 23.05}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1813871531
 MonoBehaviour:
@@ -3210,7 +3210,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: FRUSTRATION EQUIPAGE
+  m_text: BONHEUR EQUIPAGE
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2b9828281e563ff47a93dfab9cce387c, type: 2}
   m_sharedMaterial: {fileID: 4003083473723891081, guid: 2b9828281e563ff47a93dfab9cce387c, type: 2}

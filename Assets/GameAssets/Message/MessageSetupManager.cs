@@ -133,6 +133,10 @@ public class MessageSetupManager : MonoBehaviour
             {
                 userResponse = "Vous êtes inutiles de toute façon ...";
             }
+            if (prompt.responseOptions[selectedResponseIndex].isGameOverResponse)
+            {
+                userResponse = prompt.responseOptions[selectedResponseIndex].gameOverMessage;
+            }
 
             messageUI.SetMessage(userResponse);
         }

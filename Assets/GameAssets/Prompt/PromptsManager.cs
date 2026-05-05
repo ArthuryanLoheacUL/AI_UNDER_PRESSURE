@@ -21,7 +21,7 @@ public class PromptsManager : MonoBehaviour
     }
 
     public List<Prompt> prompts;
-    private List<WeightedPrompt> promptsWithWeights;
+    private List<WeightedPrompt> promptsWithWeights = new List<WeightedPrompt>();
 
     private List<Prompt> queuePrompts = new List<Prompt>();
     private List<Prompt> prevPrompts = new List<Prompt>();
@@ -41,6 +41,7 @@ public class PromptsManager : MonoBehaviour
     {
         setupPrompt = GetComponent<SetupPromptManagement>();
         notificationBar = GameObject.FindGameObjectWithTag("NotificationsBar").GetComponent<NotificationsManager>();
+        Time.timeScale = 1f; // Ensure the game is not paused at the start
     }
 
     void NotifyNewPrompt(Prompt prompt)
@@ -262,7 +263,7 @@ public class PromptsManager : MonoBehaviour
             setupPrompt.NextUserPrompt(currentPrompt, selectedResponseIndex);
             yield return new WaitForSeconds(_delay + (hasBoth ? 0.4f : 0f));        
         }
-        if (RessourceManager.Instance.GetFrustration() >= 100)
+        if (RessourceManager.Instance.GetFrustration() >= 100 || currentPrompt.responseOptions[selectedResponseIndex].isGameOverResponse)
         {
             isGameOver = true;
             Time.timeScale = 0f; // Freeze the game

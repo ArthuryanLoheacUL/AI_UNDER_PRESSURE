@@ -24,11 +24,15 @@ MonoBehaviour:
     frustrationGain: -15
     addedPrompts: []
     addedDirectPrompts: []
+    isGameOverResponse: 0
+    gameOverMessage: 
   - optionText: Refuser
     responseUserText: "Refus cat\xE9gorique."
     ressourceGain: 0
     frustrationGain: 20
     addedPrompts: []
     addedDirectPrompts: []
+    isGameOverResponse: 1
+    gameOverMessage: "Le public se reb\xE8lle et vous \xE9teigne de force !"
   timer: 0
   timerMax: 0
