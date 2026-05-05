@@ -10,35 +10,37 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
-  m_Name: pr_Eko_NaineBrune_Incident
-  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
-  senderName: "Nav. Eko"
-  message: "On est dans la magn\u00E9tosph\u00E8re. Champ instable. Boucliers \u00E0 41%."
+  m_Name: pr_Eko_Trajectoire
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  senderName: Nav. Eko
+  message: "J'ai recalcul\xE9. On peut gagner 8 mois en rasant une naine brune. Le
+    risque  est estim\xE9 4%."
   isUnique: 1
-  isUrgent: 1
-  chainTag: ""
-  isCrisis: 1
+  isUrgent: 0
+  chainTag: 
   isRelief: 0
   responseOptions:
-  - optionText: "Renforce"
-    responseUserText: "Tout sur les boucliers."
-    ressourceGain: -15
-    bonheurGain: 10
-    addedPrompts: []
+  - optionText: GO
+    responseUserText: Let's go je lance l'operation !
+    ressourceGain: -10
+    bonheurGain: 5
+    addedPrompts:
+    - prompt: {fileID: 11400000, guid: 3670bf81ac7f0304f4ad06f0aa02279b, type: 2}
+      weight: 10
     addedDirectPrompts: []
     removedPrompts: []
     removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
-  - optionText: "Tiens bon"
-    responseUserText: "On serre les dents."
+    gameOverMessage: 
+  - optionText: "Trop risqu\xE9"
+    responseUserText: "On aurait pu r\xE9duire le trajet de 8 mois dommage."
     ressourceGain: 0
-    bonheurGain: -15
+    bonheurGain: -5
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []
     removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
+    gameOverMessage: 
   timer: 0
   timerMax: 0

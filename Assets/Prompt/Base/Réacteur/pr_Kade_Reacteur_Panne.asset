@@ -10,20 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
-  m_Name: pr_Sol_Filtres
+  m_Name: pr_Kade_Reacteur_Panne
   m_EditorClassIdentifier: Assembly-CSharp::Prompt
-  senderName: Ing. Sol
-  message: "Filtres \xE0 eau du secteur D colmat\xE9s. Remplacement standard ou recyclage
-    pouss\xE9."
-  isUnique: 0
-  isUrgent: 0
+  senderName: Ing. Kade
+  message: LE MOTEUR SECOND A LACHE !!! On est sur le primaire uniquement !!!
+  isUnique: 1
+  isUrgent: 1
   chainTag: 
   isCrisis: 0
   isRelief: 0
   responseOptions:
-  - optionText: Remplacer
-    responseUserText: "Pi\xE8ces neuves, allez-y."
-    ressourceGain: -10
+  - optionText: "R\xE9paration d'urgence"
+    responseUserText: "Tout le matos est envoy\xE9 sur le secondaire."
+    ressourceGain: -15
     bonheurGain: 5
     addedPrompts: []
     addedDirectPrompts: []
@@ -31,16 +30,13 @@ MonoBehaviour:
     removedChainTags: []
     isGameOverResponse: 0
     gameOverMessage: 
-  - optionText: Recycler
-    responseUserText: On pousse les filtres.
-    ressourceGain: 5
-    bonheurGain: -5
-    addedPrompts:
-    - prompt: {fileID: 11400000, guid: dc510c1b9c4ce97c0754e12f7ae8b5e1, type: 2}
-      weight: 2
+  - optionText: Tenir sur le primaire
+    responseUserText: On va prier ...
+    ressourceGain: 0
+    bonheurGain: -15
+    addedPrompts: []
     addedDirectPrompts: []
-    removedPrompts:
-    - {fileID: 11400000}
+    removedPrompts: []
     removedChainTags: []
     isGameOverResponse: 0
     gameOverMessage: 

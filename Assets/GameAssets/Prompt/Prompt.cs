@@ -9,7 +9,7 @@ public class Prompt : ScriptableObject
     {
         [Header("Texts")]
         public string optionText; // Text to display in the UI Button for this response option
-        public string responseUserText; // Text that the user will say when selecting this response, displayed in the conversation history
+        [TextArea] public string responseUserText; // Text that the user will say when selecting this response, displayed in the conversation history
 
         [Header("Values")]
         public int ressourceGain; // Value added to the resource level when this response is selected
@@ -28,7 +28,7 @@ public class Prompt : ScriptableObject
 
         [Header("Game Over")]
         public bool isGameOverResponse; // If true, selecting this response will end the game
-        public string gameOverMessage; // Message to display when the game is over due to this response
+        [TextArea] public string gameOverMessage; // Message to display when the game is over due to this response
     }
 
     [Header("Identity")]

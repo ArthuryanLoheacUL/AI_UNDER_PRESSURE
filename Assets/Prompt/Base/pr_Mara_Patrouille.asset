@@ -11,17 +11,18 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
   m_Name: pr_Mara_Patrouille
-  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
-  senderName: "Sec. Mara"
-  message: "Patrouille de nuit dans les coursives basses. Effectif normal ou doubl\u00E9 ?"
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  senderName: Sec. Mara
+  message: "Pour les patrouille de nuit dans les zones basses. On reste sur l\u2019effectif
+    habituel ou on le double ?"
   isUnique: 0
   isUrgent: 0
-  chainTag: ""
+  chainTag: 
   isCrisis: 0
   isRelief: 0
   responseOptions:
-  - optionText: "Doubl\u00E9"
-    responseUserText: "Double les rondes."
+  - optionText: Double
+    responseUserText: On double les rondes, on se sentira mieux merci !
     ressourceGain: -10
     bonheurGain: 5
     addedPrompts: []
@@ -29,9 +30,9 @@ MonoBehaviour:
     removedPrompts: []
     removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
-  - optionText: "Normal"
-    responseUserText: "Comme d'habitude."
+    gameOverMessage: 
+  - optionText: Habituel
+    responseUserText: Comme d'habitude.
     ressourceGain: 0
     bonheurGain: 0
     addedPrompts: []
@@ -39,6 +40,6 @@ MonoBehaviour:
     removedPrompts: []
     removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
+    gameOverMessage: 
   timer: 0
   timerMax: 0

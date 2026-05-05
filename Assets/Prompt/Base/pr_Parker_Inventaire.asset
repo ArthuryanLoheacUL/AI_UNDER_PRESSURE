@@ -11,17 +11,17 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
   m_Name: pr_Parker_Inventaire
-  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
-  senderName: "Ing. Parker"
-  message: "Inventaire moteur clos. Tout est nominal."
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  senderName: Ing. Parker
+  message: "l'Inventaire du moteur est termin\xE9. Tout est conforme."
   isUnique: 0
   isUrgent: 0
-  chainTag: "Parker"
+  chainTag: Parker
   isCrisis: 0
   isRelief: 1
   responseOptions:
-  - optionText: "Bien not\u00E9"
-    responseUserText: "Bien re\u00E7u."
+  - optionText: "Bien not\xE9"
+    responseUserText: 
     ressourceGain: 0
     bonheurGain: 5
     addedPrompts: []
@@ -29,18 +29,18 @@ MonoBehaviour:
     removedPrompts: []
     removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
-  - optionText: "Audit complet"
-    responseUserText: "Je veux voir ton inventaire moi-m\u00EAme."
+    gameOverMessage: 
+  - optionText: Audit complet
+    responseUserText: "pff\u2026"
     ressourceGain: -5
     bonheurGain: -5
     addedPrompts:
     - prompt: {fileID: 11400000, guid: 01deaac1c55c19d2d9a4cdd23239833f, type: 2}
-      weight: 2.0
+      weight: 2
     addedDirectPrompts: []
     removedPrompts: []
     removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
+    gameOverMessage: 
   timer: 0
   timerMax: 0

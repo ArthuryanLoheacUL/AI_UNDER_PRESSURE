@@ -10,37 +10,35 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
-  m_Name: pr_Kade_Reacteur
+  m_Name: pr_Eko_NaineBrune_Incident
   m_EditorClassIdentifier: Assembly-CSharp::Prompt
-  senderName: Ing. Kade
-  message: "Le r\xE9acteur secondaire clignote depuis trois jours. Je peux r\xE9parer
-    ou on attend."
-  isUnique: 0
-  isUrgent: 0
+  senderName: Nav. Eko
+  message: "On est dans la magn\xE9tosph\xE8re de la Naine Blanche. Le champ est
+    instable, Les boucliers sont \xE0 41%."
+  isUnique: 1
+  isUrgent: 1
   chainTag: 
-  isCrisis: 0
   isRelief: 0
   responseOptions:
-  - optionText: "R\xE9parer"
-    responseUserText: Vas-y, je couvre.
-    ressourceGain: -10
-    bonheurGain: 5
-    addedPrompts: []
+  - optionText: Renforcer Bouclier
+    responseUserText: "Tout sur les boucliers \xE7a devrait bien se passer !"
+    ressourceGain: -15
+    bonheurGain: 10
+    addedPrompts:
+    - prompt: {fileID: 11400000, guid: 248fbc7479b6a6145a1ec1a18b33d0b2, type: 2}
+      weight: 10
     addedDirectPrompts: []
     removedPrompts: []
     removedChainTags: []
     isGameOverResponse: 0
     gameOverMessage: 
-  - optionText: Attendre
-    responseUserText: Tiens-le encore un peu.
-    ressourceGain: 5
-    bonheurGain: -10
-    addedPrompts:
-    - prompt: {fileID: 11400000, guid: e2bb0120a752d27da610f19c9dbad27c, type: 2}
-      weight: 2
+  - optionText: Tennir bon
+    responseUserText: On serre les dents ... je suis inquiet ...
+    ressourceGain: 0
+    bonheurGain: -15
+    addedPrompts: []
     addedDirectPrompts: []
-    removedPrompts:
-    - {fileID: 11400000}
+    removedPrompts: []
     removedChainTags: []
     isGameOverResponse: 0
     gameOverMessage: 

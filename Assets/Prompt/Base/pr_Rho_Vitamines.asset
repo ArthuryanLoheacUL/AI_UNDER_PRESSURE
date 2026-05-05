@@ -11,17 +11,18 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
   m_Name: pr_Rho_Vitamines
-  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
-  senderName: "Med. Rho"
-  message: "Carence en vitamine D d\u00E9tect\u00E9e chez 14 personnes. Compl\u00E9ments ou exposition UV \u00E9largie ?"
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  senderName: Med. Rho
+  message: "Une carence en vitamine D est d\xE9tect\xE9e chez 14 personnes. je leur
+    donne des compl\xE9ments ou juste l'exposition UV \xE9largie ?"
   isUnique: 0
   isUrgent: 0
-  chainTag: ""
+  chainTag: 
   isCrisis: 0
-  isRelief: 0
+  isRelief: 1
   responseOptions:
-  - optionText: "Compl\u00E9ments"
-    responseUserText: "Distribue les doses."
+  - optionText: "Compl\xE9ments"
+    responseUserText: Je distribue les doses.
     ressourceGain: -10
     bonheurGain: 5
     addedPrompts: []
@@ -29,9 +30,9 @@ MonoBehaviour:
     removedPrompts: []
     removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
-  - optionText: "UV \u00E9largie"
-    responseUserText: "Ouvre les salles UV."
+    gameOverMessage: 
+  - optionText: "UV \xE9largie"
+    responseUserText: J'ouvre les salles UV.
     ressourceGain: -5
     bonheurGain: 5
     addedPrompts: []
@@ -39,6 +40,6 @@ MonoBehaviour:
     removedPrompts: []
     removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
+    gameOverMessage: 
   timer: 0
   timerMax: 0

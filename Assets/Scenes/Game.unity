@@ -362,7 +362,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   prompts:
-  - {fileID: 11400000, guid: 3670bf81ac7f0304f4ad06f0aa02279b, type: 2}
   - {fileID: 11400000, guid: 37d04354f82409d6a1a22567b3f0c692, type: 2}
   - {fileID: 11400000, guid: f38a0c5058f388dc65ced61010317bac, type: 2}
   - {fileID: 11400000, guid: 4308588061cbc53c1be0a2368bf8fecb, type: 2}
@@ -385,7 +384,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: b8e1231535027572199379c824170f3c, type: 2}
   - {fileID: 11400000, guid: 5aa0231e26a82b08c6f129f1ef2a7038, type: 2}
   - {fileID: 11400000, guid: 58067a33ab9d62daf2209641f852eb87, type: 2}
-  - {fileID: 11400000, guid: 01deaac1c55c19d2d9a4cdd23239833f, type: 2}
   - {fileID: 11400000, guid: 0987f3fb70b7e9cb3182955f4875de6b, type: 2}
   - {fileID: 11400000, guid: 7c1463148fa57861d19baa092200e75c, type: 2}
   - {fileID: 11400000, guid: b6e50755483c223f87c242642c95aa59, type: 2}

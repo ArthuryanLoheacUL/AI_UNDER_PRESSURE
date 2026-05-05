@@ -10,18 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
-  m_Name: pr_Sol_Eau_Trouble
+  m_Name: pr_Sol_Filtres
   m_EditorClassIdentifier: Assembly-CSharp::Prompt
   senderName: Ing. Sol
-  message: "L'eau du secteur D a un go\xFBt m\xE9tallique. Trois plaintes ce matin."
+  message: "Les filtres \xE0 eau du secteur D sont colmat\xE9s. Je peux toujours
+    lancer un recyclage pouss\xE9."
   isUnique: 1
   isUrgent: 0
   chainTag: 
-  isCrisis: 1
+  isCrisis: 0
   isRelief: 0
   responseOptions:
-  - optionText: Purger
-    responseUserText: "Purge compl\xE8te, on encaisse."
+  - optionText: Non remplacer
+    responseUserText: "Cool de nouvelles pi\xE8ces."
     ressourceGain: -10
     bonheurGain: 5
     addedPrompts: []
@@ -30,12 +31,12 @@ MonoBehaviour:
     removedChainTags: []
     isGameOverResponse: 0
     gameOverMessage: 
-  - optionText: Minimiser
-    responseUserText: Dis-leur que c'est psychologique.
-    ressourceGain: 0
-    bonheurGain: -10
+  - optionText: Oui Recycler
+    responseUserText: Je pousse les filtres alors
+    ressourceGain: 5
+    bonheurGain: -5
     addedPrompts:
-    - prompt: {fileID: 11400000}
+    - prompt: {fileID: 11400000, guid: dc510c1b9c4ce97c0754e12f7ae8b5e1, type: 2}
       weight: 2
     addedDirectPrompts: []
     removedPrompts: []

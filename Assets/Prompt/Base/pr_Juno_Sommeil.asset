@@ -11,17 +11,17 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
   m_Name: pr_Juno_Sommeil
-  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
-  senderName: "Med. Juno"
-  message: "L'\u00E9quipage dort mal. Rotation des quarts trop serr\u00E9e. Je recommande une semaine all\u00E9g\u00E9e."
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  senderName: Med. Juno
+  message: "L'\xE9quipage dort mal. car les rotation des quarts sont trop serr\xE9e.
+    Je recommande une semaine all\xE9g\xE9e."
   isUnique: 0
   isUrgent: 0
-  chainTag: ""
-  isCrisis: 0
+  chainTag: 
   isRelief: 1
   responseOptions:
-  - optionText: "Accord\u00E9e"
-    responseUserText: "Accord\u00E9e, on l\u00E8ve le pied."
+  - optionText: "Accord\xE9e"
+    responseUserText: "Super \xE0 nous le repos."
     ressourceGain: -5
     bonheurGain: 10
     addedPrompts: []
@@ -29,9 +29,9 @@ MonoBehaviour:
     removedPrompts: []
     removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
-  - optionText: "Refus\u00E9e"
-    responseUserText: "Pas le luxe."
+    gameOverMessage: 
+  - optionText: "Refus\xE9e"
+    responseUserText: "C'\xE9tait pas grand choses..."
     ressourceGain: 0
     bonheurGain: -10
     addedPrompts: []
@@ -39,6 +39,6 @@ MonoBehaviour:
     removedPrompts: []
     removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
+    gameOverMessage: 
   timer: 0
   timerMax: 0

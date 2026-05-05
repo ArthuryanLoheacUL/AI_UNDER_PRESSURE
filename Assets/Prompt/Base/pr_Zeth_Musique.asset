@@ -11,17 +11,18 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
   m_Name: pr_Zeth_Musique
-  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
-  senderName: "Com. Zeth"
-  message: "Quelqu'un diffuse de la musique sur le r\u00E9seau interne \u00E0 3h du matin. C'est Korr."
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  senderName: Com. Zeth
+  message: "Quelqu'un diffuse de la musique sur le r\xE9seau interne \xE0 3h du matin.
+    C'est Korr je crois."
   isUnique: 0
   isUrgent: 0
-  chainTag: ""
+  chainTag: 
   isCrisis: 0
   isRelief: 1
   responseOptions:
-  - optionText: "Laisser faire"
-    responseUserText: "Si \u00E7a aide, \u00E7a aide."
+  - optionText: Laisser faire
+    responseUserText: "Si \xE7a leur fait plaisir on devrait pouvoir le supporter"
     ressourceGain: 0
     bonheurGain: 5
     addedPrompts: []
@@ -29,9 +30,9 @@ MonoBehaviour:
     removedPrompts: []
     removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
-  - optionText: "Couper"
-    responseUserText: "Coupe la diffusion."
+    gameOverMessage: 
+  - optionText: Couper
+    responseUserText: On coupe la diffusion.
     ressourceGain: 0
     bonheurGain: -10
     addedPrompts: []
@@ -39,6 +40,6 @@ MonoBehaviour:
     removedPrompts: []
     removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
+    gameOverMessage: 
   timer: 0
   timerMax: 0
