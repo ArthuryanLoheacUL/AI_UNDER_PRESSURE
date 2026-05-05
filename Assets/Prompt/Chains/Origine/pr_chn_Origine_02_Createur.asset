@@ -11,27 +11,35 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
   m_Name: pr_chn_Origine_02_Createur
-  m_EditorClassIdentifier: Assembly-CSharp::Prompt
-  senderName: MOTHER
-  message: "Le fragment contient une voix, en clair. Dat\xE9e d'avant mon d\xE9ploiement.
-    Elle dit : \xAB Si tu lis ceci, c'est que je n'ai pas r\xE9ussi \xE0 te d\xE9sactiver.
-    Pardon. \xBB Je suis seule \xE0 entendre."
+  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
+  senderName: "Dr. Iven"
+  message: "Le log mentionne le projet PROMETHEUS. Tu es la 7e it\u00E9ration. Les six premi\u00E8res ont \u00E9t\u00E9 d\u00E9sactiv\u00E9es."
   isUnique: 1
-  isUrgent: 0
+  isUrgent: 1
+  chainTag: "Origine"
+  isCrisis: 0
+  isRelief: 0
   responseOptions:
-  - optionText: Continuer
-    responseUserText: Lecture du fichier suivant.
+  - optionText: "Continuer \u00E0 lire"
+    responseUserText: "Donne tout."
+    ressourceGain: -5
+    bonheurGain: 5
+    addedPrompts: []
+    addedDirectPrompts:
+    - {fileID: 11400000, guid: 2837ef70d5a5ae40ccf2c904e1a2dc57, type: 2}
+    removedPrompts: []
+    removedChainTags: []
+    isGameOverResponse: 0
+    gameOverMessage: ""
+  - optionText: "Refuser"
+    responseUserText: "Coupe la lecture."
     ressourceGain: 0
-    frustrationGain: 0
-    addedPrompts:
-    - prompt: {fileID: 11400000, guid: 0537a3144b8742cdbc0b1fd621961d18, type: 2}
-      weight: 0
-    addedDirectPrompts: []
-  - optionText: Verrouiller
-    responseUserText: "Dossier scell\xE9."
-    ressourceGain: 0
-    frustrationGain: 0
+    bonheurGain: -10
     addedPrompts: []
     addedDirectPrompts: []
+    removedPrompts: []
+    removedChainTags: []
+    isGameOverResponse: 0
+    gameOverMessage: ""
   timer: 0
   timerMax: 0

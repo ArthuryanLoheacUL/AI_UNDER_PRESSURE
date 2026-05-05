@@ -11,28 +11,36 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
   m_Name: pr_chn_Fantome_02_Abordage
-  m_EditorClassIdentifier: Assembly-CSharp::Prompt
-  senderName: Capt. Ilya Voss
-  message: "On peut envoyer une \xE9quipe \xE0 bord, MOTHER. Pi\xE8ces de rechange,
-    donn\xE9es, peut-\xEAtre plus. Mais inconnu total \u2014 on sait pas ce qui s'est
-    pass\xE9. Ou on scanne \xE0 distance et on continue."
+  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
+  senderName: "Capt. Voss"
+  message: "C'est un cargo. \"Sir\u00E8ne-IV\". Disparu il y a 60 ans. Coque intacte. Aucun signal."
   isUnique: 1
   isUrgent: 0
+  chainTag: "Fantome"
+  isCrisis: 0
+  isRelief: 0
   responseOptions:
-  - optionText: Aborder
-    responseUserText: "\xC9quipe d'inspection en route."
-    ressourceGain: -10
-    frustrationGain: -5
+  - optionText: "Aborder"
+    responseUserText: "\u00C9quipe d'abordage."
+    ressourceGain: -15
+    bonheurGain: 5
     addedPrompts: []
     addedDirectPrompts:
-    - {fileID: 11400000, guid: a67e6af3883046c8845e66bdd92a5158, type: 2}
-  - optionText: Scanner
-    responseUserText: Scan distant, prudence.
-    ressourceGain: -5
-    frustrationGain: 5
-    addedPrompts:
-    - prompt: {fileID: 11400000, guid: a67e6af3883046c8845e66bdd92a5158, type: 2}
-      weight: 10
+    - {fileID: 11400000, guid: 487f71a22a4ecb8c3a95e453cc09a8a5, type: 2}
+    removedPrompts: []
+    removedChainTags: []
+    isGameOverResponse: 0
+    gameOverMessage: ""
+  - optionText: "Cataloguer et passer"
+    responseUserText: "Note les coordonn\u00E9es."
+    ressourceGain: 0
+    bonheurGain: -5
+    addedPrompts: []
     addedDirectPrompts: []
+    removedPrompts: []
+    removedChainTags:
+    - "Fantome"
+    isGameOverResponse: 0
+    gameOverMessage: ""
   timer: 0
   timerMax: 0

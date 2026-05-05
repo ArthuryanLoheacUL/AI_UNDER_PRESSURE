@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
+  m_Name: pr_chn_Cryopanne_01_Reveil
+  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
+  senderName: "Med. Juno"
+  message: "Cuve 412 \u2014 r\u00E9veil pr\u00E9matur\u00E9. Le colon est conscient depuis trois heures. D\u00E9sorient\u00E9."
+  isUnique: 0
+  isUrgent: 1
+  chainTag: "Cryopanne"
+  isCrisis: 0
+  isRelief: 0
+  responseOptions:
+  - optionText: "Recryog\u00E9niser"
+    responseUserText: "Endors-le."
+    ressourceGain: -10
+    bonheurGain: 0
+    addedPrompts: []
+    addedDirectPrompts:
+    - {fileID: 11400000, guid: c93ec52b00d8536dba3d9f2ad062a08e, type: 2}
+    removedPrompts: []
+    removedChainTags: []
+    isGameOverResponse: 0
+    gameOverMessage: ""
+  - optionText: "Le garder \u00E9veill\u00E9"
+    responseUserText: "Int\u00E8gre-le \u00E0 l'\u00E9quipage."
+    ressourceGain: -5
+    bonheurGain: 5
+    addedPrompts:
+    - prompt: {fileID: 11400000, guid: ac709a15d61d3a1c4498cdc049a37f7e, type: 2}
+      weight: 2.0
+    addedDirectPrompts: []
+    removedPrompts: []
+    removedChainTags: []
+    isGameOverResponse: 0
+    gameOverMessage: ""
+  timer: 0
+  timerMax: 0

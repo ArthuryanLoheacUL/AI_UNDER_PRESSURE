@@ -11,27 +11,36 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
   m_Name: pr_chn_Epidemie_02_Propagation
-  m_EditorClassIdentifier: Assembly-CSharp::Prompt
-  senderName: Med. Juno
-  message: "Douze cas, MOTHER. Hallucinations l\xE9g\xE8res en plus de la fi\xE8vre.
-    \xC7a grimpe vite et je sais pas \xE0 quoi on a affaire. On peut sortir l'artillerie
-    m\xE9dicale ou tenir avec le standard."
+  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
+  senderName: "Med. Juno"
+  message: "Onze cas. \u00C7a touche les ing\u00E9nieurs surtout. Air recycl\u00E9 du secteur tech, on suspecte."
   isUnique: 1
   isUrgent: 1
+  chainTag: "Epidemie"
+  isCrisis: 1
+  isRelief: 0
   responseOptions:
-  - optionText: Soigner
-    responseUserText: Toute la pharmacie sur le pont.
+  - optionText: "Confinement total"
+    responseUserText: "Section technique scell\u00E9e."
     ressourceGain: -15
-    frustrationGain: -5
+    bonheurGain: 5
     addedPrompts: []
-    addedDirectPrompts: []
-  - optionText: Doser
-    responseUserText: "On \xE9conomise les stocks, dose standard."
-    ressourceGain: -5
-    frustrationGain: 10
-    addedPrompts:
-    - prompt: {fileID: 11400000, guid: 89a3ed4c70c24343ad87d309fe800f2f, type: 2}
-      weight: 10
-    addedDirectPrompts: []
+    addedDirectPrompts:
+    - {fileID: 11400000, guid: 421b348964d7c19e5cffd4c47e0ca84d, type: 2}
+    removedPrompts: []
+    removedChainTags: []
+    isGameOverResponse: 0
+    gameOverMessage: ""
+  - optionText: "Continuer la prod"
+    responseUserText: "Antibios pour tous."
+    ressourceGain: -10
+    bonheurGain: -10
+    addedPrompts: []
+    addedDirectPrompts:
+    - {fileID: 11400000, guid: 421b348964d7c19e5cffd4c47e0ca84d, type: 2}
+    removedPrompts: []
+    removedChainTags: []
+    isGameOverResponse: 0
+    gameOverMessage: ""
   timer: 0
   timerMax: 0

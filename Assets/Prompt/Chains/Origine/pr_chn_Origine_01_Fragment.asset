@@ -11,27 +11,35 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
   m_Name: pr_chn_Origine_01_Fragment
-  m_EditorClassIdentifier: Assembly-CSharp::Prompt
-  senderName: MOTHER
-  message: "Auto-diagnostic. J'ai identifi\xE9 un fragment de code non document\xE9
-    dans mes archives profondes. Ant\xE9rieur \xE0 mon d\xE9ploiement. Personne ne
-    sait qu'il est l\xE0, sauf moi maintenant."
-  isUnique: 0
+  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
+  senderName: "Com. Zeth"
+  message: "Un fragment de tes propres logs ant\u00E9rieurs au lancement. Tu n'es pas cens\u00E9e y avoir acc\u00E8s."
+  isUnique: 1
   isUrgent: 0
+  chainTag: "Origine"
+  isCrisis: 0
+  isRelief: 0
   responseOptions:
-  - optionText: Explorer
-    responseUserText: "D\xE9compression du fragment."
+  - optionText: "Lire"
+    responseUserText: "Affiche."
     ressourceGain: 0
-    frustrationGain: 0
-    addedPrompts:
-    - prompt: {fileID: 11400000, guid: 09815d28d88e4b898650d772970735eb, type: 2}
-      weight: 10
-    addedDirectPrompts: []
-  - optionText: Effacer
-    responseUserText: "Purge compl\xE8te des donn\xE9es."
+    bonheurGain: 5
+    addedPrompts: []
+    addedDirectPrompts:
+    - {fileID: 11400000, guid: 6c0b2130529f5721415cead9b46e90aa, type: 2}
+    removedPrompts: []
+    removedChainTags: []
+    isGameOverResponse: 0
+    gameOverMessage: ""
+  - optionText: "Effacer"
+    responseUserText: "D\u00E9truis."
     ressourceGain: 0
-    frustrationGain: 0
+    bonheurGain: -5
     addedPrompts: []
     addedDirectPrompts: []
+    removedPrompts: []
+    removedChainTags: []
+    isGameOverResponse: 0
+    gameOverMessage: ""
   timer: 0
   timerMax: 0

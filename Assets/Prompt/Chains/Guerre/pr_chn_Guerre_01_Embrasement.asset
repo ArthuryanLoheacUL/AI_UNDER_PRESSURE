@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
+  m_Name: pr_chn_Guerre_01_Embrasement
+  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
+  senderName: "Sec. Mara"
+  message: "Iven a forc\u00E9 l'armurerie. Il a deux gardes avec lui. Voss est en infirmerie."
+  isUnique: 1
+  isUrgent: 1
+  chainTag: "Guerre"
+  isCrisis: 1
+  isRelief: 0
+  responseOptions:
+  - optionText: "N\u00E9gocier"
+    responseUserText: "Ouvre un canal."
+    ressourceGain: -5
+    bonheurGain: 5
+    addedPrompts: []
+    addedDirectPrompts:
+    - {fileID: 11400000, guid: 0f894f610f9725617578949da7fe47d8, type: 2}
+    removedPrompts: []
+    removedChainTags: []
+    isGameOverResponse: 0
+    gameOverMessage: ""
+  - optionText: "Mara, neutralise"
+    responseUserText: "Feu vert."
+    ressourceGain: -10
+    bonheurGain: -10
+    addedPrompts: []
+    addedDirectPrompts:
+    - {fileID: 11400000, guid: 5a307ebef0c69d56ed039f6c42bfda7a, type: 2}
+    removedPrompts: []
+    removedChainTags: []
+    isGameOverResponse: 0
+    gameOverMessage: ""
+  timer: 0
+  timerMax: 0

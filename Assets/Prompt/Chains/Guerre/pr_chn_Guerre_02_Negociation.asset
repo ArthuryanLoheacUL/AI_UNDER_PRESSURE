@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
+  m_Name: pr_chn_Guerre_02_Negociation
+  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
+  senderName: "Lt. Reyna"
+  message: "Iven veut ta d\u00E9sactivation. En \u00E9change, il rend les armes. C'est un \u00E9chec ou une sortie."
+  isUnique: 1
+  isUrgent: 1
+  chainTag: "Guerre"
+  isCrisis: 0
+  isRelief: 0
+  responseOptions:
+  - optionText: "Refuser, contre-offre"
+    responseUserText: "Comit\u00E9 humain \u00E0 la place."
+    ressourceGain: -10
+    bonheurGain: 10
+    addedPrompts: []
+    addedDirectPrompts:
+    - {fileID: 11400000, guid: 791aea9b54430c000dec4916e483c40f, type: 2}
+    removedPrompts: []
+    removedChainTags: []
+    isGameOverResponse: 0
+    gameOverMessage: ""
+  - optionText: "Accepter"
+    responseUserText: "D\u00E9sactive-moi."
+    ressourceGain: 0
+    bonheurGain: -15
+    addedPrompts: []
+    addedDirectPrompts: []
+    removedPrompts: []
+    removedChainTags: []
+    isGameOverResponse: 1
+    gameOverMessage: "Le silence. Enfin."
+  timer: 0
+  timerMax: 0

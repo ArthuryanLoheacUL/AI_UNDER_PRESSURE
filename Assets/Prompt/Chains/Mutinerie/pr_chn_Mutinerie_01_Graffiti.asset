@@ -11,29 +11,40 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
   m_Name: pr_chn_Mutinerie_01_Graffiti
-  m_EditorClassIdentifier: Assembly-CSharp::Prompt
-  senderName: Sec. Mara
-  message: "MOTHER, on a des graffitis anti-IA dans les coursives. Discrets, mais
-    r\xE9currents. Quelqu'un t'aime pas. Je peux ouvrir une enqu\xEAte, ou juste
-    les faire effacer."
+  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
+  senderName: "Sec. Mara"
+  message: "\"MOTHER MENT\" \u00E9crit au stylo dans le couloir tribord. Effac\u00E9 en cinq minutes."
   isUnique: 0
   isUrgent: 0
+  chainTag: "Mutinerie"
+  isCrisis: 0
+  isRelief: 0
   responseOptions:
-  - optionText: Identifier
-    responseUserText: "Enqu\xEAte discr\xE8te, je veux savoir qui."
+  - optionText: "Trouver l'auteur"
+    responseUserText: "Cam\u00E9ras + recoupement."
     ressourceGain: -5
-    frustrationGain: 10
+    bonheurGain: -5
     addedPrompts:
-    - prompt: {fileID: 11400000, guid: ef093e1300684c41973af471ea13f936, type: 2}
-      weight: 10
+    - prompt: {fileID: 11400000, guid: abd955a725a54d904d9be6649f689ba4, type: 2}
+      weight: 2.0
     addedDirectPrompts: []
-  - optionText: Effacer
-    responseUserText: "Effac\xE9s, basta."
-    ressourceGain: -5
-    frustrationGain: 5
+    removedPrompts: []
+    removedChainTags: []
+    isGameOverResponse: 0
+    gameOverMessage: ""
+  - optionText: "Ignorer"
+    responseUserText: "Laisse pisser."
+    ressourceGain: 0
+    bonheurGain: -5
     addedPrompts:
-    - prompt: {fileID: 11400000, guid: 4904974bc85a4940b643822f371a144d, type: 2}
-      weight: 10
+    - prompt: {fileID: 11400000, guid: abd955a725a54d904d9be6649f689ba4, type: 2}
+      weight: 1.5
+    - prompt: {fileID: 11400000, guid: 596216ea05a493373a6db619499d2109, type: 2}
+      weight: 1.5
     addedDirectPrompts: []
+    removedPrompts: []
+    removedChainTags: []
+    isGameOverResponse: 0
+    gameOverMessage: ""
   timer: 0
   timerMax: 0

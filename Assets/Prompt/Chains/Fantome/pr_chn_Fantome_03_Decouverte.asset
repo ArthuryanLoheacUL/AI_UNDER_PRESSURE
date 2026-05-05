@@ -11,27 +11,36 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
   m_Name: pr_chn_Fantome_03_Decouverte
-  m_EditorClassIdentifier: Assembly-CSharp::Prompt
-  senderName: Dr. Vale
-  message: "MOTHER, le vaisseau est intact. Aucun corps, aucune trace de lutte. Les
-    logs sont corrompus aux trois-quarts, ce qui n'arrive pas naturellement. Quelque
-    chose s'est pass\xE9 ici."
+  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
+  senderName: "Sec. Mara"
+  message: "Personne \u00E0 bord. Cuves cryo intactes mais vides. Aucun cadavre. Aucun journal de bord."
   isUnique: 1
   isUrgent: 1
+  chainTag: "Fantome"
+  isCrisis: 0
+  isRelief: 0
   responseOptions:
-  - optionText: "R\xE9cup\xE9rer"
-    responseUserText: On prend ce qu'on peut, vite.
+  - optionText: "R\u00E9cup\u00E9ration mat\u00E9rielle"
+    responseUserText: "Tout ce qui se prend."
     ressourceGain: 15
-    frustrationGain: 5
-    addedPrompts:
-    - prompt: {fileID: 11400000, guid: 60b430dd39ce4bebaff8d6f082ea6cde, type: 2}
-      weight: 10
-    addedDirectPrompts: []
-  - optionText: Quitter
-    responseUserText: "On d\xE9gage imm\xE9diatement."
-    ressourceGain: 0
-    frustrationGain: -5
+    bonheurGain: -5
     addedPrompts: []
-    addedDirectPrompts: []
+    addedDirectPrompts:
+    - {fileID: 11400000, guid: 9a270bbe1474d8d9c6abf70952b335b2, type: 2}
+    removedPrompts: []
+    removedChainTags: []
+    isGameOverResponse: 0
+    gameOverMessage: ""
+  - optionText: "Fouille compl\u00E8te"
+    responseUserText: "Trouve les logs."
+    ressourceGain: -10
+    bonheurGain: 5
+    addedPrompts: []
+    addedDirectPrompts:
+    - {fileID: 11400000, guid: 9a270bbe1474d8d9c6abf70952b335b2, type: 2}
+    removedPrompts: []
+    removedChainTags: []
+    isGameOverResponse: 0
+    gameOverMessage: ""
   timer: 0
   timerMax: 0

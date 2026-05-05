@@ -11,27 +11,35 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
   m_Name: pr_chn_Fantome_01_Detection
-  m_EditorClassIdentifier: Assembly-CSharp::Prompt
-  senderName: Nav. Eko
-  message: "\xC9pave rep\xE9r\xE9e \xE0 3 heures, MOTHER. Vaisseau colonial de classe
-    ancienne \u2014 du m\xEAme type que nous, en plus vieux. Aucune signature thermique.
-    Personne \xE0 bord, en th\xE9orie."
+  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
+  senderName: "Nav. Eko"
+  message: "\u00C9cho radar \u00E0 0.8 UA. M\u00E9tallique. Inerte. Pas dans nos cartes."
   isUnique: 0
   isUrgent: 0
+  chainTag: "Fantome"
+  isCrisis: 0
+  isRelief: 0
   responseOptions:
-  - optionText: Approcher
-    responseUserText: "On d\xE9vie, cap dessus."
+  - optionText: "Approcher"
+    responseUserText: "Cap dessus."
     ressourceGain: -5
-    frustrationGain: -5
-    addedPrompts:
-    - prompt: {fileID: 11400000, guid: 4b793656cc1047b8a58c30b4f3de02ec, type: 2}
-      weight: 10
-    addedDirectPrompts: []
-  - optionText: Continuer
-    responseUserText: Pas le temps, on continue.
-    ressourceGain: 5
-    frustrationGain: 5
+    bonheurGain: 5
+    addedPrompts: []
+    addedDirectPrompts:
+    - {fileID: 11400000, guid: ed4a754cbfa11569527a5b56cf14b672, type: 2}
+    removedPrompts: []
+    removedChainTags: []
+    isGameOverResponse: 0
+    gameOverMessage: ""
+  - optionText: "Continuer"
+    responseUserText: "On passe \u00E0 c\u00F4t\u00E9."
+    ressourceGain: 0
+    bonheurGain: -5
     addedPrompts: []
     addedDirectPrompts: []
+    removedPrompts: []
+    removedChainTags: []
+    isGameOverResponse: 0
+    gameOverMessage: ""
   timer: 0
   timerMax: 0

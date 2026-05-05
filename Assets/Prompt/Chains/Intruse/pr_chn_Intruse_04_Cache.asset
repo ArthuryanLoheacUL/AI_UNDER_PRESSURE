@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
+  m_Name: pr_chn_Intruse_04_Cache
+  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
+  senderName: "Sec. Mara"
+  message: "On l'a coinc\u00E9e dans le couloir m\u00E9dical. Vale est dans la salle. Si je scelle, elle reste avec."
+  isUnique: 1
+  isUrgent: 1
+  chainTag: "Intruse"
+  isCrisis: 1
+  isRelief: 0
+  responseOptions:
+  - optionText: "Scelle le secteur"
+    responseUserText: "Scelle. D\u00E9sol\u00E9e Vale."
+    ressourceGain: 0
+    bonheurGain: -15
+    addedPrompts: []
+    addedDirectPrompts:
+    - {fileID: 11400000, guid: 715540ab7bf68a800f26022aed86d85e, type: 2}
+    removedPrompts: []
+    removedChainTags:
+    - "Vale_Active"
+    isGameOverResponse: 0
+    gameOverMessage: ""
+  - optionText: "Trouve une autre solution"
+    responseUserText: "Improvise. Vite."
+    ressourceGain: -15
+    bonheurGain: 10
+    addedPrompts: []
+    addedDirectPrompts:
+    - {fileID: 11400000, guid: 40a7c4bf09f7a650408240d3cfd9608c, type: 2}
+    removedPrompts: []
+    removedChainTags: []
+    isGameOverResponse: 0
+    gameOverMessage: ""
+  timer: 0
+  timerMax: 0

@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
+  m_Name: pr_chn_Contact_01_Coalition
+  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
+  senderName: "Com. Zeth"
+  message: "Message re\u00E7u. La Coalition Stellaire. Ils veulent un check-in. Premi\u00E8re fois en vingt ans."
+  isUnique: 1
+  isUrgent: 0
+  chainTag: "Contact"
+  isCrisis: 0
+  isRelief: 0
+  responseOptions:
+  - optionText: "R\u00E9pondre vrai"
+    responseUserText: "Rapport int\u00E9gral."
+    ressourceGain: -5
+    bonheurGain: 5
+    addedPrompts: []
+    addedDirectPrompts:
+    - {fileID: 11400000, guid: 99ab0bdfa79fd493bd5443d45092d4cb, type: 2}
+    removedPrompts: []
+    removedChainTags: []
+    isGameOverResponse: 0
+    gameOverMessage: ""
+  - optionText: "Mentir"
+    responseUserText: "Tout va bien."
+    ressourceGain: 5
+    bonheurGain: -5
+    addedPrompts:
+    - prompt: {fileID: 11400000, guid: 619041fe2c98c9a5f03d35e89a0282e5, type: 2}
+      weight: 2.0
+    addedDirectPrompts: []
+    removedPrompts: []
+    removedChainTags: []
+    isGameOverResponse: 0
+    gameOverMessage: ""
+  timer: 0
+  timerMax: 0

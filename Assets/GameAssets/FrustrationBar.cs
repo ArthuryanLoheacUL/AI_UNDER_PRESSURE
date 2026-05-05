@@ -1,15 +1,19 @@
 using UnityEngine;
 using UnityEngine.UI;
 
+// NOTE: kept the class name FrustrationBar for compatibility with existing
+// scene references (Game.unity references this script's GUID). It now drives a
+// "bonheur" bar where 1.0 = full bonheur (good) and 0.0 = empty bonheur (game
+// over). The shake triggers when bonheur DROPS (bad news).
 public class FrustrationBar : MonoBehaviour
 {
     public Slider sliderBG;
     public Slider sliderFG;
-    float targetFrustration = 0f;
+    float targetValue = 1f;
     float animationSpeed = 0.2f;
     float animationSpeedBG = 1f;
 
-    bool isUpping = false;
+    bool isDropping = false;
 
     // Shake variables
     private bool isShaking = false;
@@ -29,74 +33,43 @@ public class FrustrationBar : MonoBehaviour
         shakeTimer = shakeDuration;
     }
 
-    public void SetFrustration(float frustration)
+    public void SetBonheur(float bonheur01)
     {
-        targetFrustration = frustration;
-        if (targetFrustration > sliderFG.value)
+        // bonheur01: 0..1 where 1 is full bonheur.
+        if (bonheur01 < targetValue)
         {
-            isUpping = true;
-            TriggerShake(); // Shake when frustration increases
+            // bonheur is decreasing -> shake (bad news for the AI).
+            isDropping = true;
+            TriggerShake();
         }
         else
         {
-            isUpping = false;
+            isDropping = false;
         }
+        targetValue = bonheur01;
+    }
+
+    // Backwards-compatible shim. Old callers passed a "frustration" 0..1 where
+    // 1 was BAD. Convert to bonheur and forward.
+    public void SetFrustration(float frustration01)
+    {
+        SetBonheur(1f - frustration01);
     }
 
     void Update()
     {
-        if (isUpping)
+        // Pick which slider leads / trails based on direction of change.
+        if (isDropping)
         {
-            if (sliderFG.value < targetFrustration)
-            {
-                sliderFG.value += Time.deltaTime * animationSpeed;
-                if (sliderFG.value > targetFrustration)
-                    sliderFG.value = targetFrustration;
-            }
-            else if (sliderFG.value > targetFrustration)
-            {
-                sliderFG.value -= Time.deltaTime * animationSpeed;
-                if (sliderFG.value < targetFrustration)
-                    sliderFG.value = targetFrustration;
-            }
-            if (sliderBG.value < targetFrustration)
-            {
-                sliderBG.value += Time.deltaTime * animationSpeedBG;
-                if (sliderBG.value > targetFrustration)
-                    sliderBG.value = targetFrustration;
-            }
-            else if (sliderBG.value > targetFrustration)
-            {
-                sliderBG.value -= Time.deltaTime * animationSpeedBG;
-                if (sliderBG.value < targetFrustration)
-                    sliderBG.value = targetFrustration;
-            }   
-        } else
+            // FG snaps quickly down, BG drains slowly.
+            MoveSlider(sliderFG, targetValue, animationSpeedBG);
+            MoveSlider(sliderBG, targetValue, animationSpeed);
+        }
+        else
         {
-            if (sliderFG.value < targetFrustration)
-            {
-                sliderFG.value += Time.deltaTime * animationSpeedBG;
-                if (sliderFG.value > targetFrustration)
-                    sliderFG.value = targetFrustration;
-            }
-            else if (sliderFG.value > targetFrustration)
-            {
-                sliderFG.value -= Time.deltaTime * animationSpeedBG;
-                if (sliderFG.value < targetFrustration)
-                    sliderFG.value = targetFrustration;
-            }
-            if (sliderBG.value < targetFrustration)
-            {
-                sliderBG.value += Time.deltaTime * animationSpeed;
-                if (sliderBG.value > targetFrustration)
-                    sliderBG.value = targetFrustration;
-            }
-            else if (sliderBG.value > targetFrustration)
-            {
-                sliderBG.value -= Time.deltaTime * animationSpeed;
-                if (sliderBG.value < targetFrustration)
-                    sliderBG.value = targetFrustration;
-            }  
+            // BG fills quickly up, FG fills slowly behind it.
+            MoveSlider(sliderFG, targetValue, animationSpeed);
+            MoveSlider(sliderBG, targetValue, animationSpeedBG);
         }
 
         // Apply shake effect
@@ -115,6 +88,20 @@ public class FrustrationBar : MonoBehaviour
                 float shakeY = Random.Range(-shakeAmount, shakeAmount);
                 transform.localPosition = originalPosition + new Vector3(shakeX, shakeY, 0f);
             }
+        }
+    }
+
+    void MoveSlider(Slider s, float target, float speed)
+    {
+        if (s == null) return;
+        if (Mathf.Abs(s.value - target) < 0.0001f) return;
+        if (s.value < target)
+        {
+            s.value = Mathf.Min(target, s.value + Time.deltaTime * speed);
+        }
+        else
+        {
+            s.value = Mathf.Max(target, s.value - Time.deltaTime * speed);
         }
     }
 }

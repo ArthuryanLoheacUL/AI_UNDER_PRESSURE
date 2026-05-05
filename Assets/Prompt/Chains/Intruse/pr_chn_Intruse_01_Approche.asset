@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
+  m_Name: pr_chn_Intruse_01_Approche
+  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
+  senderName: "Sec. Mara"
+  message: "Quelque chose est pass\u00E9 par le sas de maintenance B. Pas dans la liste d'\u00E9quipage."
+  isUnique: 1
+  isUrgent: 1
+  chainTag: "Intruse"
+  isCrisis: 1
+  isRelief: 0
+  responseOptions:
+  - optionText: "Confinement secteur"
+    responseUserText: "Scelle B et C."
+    ressourceGain: -10
+    bonheurGain: 5
+    addedPrompts: []
+    addedDirectPrompts:
+    - {fileID: 11400000, guid: 7b4374ab7e2564aa0c72608478bf88cf, type: 2}
+    removedPrompts: []
+    removedChainTags: []
+    isGameOverResponse: 0
+    gameOverMessage: ""
+  - optionText: "Patrouille arm\u00E9e"
+    responseUserText: "Mara, prends deux gardes."
+    ressourceGain: -5
+    bonheurGain: -10
+    addedPrompts: []
+    addedDirectPrompts:
+    - {fileID: 11400000, guid: 7b4374ab7e2564aa0c72608478bf88cf, type: 2}
+    removedPrompts: []
+    removedChainTags: []
+    isGameOverResponse: 0
+    gameOverMessage: ""
+  timer: 0
+  timerMax: 0

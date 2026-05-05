@@ -11,28 +11,36 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
   m_Name: pr_chn_Mutinerie_03_Meneur
-  m_EditorClassIdentifier: Assembly-CSharp::Prompt
-  senderName: Sec. Mara
-  message: "C'est Iven qui m\xE8ne, MOTHER. R\xE9unions discr\xE8tes en salle hydroponique,
-    jamais les m\xEAmes participants. Il pr\xE9pare quelque chose, mais je sais pas
-    encore quoi."
+  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
+  senderName: "Sec. Mara"
+  message: "Iven m\u00E8ne la p\u00E9tition. Il a un plan pour te d\u00E9brancher temporairement."
   isUnique: 1
-  isUrgent: 0
+  isUrgent: 1
+  chainTag: "Mutinerie"
+  isCrisis: 1
+  isRelief: 0
   responseOptions:
-  - optionText: Surveiller
-    responseUserText: Surveillance en sourdine.
+  - optionText: "Le confronter"
+    responseUserText: "R\u00E9union publique."
     ressourceGain: -5
-    frustrationGain: 0
-    addedPrompts:
-    - prompt: {fileID: 11400000, guid: 2893afe8ae604ec7ac9dc3b46a2bcfcf, type: 2}
-      weight: 10
-    addedDirectPrompts: []
-  - optionText: Confronter
-    responseUserText: Confrontation publique, maintenant.
-    ressourceGain: 0
-    frustrationGain: 10
+    bonheurGain: 5
     addedPrompts: []
     addedDirectPrompts:
-    - {fileID: 11400000, guid: 2893afe8ae604ec7ac9dc3b46a2bcfcf, type: 2}
+    - {fileID: 11400000, guid: efa43c3452e4f38b931d24a68ca53655, type: 2}
+    removedPrompts: []
+    removedChainTags: []
+    isGameOverResponse: 0
+    gameOverMessage: ""
+  - optionText: "Confiner Iven"
+    responseUserText: "Quartiers priv\u00E9s."
+    ressourceGain: 0
+    bonheurGain: -15
+    addedPrompts: []
+    addedDirectPrompts:
+    - {fileID: 11400000, guid: 998497334787314c4c330cf7212625ec, type: 2}
+    removedPrompts: []
+    removedChainTags: []
+    isGameOverResponse: 0
+    gameOverMessage: ""
   timer: 0
   timerMax: 0

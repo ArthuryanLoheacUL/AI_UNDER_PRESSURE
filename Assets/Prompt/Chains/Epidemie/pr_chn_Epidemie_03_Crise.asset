@@ -11,23 +11,36 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
   m_Name: pr_chn_Epidemie_03_Crise
-  m_EditorClassIdentifier: Assembly-CSharp::Prompt
-  senderName: Med. Juno
-  message: "Trente pourcents de l'\xE9quipage actif est touch\xE9, MOTHER. Ilya inclus. D\xE9lire, fi\xE8vre, fatigue. Soit on d\xE9clenche le plan d'urgence int\xE9gral, soit on serre les dents et on esp\xE8re."
+  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
+  senderName: "Med. Juno"
+  message: "Un mort. Sol. Les autres sont stabilis\u00E9s. La famille demande \u00E0 voir le corps."
   isUnique: 1
   isUrgent: 1
+  chainTag: "Epidemie"
+  isCrisis: 1
+  isRelief: 0
   responseOptions:
-  - optionText: Mobiliser
-    responseUserText: Mobilisation maximale, tout le monde.
-    ressourceGain: -20
-    frustrationGain: -10
+  - optionText: "Autoriser"
+    responseUserText: "Laisse la famille."
+    ressourceGain: -5
+    bonheurGain: 10
     addedPrompts: []
-    addedDirectPrompts: []
-  - optionText: Tenir
-    responseUserText: "On tient bon, \xE7a va passer."
+    addedDirectPrompts:
+    - {fileID: 11400000, guid: a6ff28c92fcae7031e7ab5e2962a4414, type: 2}
+    removedPrompts: []
+    removedChainTags: []
+    isGameOverResponse: 0
+    gameOverMessage: ""
+  - optionText: "Refuser, s\u00E9curit\u00E9"
+    responseUserText: "Non. Dossier scell\u00E9."
     ressourceGain: 0
-    frustrationGain: 25
+    bonheurGain: -15
     addedPrompts: []
-    addedDirectPrompts: []
+    addedDirectPrompts:
+    - {fileID: 11400000, guid: a6ff28c92fcae7031e7ab5e2962a4414, type: 2}
+    removedPrompts: []
+    removedChainTags: []
+    isGameOverResponse: 0
+    gameOverMessage: ""
   timer: 0
   timerMax: 0

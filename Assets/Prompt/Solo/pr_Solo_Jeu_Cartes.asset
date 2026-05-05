@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
+  m_Name: pr_Solo_Jeu_Cartes
+  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
+  senderName: "Ing. Kade"
+  message: "On organise un tournoi de cartes ce soir. Tu peux nous filer une heure de r\u00E9seau ?"
+  isUnique: 0
+  isUrgent: 0
+  chainTag: ""
+  isCrisis: 0
+  isRelief: 1
+  responseOptions:
+  - optionText: "Accord\u00E9"
+    responseUserText: "Heure offerte."
+    ressourceGain: -5
+    bonheurGain: 10
+    addedPrompts: []
+    addedDirectPrompts: []
+    removedPrompts: []
+    removedChainTags: []
+    isGameOverResponse: 0
+    gameOverMessage: ""
+  - optionText: "Refus\u00E9"
+    responseUserText: "Pas dans le quota."
+    ressourceGain: 0
+    bonheurGain: -5
+    addedPrompts: []
+    addedDirectPrompts: []
+    removedPrompts: []
+    removedChainTags: []
+    isGameOverResponse: 0
+    gameOverMessage: ""
+  timer: 0
+  timerMax: 0

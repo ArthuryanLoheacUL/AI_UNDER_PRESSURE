@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
+  m_Name: pr_chn_Signal_01_Bruit
+  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
+  senderName: "Dr. Iven"
+  message: "Il y a un signal dans le bruit de fond. R\u00E9gulier. 11 impulsions, pause, 3, pause, 11. Pas de chez nous."
+  isUnique: 1
+  isUrgent: 1
+  chainTag: "Signal"
+  isCrisis: 0
+  isRelief: 0
+  responseOptions:
+  - optionText: "On r\u00E9pond"
+    responseUserText: "On r\u00E9pond. Court."
+    ressourceGain: -5
+    bonheurGain: 10
+    addedPrompts: []
+    addedDirectPrompts:
+    - {fileID: 11400000, guid: aeed4bae6c8c6f5383ccdb814006195f, type: 2}
+    removedPrompts: []
+    removedChainTags: []
+    isGameOverResponse: 0
+    gameOverMessage: ""
+  - optionText: "Log et silence"
+    responseUserText: "Note. Silence radio."
+    ressourceGain: 0
+    bonheurGain: -5
+    addedPrompts:
+    - prompt: {fileID: 11400000, guid: 5cd862cdd543d8165bf02618d888825f, type: 2}
+      weight: 3.0
+    addedDirectPrompts: []
+    removedPrompts: []
+    removedChainTags: []
+    isGameOverResponse: 0
+    gameOverMessage: ""
+  timer: 0
+  timerMax: 0

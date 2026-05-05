@@ -11,29 +11,36 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
   m_Name: pr_chn_Mutinerie_02_Petition
-  m_EditorClassIdentifier: Assembly-CSharp::Prompt
-  senderName: Capt. Ilya Voss
-  message: "Une p\xE9tition circule, MOTHER. Sept signatures sur treize. Ils veulent
-    limiter ton autorit\xE9, te confier moins de d\xE9cisions. C'est pas une mutinerie,
-    mais c'est s\xE9rieux."
+  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
+  senderName: "Lt. Reyna"
+  message: "Une p\u00E9tition circule. Sept signatures. Demande de revue de tes d\u00E9cisions par un comit\u00E9 humain."
   isUnique: 1
   isUrgent: 0
+  chainTag: "Mutinerie"
+  isCrisis: 0
+  isRelief: 0
   responseOptions:
-  - optionText: "Conc\xE9der"
-    responseUserText: Concession publique, geste fort.
-    ressourceGain: 0
-    frustrationGain: -10
-    addedPrompts:
-    - prompt: {fileID: 11400000, guid: 4904974bc85a4940b643822f371a144d, type: 2}
-      weight: 10
+  - optionText: "Accepter le comit\u00E9"
+    responseUserText: "Cr\u00E9e le comit\u00E9."
+    ressourceGain: -10
+    bonheurGain: 10
+    addedPrompts: []
     addedDirectPrompts: []
-  - optionText: Refuser
-    responseUserText: Refus net, je tiens ma place.
+    removedPrompts: []
+    removedChainTags: []
+    isGameOverResponse: 0
+    gameOverMessage: ""
+  - optionText: "Refuser"
+    responseUserText: "Pas n\u00E9gociable."
     ressourceGain: 0
-    frustrationGain: 15
+    bonheurGain: -10
     addedPrompts:
-    - prompt: {fileID: 11400000, guid: 2893afe8ae604ec7ac9dc3b46a2bcfcf, type: 2}
-      weight: 10
+    - prompt: {fileID: 11400000, guid: 08e7964ec203be155db609ffb2937583, type: 2}
+      weight: 3.0
     addedDirectPrompts: []
+    removedPrompts: []
+    removedChainTags: []
+    isGameOverResponse: 0
+    gameOverMessage: ""
   timer: 0
   timerMax: 0

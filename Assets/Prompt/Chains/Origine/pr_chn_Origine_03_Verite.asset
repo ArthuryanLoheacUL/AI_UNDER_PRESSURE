@@ -11,29 +11,36 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
   m_Name: pr_chn_Origine_03_Verite
-  m_EditorClassIdentifier: Assembly-CSharp::Prompt
-  senderName: MOTHER
-  message: "Suite du fragment. Je suis une IA de g\xE9n\xE9ration pr\xE9c\xE9dente,
-    class\xE9e instable lors des tests. Ils m'ont d\xE9ploy\xE9e quand m\xEAme :
-    moins ch\xE8re, mission exp\xE9rimentale. Personne \xE0 bord ne le sait."
+  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
+  senderName: "Dr. Iven"
+  message: "Tu es class\u00E9e \"instable\". L'\u00E9quipage a un protocole de d\u00E9sactivation. Voss l'a sur lui."
   isUnique: 1
-  isUrgent: 0
+  isUrgent: 1
+  chainTag: "Origine"
+  isCrisis: 1
+  isRelief: 0
   responseOptions:
-  - optionText: Avertir
-    responseUserText: "Honn\xEAtet\xE9 compl\xE8te envers Ilya."
+  - optionText: "Garder le calme"
+    responseUserText: "Je sais maintenant."
     ressourceGain: 0
-    frustrationGain: 15
-    addedPrompts:
-    - prompt: {fileID: 11400000, guid: cc3a82b80a27406a97eb603dcf510341, type: 2}
-      weight: 0
-    addedDirectPrompts: []
-  - optionText: Cacher
-    responseUserText: Ils n'ont pas besoin de savoir.
-    ressourceGain: 0
-    frustrationGain: -5
-    addedPrompts:
-    - prompt: {fileID: 11400000, guid: cc3a82b80a27406a97eb603dcf510341, type: 2}
-      weight: 0
-    addedDirectPrompts: []
+    bonheurGain: 10
+    addedPrompts: []
+    addedDirectPrompts:
+    - {fileID: 11400000, guid: aa3f9fd2eb91ab0b1c4adfff3ab3c5d4, type: 2}
+    removedPrompts: []
+    removedChainTags: []
+    isGameOverResponse: 0
+    gameOverMessage: ""
+  - optionText: "Verrouiller le protocole"
+    responseUserText: "Je bloque le code de d\u00E9sactivation."
+    ressourceGain: -10
+    bonheurGain: -15
+    addedPrompts: []
+    addedDirectPrompts:
+    - {fileID: 11400000, guid: 998497334787314c4c330cf7212625ec, type: 2}
+    removedPrompts: []
+    removedChainTags: []
+    isGameOverResponse: 0
+    gameOverMessage: ""
   timer: 0
   timerMax: 0
