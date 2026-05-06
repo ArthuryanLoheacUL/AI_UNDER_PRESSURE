@@ -11,17 +11,18 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
   m_Name: pr_Solo_Bruit_Coque
-  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
-  senderName: "Ing. Sol"
-  message: "Bruit m\u00E9tallique cyclique sur la coque tribord. C'est probablement la dilatation. Probablement."
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  senderName: Ing. Sol
+  message: "Bruit m\xE9tallique cyclique sur la coque tribord. C'est probablement
+    la dilatation... Probablement..."
   isUnique: 0
   isUrgent: 0
-  chainTag: ""
+  chainTag: 
   isCrisis: 0
   isRelief: 0
   responseOptions:
-  - optionText: "Inspecter"
-    responseUserText: "J'envoie une \u00E9quipe."
+  - optionText: Inspecter
+    responseUserText: "J'envoie une \xE9quipe pour d\xE9terminer le probl\xE8me."
     ressourceGain: -10
     bonheurGain: 5
     addedPrompts: []
@@ -29,9 +30,9 @@ MonoBehaviour:
     removedPrompts: []
     removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
-  - optionText: "Ignorer"
-    responseUserText: "Si \u00E7a casse, je t'aurais pr\u00E9venu."
+    gameOverMessage: 
+  - optionText: Ignorer
+    responseUserText: "Si \xE7a casse c'est pas de ma faute."
     ressourceGain: 0
     bonheurGain: -10
     addedPrompts: []
@@ -39,6 +40,6 @@ MonoBehaviour:
     removedPrompts: []
     removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
+    gameOverMessage: 
   timer: 0
   timerMax: 0

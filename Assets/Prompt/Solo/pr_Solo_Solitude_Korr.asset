@@ -11,17 +11,18 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
   m_Name: pr_Solo_Solitude_Korr
-  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
-  senderName: "Med. Rho"
-  message: "Korr ne parle plus \u00E0 personne depuis dix jours. Je m'inqui\u00E8te un peu."
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  senderName: Med. Rho
+  message: "Korr ne parle plus \xE0 personne depuis dix jours. Je m'inqui\xE8te un
+    peu."
   isUnique: 0
   isUrgent: 0
-  chainTag: ""
+  chainTag: 
   isCrisis: 0
   isRelief: 0
   responseOptions:
-  - optionText: "Lui parler"
-    responseUserText: "Je programme une session."
+  - optionText: Lui parler
+    responseUserText: "Je programme une r\xE9union."
     ressourceGain: -5
     bonheurGain: 5
     addedPrompts: []
@@ -29,9 +30,9 @@ MonoBehaviour:
     removedPrompts: []
     removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
-  - optionText: "Lui foutre la paix"
-    responseUserText: "Bon... j'esp\u00E8re que \u00E7a remonte tout seul."
+    gameOverMessage: 
+  - optionText: Laisser tranquille
+    responseUserText: "Bon... j'esp\xE8re que \xE7a remontera tout seul."
     ressourceGain: 0
     bonheurGain: -5
     addedPrompts: []
@@ -39,6 +40,6 @@ MonoBehaviour:
     removedPrompts: []
     removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
+    gameOverMessage: 
   timer: 0
   timerMax: 0

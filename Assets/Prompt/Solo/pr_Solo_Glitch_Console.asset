@@ -11,17 +11,18 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
   m_Name: pr_Solo_Glitch_Console
-  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
-  senderName: "Ing. Kade"
-  message: "Console de Reyna a flash\u00E9 un message bizarre. Mot illisible, puis plus rien."
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  senderName: Ing. Kade
+  message: "La console de Reyna a flash\xE9 un message bizarre. le mot \xE9tait illisible,
+    puis plus rien."
   isUnique: 0
   isUrgent: 0
-  chainTag: ""
+  chainTag: 
   isCrisis: 0
   isRelief: 0
   responseOptions:
-  - optionText: "Diagnostic"
-    responseUserText: "Je mets un junior dessus."
+  - optionText: Diagnostic
+    responseUserText: Je mets un junior dessus.
     ressourceGain: -5
     bonheurGain: 0
     addedPrompts: []
@@ -29,9 +30,9 @@ MonoBehaviour:
     removedPrompts: []
     removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
-  - optionText: "Ignorer"
-    responseUserText: "S\u00FBrement un cosmique."
+    gameOverMessage: 
+  - optionText: Ignorer
+    responseUserText: "S\xFBrement rien"
     ressourceGain: 0
     bonheurGain: -5
     addedPrompts: []
@@ -39,6 +40,6 @@ MonoBehaviour:
     removedPrompts: []
     removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
+    gameOverMessage: 
   timer: 0
   timerMax: 0

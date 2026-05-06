@@ -11,17 +11,18 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
   m_Name: pr_Solo_Logs_Identifie
-  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
-  senderName: "Com. Zeth"
-  message: "C'\u00E9tait Iven. Il dit qu'il v\u00E9rifiait quelque chose. Pas convaincant."
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  senderName: Com. Zeth
+  message: "C'\xE9tait Iven. Il dit qu'il v\xE9rifiait quelque chose. Mais ce n'\xE9tait
+    pas convaincant."
   isUnique: 1
   isUrgent: 0
-  chainTag: ""
+  chainTag: 
   isCrisis: 0
   isRelief: 0
   responseOptions:
-  - optionText: "Le confronter"
-    responseUserText: "R\u00E9union priv\u00E9e, sans esclandre."
+  - optionText: Le confronter
+    responseUserText: "Je demande une r\xE9union priv\xE9e avec lui."
     ressourceGain: 0
     bonheurGain: -5
     addedPrompts: []
@@ -29,9 +30,9 @@ MonoBehaviour:
     removedPrompts: []
     removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
-  - optionText: "Surveiller"
-    responseUserText: "Je mets une alerte sur son terminal."
+    gameOverMessage: 
+  - optionText: Surveiller
+    responseUserText: Je l'observerai
     ressourceGain: -5
     bonheurGain: 0
     addedPrompts: []
@@ -39,6 +40,6 @@ MonoBehaviour:
     removedPrompts: []
     removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
+    gameOverMessage: 
   timer: 0
   timerMax: 0

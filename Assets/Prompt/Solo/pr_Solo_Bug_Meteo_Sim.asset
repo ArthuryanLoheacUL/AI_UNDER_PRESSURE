@@ -11,17 +11,18 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
   m_Name: pr_Solo_Bug_Meteo_Sim
-  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
-  senderName: "Ing. Kade"
-  message: "Le simulateur m\u00E9t\u00E9o de la salle commune ne marche plus. Bug graphique."
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  senderName: Ing. Kade
+  message: "Le simulateur m\xE9t\xE9o de la salle commune ne marche plus il y a un
+    bug graphique."
   isUnique: 0
   isUrgent: 0
-  chainTag: ""
+  chainTag: 
   isCrisis: 0
   isRelief: 1
   responseOptions:
-  - optionText: "R\u00E9parer"
-    responseUserText: "Je patche ce soir."
+  - optionText: "R\xE9parer"
+    responseUserText: "Je corrige \xE7a ce soir !"
     ressourceGain: -5
     bonheurGain: 5
     addedPrompts: []
@@ -29,9 +30,9 @@ MonoBehaviour:
     removedPrompts: []
     removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
-  - optionText: "D\u00E9sactiver"
-    responseUserText: "Bon, on le coupe... dommage."
+    gameOverMessage: 
+  - optionText: "D\xE9sactiver"
+    responseUserText: On le coupe alors...
     ressourceGain: 0
     bonheurGain: -5
     addedPrompts: []
@@ -39,6 +40,6 @@ MonoBehaviour:
     removedPrompts: []
     removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
+    gameOverMessage: 
   timer: 0
   timerMax: 0

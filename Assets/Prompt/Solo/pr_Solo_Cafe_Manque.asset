@@ -11,17 +11,18 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
   m_Name: pr_Solo_Cafe_Manque
-  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
-  senderName: "Med. Rho"
-  message: "Plus de caf\u00E9 synth\u00E9tique en cuisine. Tout le monde demande quand on en refait."
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  senderName: Med. Rho
+  message: "Il n'y a plus de caf\xE9 synth\xE9tique en cuisine. Tout le monde demande
+    quand on en refait."
   isUnique: 0
   isUrgent: 0
-  chainTag: ""
+  chainTag: 
   isCrisis: 0
   isRelief: 1
   responseOptions:
-  - optionText: "Lance la prod"
-    responseUserText: "Tu sauves la journ\u00E9e !"
+  - optionText: Lance la prod
+    responseUserText: "Tu sauves la journ\xE9e !"
     ressourceGain: -5
     bonheurGain: 10
     addedPrompts: []
@@ -29,16 +30,16 @@ MonoBehaviour:
     removedPrompts: []
     removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
-  - optionText: "Rationner"
-    responseUserText: "Une dose par jour, ils tiendront."
-    ressourceGain: 5
+    gameOverMessage: 
+  - optionText: Rationner
+    responseUserText: Une dose par jour, ils tiendront.
+    ressourceGain: 10
     bonheurGain: -5
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []
     removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
+    gameOverMessage: 
   timer: 0
   timerMax: 0

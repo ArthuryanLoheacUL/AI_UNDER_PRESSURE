@@ -11,17 +11,18 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
   m_Name: pr_Voss_Discipline
-  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
-  senderName: "Capt. Voss"
-  message: "Trois techs ont saut\u00E9 leur quart cette semaine. Je les sanctionne ?"
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  senderName: Capt. Voss
+  message: "Trois techs ont saut\xE9 leur quart cette semaine. Je les sanctionne
+    ?"
   isUnique: 0
   isUrgent: 0
-  chainTag: ""
+  chainTag: 
   isCrisis: 0
   isRelief: 0
   responseOptions:
-  - optionText: "Sanction"
-    responseUserText: "Il le m\u00E9rite."
+  - optionText: Sanction
+    responseUserText: "Il le m\xE9rite."
     ressourceGain: 5
     bonheurGain: -10
     addedPrompts: []
@@ -29,16 +30,16 @@ MonoBehaviour:
     removedPrompts: []
     removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
-  - optionText: "Avertir"
-    responseUserText: "Ils ont de la chance"
-    ressourceGain: -5
+    gameOverMessage: 
+  - optionText: Avertir
+    responseUserText: Ils ont de la chance
+    ressourceGain: 0
     bonheurGain: 5
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []
     removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
+    gameOverMessage: 
   timer: 0
   timerMax: 0

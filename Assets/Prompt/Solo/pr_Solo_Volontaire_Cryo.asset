@@ -11,27 +11,28 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
   m_Name: pr_Solo_Volontaire_Cryo
-  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
-  senderName: "Med. Juno"
-  message: "Eko se porte volontaire pour retourner en cryo. Il dit qu'il \u00E9touffe."
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  senderName: Med. Juno
+  message: "Eko se porte volontaire pour retourner en cryo. Il dit qu'il \xE9touffe
+    ici"
   isUnique: 0
   isUrgent: 0
-  chainTag: ""
+  chainTag: 
   isCrisis: 0
   isRelief: 0
   responseOptions:
-  - optionText: "Accepter"
-    responseUserText: "Je pr\u00E9pare la cuve."
-    ressourceGain: -10
+  - optionText: Accepter
+    responseUserText: "Je pr\xE9pare la cuve."
+    ressourceGain: -5
     bonheurGain: 5
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []
     removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
-  - optionText: "Refuser"
-    responseUserText: "On a besoin de lui... mais \u00E7a fait mal."
+    gameOverMessage: 
+  - optionText: Refuser
+    responseUserText: "On a besoin de lui... mais \xE7a va lui faire mal au moral."
     ressourceGain: 5
     bonheurGain: -10
     addedPrompts: []
@@ -39,6 +40,6 @@ MonoBehaviour:
     removedPrompts: []
     removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
+    gameOverMessage: 
   timer: 0
   timerMax: 0

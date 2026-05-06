@@ -11,34 +11,35 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
   m_Name: pr_Solo_Diplomatie_Roles
-  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
-  senderName: "Lt. Reyna"
-  message: "Iven veut \u00EAtre inclus dans les d\u00E9cisions strat\u00E9giques. Voss n'est pas chaud."
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  senderName: Lt. Reyna
+  message: "Iven veut \xEAtre inclus dans les d\xE9cisions strat\xE9giques. Voss
+    n'est pas partant."
   isUnique: 0
   isUrgent: 0
-  chainTag: ""
+  chainTag: 
   isCrisis: 0
   isRelief: 0
   responseOptions:
-  - optionText: "Inclure Iven"
-    responseUserText: "Je convoque la r\u00E9union."
+  - optionText: Inclure Iven
+    responseUserText: "Je convoque la r\xE9union."
     ressourceGain: 0
-    bonheurGain: 5
+    bonheurGain: 0
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []
     removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
-  - optionText: "Soutenir Voss"
-    responseUserText: "C'est sa cha\u00EEne de commandement."
+    gameOverMessage: 
+  - optionText: Soutenir Voss
+    responseUserText: "C'est sa cha\xEEne de commandement apr\xE8s tout"
     ressourceGain: 0
-    bonheurGain: -5
+    bonheurGain: 0
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []
     removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
+    gameOverMessage: 
   timer: 0
   timerMax: 0

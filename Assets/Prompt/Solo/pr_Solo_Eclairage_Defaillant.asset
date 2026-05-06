@@ -11,17 +11,18 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
   m_Name: pr_Solo_Eclairage_Defaillant
-  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
-  senderName: "Ing. Kade"
-  message: "Pont 4 en \u00E9clairage de secours depuis hier. Pi\u00E8ce manquante au stock."
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  senderName: Ing. Kade
+  message: "Pont 4 utilise l'\xE9clairage de secours depuis hier. et une pi\xE8ce
+    est manquante au stock."
   isUnique: 0
   isUrgent: 0
-  chainTag: ""
+  chainTag: 
   isCrisis: 0
   isRelief: 0
   responseOptions:
-  - optionText: "Cannibaliser"
-    responseUserText: "Je prends sur le pont 7."
+  - optionText: Remplacer
+    responseUserText: Je vais prendre celles sur le pont 7.
     ressourceGain: -5
     bonheurGain: 0
     addedPrompts: []
@@ -29,9 +30,9 @@ MonoBehaviour:
     removedPrompts: []
     removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
-  - optionText: "Tenir comme \u00E7a"
-    responseUserText: "Ils s'habitueront. Mais c'est moche."
+    gameOverMessage: 
+  - optionText: "Garder comme \xE7a"
+    responseUserText: Ils s'habitueront. Mais c'est moche.
     ressourceGain: 0
     bonheurGain: -10
     addedPrompts: []
@@ -39,6 +40,6 @@ MonoBehaviour:
     removedPrompts: []
     removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
+    gameOverMessage: 
   timer: 0
   timerMax: 0

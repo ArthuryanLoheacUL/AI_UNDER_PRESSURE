@@ -11,17 +11,18 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
   m_Name: pr_Solo_Logs_Suspect
-  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
-  senderName: "Com. Zeth"
-  message: "Quelqu'un a acc\u00E9d\u00E9 aux logs cryo cette nuit, depuis un terminal anonyme."
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  senderName: Com. Zeth
+  message: "Quelqu'un a acc\xE9d\xE9 aux logs cryo cette nuit, depuis un terminal
+    anonyme."
   isUnique: 1
   isUrgent: 0
-  chainTag: ""
+  chainTag: 
   isCrisis: 0
   isRelief: 0
   responseOptions:
-  - optionText: "Tracer"
-    responseUserText: "Je trouve qui sans bruit."
+  - optionText: Tracer
+    responseUserText: Je pars chercher qui c'est.
     ressourceGain: -5
     bonheurGain: 0
     addedPrompts:
@@ -31,9 +32,9 @@ MonoBehaviour:
     removedPrompts: []
     removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
-  - optionText: "Laisser couler"
-    responseUserText: "\u00C7a me pla\u00EEt pas mais OK."
+    gameOverMessage: 
+  - optionText: Laisser couler
+    responseUserText: "\xC7a me pla\xEEt pas de fonctionner ainsi mais OK."
     ressourceGain: 0
     bonheurGain: -5
     addedPrompts: []
@@ -41,6 +42,6 @@ MonoBehaviour:
     removedPrompts: []
     removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
+    gameOverMessage: 
   timer: 0
   timerMax: 0

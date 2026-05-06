@@ -11,17 +11,18 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
   m_Name: pr_Solo_Photo_Famille
-  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
-  senderName: "Nav. Eko"
-  message: "J'ai trouv\u00E9 un dossier photos sur un terminal. Famille de Reyna. Je l'efface ?"
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  senderName: Nav. Eko
+  message: "J'ai trouv\xE9 un dossier photos sur un terminal de travail. C'est des
+    photos de famille de Reyna. Je l'efface ?"
   isUnique: 0
   isUrgent: 0
-  chainTag: ""
+  chainTag: 
   isCrisis: 0
   isRelief: 0
   responseOptions:
-  - optionText: "Lui dire"
-    responseUserText: "Elle va appr\u00E9cier, je la pr\u00E9viens."
+  - optionText: La prevenir
+    responseUserText: C'est effectivement peut etre une erreur de sa part
     ressourceGain: 0
     bonheurGain: 5
     addedPrompts: []
@@ -29,9 +30,9 @@ MonoBehaviour:
     removedPrompts: []
     removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
-  - optionText: "Effacer en silence"
-    responseUserText: "OK... j'efface. Mais c'est moche."
+    gameOverMessage: 
+  - optionText: Effacer en silence
+    responseUserText: "OK... j'efface. J'espere que ce n'\xE9tait pas sa seule copie"
     ressourceGain: 0
     bonheurGain: -10
     addedPrompts: []
@@ -39,6 +40,6 @@ MonoBehaviour:
     removedPrompts: []
     removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
+    gameOverMessage: 
   timer: 0
   timerMax: 0
