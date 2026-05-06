@@ -24,7 +24,6 @@ public class Prompt : ScriptableObject
 
         [Header("Prompts - Removed")]
         public Prompt[] removedPrompts; // Specific prompts to remove permanently from the pool
-        public string[] removedChainTags; // Whole chain tags to remove from the pool (e.g. "Parker", "Signal")
 
         [Header("Game Over")]
         public bool isGameOverResponse; // If true, selecting this response will end the game
@@ -40,7 +39,6 @@ public class Prompt : ScriptableObject
     public bool isUrgent; // If true, this prompt will be added to the front of the queue and have a timer
 
     [Header("Tags & Pacing")]
-    public string chainTag;     // Ex: "Parker", "Signal", "Intruse" - groups prompts in a narrative chain (used for batch removal & weighting)
     public bool isCrisis;       // Crisis prompt - usually drains both gauges, escalates pressure
     public bool isRelief;       // Relief prompt - boosts bonheur or ressources, used to break tension after crisis runs
 
@@ -65,7 +63,6 @@ public class Prompt : ScriptableObject
             responseOptions[i].addedPrompts = other.responseOptions[i].addedPrompts;
             responseOptions[i].addedDirectPrompts = other.responseOptions[i].addedDirectPrompts;
             responseOptions[i].removedPrompts = other.responseOptions[i].removedPrompts;
-            responseOptions[i].removedChainTags = other.responseOptions[i].removedChainTags;
             responseOptions[i].isGameOverResponse = other.responseOptions[i].isGameOverResponse;
             responseOptions[i].gameOverMessage = other.responseOptions[i].gameOverMessage;
         }
@@ -73,7 +70,6 @@ public class Prompt : ScriptableObject
         timerMax = 0f;
         isUnique = other.isUnique;
         isUrgent = other.isUrgent;
-        chainTag = other.chainTag;
         isCrisis = other.isCrisis;
         isRelief = other.isRelief;
     }

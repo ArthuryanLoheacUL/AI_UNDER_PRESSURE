@@ -149,17 +149,23 @@ public class MessageSetupManager : MonoBehaviour
         MessageUI messageUI = messageGO.GetComponent<MessageUI>();
         if (messageUI != null)
         {
-            string userResponse = prompt.responseOptions[selectedResponseIndex].responseUserText;
-            if (RessourceManager.Instance.GetBonheur() <= 0)
-            {
-                userResponse = "Vous êtes inutiles de toute façon ...";
-            }
-            if (prompt.responseOptions[selectedResponseIndex].isGameOverResponse)
-            {
-                userResponse = prompt.responseOptions[selectedResponseIndex].gameOverMessage;
-            }
+            messageUI.SetMessage(prompt.responseOptions[selectedResponseIndex].responseUserText);
+        }
+        if (RessourceManager.Instance.GetBonheur() <= 0 || prompt.responseOptions[selectedResponseIndex].isGameOverResponse)
+        {
+            GameObject messageGO2  = Instantiate(messageUserPrefab, messageParent);
 
-            messageUI.SetMessage(userResponse);
+            MessageUI messageUI2 = messageGO2.GetComponent<MessageUI>();
+            if (messageUI2 != null)
+            {
+                string userResponse = "Vous êtes inutiles de toute façon ...";
+                if (prompt.responseOptions[selectedResponseIndex].isGameOverResponse)
+                {
+                    userResponse = prompt.responseOptions[selectedResponseIndex].gameOverMessage;
+                }
+
+                messageUI2.SetMessage(userResponse);
+            }
         }
     }
 

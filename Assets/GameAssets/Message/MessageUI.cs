@@ -52,7 +52,6 @@ public class MessageUI : MonoBehaviour
         {
             float animatedY = deltaY * animationMessagePopup.Evaluate(1f - animationTime / animationMax);
             layoutGroup.padding.bottom = Mathf.RoundToInt(animatedY);
-            // Refresh the layout to apply the new padding immediately
             LayoutRebuilder.ForceRebuildLayoutImmediate(layoutGroup.GetComponent<RectTransform>());
             animationTime -= Time.deltaTime;
         } else
