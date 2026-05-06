@@ -11,36 +11,34 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
   m_Name: pr_chn_Epidemie_03_Crise
-  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
-  senderName: "Med. Juno"
-  message: "Un mort. Sol. Les autres sont stabilis\u00E9s. La famille demande \u00E0 voir le corps."
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  senderName: Med. Juno
+  message: "Un mort est d\xE9clar\xE9 de l'infection. Sol. Les autres sont stabilis\xE9s.
+    La famille demande \xE0 voir le corps."
   isUnique: 1
   isUrgent: 1
-  chainTag: "Epidemie"
   isCrisis: 1
   isRelief: 0
   responseOptions:
-  - optionText: "Autoriser"
-    responseUserText: "Laisse la famille, c'est humain."
+  - optionText: Autoriser
+    responseUserText: Laisse la famille, c'est humain.
     ressourceGain: -5
     bonheurGain: 10
     addedPrompts: []
     addedDirectPrompts:
     - {fileID: 11400000, guid: a6ff28c92fcae7031e7ab5e2962a4414, type: 2}
     removedPrompts: []
-    removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
-  - optionText: "Refuser, s\u00E9curit\u00E9"
-    responseUserText: "Dossier scell\u00E9. C'est dur."
+    gameOverMessage: 
+  - optionText: "Refuser, s\xE9curit\xE9"
+    responseUserText: "Dossier scell\xE9. C'est dur."
     ressourceGain: 0
     bonheurGain: -15
     addedPrompts: []
     addedDirectPrompts:
     - {fileID: 11400000, guid: a6ff28c92fcae7031e7ab5e2962a4414, type: 2}
     removedPrompts: []
-    removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
+    gameOverMessage: 
   timer: 0
   timerMax: 0

@@ -10,38 +10,35 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
-  m_Name: pr_Solo_Logs_Suspect
-  m_EditorClassIdentifier: Assembly-CSharp::Prompt
-  senderName: Com. Zeth
-  message: "Quelqu'un a acc\xE9d\xE9 aux logs cryo cette nuit, depuis un terminal
-    anonyme."
+  m_Name: pr_chn_PaniqueCyber_01_Nav
+  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
+  senderName: "Nav. Eko"
+  message: "Syst\u00E8me nav compromis !! Je passe en manuel ou je tente le bypass ?!"
   isUnique: 1
-  isUrgent: 0
-  chainTag: 
+  isUrgent: 1
+  chainTag: "PaniqueCyber"
   isCrisis: 0
   isRelief: 0
   responseOptions:
-  - optionText: Tracer
-    responseUserText: Je pars chercher qui c'est.
+  - optionText: "Manuel"
+    responseUserText: "OK manuel, je tiens le cap."
     ressourceGain: -5
-    bonheurGain: 0
-    addedPrompts:
-    - prompt: {fileID: 11400000, guid: d87df370d00e880e9cb8bf04ce995a65, type: 2}
-      weight: 1.5
-    addedDirectPrompts: []
-    removedPrompts: []
-    removedChainTags: []
-    isGameOverResponse: 0
-    gameOverMessage: 
-  - optionText: Laisser couler
-    responseUserText: "\xC7a me pla\xEEt pas de fonctionner ainsi mais OK."
-    ressourceGain: 0
-    bonheurGain: -5
+    bonheurGain: 5
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []
     removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: 
+    gameOverMessage: ""
+  - optionText: "Bypass auto"
+    responseUserText: "Bon... bypass. Si \u00E7a crash je suis pas responsable."
+    ressourceGain: 0
+    bonheurGain: -10
+    addedPrompts: []
+    addedDirectPrompts: []
+    removedPrompts: []
+    removedChainTags: []
+    isGameOverResponse: 0
+    gameOverMessage: ""
   timer: 0
   timerMax: 0

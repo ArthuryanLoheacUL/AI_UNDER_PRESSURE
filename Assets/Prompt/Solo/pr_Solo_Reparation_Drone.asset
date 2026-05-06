@@ -11,18 +11,17 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
   m_Name: pr_Solo_Reparation_Drone
-  m_EditorClassIdentifier: Assembly-CSharp::Prompt
-  senderName: Ing. Sol
-  message: "Un drone de maintenance a perdu un rotor en EVA. On le r\xE9cup\xE8re
-    ?"
+  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
+  senderName: "Ing. Sol"
+  message: "Un drone de maintenance a perdu un rotor en EVA. On le r\u00E9cup\u00E8re ?"
   isUnique: 0
   isUrgent: 0
-  chainTag: 
+  chainTag: ""
   isCrisis: 0
   isRelief: 0
   responseOptions:
-  - optionText: "R\xE9cup\xE9rer"
-    responseUserText: Sortie EVA, c'est parti !
+  - optionText: "R\u00E9cup\u00E9rer"
+    responseUserText: "Sortie EVA, c'est parti."
     ressourceGain: -15
     bonheurGain: 5
     addedPrompts: []
@@ -30,9 +29,9 @@ MonoBehaviour:
     removedPrompts: []
     removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: 
-  - optionText: L'abandonner
-    responseUserText: Je le marque comme perte. RIP petit rotor...
+    gameOverMessage: ""
+  - optionText: "L'abandonner"
+    responseUserText: "Mark comme perte. Triste."
     ressourceGain: 5
     bonheurGain: -5
     addedPrompts: []
@@ -40,6 +39,6 @@ MonoBehaviour:
     removedPrompts: []
     removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: 
+    gameOverMessage: ""
   timer: 0
   timerMax: 0

@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
+  m_Name: pr_chn_PaniqueMoteur_99_Resolution
+  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
+  senderName: "Lt. Reyna"
+  message: "\u00C7a se calme. Beau boulot collectif tout le monde. On souffle."
+  isUnique: 1
+  isUrgent: 0
+  chainTag: "PaniqueMoteur"
+  isCrisis: 0
+  isRelief: 1
+  responseOptions:
+  - optionText: "Tourn\u00E9e caf\u00E9"
+    responseUserText: "Cool. Tourn\u00E9e g\u00E9n\u00E9rale en cantine !"
+    ressourceGain: -5
+    bonheurGain: 15
+    addedPrompts: []
+    addedDirectPrompts: []
+    removedPrompts: []
+    removedChainTags:
+    - "PaniqueMoteur"
+    isGameOverResponse: 0
+    gameOverMessage: ""
+  - optionText: "Au boulot"
+    responseUserText: "Compris. On retourne au charbon."
+    ressourceGain: 0
+    bonheurGain: 5
+    addedPrompts: []
+    addedDirectPrompts: []
+    removedPrompts: []
+    removedChainTags:
+    - "PaniqueMoteur"
+    isGameOverResponse: 0
+    gameOverMessage: ""
+  timer: 0
+  timerMax: 0

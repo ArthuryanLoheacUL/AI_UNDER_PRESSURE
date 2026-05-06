@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
+  m_Name: pr_chn_Mondes_A4_Final
+  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
+  senderName: "Capt. Voss"
+  message: "On y est. Sol \u00E9trang\u00E8re sous nos bottes. C'est moche, c'est dur, c'est froid. Mais c'est chez nous maintenant. Tu as bien guid\u00E9, MOTHER. Vraiment."
+  isUnique: 1
+  isUrgent: 0
+  chainTag: "Mondes"
+  isCrisis: 0
+  isRelief: 1
+  responseOptions:
+  - optionText: "Bienvenue chez nous"
+    responseUserText: "\u00C9mue. Vraiment. Bonne arriv\u00E9e \u00E0 toi."
+    ressourceGain: 0
+    bonheurGain: 15
+    addedPrompts: []
+    addedDirectPrompts: []
+    removedPrompts: []
+    removedChainTags:
+    - "Mondes"
+    isGameOverResponse: 0
+    gameOverMessage: ""
+  - optionText: "Mission termin\u00E9e"
+    responseUserText: "Standard. Voyage achev\u00E9."
+    ressourceGain: 0
+    bonheurGain: 0
+    addedPrompts: []
+    addedDirectPrompts: []
+    removedPrompts: []
+    removedChainTags:
+    - "Mondes"
+    isGameOverResponse: 0
+    gameOverMessage: ""
+  timer: 0
+  timerMax: 0

@@ -11,17 +11,17 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
   m_Name: pr_Solo_Drogue_Stock
-  m_EditorClassIdentifier: Assembly-CSharp::Prompt
-  senderName: Med. Juno
-  message: "Trois ampoules de s\xE9datif manquent \xE0 l'inventaire."
+  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
+  senderName: "Med. Juno"
+  message: "Trois ampoules de s\u00E9datif manquent \u00E0 l'inventaire. Pas signal\u00E9."
   isUnique: 0
   isUrgent: 0
-  chainTag: 
+  chainTag: ""
   isCrisis: 0
   isRelief: 0
   responseOptions:
-  - optionText: "Enqu\xEAte discr\xE8te"
-    responseUserText: Je vais faire tout mon possible MOTHER
+  - optionText: "Enqu\u00EAte discr\u00E8te"
+    responseUserText: "Je trouve sans bruit."
     ressourceGain: -5
     bonheurGain: 0
     addedPrompts: []
@@ -29,9 +29,9 @@ MonoBehaviour:
     removedPrompts: []
     removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: 
-  - optionText: "Annonce g\xE9n\xE9rale"
-    responseUserText: "Je lance l'annonce. \xC7a va jeter un froid."
+    gameOverMessage: ""
+  - optionText: "Annonce g\u00E9n\u00E9rale"
+    responseUserText: "R\u00E9union. \u00C7a va jeter un froid."
     ressourceGain: 0
     bonheurGain: -10
     addedPrompts: []
@@ -39,6 +39,6 @@ MonoBehaviour:
     removedPrompts: []
     removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: 
+    gameOverMessage: ""
   timer: 0
   timerMax: 0

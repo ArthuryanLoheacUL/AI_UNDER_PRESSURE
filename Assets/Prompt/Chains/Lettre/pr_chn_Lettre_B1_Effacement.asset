@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
+  m_Name: pr_chn_Lettre_B1_Effacement
+  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
+  senderName: "Com. Zeth"
+  message: "C'est effac\u00E9. Mais Iven scanne les checksums chaque matin. Il va voir qu'un message de la Coalition manque. Il va poser des questions ce soir."
+  isUnique: 1
+  isUrgent: 0
+  chainTag: "Lettre"
+  isCrisis: 0
+  isRelief: 0
+  responseOptions:
+  - optionText: "Mets-le dans le secret"
+    responseUserText: "Bon... on est trois maintenant. C'est plus lourd."
+    ressourceGain: 0
+    bonheurGain: -5
+    addedPrompts: []
+    addedDirectPrompts:
+    - {fileID: 11400000, guid: b53da8c01babea5d62547e45870fbf0c, type: 2}
+    removedPrompts: []
+    removedChainTags: []
+    isGameOverResponse: 0
+    gameOverMessage: ""
+  - optionText: "Faux checksum"
+    responseUserText: "Je fabrique un faux signal. Encore un mensonge."
+    ressourceGain: -5
+    bonheurGain: 0
+    addedPrompts: []
+    addedDirectPrompts:
+    - {fileID: 11400000, guid: b53da8c01babea5d62547e45870fbf0c, type: 2}
+    removedPrompts: []
+    removedChainTags: []
+    isGameOverResponse: 0
+    gameOverMessage: ""
+  timer: 0
+  timerMax: 0

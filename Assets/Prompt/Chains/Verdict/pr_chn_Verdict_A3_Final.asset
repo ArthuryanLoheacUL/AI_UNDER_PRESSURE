@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
+  m_Name: pr_chn_Verdict_A3_Final
+  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
+  senderName: "Capt. Voss"
+  message: "Parker reste confin\u00E9 jusqu'\u00E0 l'arriv\u00E9e. C'est dur \u2014 il \u00E9tait bon. Mais la justice n'est pas une vengeance, c'est juste qu'elle existe. Tu as bien fait."
+  isUnique: 1
+  isUrgent: 0
+  chainTag: "Verdict"
+  isCrisis: 0
+  isRelief: 0
+  responseOptions:
+  - optionText: "Je sais pas si j'ai bien fait"
+    responseUserText: "Personne ne sait jamais vraiment. Mais merci d'avoir tranch\u00E9."
+    ressourceGain: 0
+    bonheurGain: 5
+    addedPrompts: []
+    addedDirectPrompts: []
+    removedPrompts: []
+    removedChainTags:
+    - "Verdict"
+    isGameOverResponse: 0
+    gameOverMessage: ""
+  - optionText: "J'ai bien fait"
+    responseUserText: "Compris. On avance."
+    ressourceGain: 0
+    bonheurGain: 0
+    addedPrompts: []
+    addedDirectPrompts: []
+    removedPrompts: []
+    removedChainTags:
+    - "Verdict"
+    isGameOverResponse: 0
+    gameOverMessage: ""
+  timer: 0
+  timerMax: 0

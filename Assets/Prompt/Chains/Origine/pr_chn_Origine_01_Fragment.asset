@@ -11,35 +11,32 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
   m_Name: pr_chn_Origine_01_Fragment
-  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
-  senderName: "Com. Zeth"
-  message: "J'ai trouv\u00E9 un fragment de tes propres logs ant\u00E9rieurs au lancement. T'es pas cens\u00E9e y avoir acc\u00E8s."
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  senderName: Com. Zeth
+  message: Les logs contiennents des informations.
   isUnique: 1
   isUrgent: 0
-  chainTag: "Origine"
   isCrisis: 0
   isRelief: 0
   responseOptions:
-  - optionText: "Lire"
-    responseUserText: "Affiche tout."
+  - optionText: Lire
+    responseUserText: Affiche tout.
     ressourceGain: 0
     bonheurGain: 5
     addedPrompts: []
     addedDirectPrompts:
     - {fileID: 11400000, guid: 6c0b2130529f5721415cead9b46e90aa, type: 2}
     removedPrompts: []
-    removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
-  - optionText: "Effacer"
-    responseUserText: "Bon... efface. C'est lourd."
+    gameOverMessage: 
+  - optionText: Effacer
+    responseUserText: Bon... efface. C'est lourd.
     ressourceGain: 0
     bonheurGain: -5
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []
-    removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
+    gameOverMessage: 
   timer: 0
   timerMax: 0

@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
+  m_Name: pr_chn_PaniqueMoteur_03_Console
+  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
+  senderName: "Nav. Korr"
+  message: "Console nav clignote partout, je vois plus rien !!"
+  isUnique: 1
+  isUrgent: 1
+  chainTag: "PaniqueMoteur"
+  isCrisis: 0
+  isRelief: 0
+  responseOptions:
+  - optionText: "Reset console"
+    responseUserText: "Reset, je r\u00E9cup\u00E8re l'image."
+    ressourceGain: -5
+    bonheurGain: 5
+    addedPrompts: []
+    addedDirectPrompts: []
+    removedPrompts: []
+    removedChainTags: []
+    isGameOverResponse: 0
+    gameOverMessage: ""
+  - optionText: "Pilotage \u00E0 l'aveugle"
+    responseUserText: "...\u00E0 l'aveugle alors. Cool MOTHER, vraiment."
+    ressourceGain: 0
+    bonheurGain: -10
+    addedPrompts: []
+    addedDirectPrompts: []
+    removedPrompts: []
+    removedChainTags: []
+    isGameOverResponse: 0
+    gameOverMessage: ""
+  timer: 0
+  timerMax: 0

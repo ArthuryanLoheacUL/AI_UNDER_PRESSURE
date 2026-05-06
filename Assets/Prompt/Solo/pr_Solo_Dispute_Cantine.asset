@@ -11,18 +11,17 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
   m_Name: pr_Solo_Dispute_Cantine
-  m_EditorClassIdentifier: Assembly-CSharp::Prompt
-  senderName: Sec. Mara
-  message: "Vale et Iven se sont engueul\xE9s \xE0 la cantine. Rien de grave, en
-    tout cas pour l'instant."
+  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
+  senderName: "Sec. Mara"
+  message: "Vale et Iven se sont engueul\u00E9s \u00E0 la cantine. Pas grave. Pour l'instant."
   isUnique: 0
   isUrgent: 0
-  chainTag: 
+  chainTag: ""
   isCrisis: 0
   isRelief: 0
   responseOptions:
-  - optionText: Discuter
-    responseUserText: "Je passe les voir s\xE9par\xE9ment."
+  - optionText: "M\u00E9dier discret"
+    responseUserText: "Je passe les voir s\u00E9par\u00E9ment."
     ressourceGain: 0
     bonheurGain: 5
     addedPrompts: []
@@ -30,9 +29,9 @@ MonoBehaviour:
     removedPrompts: []
     removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: 
-  - optionText: Laisser
-    responseUserText: Ils sont adultes.
+    gameOverMessage: ""
+  - optionText: "Laisser faire"
+    responseUserText: "Ils sont adultes."
     ressourceGain: 0
     bonheurGain: -5
     addedPrompts: []
@@ -40,6 +39,6 @@ MonoBehaviour:
     removedPrompts: []
     removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: 
+    gameOverMessage: ""
   timer: 0
   timerMax: 0

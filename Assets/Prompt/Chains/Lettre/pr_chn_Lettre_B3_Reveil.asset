@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
+  m_Name: pr_chn_Lettre_B3_Reveil
+  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
+  senderName: "Hayes"
+  message: "MOTHER, j'ai r\u00EAv\u00E9 de L\u00E9a cette nuit. Vraiment net. Elle souriait, elle disait au revoir. Je sais pas pourquoi je te raconte \u00E7a. Je voulais juste qu'on le sache."
+  isUnique: 1
+  isUrgent: 0
+  chainTag: "Lettre"
+  isCrisis: 0
+  isRelief: 0
+  responseOptions:
+  - optionText: "Les r\u00EAves disent parfois la v\u00E9rit\u00E9"
+    responseUserText: "Peut-\u00EAtre. Merci de m'\u00E9couter."
+    ressourceGain: 0
+    bonheurGain: 5
+    addedPrompts: []
+    addedDirectPrompts: []
+    removedPrompts: []
+    removedChainTags:
+    - "Lettre"
+    isGameOverResponse: 0
+    gameOverMessage: ""
+  - optionText: "C'est juste un r\u00EAve"
+    responseUserText: "Tu as raison. Pardon de t'avoir emb\u00EAt\u00E9e."
+    ressourceGain: 0
+    bonheurGain: -10
+    addedPrompts: []
+    addedDirectPrompts: []
+    removedPrompts: []
+    removedChainTags:
+    - "Lettre"
+    isGameOverResponse: 0
+    gameOverMessage: ""
+  timer: 0
+  timerMax: 0

@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
+  m_Name: pr_chn_Lettre_A1_Preparation
+  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
+  senderName: "Med. Rho"
+  message: "Zeth m'a parl\u00E9. Je peux pr\u00E9parer un protocole de deuil complet pour son r\u00E9veil \u2014 accompagnement, environnement contr\u00F4l\u00E9. Ou on le laisse encaisser seul, comme un adulte."
+  isUnique: 1
+  isUrgent: 0
+  chainTag: "Lettre"
+  isCrisis: 0
+  isRelief: 0
+  responseOptions:
+  - optionText: "Protocole complet"
+    responseUserText: "OK je pr\u00E9pare. C'est lourd mais juste."
+    ressourceGain: -10
+    bonheurGain: 5
+    addedPrompts: []
+    addedDirectPrompts:
+    - {fileID: 11400000, guid: 86b39c56a1e0d3e963e57119d8de1165, type: 2}
+    removedPrompts: []
+    removedChainTags: []
+    isGameOverResponse: 0
+    gameOverMessage: ""
+  - optionText: "Comme un adulte"
+    responseUserText: "Bien. Je suis pas d'accord, mais je respecte."
+    ressourceGain: 0
+    bonheurGain: -5
+    addedPrompts: []
+    addedDirectPrompts:
+    - {fileID: 11400000, guid: 86b39c56a1e0d3e963e57119d8de1165, type: 2}
+    removedPrompts: []
+    removedChainTags: []
+    isGameOverResponse: 0
+    gameOverMessage: ""
+  timer: 0
+  timerMax: 0
