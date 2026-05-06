@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: pr_chn_Epidemie_02_Propagation
   m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
   senderName: "Med. Juno"
-  message: "Onze cas. \u00C7a touche les ing\u00E9nieurs surtout. Air recycl\u00E9 du secteur tech, on suspecte."
+  message: "Onze cas. \u00C7a touche surtout les ing\u00E9nieurs. On suspecte l'air recycl\u00E9 du secteur tech."
   isUnique: 1
   isUrgent: 1
   chainTag: "Epidemie"
@@ -32,7 +32,7 @@ MonoBehaviour:
     isGameOverResponse: 0
     gameOverMessage: ""
   - optionText: "Continuer la prod"
-    responseUserText: "Antibios pour tous."
+    responseUserText: "Antibios pour tous. Risqu\u00E9."
     ressourceGain: -10
     bonheurGain: -10
     addedPrompts: []

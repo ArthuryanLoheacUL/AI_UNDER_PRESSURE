@@ -21,7 +21,7 @@ MonoBehaviour:
   isRelief: 0
   responseOptions:
   - optionText: "Inclure Iven"
-    responseUserText: "R\u00E9union \u00E0 trois."
+    responseUserText: "Je convoque la r\u00E9union."
     ressourceGain: 0
     bonheurGain: 5
     addedPrompts: []

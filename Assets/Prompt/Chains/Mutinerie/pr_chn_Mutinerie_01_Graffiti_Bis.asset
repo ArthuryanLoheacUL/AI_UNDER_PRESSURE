@@ -13,15 +13,15 @@ MonoBehaviour:
   m_Name: pr_chn_Mutinerie_01_Graffiti_Bis
   m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
   senderName: "Sec. Mara"
-  message: "Un autre. Trois maintenant. Diff\u00E9rentes mains."
-  isUnique: 0
+  message: "Y'en a un autre. Trois maintenant. Trois mains diff\u00E9rentes."
+  isUnique: 1
   isUrgent: 0
   chainTag: "Mutinerie"
   isCrisis: 0
   isRelief: 0
   responseOptions:
   - optionText: "R\u00E9union d'\u00E9quipage"
-    responseUserText: "Mets-les face \u00E0 toi."
+    responseUserText: "Je les mets face \u00E0 toi."
     ressourceGain: -5
     bonheurGain: 5
     addedPrompts: []
@@ -30,8 +30,8 @@ MonoBehaviour:
     removedChainTags: []
     isGameOverResponse: 0
     gameOverMessage: ""
-  - optionText: "Renforcer la surveillance"
-    responseUserText: "Cam\u00E9ras partout."
+  - optionText: "Renforcer surveillance"
+    responseUserText: "Cam\u00E9ras partout. \u00C7a va peser."
     ressourceGain: -5
     bonheurGain: -10
     addedPrompts: []

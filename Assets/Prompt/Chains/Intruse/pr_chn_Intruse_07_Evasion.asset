@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: pr_chn_Intruse_07_Evasion
   m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
   senderName: "Sec. Mara"
-  message: "Elle s'est \u00E9chapp\u00E9e du sas. Il y a du sang sur la porte. Qui a ouvert ?"
+  message: "Elle s'est \u00E9chapp\u00E9e du sas. Du sang sur la porte. Quelqu'un l'a ouverte de l'int\u00E9rieur."
   isUnique: 1
   isUrgent: 1
   chainTag: "Intruse"
@@ -32,7 +32,7 @@ MonoBehaviour:
     isGameOverResponse: 0
     gameOverMessage: ""
   - optionText: "Pacte tactique"
-    responseUserText: "Laisse-la passer. On verra."
+    responseUserText: "...t'es s\u00E9rieuse MOTHER ? Non."
     ressourceGain: 0
     bonheurGain: -15
     addedPrompts: []

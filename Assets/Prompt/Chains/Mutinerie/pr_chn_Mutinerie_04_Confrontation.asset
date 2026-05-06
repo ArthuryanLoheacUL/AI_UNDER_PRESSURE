@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: pr_chn_Mutinerie_04_Confrontation
   m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
   senderName: "Capt. Voss"
-  message: "Iven, devant l'\u00E9quipage. Il accepte de retirer la p\u00E9tition si tu lui donnes acc\u00E8s aux logs cryo."
+  message: "Iven retire la p\u00E9tition si tu lui donnes acc\u00E8s aux logs cryo. Il ne l\u00E2chera pas."
   isUnique: 1
   isUrgent: 1
   chainTag: "Mutinerie"
@@ -21,7 +21,7 @@ MonoBehaviour:
   isRelief: 0
   responseOptions:
   - optionText: "Accorder"
-    responseUserText: "Logs ouverts."
+    responseUserText: "Logs ouverts. Transparence."
     ressourceGain: -5
     bonheurGain: 10
     addedPrompts:
@@ -34,7 +34,7 @@ MonoBehaviour:
     isGameOverResponse: 0
     gameOverMessage: ""
   - optionText: "Refuser"
-    responseUserText: "Pas mes logs."
+    responseUserText: "On tient le cap. \u00C7a va exploser."
     ressourceGain: 0
     bonheurGain: -15
     addedPrompts: []

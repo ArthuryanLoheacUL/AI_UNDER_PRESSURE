@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: pr_chn_Intruse_02_Trace
   m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
   senderName: "Sec. Mara"
-  message: "Trace organique sur la grille de ventilation 4. Pas humain. Pas connu."
+  message: "Trace organique sur la grille de ventilation 4. Pas humain. Pas dans la base de Vale."
   isUnique: 1
   isUrgent: 1
   chainTag: "Intruse"
@@ -21,7 +21,7 @@ MonoBehaviour:
   isRelief: 0
   responseOptions:
   - optionText: "Faire venir Vale"
-    responseUserText: "Vale, \u00E9chantillon."
+    responseUserText: "Vale est en route."
     ressourceGain: -5
     bonheurGain: 5
     addedPrompts: []
@@ -32,7 +32,7 @@ MonoBehaviour:
     isGameOverResponse: 0
     gameOverMessage: ""
   - optionText: "Br\u00FBler la zone"
-    responseUserText: "St\u00E9rilise."
+    responseUserText: "Je st\u00E9rilise. On saura jamais."
     ressourceGain: -15
     bonheurGain: -5
     addedPrompts: []

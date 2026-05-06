@@ -32,9 +32,9 @@ public class MessageSetupManager : MonoBehaviour
             {
                 CreateTimeIndicatorCore(savedPrompt.time);
                 CreateOverMessageCore(savedPrompt.senderName);
-                CreateMessageUserCore(savedPrompt.senderMessage, 0f, false);
-                CreateMessageAICore(savedPrompt.IaMessage);
-                CreateMessageUserCore(savedPrompt.userResponse, 0f, false);
+                CreateMessageUserCore(savedPrompt.senderMessage, 0f, false, true);
+                CreateMessageAICore(savedPrompt.IaMessage, true);
+                CreateMessageUserCore(savedPrompt.userResponse, 0f, false, true);
             }
         }
 
@@ -129,7 +129,7 @@ public class MessageSetupManager : MonoBehaviour
             messageUI.SetMessage(message, timer, isUrgent);
         }
     }
-    void CreateMessageAICore(string text)
+    void CreateMessageAICore(string text, bool skip = false)
     {
         // Create new message based on the prompt's sender
         GameObject messageGO  = Instantiate(messageAIPrefab, messageParent);
@@ -137,7 +137,7 @@ public class MessageSetupManager : MonoBehaviour
         MessageUI messageUI = messageGO.GetComponent<MessageUI>();
         if (messageUI != null)
         {
-            messageUI.SetMessage(text);
+            messageUI.SetMessage(text, -1, false, skip);
         }
     }
 
@@ -163,7 +163,7 @@ public class MessageSetupManager : MonoBehaviour
         }
     }
 
-    void CreateMessageUserCore(string userResponse, float timer = 0f, bool isUrgent = false)
+    void CreateMessageUserCore(string userResponse, float timer = 0f, bool isUrgent = false, bool skip = false)
     {
         // Create new message based on the prompt's sender
         GameObject messageGO  = Instantiate(messageUserPrefab, messageParent);
@@ -171,7 +171,7 @@ public class MessageSetupManager : MonoBehaviour
         MessageUI messageUI = messageGO.GetComponent<MessageUI>();
         if (messageUI != null)
         {
-            messageUI.SetMessage(userResponse, timer, isUrgent);
+            messageUI.SetMessage(userResponse, timer, isUrgent, skip);
         }
     }
     

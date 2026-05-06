@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: pr_chn_Parker_01_Discrepance
   m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
   senderName: "Ing. Sol"
-  message: "L'inventaire moteur de Parker ne colle pas. Il manque 12 kg de bore-11. Petite quantit\u00E9, gros probl\u00E8me."
+  message: "L'inventaire moteur de Parker ne colle pas. Il manque douze kilos de bore-11. C'est \u00E9norme."
   isUnique: 1
   isUrgent: 0
   chainTag: "Parker"

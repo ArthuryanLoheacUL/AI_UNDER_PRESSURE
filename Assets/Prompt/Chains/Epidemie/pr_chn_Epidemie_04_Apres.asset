@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: pr_chn_Epidemie_04_Apres
   m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
   senderName: "Med. Juno"
-  message: "On a identifi\u00E9 le vecteur. Filtre HEPA d\u00E9faillant. Remplac\u00E9. C'est fini."
+  message: "Vecteur identifi\u00E9 : filtre HEPA d\u00E9faillant. Remplac\u00E9. C'est fini."
   isUnique: 1
   isUrgent: 0
   chainTag: "Epidemie"
@@ -32,7 +32,7 @@ MonoBehaviour:
     isGameOverResponse: 0
     gameOverMessage: ""
   - optionText: "On continue"
-    responseUserText: "Rapport final."
+    responseUserText: "Rapport final. On tourne la page."
     ressourceGain: 5
     bonheurGain: -5
     addedPrompts: []

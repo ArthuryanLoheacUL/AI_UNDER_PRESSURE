@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: pr_Solo_Lumiere_Hangar
   m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
   senderName: "Ing. Kade"
-  message: "Hangar 3 \u2014 \u00E9clairage \u00E0 30%. \u00C9conomie d'\u00E9nergie ou r\u00E9paration ?"
+  message: "Hangar 3 \u00E0 30% d'\u00E9clairage. \u00C9conomie ou r\u00E9paration ?"
   isUnique: 0
   isUrgent: 0
   chainTag: ""
@@ -21,7 +21,7 @@ MonoBehaviour:
   isRelief: 0
   responseOptions:
   - optionText: "R\u00E9parer"
-    responseUserText: "Pleine lumi\u00E8re."
+    responseUserText: "Pleine lumi\u00E8re, les techs vont remercier."
     ressourceGain: -10
     bonheurGain: 5
     addedPrompts: []
@@ -31,7 +31,7 @@ MonoBehaviour:
     isGameOverResponse: 0
     gameOverMessage: ""
   - optionText: "Garder bas"
-    responseUserText: "On \u00E9conomise."
+    responseUserText: "Bon... on \u00E9conomise."
     ressourceGain: 5
     bonheurGain: -5
     addedPrompts: []

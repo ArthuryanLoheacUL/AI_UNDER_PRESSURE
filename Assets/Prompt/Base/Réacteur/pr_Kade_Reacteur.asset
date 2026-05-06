@@ -11,17 +11,17 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
   m_Name: pr_Kade_Reacteur
-  m_EditorClassIdentifier: Assembly-CSharp::Prompt
-  senderName: Ing. Kade
-  message: "Le r\xE9acteur secondaire clignote depuis trois jours. Je peux le r\xE9parer
-    s'il faut."
-  isUnique: 0
+  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
+  senderName: "Ing. Kade"
+  message: "Le r\u00E9acteur secondaire clignote depuis trois jours. Je peux le r\u00E9parer s'il faut."
+  isUnique: 1
   isUrgent: 0
-  chainTag: 
+  chainTag: ""
+  isCrisis: 0
   isRelief: 0
   responseOptions:
-  - optionText: "R\xE9parer"
-    responseUserText: "Tr\xE8s bien \xE7a devrait r\xE9gler l'inqui\xE9tude."
+  - optionText: "R\u00E9parer"
+    responseUserText: "Tr\u00E8s bien \u00E7a devrait r\u00E9gler l'inqui\u00E9tude."
     ressourceGain: -10
     bonheurGain: 5
     addedPrompts: []
@@ -29,19 +29,18 @@ MonoBehaviour:
     removedPrompts: []
     removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: 
-  - optionText: Attendre
-    responseUserText: "On va \xE9sperer que \xE7a \xE9xplose pas ..."
+    gameOverMessage: ""
+  - optionText: "Attendre"
+    responseUserText: "On va \u00E9sperer que \u00E7a \u00E9xplose pas ..."
     ressourceGain: 5
     bonheurGain: -10
     addedPrompts:
     - prompt: {fileID: 11400000, guid: e2bb0120a752d27da610f19c9dbad27c, type: 2}
-      weight: 2
+      weight: 2.0
     addedDirectPrompts: []
-    removedPrompts:
-    - {fileID: 11400000}
+    removedPrompts: []
     removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: 
+    gameOverMessage: ""
   timer: 0
   timerMax: 0

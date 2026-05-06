@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: pr_chn_Cryopanne_04_Crise_Olen
   m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
   senderName: "Sec. Mara"
-  message: "Olen a forc\u00E9 une cuve. Il a sa fille dans les bras. Elle est en arr\u00EAt biologique."
+  message: "Olen a forc\u00E9 une cuve. Sa fille de six ans dans les bras. Arr\u00EAt biologique. Deux minutes max."
   isUnique: 1
   isUrgent: 1
   chainTag: "Cryopanne"
@@ -21,7 +21,7 @@ MonoBehaviour:
   isRelief: 0
   responseOptions:
   - optionText: "Sauver la fille"
-    responseUserText: "Toute la m\u00E9dicale dessus."
+    responseUserText: "Toute la m\u00E9dicale dessus !"
     ressourceGain: -15
     bonheurGain: 5
     addedPrompts: []
@@ -32,9 +32,9 @@ MonoBehaviour:
     isGameOverResponse: 0
     gameOverMessage: ""
   - optionText: "Sauver les autres"
-    responseUserText: "Stabilise les cuves voisines."
+    responseUserText: "...t'abandonnes la fille pour les voisines."
     ressourceGain: -10
-    bonheurGain: -10
+    bonheurGain: -15
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []

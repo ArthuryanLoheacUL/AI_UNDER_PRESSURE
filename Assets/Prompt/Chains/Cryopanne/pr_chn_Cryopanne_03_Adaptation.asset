@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: pr_chn_Cryopanne_03_Adaptation
   m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
   senderName: "Med. Rho"
-  message: "Le r\u00E9veill\u00E9 s'appelle Olen. Il demande \u00E0 voir sa famille \u2014 tous en cryo, tous interdits d'acc\u00E8s."
+  message: "Olen demande \u00E0 voir sa famille. Tous en cryo, tous interdits d'acc\u00E8s. Il pleure."
   isUnique: 1
   isUrgent: 0
   chainTag: "Cryopanne"
@@ -31,7 +31,7 @@ MonoBehaviour:
     isGameOverResponse: 0
     gameOverMessage: ""
   - optionText: "Refuser"
-    responseUserText: "Protocole. Pas d'exception."
+    responseUserText: "Protocole. Pas d'exception. C'est moche."
     ressourceGain: 0
     bonheurGain: -10
     addedPrompts:

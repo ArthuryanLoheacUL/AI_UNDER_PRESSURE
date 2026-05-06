@@ -11,18 +11,17 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
   m_Name: pr_Sol_Eau_Trouble
-  m_EditorClassIdentifier: Assembly-CSharp::Prompt
-  senderName: Ing. Sol
-  message: "L'eau du secteur D a un go\xFBt m\xE9tallique. J'ai re\xE7u 3 plaintes
-    ce matin."
+  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
+  senderName: "Ing. Sol"
+  message: "L'eau du secteur D a un go\u00FBt m\u00E9tallique. J'ai re\u00E7u 3 plaintes ce matin."
   isUnique: 1
   isUrgent: 0
-  chainTag: 
+  chainTag: ""
   isCrisis: 1
   isRelief: 0
   responseOptions:
-  - optionText: Purger
-    responseUserText: Je lance la purge
+  - optionText: "Purger"
+    responseUserText: "Je lance la purge"
     ressourceGain: -10
     bonheurGain: 5
     addedPrompts: []
@@ -30,18 +29,16 @@ MonoBehaviour:
     removedPrompts: []
     removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: 
-  - optionText: Minimiser
-    responseUserText: je leur dirai que c'est psychologique alors ...
+    gameOverMessage: ""
+  - optionText: "Minimiser"
+    responseUserText: "je leur dirai que c'est psychologique alors ..."
     ressourceGain: 0
     bonheurGain: -10
-    addedPrompts:
-    - prompt: {fileID: 11400000}
-      weight: 2
+    addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []
     removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: 
+    gameOverMessage: ""
   timer: 0
   timerMax: 0

@@ -13,15 +13,15 @@ MonoBehaviour:
   m_Name: pr_chn_Intruse_01_Approche
   m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
   senderName: "Sec. Mara"
-  message: "Quelque chose est pass\u00E9 par le sas de maintenance B. Pas dans la liste d'\u00E9quipage."
+  message: "Quelque chose est pass\u00E9 par le sas de maintenance B. Aucune signature dans la liste d'\u00E9quipage."
   isUnique: 1
   isUrgent: 1
   chainTag: "Intruse"
   isCrisis: 1
   isRelief: 0
   responseOptions:
-  - optionText: "Confinement secteur"
-    responseUserText: "Scelle B et C."
+  - optionText: "Confine le secteur"
+    responseUserText: "Je scelle B et C tout de suite."
     ressourceGain: -10
     bonheurGain: 5
     addedPrompts: []
@@ -32,7 +32,7 @@ MonoBehaviour:
     isGameOverResponse: 0
     gameOverMessage: ""
   - optionText: "Patrouille arm\u00E9e"
-    responseUserText: "Mara, prends deux gardes."
+    responseUserText: "Je prends Korr et Lin."
     ressourceGain: -5
     bonheurGain: -10
     addedPrompts: []

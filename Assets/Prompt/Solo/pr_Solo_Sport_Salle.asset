@@ -13,15 +13,15 @@ MonoBehaviour:
   m_Name: pr_Solo_Sport_Salle
   m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
   senderName: "Lt. Reyna"
-  message: "L'\u00E9quipage demande l'ouverture nocturne de la salle de sport. \u00C9nergie suppl\u00E9mentaire."
+  message: "L'\u00E9quipage demande l'ouverture nocturne de la salle de sport."
   isUnique: 0
   isUrgent: 0
   chainTag: ""
   isCrisis: 0
   isRelief: 1
   responseOptions:
-  - optionText: "Ouvert"
-    responseUserText: "Salle 24/24."
+  - optionText: "Ouverte 24/24"
+    responseUserText: "Tout le monde va appr\u00E9cier !"
     ressourceGain: -10
     bonheurGain: 10
     addedPrompts: []
@@ -31,7 +31,7 @@ MonoBehaviour:
     isGameOverResponse: 0
     gameOverMessage: ""
   - optionText: "Pas la nuit"
-    responseUserText: "Horaires standards."
+    responseUserText: "Bon... horaires standards."
     ressourceGain: 0
     bonheurGain: -5
     addedPrompts: []

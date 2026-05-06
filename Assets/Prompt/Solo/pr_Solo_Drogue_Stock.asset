@@ -21,7 +21,7 @@ MonoBehaviour:
   isRelief: 0
   responseOptions:
   - optionText: "Enqu\u00EAte discr\u00E8te"
-    responseUserText: "Trouve sans bruit."
+    responseUserText: "Je trouve sans bruit."
     ressourceGain: -5
     bonheurGain: 0
     addedPrompts: []
@@ -31,7 +31,7 @@ MonoBehaviour:
     isGameOverResponse: 0
     gameOverMessage: ""
   - optionText: "Annonce g\u00E9n\u00E9rale"
-    responseUserText: "R\u00E9union. Tout le monde."
+    responseUserText: "R\u00E9union. \u00C7a va jeter un froid."
     ressourceGain: 0
     bonheurGain: -10
     addedPrompts: []

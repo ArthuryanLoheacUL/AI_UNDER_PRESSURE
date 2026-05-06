@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: pr_Solo_Faune_Insecte
   m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
   senderName: "Dr. Vale"
-  message: "Nous avons un insecte dans l'hydroponie. Probablement clandestin du chargement."
+  message: "On a un insecte vivant dans l'hydroponie. Probablement un clandestin du chargement."
   isUnique: 0
   isUrgent: 0
   chainTag: ""
@@ -21,7 +21,7 @@ MonoBehaviour:
   isRelief: 0
   responseOptions:
   - optionText: "Exterminer"
-    responseUserText: "Extermine."
+    responseUserText: "Bon... j'extermine."
     ressourceGain: -5
     bonheurGain: -5
     addedPrompts: []
@@ -31,7 +31,7 @@ MonoBehaviour:
     isGameOverResponse: 0
     gameOverMessage: ""
   - optionText: "\u00C9tudier"
-    responseUserText: "Capture vivant, \u00E9tudie."
+    responseUserText: "Yes, je le capture vivant !"
     ressourceGain: -10
     bonheurGain: 5
     addedPrompts: []

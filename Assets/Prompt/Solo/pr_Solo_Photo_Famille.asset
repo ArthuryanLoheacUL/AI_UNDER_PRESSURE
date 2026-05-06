@@ -21,7 +21,7 @@ MonoBehaviour:
   isRelief: 0
   responseOptions:
   - optionText: "Lui dire"
-    responseUserText: "Pr\u00E9viens-la."
+    responseUserText: "Elle va appr\u00E9cier, je la pr\u00E9viens."
     ressourceGain: 0
     bonheurGain: 5
     addedPrompts: []
@@ -31,7 +31,7 @@ MonoBehaviour:
     isGameOverResponse: 0
     gameOverMessage: ""
   - optionText: "Effacer en silence"
-    responseUserText: "Efface."
+    responseUserText: "OK... j'efface. Mais c'est moche."
     ressourceGain: 0
     bonheurGain: -10
     addedPrompts: []

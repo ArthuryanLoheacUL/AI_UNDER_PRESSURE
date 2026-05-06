@@ -13,15 +13,15 @@ MonoBehaviour:
   m_Name: pr_chn_Signal_Retour_Insistant
   m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
   senderName: "Com. Zeth"
-  message: "Le signal est revenu. Plus fort. Plus pressant. Il conna\u00EEt notre fr\u00E9quence interne."
-  isUnique: 0
+  message: "Le signal est revenu. Plus fort. Il conna\u00EEt notre fr\u00E9quence interne maintenant."
+  isUnique: 1
   isUrgent: 1
   chainTag: "Signal"
   isCrisis: 1
   isRelief: 0
   responseOptions:
-  - optionText: "R\u00E9pondre cette fois"
-    responseUserText: "On parle."
+  - optionText: "R\u00E9pondre"
+    responseUserText: "OK on parle, enfin."
     ressourceGain: -5
     bonheurGain: 5
     addedPrompts: []
@@ -32,13 +32,14 @@ MonoBehaviour:
     isGameOverResponse: 0
     gameOverMessage: ""
   - optionText: "Couper TOUT"
-    responseUserText: "Black out."
+    responseUserText: "Black-out total. \u00C7a sent l'erreur mais OK."
     ressourceGain: -10
     bonheurGain: -10
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []
-    removedChainTags: []
+    removedChainTags:
+    - "Signal"
     isGameOverResponse: 0
     gameOverMessage: ""
   timer: 0

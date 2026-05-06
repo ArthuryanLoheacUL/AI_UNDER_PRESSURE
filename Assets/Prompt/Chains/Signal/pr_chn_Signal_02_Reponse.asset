@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: pr_chn_Signal_02_Reponse
   m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
   senderName: "Dr. Iven"
-  message: "Ils ont r\u00E9pondu. Six secondes. Ils sont pr\u00E8s."
+  message: "Ils ont r\u00E9pondu en six secondes. Ils sont proches."
   isUnique: 1
   isUrgent: 1
   chainTag: "Signal"
@@ -21,7 +21,7 @@ MonoBehaviour:
   isRelief: 0
   responseOptions:
   - optionText: "Continue le contact"
-    responseUserText: "Garde la ligne."
+    responseUserText: "Je garde la ligne ouverte."
     ressourceGain: -5
     bonheurGain: 10
     addedPrompts: []
@@ -32,18 +32,16 @@ MonoBehaviour:
     isGameOverResponse: 0
     gameOverMessage: ""
   - optionText: "Coupe tout"
-    responseUserText: "Coupe. Maintenant."
+    responseUserText: "Bon... je coupe. Tu prends ta responsabilit\u00E9."
     ressourceGain: 0
     bonheurGain: -10
     addedPrompts:
     - prompt: {fileID: 11400000, guid: 40304ef52ce956c932962ef386037067, type: 2}
       weight: 4.0
     addedDirectPrompts: []
-    removedPrompts:
-    - {fileID: 11400000, guid: a16e5f73634ab11976b969f227483226, type: 2}
-    - {fileID: 11400000, guid: 62d8363f6c6a98dc25af28613184569c, type: 2}
-    - {fileID: 11400000, guid: f756c38abde3c1a5e14ee2fce1b58b0c, type: 2}
-    removedChainTags: []
+    removedPrompts: []
+    removedChainTags:
+    - "Signal"
     isGameOverResponse: 0
     gameOverMessage: ""
   timer: 0

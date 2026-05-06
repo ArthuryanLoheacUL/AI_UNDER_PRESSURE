@@ -21,7 +21,7 @@ MonoBehaviour:
   isRelief: 0
   responseOptions:
   - optionText: "Le confronter"
-    responseUserText: "R\u00E9union priv\u00E9e."
+    responseUserText: "R\u00E9union priv\u00E9e, sans esclandre."
     ressourceGain: 0
     bonheurGain: -5
     addedPrompts: []
@@ -31,7 +31,7 @@ MonoBehaviour:
     isGameOverResponse: 0
     gameOverMessage: ""
   - optionText: "Surveiller"
-    responseUserText: "Mets une alerte sur son terminal."
+    responseUserText: "Je mets une alerte sur son terminal."
     ressourceGain: -5
     bonheurGain: 0
     addedPrompts: []

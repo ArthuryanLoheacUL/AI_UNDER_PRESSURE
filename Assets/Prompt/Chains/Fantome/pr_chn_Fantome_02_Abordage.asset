@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: pr_chn_Fantome_02_Abordage
   m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
   senderName: "Capt. Voss"
-  message: "C'est un cargo. \"Sir\u00E8ne-IV\". Disparu il y a 60 ans. Coque intacte. Aucun signal."
+  message: "C'est un cargo. \"Sir\u00E8ne-IV\". Disparu il y a 60 ans. Coque intacte, aucun signal."
   isUnique: 1
   isUrgent: 0
   chainTag: "Fantome"
@@ -21,7 +21,7 @@ MonoBehaviour:
   isRelief: 0
   responseOptions:
   - optionText: "Aborder"
-    responseUserText: "\u00C9quipe d'abordage."
+    responseUserText: "\u00C9quipe d'abordage en route."
     ressourceGain: -15
     bonheurGain: 5
     addedPrompts: []
@@ -32,7 +32,7 @@ MonoBehaviour:
     isGameOverResponse: 0
     gameOverMessage: ""
   - optionText: "Cataloguer et passer"
-    responseUserText: "Note les coordonn\u00E9es."
+    responseUserText: "Je note les coordonn\u00E9es."
     ressourceGain: 0
     bonheurGain: -5
     addedPrompts: []

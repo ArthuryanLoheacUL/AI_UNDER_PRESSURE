@@ -21,7 +21,7 @@ MonoBehaviour:
   isRelief: 0
   responseOptions:
   - optionText: "Pression maximale"
-    responseUserText: "Continue l'assaut."
+    responseUserText: "Continue l'assaut. C'est dur."
     ressourceGain: -15
     bonheurGain: -15
     addedPrompts: []
@@ -32,7 +32,7 @@ MonoBehaviour:
     isGameOverResponse: 0
     gameOverMessage: ""
   - optionText: "Cessez-le-feu"
-    responseUserText: "Recul. On parle."
+    responseUserText: "Recule. On parle."
     ressourceGain: -5
     bonheurGain: 5
     addedPrompts: []

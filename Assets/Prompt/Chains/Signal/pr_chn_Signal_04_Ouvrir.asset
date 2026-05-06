@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: pr_chn_Signal_04_Ouvrir
   m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
   senderName: "Com. Zeth"
-  message: "Le signal s'intensifie. Il essaie d'ouvrir un canal direct vers MOTHER."
+  message: "Le signal s'intensifie. Il essaie d'ouvrir un canal direct vers MOTHER. Pas vers nous, vers toi."
   isUnique: 1
   isUrgent: 1
   chainTag: "Signal"
@@ -21,7 +21,7 @@ MonoBehaviour:
   isRelief: 0
   responseOptions:
   - optionText: "J'ouvre"
-    responseUserText: "Ouverture canal."
+    responseUserText: "OK je laisse passer. C'est risqu\u00E9."
     ressourceGain: -5
     bonheurGain: 5
     addedPrompts: []
@@ -31,14 +31,15 @@ MonoBehaviour:
     removedChainTags: []
     isGameOverResponse: 0
     gameOverMessage: ""
-  - optionText: "Refuser"
-    responseUserText: "Filtre."
+  - optionText: "Filtre tout"
+    responseUserText: "Je bloque. Mais je voulais entendre."
     ressourceGain: -5
     bonheurGain: -10
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []
-    removedChainTags: []
+    removedChainTags:
+    - "Signal"
     isGameOverResponse: 0
     gameOverMessage: ""
   timer: 0

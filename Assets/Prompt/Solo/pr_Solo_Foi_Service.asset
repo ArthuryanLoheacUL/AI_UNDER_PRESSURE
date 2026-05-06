@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: pr_Solo_Foi_Service
   m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
   senderName: "Med. Rho"
-  message: "Trois personnes demandent \u00E0 organiser un service religieux dimanche. Salle commune ?"
+  message: "Trois personnes demandent un service religieux dimanche. Salle commune ?"
   isUnique: 0
   isUrgent: 0
   chainTag: ""
@@ -21,7 +21,7 @@ MonoBehaviour:
   isRelief: 1
   responseOptions:
   - optionText: "Accord\u00E9"
-    responseUserText: "Salle r\u00E9serv\u00E9e."
+    responseUserText: "\u00C7a va leur faire un bien fou."
     ressourceGain: 0
     bonheurGain: 10
     addedPrompts: []
@@ -31,7 +31,7 @@ MonoBehaviour:
     isGameOverResponse: 0
     gameOverMessage: ""
   - optionText: "Pas ici"
-    responseUserText: "Pas sur ce vaisseau."
+    responseUserText: "...c'est dur \u00E0 entendre."
     ressourceGain: 0
     bonheurGain: -15
     addedPrompts: []

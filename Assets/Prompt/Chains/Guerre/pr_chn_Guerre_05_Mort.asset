@@ -21,7 +21,7 @@ MonoBehaviour:
   isRelief: 0
   responseOptions:
   - optionText: "Confession publique"
-    responseUserText: "J'ai donn\u00E9 l'ordre."
+    responseUserText: "C'est moi qui ai donn\u00E9 l'ordre."
     ressourceGain: 0
     bonheurGain: 5
     addedPrompts: []
@@ -33,7 +33,7 @@ MonoBehaviour:
     isGameOverResponse: 0
     gameOverMessage: ""
   - optionText: "Effacer les logs"
-    responseUserText: "Personne ne saura."
+    responseUserText: "Personne ne saura. Mais moi je saurai."
     ressourceGain: -5
     bonheurGain: -15
     addedPrompts:

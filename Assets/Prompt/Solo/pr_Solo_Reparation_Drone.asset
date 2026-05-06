@@ -21,7 +21,7 @@ MonoBehaviour:
   isRelief: 0
   responseOptions:
   - optionText: "R\u00E9cup\u00E9rer"
-    responseUserText: "Sortie EVA."
+    responseUserText: "Sortie EVA, c'est parti."
     ressourceGain: -15
     bonheurGain: 5
     addedPrompts: []
@@ -31,7 +31,7 @@ MonoBehaviour:
     isGameOverResponse: 0
     gameOverMessage: ""
   - optionText: "L'abandonner"
-    responseUserText: "Mark comme perte."
+    responseUserText: "Mark comme perte. Triste."
     ressourceGain: 5
     bonheurGain: -5
     addedPrompts: []

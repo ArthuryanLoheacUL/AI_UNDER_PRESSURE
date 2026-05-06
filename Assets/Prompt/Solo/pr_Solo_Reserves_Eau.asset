@@ -21,7 +21,7 @@ MonoBehaviour:
   isRelief: 0
   responseOptions:
   - optionText: "Rationnement"
-    responseUserText: "R\u00E9duit les douches \u00E0 un jour sur deux."
+    responseUserText: "Douches un jour sur deux. \u00C7a va r\u00E2ler."
     ressourceGain: 10
     bonheurGain: -10
     addedPrompts: []
@@ -31,7 +31,7 @@ MonoBehaviour:
     isGameOverResponse: 0
     gameOverMessage: ""
   - optionText: "Attendre"
-    responseUserText: "On verra."
+    responseUserText: "On verra plus tard."
     ressourceGain: 0
     bonheurGain: 0
     addedPrompts: []

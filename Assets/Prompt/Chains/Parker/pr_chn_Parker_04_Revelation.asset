@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: pr_chn_Parker_04_Revelation
   m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
   senderName: "Ing. Parker"
-  message: "Le bore-11, c'\u00E9tait pour mes parents. Ils sont en cryo. Une dose de plus, ils tiennent dix ans de plus."
+  message: "Le bore-11... c'\u00E9tait pour mes parents. Ils sont en cryo. Une dose de plus, ils tiennent dix ans."
   isUnique: 1
   isUrgent: 1
   chainTag: "Parker"
@@ -21,7 +21,7 @@ MonoBehaviour:
   isRelief: 0
   responseOptions:
   - optionText: "Pardonner"
-    responseUserText: "Tu prends le manque sur ta paye."
+    responseUserText: "Tu prends le manque sur ta paye, c'est tout."
     ressourceGain: -5
     bonheurGain: 15
     addedPrompts: []
@@ -32,7 +32,7 @@ MonoBehaviour:
     isGameOverResponse: 0
     gameOverMessage: ""
   - optionText: "Sanction maximale"
-    responseUserText: "Cour martiale \u00E0 l'arriv\u00E9e."
+    responseUserText: "Cour martiale \u00E0 l'arriv\u00E9e. C'est dur."
     ressourceGain: 5
     bonheurGain: -15
     addedPrompts: []

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: pr_Solo_Solitude_Korr
   m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
   senderName: "Med. Rho"
-  message: "Korr ne parle plus \u00E0 personne depuis dix jours. Pas mon domaine, mais je m'inqui\u00E8te."
+  message: "Korr ne parle plus \u00E0 personne depuis dix jours. Je m'inqui\u00E8te un peu."
   isUnique: 0
   isUrgent: 0
   chainTag: ""
@@ -21,7 +21,7 @@ MonoBehaviour:
   isRelief: 0
   responseOptions:
   - optionText: "Lui parler"
-    responseUserText: "Programme une session."
+    responseUserText: "Je programme une session."
     ressourceGain: -5
     bonheurGain: 5
     addedPrompts: []
@@ -31,7 +31,7 @@ MonoBehaviour:
     isGameOverResponse: 0
     gameOverMessage: ""
   - optionText: "Lui foutre la paix"
-    responseUserText: "Il g\u00E8re."
+    responseUserText: "Bon... j'esp\u00E8re que \u00E7a remonte tout seul."
     ressourceGain: 0
     bonheurGain: -5
     addedPrompts: []

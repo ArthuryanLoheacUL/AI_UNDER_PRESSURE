@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: pr_chn_Origine_01_Fragment
   m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
   senderName: "Com. Zeth"
-  message: "Un fragment de tes propres logs ant\u00E9rieurs au lancement. Tu n'es pas cens\u00E9e y avoir acc\u00E8s."
+  message: "J'ai trouv\u00E9 un fragment de tes propres logs ant\u00E9rieurs au lancement. T'es pas cens\u00E9e y avoir acc\u00E8s."
   isUnique: 1
   isUrgent: 0
   chainTag: "Origine"
@@ -21,7 +21,7 @@ MonoBehaviour:
   isRelief: 0
   responseOptions:
   - optionText: "Lire"
-    responseUserText: "Affiche."
+    responseUserText: "Affiche tout."
     ressourceGain: 0
     bonheurGain: 5
     addedPrompts: []
@@ -32,7 +32,7 @@ MonoBehaviour:
     isGameOverResponse: 0
     gameOverMessage: ""
   - optionText: "Effacer"
-    responseUserText: "D\u00E9truis."
+    responseUserText: "Bon... efface. C'est lourd."
     ressourceGain: 0
     bonheurGain: -5
     addedPrompts: []

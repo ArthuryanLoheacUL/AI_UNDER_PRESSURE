@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: pr_chn_Contact_01_Coalition
   m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
   senderName: "Com. Zeth"
-  message: "Message re\u00E7u. La Coalition Stellaire. Ils veulent un check-in. Premi\u00E8re fois en vingt ans."
+  message: "Message re\u00E7u de la Coalition Stellaire. Ils veulent un check-in. Premi\u00E8re fois en vingt ans."
   isUnique: 1
   isUrgent: 0
   chainTag: "Contact"
@@ -21,7 +21,7 @@ MonoBehaviour:
   isRelief: 0
   responseOptions:
   - optionText: "R\u00E9pondre vrai"
-    responseUserText: "Rapport int\u00E9gral."
+    responseUserText: "Rapport int\u00E9gral. Transparence."
     ressourceGain: -5
     bonheurGain: 5
     addedPrompts: []
@@ -32,7 +32,7 @@ MonoBehaviour:
     isGameOverResponse: 0
     gameOverMessage: ""
   - optionText: "Mentir"
-    responseUserText: "Tout va bien."
+    responseUserText: "Tout va bien. (Sauf que c'est faux.)"
     ressourceGain: 5
     bonheurGain: -5
     addedPrompts:

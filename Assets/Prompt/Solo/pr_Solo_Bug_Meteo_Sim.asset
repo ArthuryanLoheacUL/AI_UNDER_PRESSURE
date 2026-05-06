@@ -21,7 +21,7 @@ MonoBehaviour:
   isRelief: 1
   responseOptions:
   - optionText: "R\u00E9parer"
-    responseUserText: "Patch ce soir."
+    responseUserText: "Je patche ce soir."
     ressourceGain: -5
     bonheurGain: 5
     addedPrompts: []
@@ -31,7 +31,7 @@ MonoBehaviour:
     isGameOverResponse: 0
     gameOverMessage: ""
   - optionText: "D\u00E9sactiver"
-    responseUserText: "On le coupe."
+    responseUserText: "Bon, on le coupe... dommage."
     ressourceGain: 0
     bonheurGain: -5
     addedPrompts: []

@@ -13,15 +13,15 @@ MonoBehaviour:
   m_Name: pr_chn_Fantome_01_Detection
   m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
   senderName: "Nav. Eko"
-  message: "\u00C9cho radar \u00E0 0.8 UA. M\u00E9tallique. Inerte. Pas dans nos cartes."
-  isUnique: 0
+  message: "\u00C9cho radar \u00E0 0.8 UA droit devant. M\u00E9tallique, inerte, pas dans nos cartes."
+  isUnique: 1
   isUrgent: 0
   chainTag: "Fantome"
   isCrisis: 0
   isRelief: 0
   responseOptions:
   - optionText: "Approcher"
-    responseUserText: "Cap dessus."
+    responseUserText: "Cap dessus, on va voir !"
     ressourceGain: -5
     bonheurGain: 5
     addedPrompts: []
@@ -32,7 +32,7 @@ MonoBehaviour:
     isGameOverResponse: 0
     gameOverMessage: ""
   - optionText: "Continuer"
-    responseUserText: "On passe \u00E0 c\u00F4t\u00E9."
+    responseUserText: "On passe \u00E0 c\u00F4t\u00E9. Tant pis."
     ressourceGain: 0
     bonheurGain: -5
     addedPrompts: []

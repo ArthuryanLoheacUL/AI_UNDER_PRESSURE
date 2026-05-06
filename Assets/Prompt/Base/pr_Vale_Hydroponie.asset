@@ -11,18 +11,17 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
   m_Name: pr_Vale_Hydroponie
-  m_EditorClassIdentifier: Assembly-CSharp::Prompt
-  senderName: Dr. Vale
-  message: "Une nouvelle souche d'algue prolif\xE8re dans le bac 4. Elle sembe Inoffensive
-    ... ou int\xE9ressante."
+  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
+  senderName: "Dr. Vale"
+  message: "Une nouvelle souche d'algue prolif\u00E8re dans le bac 4. Elle sembe Inoffensive ... ou int\u00E9ressante."
   isUnique: 0
   isUrgent: 0
-  chainTag: 
+  chainTag: ""
   isCrisis: 0
   isRelief: 1
   responseOptions:
-  - optionText: "\xC9tudier"
-    responseUserText: C'est super la science.
+  - optionText: "\u00C9tudier"
+    responseUserText: "C'est super la science."
     ressourceGain: -5
     bonheurGain: 5
     addedPrompts: []
@@ -30,10 +29,9 @@ MonoBehaviour:
     removedPrompts: []
     removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: 
-  - optionText: "Br\xFBler"
-    responseUserText: "Je st\xE9rilise le bac en \xE9sperant qu'elle ne cachait pas
-      un progr\xE8s technologique incroyable."
+    gameOverMessage: ""
+  - optionText: "Br\u00FBler"
+    responseUserText: "Je st\u00E9rilise le bac en \u00E9sperant qu'elle ne cachait pas un progr\u00E8s technologique incroyable."
     ressourceGain: -5
     bonheurGain: -5
     addedPrompts: []
@@ -41,6 +39,6 @@ MonoBehaviour:
     removedPrompts: []
     removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: 
+    gameOverMessage: ""
   timer: 0
   timerMax: 0

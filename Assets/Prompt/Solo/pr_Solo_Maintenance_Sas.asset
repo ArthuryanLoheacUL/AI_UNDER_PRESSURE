@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: pr_Solo_Maintenance_Sas
   m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
   senderName: "Ing. Sol"
-  message: "Le sas de maintenance B grince. Joint qui s\u00E8che. R\u00E9paration ou monitoring ?"
+  message: "Sas de maintenance B grince \u00E0 chaque ouverture. Joint qui s\u00E8che."
   isUnique: 0
   isUrgent: 0
   chainTag: ""
@@ -21,7 +21,7 @@ MonoBehaviour:
   isRelief: 0
   responseOptions:
   - optionText: "R\u00E9parer"
-    responseUserText: "Joint neuf."
+    responseUserText: "Joint neuf, c'est parti."
     ressourceGain: -10
     bonheurGain: 5
     addedPrompts: []
@@ -31,7 +31,7 @@ MonoBehaviour:
     isGameOverResponse: 0
     gameOverMessage: ""
   - optionText: "Monitorer"
-    responseUserText: "Capteurs en alerte."
+    responseUserText: "Capteurs en alerte. C'est de la dette."
     ressourceGain: 0
     bonheurGain: -5
     addedPrompts: []

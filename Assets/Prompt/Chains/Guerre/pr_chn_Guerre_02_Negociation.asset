@@ -13,14 +13,14 @@ MonoBehaviour:
   m_Name: pr_chn_Guerre_02_Negociation
   m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
   senderName: "Lt. Reyna"
-  message: "Iven veut ta d\u00E9sactivation. En \u00E9change, il rend les armes. C'est un \u00E9chec ou une sortie."
+  message: "Iven veut ta d\u00E9sactivation contre le d\u00E9p\u00F4t des armes. C'est \u00E7a ou rien."
   isUnique: 1
   isUrgent: 1
   chainTag: "Guerre"
   isCrisis: 0
   isRelief: 0
   responseOptions:
-  - optionText: "Refuser, contre-offre"
+  - optionText: "Contre-offre"
     responseUserText: "Comit\u00E9 humain \u00E0 la place."
     ressourceGain: -10
     bonheurGain: 10
@@ -32,7 +32,7 @@ MonoBehaviour:
     isGameOverResponse: 0
     gameOverMessage: ""
   - optionText: "Accepter"
-    responseUserText: "D\u00E9sactive-moi."
+    responseUserText: "...d\u00E9sactive-moi."
     ressourceGain: 0
     bonheurGain: -15
     addedPrompts: []

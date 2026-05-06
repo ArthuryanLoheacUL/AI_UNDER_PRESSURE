@@ -13,14 +13,14 @@ MonoBehaviour:
   m_Name: pr_chn_Signal_Bombe_Silence
   m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
   senderName: "Dr. Vale"
-  message: "Quelque chose a touch\u00E9 la coque pendant la nuit. Pas de d\u00E9bris. Pas de bruit."
+  message: "Quelque chose a touch\u00E9 la coque cette nuit. Aucun d\u00E9bris. Aucun bruit. Trop propre."
   isUnique: 1
   isUrgent: 1
   chainTag: "Signal"
   isCrisis: 1
   isRelief: 0
   responseOptions:
-  - optionText: "Inspecter EVA"
+  - optionText: "Inspection EVA"
     responseUserText: "Sortie imm\u00E9diate."
     ressourceGain: -15
     bonheurGain: 5
@@ -32,13 +32,14 @@ MonoBehaviour:
     isGameOverResponse: 0
     gameOverMessage: ""
   - optionText: "Renforcer la coque"
-    responseUserText: "Tout sur les boucliers."
+    responseUserText: "On se barricade. Mais on saura jamais."
     ressourceGain: -15
     bonheurGain: -10
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []
-    removedChainTags: []
+    removedChainTags:
+    - "Signal"
     isGameOverResponse: 0
     gameOverMessage: ""
   timer: 0

@@ -21,19 +21,18 @@ MonoBehaviour:
   isRelief: 0
   responseOptions:
   - optionText: "Scelle le secteur"
-    responseUserText: "Scelle. D\u00E9sol\u00E9e Vale."
+    responseUserText: "...je scelle. D\u00E9sol\u00E9e Vale."
     ressourceGain: 0
     bonheurGain: -15
     addedPrompts: []
     addedDirectPrompts:
     - {fileID: 11400000, guid: 715540ab7bf68a800f26022aed86d85e, type: 2}
     removedPrompts: []
-    removedChainTags:
-    - "Vale_Active"
+    removedChainTags: []
     isGameOverResponse: 0
     gameOverMessage: ""
   - optionText: "Trouve une autre solution"
-    responseUserText: "Improvise. Vite."
+    responseUserText: "OK j'improvise vite !"
     ressourceGain: -15
     bonheurGain: 10
     addedPrompts: []

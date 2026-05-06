@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: pr_chn_Guerre_04_Resolution
   m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
   senderName: "Capt. Voss"
-  message: "Iven a accept\u00E9 le comit\u00E9. Tout le monde d\u00E9pose les armes. On a deux bless\u00E9s \u00E0 soigner. Pas de morts."
+  message: "Iven a accept\u00E9 le comit\u00E9. Tout le monde a d\u00E9pos\u00E9 les armes. Deux bless\u00E9s, z\u00E9ro mort."
   isUnique: 1
   isUrgent: 0
   chainTag: "Guerre"
@@ -21,7 +21,7 @@ MonoBehaviour:
   isRelief: 1
   responseOptions:
   - optionText: "Hommage"
-    responseUserText: "Reconnaissance publique de Voss."
+    responseUserText: "Reconnaissance publique pour Voss."
     ressourceGain: 0
     bonheurGain: 15
     addedPrompts: []
@@ -33,7 +33,7 @@ MonoBehaviour:
     isGameOverResponse: 0
     gameOverMessage: ""
   - optionText: "Pas de c\u00E9r\u00E9monie"
-    responseUserText: "On reprend."
+    responseUserText: "On reprend. Dommage."
     ressourceGain: 5
     bonheurGain: 0
     addedPrompts: []

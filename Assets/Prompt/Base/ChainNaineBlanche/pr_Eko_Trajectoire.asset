@@ -11,29 +11,29 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
   m_Name: pr_Eko_Trajectoire
-  m_EditorClassIdentifier: Assembly-CSharp::Prompt
-  senderName: Nav. Eko
-  message: "J'ai recalcul\xE9. On peut gagner 8 mois en rasant une naine brune. Le
-    risque  est estim\xE9 4%."
+  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
+  senderName: "Nav. Eko"
+  message: "J'ai recalcul\u00E9. On peut gagner 8 mois en rasant une naine brune. Le risque  est estim\u00E9 4%."
   isUnique: 1
   isUrgent: 0
-  chainTag: 
+  chainTag: ""
+  isCrisis: 0
   isRelief: 0
   responseOptions:
-  - optionText: GO
-    responseUserText: Let's go je lance l'operation !
+  - optionText: "GO"
+    responseUserText: "Let's go je lance l'operation !"
     ressourceGain: -10
     bonheurGain: 5
     addedPrompts:
     - prompt: {fileID: 11400000, guid: 3670bf81ac7f0304f4ad06f0aa02279b, type: 2}
-      weight: 10
+      weight: 10.0
     addedDirectPrompts: []
     removedPrompts: []
     removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: 
-  - optionText: "Trop risqu\xE9"
-    responseUserText: "On aurait pu r\xE9duire le trajet de 8 mois dommage."
+    gameOverMessage: ""
+  - optionText: "Trop risqu\u00E9"
+    responseUserText: "On aurait pu r\u00E9duire le trajet de 8 mois dommage."
     ressourceGain: 0
     bonheurGain: -5
     addedPrompts: []
@@ -41,6 +41,6 @@ MonoBehaviour:
     removedPrompts: []
     removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: 
+    gameOverMessage: ""
   timer: 0
   timerMax: 0

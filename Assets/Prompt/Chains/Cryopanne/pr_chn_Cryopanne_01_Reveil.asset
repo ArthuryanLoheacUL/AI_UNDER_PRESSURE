@@ -13,15 +13,15 @@ MonoBehaviour:
   m_Name: pr_chn_Cryopanne_01_Reveil
   m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
   senderName: "Med. Juno"
-  message: "Cuve 412 \u2014 r\u00E9veil pr\u00E9matur\u00E9. Le colon est conscient depuis trois heures. D\u00E9sorient\u00E9."
-  isUnique: 0
+  message: "Cuve 412, r\u00E9veil pr\u00E9matur\u00E9. Le colon est conscient depuis trois heures. Il s'appelle Olen."
+  isUnique: 1
   isUrgent: 1
   chainTag: "Cryopanne"
   isCrisis: 0
   isRelief: 0
   responseOptions:
   - optionText: "Recryog\u00E9niser"
-    responseUserText: "Endors-le."
+    responseUserText: "Je l'endors. C'est plus s\u00FBr."
     ressourceGain: -10
     bonheurGain: 0
     addedPrompts: []
@@ -32,7 +32,7 @@ MonoBehaviour:
     isGameOverResponse: 0
     gameOverMessage: ""
   - optionText: "Le garder \u00E9veill\u00E9"
-    responseUserText: "Int\u00E8gre-le \u00E0 l'\u00E9quipage."
+    responseUserText: "On l'int\u00E8gre \u00E0 l'\u00E9quipage !"
     ressourceGain: -5
     bonheurGain: 5
     addedPrompts:

@@ -21,7 +21,7 @@ MonoBehaviour:
   isRelief: 0
   responseOptions:
   - optionText: "Accepter"
-    responseUserText: "Pr\u00E9paration cryo."
+    responseUserText: "Je pr\u00E9pare la cuve."
     ressourceGain: -10
     bonheurGain: 5
     addedPrompts: []
@@ -31,7 +31,7 @@ MonoBehaviour:
     isGameOverResponse: 0
     gameOverMessage: ""
   - optionText: "Refuser"
-    responseUserText: "On a besoin de lui."
+    responseUserText: "On a besoin de lui... mais \u00E7a fait mal."
     ressourceGain: 5
     bonheurGain: -10
     addedPrompts: []

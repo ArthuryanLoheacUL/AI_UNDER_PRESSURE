@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: pr_Solo_Bruit_Coque
   m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
   senderName: "Ing. Sol"
-  message: "Bruit m\u00E9tallique cyclique sur la coque tribord. Probablement dilatation. Probablement."
+  message: "Bruit m\u00E9tallique cyclique sur la coque tribord. C'est probablement la dilatation. Probablement."
   isUnique: 0
   isUrgent: 0
   chainTag: ""
@@ -21,7 +21,7 @@ MonoBehaviour:
   isRelief: 0
   responseOptions:
   - optionText: "Inspecter"
-    responseUserText: "\u00C9quipe en route."
+    responseUserText: "J'envoie une \u00E9quipe."
     ressourceGain: -10
     bonheurGain: 5
     addedPrompts: []
@@ -31,7 +31,7 @@ MonoBehaviour:
     isGameOverResponse: 0
     gameOverMessage: ""
   - optionText: "Ignorer"
-    responseUserText: "Si \u00E7a casse, je ferai pas semblant d'\u00EAtre surprise."
+    responseUserText: "Si \u00E7a casse, je t'aurais pr\u00E9venu."
     ressourceGain: 0
     bonheurGain: -10
     addedPrompts: []

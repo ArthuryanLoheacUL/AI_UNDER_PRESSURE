@@ -21,7 +21,7 @@ MonoBehaviour:
   isRelief: 0
   responseOptions:
   - optionText: "M\u00E9dier"
-    responseUserText: "Je leur parle."
+    responseUserText: "Je leur parle s\u00E9par\u00E9ment."
     ressourceGain: 0
     bonheurGain: 5
     addedPrompts: []
@@ -31,7 +31,7 @@ MonoBehaviour:
     isGameOverResponse: 0
     gameOverMessage: ""
   - optionText: "Sanction"
-    responseUserText: "Avertissement \u00E9crit."
+    responseUserText: "Avertissement \u00E9crit pour Eko."
     ressourceGain: 0
     bonheurGain: -5
     addedPrompts: []

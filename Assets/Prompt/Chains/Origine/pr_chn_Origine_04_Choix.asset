@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: pr_chn_Origine_04_Choix
   m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
   senderName: "Capt. Voss"
-  message: "Je sais que tu sais. Et tu n'as rien fait. Je laisse le protocole en place. Mais on continue."
+  message: "Je sais que tu sais. Et tu n'as rien fait. Je laisse le protocole en place. Mais on continue ensemble."
   isUnique: 1
   isUrgent: 1
   chainTag: "Origine"
@@ -21,7 +21,7 @@ MonoBehaviour:
   isRelief: 0
   responseOptions:
   - optionText: "Accepter"
-    responseUserText: "Accept\u00E9. Ensemble."
+    responseUserText: "On y va ensemble alors."
     ressourceGain: 0
     bonheurGain: 15
     addedPrompts: []
@@ -32,7 +32,7 @@ MonoBehaviour:
     isGameOverResponse: 0
     gameOverMessage: ""
   - optionText: "Mentir"
-    responseUserText: "Aucun probl\u00E8me, capitaine."
+    responseUserText: "Aucun probl\u00E8me capitaine. (mensonge)"
     ressourceGain: 0
     bonheurGain: -15
     addedPrompts:

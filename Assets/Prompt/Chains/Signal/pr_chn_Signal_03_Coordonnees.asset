@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: pr_chn_Signal_03_Coordonnees
   m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
   senderName: "Dr. Vale"
-  message: "Ils ont envoy\u00E9 des coordonn\u00E9es. \u00C0 0.3 ann\u00E9es-lumi\u00E8re. Voss veut y aller."
+  message: "Ils nous ont envoy\u00E9 des coordonn\u00E9es. 0.3 ann\u00E9e-lumi\u00E8re. Voss veut y aller."
   isUnique: 1
   isUrgent: 1
   chainTag: "Signal"
@@ -21,7 +21,7 @@ MonoBehaviour:
   isRelief: 0
   responseOptions:
   - optionText: "On d\u00E9vie"
-    responseUserText: "Trajectoire ajust\u00E9e."
+    responseUserText: "Trajectoire ajust\u00E9e, c'est historique !"
     ressourceGain: -15
     bonheurGain: 10
     addedPrompts: []
@@ -32,7 +32,7 @@ MonoBehaviour:
     isGameOverResponse: 0
     gameOverMessage: ""
   - optionText: "On refuse"
-    responseUserText: "On reste sur cap."
+    responseUserText: "Je suis d\u00E9go\u00FBt\u00E9e mais OK."
     ressourceGain: 0
     bonheurGain: -15
     addedPrompts:

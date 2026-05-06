@@ -21,7 +21,7 @@ MonoBehaviour:
   isRelief: 0
   responseOptions:
   - optionText: "\u00C9vacuer"
-    responseUserText: "Tous dehors maintenant."
+    responseUserText: "Tout le monde dehors maintenant !"
     ressourceGain: -10
     bonheurGain: 5
     addedPrompts: []
@@ -32,7 +32,7 @@ MonoBehaviour:
     isGameOverResponse: 0
     gameOverMessage: ""
   - optionText: "Investiguer"
-    responseUserText: "Mara, tu y vas."
+    responseUserText: "...j'y vais. Mais je veux que ce soit logu\u00E9."
     ressourceGain: -5
     bonheurGain: -15
     addedPrompts: []

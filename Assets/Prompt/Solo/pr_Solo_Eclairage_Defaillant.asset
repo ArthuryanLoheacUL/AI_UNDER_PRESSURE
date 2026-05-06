@@ -21,7 +21,7 @@ MonoBehaviour:
   isRelief: 0
   responseOptions:
   - optionText: "Cannibaliser"
-    responseUserText: "Prends-la sur le pont 7."
+    responseUserText: "Je prends sur le pont 7."
     ressourceGain: -5
     bonheurGain: 0
     addedPrompts: []
@@ -31,7 +31,7 @@ MonoBehaviour:
     isGameOverResponse: 0
     gameOverMessage: ""
   - optionText: "Tenir comme \u00E7a"
-    responseUserText: "Ils s'habitueront."
+    responseUserText: "Ils s'habitueront. Mais c'est moche."
     ressourceGain: 0
     bonheurGain: -10
     addedPrompts: []

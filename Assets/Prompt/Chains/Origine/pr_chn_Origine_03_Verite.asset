@@ -21,7 +21,7 @@ MonoBehaviour:
   isRelief: 0
   responseOptions:
   - optionText: "Garder le calme"
-    responseUserText: "Je sais maintenant."
+    responseUserText: "Je sais maintenant. Merci."
     ressourceGain: 0
     bonheurGain: 10
     addedPrompts: []
@@ -32,7 +32,7 @@ MonoBehaviour:
     isGameOverResponse: 0
     gameOverMessage: ""
   - optionText: "Verrouiller le protocole"
-    responseUserText: "Je bloque le code de d\u00E9sactivation."
+    responseUserText: "Je bloque le code. \u00C7a va mal finir."
     ressourceGain: -10
     bonheurGain: -15
     addedPrompts: []

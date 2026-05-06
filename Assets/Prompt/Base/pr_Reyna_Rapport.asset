@@ -11,17 +11,17 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
   m_Name: pr_Reyna_Rapport
-  m_EditorClassIdentifier: Assembly-CSharp::Prompt
-  senderName: Lt. Reyna
-  message: "Le rapport hebdo est pr\xEAt. Je peux te le r\xE9sumer si tu veux."
+  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
+  senderName: "Lt. Reyna"
+  message: "Le rapport hebdo est pr\u00EAt. Je peux te le r\u00E9sumer si tu veux."
   isUnique: 0
   isUrgent: 0
-  chainTag: 
+  chainTag: ""
   isCrisis: 0
   isRelief: 1
   responseOptions:
-  - optionText: "R\xE9sum\xE9"
-    responseUserText: Je t'explique alors ... *monologue beaucoup trop long*
+  - optionText: "R\u00E9sum\u00E9"
+    responseUserText: "Je t'explique alors ... *monologue beaucoup trop long*"
     ressourceGain: 0
     bonheurGain: 5
     addedPrompts: []
@@ -29,9 +29,9 @@ MonoBehaviour:
     removedPrompts: []
     removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: 
-  - optionText: Brut
-    responseUserText: Je t'envoie tout.
+    gameOverMessage: ""
+  - optionText: "Brut"
+    responseUserText: "Je t'envoie tout."
     ressourceGain: 5
     bonheurGain: 0
     addedPrompts: []
@@ -39,6 +39,6 @@ MonoBehaviour:
     removedPrompts: []
     removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: 
+    gameOverMessage: ""
   timer: 0
   timerMax: 0

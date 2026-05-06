@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: pr_chn_Cryopanne_02_Cause
   m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
   senderName: "Ing. Sol"
-  message: "La cause du r\u00E9veil : surtension \u00E9lectrique. Cinq autres cuves \u00E0 risque imminent."
+  message: "Cause du r\u00E9veil : surtension \u00E9lectrique. Cinq autres cuves \u00E0 risque imminent."
   isUnique: 1
   isUrgent: 1
   chainTag: "Cryopanne"
@@ -21,7 +21,7 @@ MonoBehaviour:
   isRelief: 0
   responseOptions:
   - optionText: "R\u00E9parer le bus"
-    responseUserText: "Tout sur l'\u00E9lectrique cryo."
+    responseUserText: "Tout sur l'\u00E9lectrique cryo !"
     ressourceGain: -15
     bonheurGain: 5
     addedPrompts: []

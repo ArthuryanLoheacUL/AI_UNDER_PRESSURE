@@ -21,7 +21,7 @@ MonoBehaviour:
   isRelief: 1
   responseOptions:
   - optionText: "Accord\u00E9"
-    responseUserText: "Heure offerte."
+    responseUserText: "Tout le monde va kiffer !"
     ressourceGain: -5
     bonheurGain: 10
     addedPrompts: []
@@ -31,7 +31,7 @@ MonoBehaviour:
     isGameOverResponse: 0
     gameOverMessage: ""
   - optionText: "Refus\u00E9"
-    responseUserText: "Pas dans le quota."
+    responseUserText: "Bof. C'est moyen MOTHER."
     ressourceGain: 0
     bonheurGain: -5
     addedPrompts: []

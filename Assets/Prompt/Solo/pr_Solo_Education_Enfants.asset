@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: pr_Solo_Education_Enfants
   m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
   senderName: "Med. Rho"
-  message: "Les enfants en cryo ont besoin de programmes d'\u00E9ducation. G\u00E9n\u00E8re-les."
+  message: "Les enfants en cryo auront besoin de programmes \u00E9ducatifs. Tu peux g\u00E9n\u00E9rer ?"
   isUnique: 0
   isUrgent: 0
   chainTag: ""
@@ -21,7 +21,7 @@ MonoBehaviour:
   isRelief: 1
   responseOptions:
   - optionText: "G\u00E9n\u00E8re"
-    responseUserText: "Vingt ans de cours, pr\u00EAts."
+    responseUserText: "Vingt ans de cours, pr\u00EAts \u00E0 l'arriv\u00E9e !"
     ressourceGain: -5
     bonheurGain: 5
     addedPrompts: []
@@ -31,7 +31,7 @@ MonoBehaviour:
     isGameOverResponse: 0
     gameOverMessage: ""
   - optionText: "Pas le temps"
-    responseUserText: "Plus tard."
+    responseUserText: "Bon... je note pour plus tard."
     ressourceGain: 0
     bonheurGain: -5
     addedPrompts: []

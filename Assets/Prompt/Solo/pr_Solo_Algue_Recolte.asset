@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: pr_Solo_Algue_Recolte
   m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
   senderName: "Dr. Vale"
-  message: "La r\u00E9colte d'algues du bac 7 est exceptionnelle. Distribution g\u00E9n\u00E9rale ?"
+  message: "La r\u00E9colte d'algues du bac 7 est exceptionnelle. On distribue \u00E0 tous ?"
   isUnique: 0
   isUrgent: 0
   chainTag: ""
@@ -21,7 +21,7 @@ MonoBehaviour:
   isRelief: 1
   responseOptions:
   - optionText: "Distribuer"
-    responseUserText: "Bonus pour tout le monde."
+    responseUserText: "Bonus pour tout le monde !"
     ressourceGain: -5
     bonheurGain: 10
     addedPrompts: []
@@ -31,7 +31,7 @@ MonoBehaviour:
     isGameOverResponse: 0
     gameOverMessage: ""
   - optionText: "Stocker"
-    responseUserText: "On garde pour les coups durs."
+    responseUserText: "On garde au frais pour les coups durs."
     ressourceGain: 10
     bonheurGain: -5
     addedPrompts: []

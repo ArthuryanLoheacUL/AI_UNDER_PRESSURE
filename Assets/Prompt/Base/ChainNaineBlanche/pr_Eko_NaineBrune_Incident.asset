@@ -11,29 +11,29 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
   m_Name: pr_Eko_NaineBrune_Incident
-  m_EditorClassIdentifier: Assembly-CSharp::Prompt
-  senderName: Nav. Eko
-  message: "On est dans la magn\xE9tosph\xE8re de la Naine Blanche. Le champ est
-    instable, Les boucliers sont \xE0 41%."
+  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
+  senderName: "Nav. Eko"
+  message: "On est dans la magn\u00E9tosph\u00E8re de la Naine Blanche. Le champ est instable, Les boucliers sont \u00E0 41%."
   isUnique: 1
   isUrgent: 1
-  chainTag: 
+  chainTag: ""
+  isCrisis: 0
   isRelief: 0
   responseOptions:
-  - optionText: Renforcer Bouclier
-    responseUserText: "Tout sur les boucliers \xE7a devrait bien se passer !"
+  - optionText: "Renforcer Bouclier"
+    responseUserText: "Tout sur les boucliers \u00E7a devrait bien se passer !"
     ressourceGain: -15
     bonheurGain: 10
     addedPrompts:
     - prompt: {fileID: 11400000, guid: 248fbc7479b6a6145a1ec1a18b33d0b2, type: 2}
-      weight: 10
+      weight: 10.0
     addedDirectPrompts: []
     removedPrompts: []
     removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: 
-  - optionText: Tennir bon
-    responseUserText: On serre les dents ... je suis inquiet ...
+    gameOverMessage: ""
+  - optionText: "Tennir bon"
+    responseUserText: "On serre les dents ... je suis inquiet ..."
     ressourceGain: 0
     bonheurGain: -15
     addedPrompts: []
@@ -41,6 +41,6 @@ MonoBehaviour:
     removedPrompts: []
     removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: 
+    gameOverMessage: ""
   timer: 0
   timerMax: 0

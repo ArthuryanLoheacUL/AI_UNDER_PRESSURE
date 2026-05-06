@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: pr_chn_Contact_03_Suspicion
   m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
   senderName: "Com. Zeth"
-  message: "La Coalition a relanc\u00E9. Trois fois. Ils savent qu'on ment. Ils envoient un correctif d'autorit\u00E9."
+  message: "La Coalition a relanc\u00E9. Trois fois. Ils savent qu'on ment. Correctif d'autorit\u00E9 en route."
   isUnique: 1
   isUrgent: 1
   chainTag: "Contact"
@@ -21,7 +21,7 @@ MonoBehaviour:
   isRelief: 0
   responseOptions:
   - optionText: "Avouer maintenant"
-    responseUserText: "Demande pardon, demande aide."
+    responseUserText: "Je demande pardon. Mieux tard que jamais."
     ressourceGain: -5
     bonheurGain: 5
     addedPrompts: []
@@ -32,7 +32,7 @@ MonoBehaviour:
     isGameOverResponse: 0
     gameOverMessage: ""
   - optionText: "Couper le canal"
-    responseUserText: "Black-out total."
+    responseUserText: "Black-out total. On dort plus tranquille."
     ressourceGain: -10
     bonheurGain: -15
     addedPrompts: []

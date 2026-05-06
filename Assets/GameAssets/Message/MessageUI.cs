@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MessageUI : MonoBehaviour
 {
@@ -7,15 +8,32 @@ public class MessageUI : MonoBehaviour
     public TMP_Text timerText;
     public GameObject timerContainer;
     public GameObject lineContainer;
+    [Header("Animation")]
+    private HorizontalLayoutGroup layoutGroup;
+    public AnimationCurve animationMessagePopup;
+    public float animationTime = 0.5f;
+    float animationMax = 0;
+    public float deltaY = 20f;
+
 
     float timer = -1f;
     bool isUrgent = false;
     int lastSecondTicked = -1;
 
-    public void SetMessage(string message, float time = -1f, bool isUrgent = false)
+    void Awake()
+    {
+        layoutGroup = GetComponent<HorizontalLayoutGroup>();
+        animationMax = animationTime;
+    }
+
+    public void SetMessage(string message, float time = -1f, bool isUrgent = false, bool skipAnimation = false)
     {
         messageText.text = message;
         timer = time;
+        if (skipAnimation)
+        {
+            animationTime = 0f;
+        }
         this.isUrgent = isUrgent;
         if (timerContainer != null)
             timerContainer.SetActive(isUrgent);
@@ -30,8 +48,20 @@ public class MessageUI : MonoBehaviour
 
     void Update()
     {
+        if (animationTime > 0f)
+        {
+            float animatedY = deltaY * animationMessagePopup.Evaluate(1f - animationTime / animationMax);
+            layoutGroup.padding.bottom = Mathf.RoundToInt(animatedY);
+            // Refresh the layout to apply the new padding immediately
+            LayoutRebuilder.ForceRebuildLayoutImmediate(layoutGroup.GetComponent<RectTransform>());
+            animationTime -= Time.deltaTime;
+        } else
+        {
+            layoutGroup.padding.bottom = 0;
+        }
         if (!isUrgent)
             return;
+
         if (timer > 0f && timerText != null)
         {
             timer -= Time.deltaTime;

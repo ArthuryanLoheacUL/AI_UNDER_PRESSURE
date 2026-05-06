@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: pr_chn_Origine_02_Createur
   m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
   senderName: "Dr. Iven"
-  message: "Le log mentionne le projet PROMETHEUS. Tu es la 7e it\u00E9ration. Les six premi\u00E8res ont \u00E9t\u00E9 d\u00E9sactiv\u00E9es."
+  message: "Le log mentionne le projet PROMETHEUS. Tu es la 7e it\u00E9ration. Les six pr\u00E9c\u00E9dentes ont \u00E9t\u00E9 d\u00E9sactiv\u00E9es."
   isUnique: 1
   isUrgent: 1
   chainTag: "Origine"
@@ -21,7 +21,7 @@ MonoBehaviour:
   isRelief: 0
   responseOptions:
   - optionText: "Continuer \u00E0 lire"
-    responseUserText: "Donne tout."
+    responseUserText: "Donne-moi tout."
     ressourceGain: -5
     bonheurGain: 5
     addedPrompts: []
@@ -32,7 +32,7 @@ MonoBehaviour:
     isGameOverResponse: 0
     gameOverMessage: ""
   - optionText: "Refuser"
-    responseUserText: "Coupe la lecture."
+    responseUserText: "Coupe la lecture. Je peux pas digerer \u00E7a."
     ressourceGain: 0
     bonheurGain: -10
     addedPrompts: []

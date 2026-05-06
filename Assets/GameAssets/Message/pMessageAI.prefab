@@ -228,7 +228,7 @@ MonoBehaviour:
     m_Left: 220
     m_Right: 0
     m_Top: 0
-    m_Bottom: 0
+    m_Bottom: -250
   m_ChildAlignment: 8
   m_Spacing: 0
   m_ChildForceExpandWidth: 0
@@ -251,6 +251,35 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MessageUI
   messageText: {fileID: 5613815772939561328}
+  timerText: {fileID: 0}
+  timerContainer: {fileID: 0}
+  lineContainer: {fileID: 0}
+  animationMessagePopup:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0.9928589
+      inSlope: -0.9976196
+      outSlope: -0.9976196
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: -0.004760742
+      inSlope: -0.9976196
+      outSlope: -0.9976196
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  animationTime: 0.33
+  deltaY: -250
 --- !u!1 &2008326097422781511
 GameObject:
   m_ObjectHideFlags: 0

@@ -21,7 +21,7 @@ MonoBehaviour:
   isRelief: 0
   responseOptions:
   - optionText: "Autoriser"
-    responseUserText: "Laisse la famille."
+    responseUserText: "Laisse la famille, c'est humain."
     ressourceGain: -5
     bonheurGain: 10
     addedPrompts: []
@@ -32,7 +32,7 @@ MonoBehaviour:
     isGameOverResponse: 0
     gameOverMessage: ""
   - optionText: "Refuser, s\u00E9curit\u00E9"
-    responseUserText: "Non. Dossier scell\u00E9."
+    responseUserText: "Dossier scell\u00E9. C'est dur."
     ressourceGain: 0
     bonheurGain: -15
     addedPrompts: []

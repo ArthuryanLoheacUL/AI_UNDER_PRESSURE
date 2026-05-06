@@ -21,7 +21,7 @@ MonoBehaviour:
   isRelief: 0
   responseOptions:
   - optionText: "Arr\u00EAter Parker"
-    responseUserText: "Mara, va le chercher."
+    responseUserText: "Mara va le chercher."
     ressourceGain: -5
     bonheurGain: -10
     addedPrompts: []
@@ -32,7 +32,7 @@ MonoBehaviour:
     isGameOverResponse: 0
     gameOverMessage: ""
   - optionText: "Le tuer"
-    responseUserText: "Ouvre son sas."
+    responseUserText: "Ouvre son sas. ...t'es s\u00FBre ?"
     ressourceGain: 0
     bonheurGain: -15
     addedPrompts: []

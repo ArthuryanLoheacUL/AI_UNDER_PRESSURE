@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: pr_Solo_Reseau_Lent
   m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
   senderName: "Com. Zeth"
-  message: "Le r\u00E9seau interne tra\u00EEne. Je peux purger le cache ou augmenter la bande passante."
+  message: "R\u00E9seau interne qui tra\u00EEne. Je purge le cache ou j'augmente la bande passante ?"
   isUnique: 0
   isUrgent: 0
   chainTag: ""
@@ -21,7 +21,7 @@ MonoBehaviour:
   isRelief: 0
   responseOptions:
   - optionText: "Purge"
-    responseUserText: "Coupe deux minutes."
+    responseUserText: "Je coupe deux minutes."
     ressourceGain: -5
     bonheurGain: 0
     addedPrompts: []
@@ -31,7 +31,7 @@ MonoBehaviour:
     isGameOverResponse: 0
     gameOverMessage: ""
   - optionText: "Bande passante"
-    responseUserText: "Augmente, prends sur ressources."
+    responseUserText: "L'\u00E9quipage va te b\u00E9nir."
     ressourceGain: -10
     bonheurGain: 5
     addedPrompts: []

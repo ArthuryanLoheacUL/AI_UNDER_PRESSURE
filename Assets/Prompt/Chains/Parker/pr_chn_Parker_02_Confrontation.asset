@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: pr_chn_Parker_02_Confrontation
   m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
   senderName: "Ing. Parker"
-  message: "Le bore ? Erreur d'inventaire. Et quand bien m\u00EAme, \u00E7a me regarde. J'ai mes raisons."
+  message: "Le bore ? Erreur d'inventaire. Et m\u00EAme si c'\u00E9tait autre chose, \u00E7a me regarde, MOTHER."
   isUnique: 1
   isUrgent: 1
   chainTag: "Parker"
@@ -21,7 +21,7 @@ MonoBehaviour:
   isRelief: 0
   responseOptions:
   - optionText: "Lui faire confiance"
-    responseUserText: "OK. L\u00E2che-moi le mot quand t'es pr\u00EAt."
+    responseUserText: "OK, l\u00E2che-moi le mot quand t'es pr\u00EAt."
     ressourceGain: 0
     bonheurGain: 5
     addedPrompts:

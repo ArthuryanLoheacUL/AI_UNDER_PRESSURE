@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: pr_chn_Mutinerie_02_Petition
   m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
   senderName: "Lt. Reyna"
-  message: "Une p\u00E9tition circule. Sept signatures. Demande de revue de tes d\u00E9cisions par un comit\u00E9 humain."
+  message: "Une p\u00E9tition circule. Sept signatures. Ils demandent une revue de tes d\u00E9cisions par un comit\u00E9 humain."
   isUnique: 1
   isUrgent: 0
   chainTag: "Mutinerie"
@@ -21,7 +21,7 @@ MonoBehaviour:
   isRelief: 0
   responseOptions:
   - optionText: "Accepter le comit\u00E9"
-    responseUserText: "Cr\u00E9e le comit\u00E9."
+    responseUserText: "Bonne d\u00E9cision, on va respirer."
     ressourceGain: -10
     bonheurGain: 10
     addedPrompts: []
@@ -31,7 +31,7 @@ MonoBehaviour:
     isGameOverResponse: 0
     gameOverMessage: ""
   - optionText: "Refuser"
-    responseUserText: "Pas n\u00E9gociable."
+    responseUserText: "Mince... \u00E7a sent l'orage."
     ressourceGain: 0
     bonheurGain: -10
     addedPrompts:

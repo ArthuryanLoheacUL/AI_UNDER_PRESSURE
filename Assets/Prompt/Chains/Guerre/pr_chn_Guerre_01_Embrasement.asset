@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: pr_chn_Guerre_01_Embrasement
   m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
   senderName: "Sec. Mara"
-  message: "Iven a forc\u00E9 l'armurerie. Il a deux gardes avec lui. Voss est en infirmerie."
+  message: "Iven a forc\u00E9 l'armurerie. Deux gardes avec lui. Voss est en infirmerie."
   isUnique: 1
   isUrgent: 1
   chainTag: "Guerre"
@@ -21,7 +21,7 @@ MonoBehaviour:
   isRelief: 0
   responseOptions:
   - optionText: "N\u00E9gocier"
-    responseUserText: "Ouvre un canal."
+    responseUserText: "J'ouvre un canal."
     ressourceGain: -5
     bonheurGain: 5
     addedPrompts: []
@@ -32,7 +32,7 @@ MonoBehaviour:
     isGameOverResponse: 0
     gameOverMessage: ""
   - optionText: "Mara, neutralise"
-    responseUserText: "Feu vert."
+    responseUserText: "Feu vert. C'est dur mais n\u00E9cessaire."
     ressourceGain: -10
     bonheurGain: -10
     addedPrompts: []

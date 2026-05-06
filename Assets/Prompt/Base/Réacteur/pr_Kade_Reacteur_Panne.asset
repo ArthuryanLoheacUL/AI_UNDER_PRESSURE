@@ -11,17 +11,17 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
   m_Name: pr_Kade_Reacteur_Panne
-  m_EditorClassIdentifier: Assembly-CSharp::Prompt
-  senderName: Ing. Kade
-  message: LE MOTEUR SECOND A LACHE !!! On est sur le primaire uniquement !!!
+  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
+  senderName: "Ing. Kade"
+  message: "LE MOTEUR SECOND A LACHE !!! On est sur le primaire uniquement !!!"
   isUnique: 1
   isUrgent: 1
-  chainTag: 
+  chainTag: ""
   isCrisis: 0
   isRelief: 0
   responseOptions:
-  - optionText: "R\xE9paration d'urgence"
-    responseUserText: "Tout le matos est envoy\xE9 sur le secondaire."
+  - optionText: "R\u00E9paration d'urgence"
+    responseUserText: "Tout le matos est envoy\u00E9 sur le secondaire."
     ressourceGain: -15
     bonheurGain: 5
     addedPrompts: []
@@ -29,9 +29,9 @@ MonoBehaviour:
     removedPrompts: []
     removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: 
-  - optionText: Tenir sur le primaire
-    responseUserText: On va prier ...
+    gameOverMessage: ""
+  - optionText: "Tenir sur le primaire"
+    responseUserText: "On va prier ..."
     ressourceGain: 0
     bonheurGain: -15
     addedPrompts: []
@@ -39,6 +39,6 @@ MonoBehaviour:
     removedPrompts: []
     removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: 
+    gameOverMessage: ""
   timer: 0
   timerMax: 0

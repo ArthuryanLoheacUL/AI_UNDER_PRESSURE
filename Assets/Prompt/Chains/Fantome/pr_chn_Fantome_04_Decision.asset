@@ -21,7 +21,7 @@ MonoBehaviour:
   isRelief: 0
   responseOptions:
   - optionText: "Partir vite"
-    responseUserText: "D\u00E9colle."
+    responseUserText: "On d\u00E9colle. Pas envie de finir comme eux."
     ressourceGain: -10
     bonheurGain: 5
     addedPrompts:
@@ -34,7 +34,7 @@ MonoBehaviour:
     isGameOverResponse: 0
     gameOverMessage: ""
   - optionText: "Continuer la fouille"
-    responseUserText: "Encore une heure."
+    responseUserText: "Encore une heure, c'est risqu\u00E9."
     ressourceGain: -5
     bonheurGain: -10
     addedPrompts: []

@@ -21,7 +21,7 @@ MonoBehaviour:
   isRelief: 0
   responseOptions:
   - optionText: "Diagnostic"
-    responseUserText: "Mets un junior dessus."
+    responseUserText: "Je mets un junior dessus."
     ressourceGain: -5
     bonheurGain: 0
     addedPrompts: []

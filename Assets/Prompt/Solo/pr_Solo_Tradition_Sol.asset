@@ -13,15 +13,15 @@ MonoBehaviour:
   m_Name: pr_Solo_Tradition_Sol
   m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
   senderName: "Capt. Voss"
-  message: "Demain c'est l'\u00E9quivalent du nouvel an terrestre. L'\u00E9quipage demande une coupure de service."
+  message: "Demain c'est l'\u00E9quivalent du nouvel an. L'\u00E9quipage demande six heures de coupure pour f\u00EAter."
   isUnique: 0
   isUrgent: 0
   chainTag: ""
   isCrisis: 0
   isRelief: 1
   responseOptions:
-  - optionText: "Accord\u00E9e"
-    responseUserText: "Mode minimal pendant six heures."
+  - optionText: "Accord\u00E9"
+    responseUserText: "On va respirer un peu, merci !"
     ressourceGain: -10
     bonheurGain: 10
     addedPrompts: []
@@ -30,8 +30,8 @@ MonoBehaviour:
     removedChainTags: []
     isGameOverResponse: 0
     gameOverMessage: ""
-  - optionText: "Refus\u00E9e"
-    responseUserText: "On n'est pas en vacances."
+  - optionText: "Refus\u00E9"
+    responseUserText: "Mince... ils vont pas aimer."
     ressourceGain: 0
     bonheurGain: -10
     addedPrompts: []
