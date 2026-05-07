@@ -11,36 +11,32 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
   m_Name: pr_chn_Contact_03_Suspicion
-  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
-  senderName: "Com. Zeth"
-  message: "La Coalition a relanc\u00E9. Trois fois. Ils savent qu'on ment. Correctif d'autorit\u00E9 en route."
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  senderName: Com. Zeth
+  message: "La Coalition a relanc\xE9. Trois fois. Ils savent qu'on ment. Le correctif 
+    d'autorit\xE9 serait en route."
   isUnique: 1
   isUrgent: 1
-  chainTag: "Contact"
   isCrisis: 1
   isRelief: 0
   responseOptions:
-  - optionText: "Avouer maintenant"
-    responseUserText: "Je demande pardon. Mieux tard que jamais."
+  - optionText: Avouer
+    responseUserText: Je demande pardon. Mieux vaut tard que jamais.
     ressourceGain: -5
     bonheurGain: 5
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []
-    removedChainTags:
-    - "Contact"
     isGameOverResponse: 0
-    gameOverMessage: ""
-  - optionText: "Couper le canal"
-    responseUserText: "Black-out total. On dort plus tranquille."
+    gameOverMessage: 
+  - optionText: Couper le canal
+    responseUserText: Black-out total. On dormira plus tranquille.
     ressourceGain: -10
-    bonheurGain: -15
+    bonheurGain: 10
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []
-    removedChainTags:
-    - "Contact"
     isGameOverResponse: 0
-    gameOverMessage: ""
+    gameOverMessage: 
   timer: 0
   timerMax: 0
