@@ -11,37 +11,35 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
   m_Name: pr_chn_Signal_01_Bruit
-  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
-  senderName: "Dr. Iven"
-  message: "Il y a un signal dans le bruit de fond. R\u00E9gulier. 11 impulsions, pause, 3, pause, 11. \u00C7a vient pas de chez nous."
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  senderName: Dr. Iven
+  message: "Il y a un signal dans le bruit de fond. Il est r\xE9gulier. des impulsions,
+    une pause, des impulsions, etc. Ca semble venir de l'exterieur."
   isUnique: 1
   isUrgent: 1
-  chainTag: "Signal"
   isCrisis: 0
   isRelief: 0
   responseOptions:
-  - optionText: "On r\u00E9pond"
-    responseUserText: "Je tente une r\u00E9ponse courte !"
+  - optionText: "R\xE9pondre"
+    responseUserText: "Je tente une r\xE9ponse courte !"
     ressourceGain: -5
     bonheurGain: 10
     addedPrompts: []
     addedDirectPrompts:
     - {fileID: 11400000, guid: aeed4bae6c8c6f5383ccdb814006195f, type: 2}
     removedPrompts: []
-    removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
-  - optionText: "Log et silence"
-    responseUserText: "Bon... j'archive et je la ferme."
+    gameOverMessage: 
+  - optionText: Noter et silence
+    responseUserText: Bon... j'archive et on la ferme.
     ressourceGain: 0
     bonheurGain: -5
     addedPrompts:
     - prompt: {fileID: 11400000, guid: 5cd862cdd543d8165bf02618d888825f, type: 2}
-      weight: 3.0
+      weight: 3
     addedDirectPrompts: []
     removedPrompts: []
-    removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
+    gameOverMessage: 
   timer: 0
   timerMax: 0

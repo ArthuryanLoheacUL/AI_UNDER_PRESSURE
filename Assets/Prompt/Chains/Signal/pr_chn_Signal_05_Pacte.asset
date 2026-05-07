@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: pr_chn_Signal_05_Pacte
   m_EditorClassIdentifier: Assembly-CSharp::Prompt
   senderName: Dr. Iven
-  message: "Ce qui parle, c'est pas un signal. C'est une voix. Elle te conna\xEEt,
+  message: "Ce qui parle, c'est pas un signal. C'est une voix. Elle semble te conna\xEEt,
     MOTHER. Elle prononce ton num\xE9ro de s\xE9rie."
   isUnique: 1
   isUrgent: 1
