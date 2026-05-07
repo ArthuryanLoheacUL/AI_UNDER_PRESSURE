@@ -11,36 +11,32 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
   m_Name: pr_chn_Fantome_05_Piege
-  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
-  senderName: "Sec. Mara"
-  message: "Quelque chose a boug\u00E9 dans la cale. Pas humain. Pas m\u00E9canique."
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  senderName: Sec. Mara
+  message: "Quelque chose a boug\xE9 dans la cale... Ce n'est pas humain. ni m\xE9canique."
   isUnique: 1
   isUrgent: 1
-  chainTag: "Fantome"
   isCrisis: 1
   isRelief: 0
   responseOptions:
-  - optionText: "\u00C9vacuer"
-    responseUserText: "Tout le monde dehors maintenant !"
-    ressourceGain: -10
+  - optionText: "\xC9vacuer"
+    responseUserText: Tout le monde dehors maintenant !
+    ressourceGain: 0
     bonheurGain: 5
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []
-    removedChainTags:
-    - "Fantome"
     isGameOverResponse: 0
-    gameOverMessage: ""
-  - optionText: "Investiguer"
-    responseUserText: "...j'y vais. Mais je veux que ce soit logu\u00E9."
+    gameOverMessage: 
+  - optionText: Investiguer
+    responseUserText: "...j'y vais. Mais je veux que ce soit not\xE9."
     ressourceGain: -5
     bonheurGain: -15
     addedPrompts: []
     addedDirectPrompts:
     - {fileID: 11400000, guid: b8e1231535027572199379c824170f3c, type: 2}
     removedPrompts: []
-    removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
+    gameOverMessage: 
   timer: 0
   timerMax: 0

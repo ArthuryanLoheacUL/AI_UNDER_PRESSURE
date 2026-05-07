@@ -11,35 +11,33 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
   m_Name: pr_chn_Fantome_01_Detection
-  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
-  senderName: "Nav. Eko"
-  message: "\u00C9cho radar \u00E0 0.8 UA droit devant. M\u00E9tallique, inerte, pas dans nos cartes."
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  senderName: Nav. Eko
+  message: "On a un \xE9cho radar \xE0 0.8 UA. Il est m\xE9tallique, inerte et pas
+    not\xE9 dans nos cartes. Ca nous ferait un d\xE9tour de 3 mois cependant ..."
   isUnique: 1
   isUrgent: 0
-  chainTag: "Fantome"
   isCrisis: 0
   isRelief: 0
   responseOptions:
-  - optionText: "Approcher"
-    responseUserText: "Cap dessus, on va voir !"
+  - optionText: Approcher
+    responseUserText: Cap dessus, on va voir !
     ressourceGain: -5
     bonheurGain: 5
     addedPrompts: []
     addedDirectPrompts:
     - {fileID: 11400000, guid: ed4a754cbfa11569527a5b56cf14b672, type: 2}
     removedPrompts: []
-    removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
-  - optionText: "Continuer"
-    responseUserText: "On passe \u00E0 c\u00F4t\u00E9. Tant pis."
+    gameOverMessage: 
+  - optionText: Continuer
+    responseUserText: "On passe \xE0 c\xF4t\xE9. Tant pis."
     ressourceGain: 0
     bonheurGain: -5
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []
-    removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
+    gameOverMessage: 
   timer: 0
   timerMax: 0

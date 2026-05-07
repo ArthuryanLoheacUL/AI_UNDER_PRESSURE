@@ -11,36 +11,33 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
   m_Name: pr_chn_Fantome_03_Decouverte
-  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
-  senderName: "Sec. Mara"
-  message: "Personne \u00E0 bord. Cuves cryo intactes mais vides. Aucun cadavre. Aucun journal."
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  senderName: Sec. Mara
+  message: "Il n'y a personne \xE0 bord... Les cuves cryo intactes mais vides. Et
+    aucun cadavre. Aucun journal... rien..."
   isUnique: 1
   isUrgent: 1
-  chainTag: "Fantome"
   isCrisis: 0
   isRelief: 0
   responseOptions:
-  - optionText: "R\u00E9cup\u00E9ration mat\u00E9rielle"
-    responseUserText: "Tout ce qui se prend."
-    ressourceGain: 15
-    bonheurGain: -5
+  - optionText: "R\xE9cup\xE9ration mat\xE9rielle"
+    responseUserText: On prend tout et on part
+    ressourceGain: 25
+    bonheurGain: 0
     addedPrompts: []
-    addedDirectPrompts:
-    - {fileID: 11400000, guid: 9a270bbe1474d8d9c6abf70952b335b2, type: 2}
+    addedDirectPrompts: []
     removedPrompts: []
-    removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
-  - optionText: "Fouille compl\u00E8te"
-    responseUserText: "On cherche les logs."
+    gameOverMessage: 
+  - optionText: "Fouille compl\xE8te"
+    responseUserText: "On cherche plus proffond\xE9ment."
     ressourceGain: -10
     bonheurGain: 5
     addedPrompts: []
     addedDirectPrompts:
     - {fileID: 11400000, guid: 9a270bbe1474d8d9c6abf70952b335b2, type: 2}
     removedPrompts: []
-    removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
+    gameOverMessage: 
   timer: 0
   timerMax: 0

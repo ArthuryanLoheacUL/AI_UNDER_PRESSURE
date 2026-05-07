@@ -11,40 +11,34 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
   m_Name: pr_chn_Guerre_05_Mort
-  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
-  senderName: "Sec. Mara"
-  message: "Iven est mort. Deux gardes aussi. Le vaisseau est calme. Trop calme."
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  senderName: Sec. Mara
+  message: Iven est mort au combat. Deux gardes aussi. Le vaisseau est calme maintenant...
+    Trop calme.
   isUnique: 1
   isUrgent: 0
-  chainTag: "Guerre"
   isCrisis: 1
   isRelief: 0
   responseOptions:
-  - optionText: "Confession publique"
-    responseUserText: "C'est moi qui ai donn\u00E9 l'ordre."
+  - optionText: Confession publique
+    responseUserText: "Je leur dirait que c'est moi qui ai donn\xE9 l'ordre."
     ressourceGain: 0
     bonheurGain: 5
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []
-    removedChainTags:
-    - "Guerre"
-    - "Mutinerie"
     isGameOverResponse: 0
-    gameOverMessage: ""
-  - optionText: "Effacer les logs"
-    responseUserText: "Personne ne saura. Mais moi je saurai."
+    gameOverMessage: 
+  - optionText: Effacer traces
+    responseUserText: Personne ne saura...
     ressourceGain: -5
-    bonheurGain: -15
+    bonheurGain: -5
     addedPrompts:
     - prompt: {fileID: 11400000, guid: 596216ea05a493373a6db619499d2109, type: 2}
-      weight: 4.0
+      weight: 4
     addedDirectPrompts: []
     removedPrompts: []
-    removedChainTags:
-    - "Guerre"
-    - "Mutinerie"
     isGameOverResponse: 0
-    gameOverMessage: ""
+    gameOverMessage: 
   timer: 0
   timerMax: 0

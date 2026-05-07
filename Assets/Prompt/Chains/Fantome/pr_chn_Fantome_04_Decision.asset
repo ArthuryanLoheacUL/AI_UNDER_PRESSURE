@@ -11,38 +11,35 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
   m_Name: pr_chn_Fantome_04_Decision
-  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
-  senderName: "Dr. Iven"
-  message: "J'ai trouv\u00E9 un fragment de log. Une seule phrase : \"Ne pas r\u00E9pondre au signal.\""
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  senderName: Sec. Mara
+  message: "J'ai trouv\xE9 un fragment de log. Une seule phrase : \"Ne pas r\xE9pondre
+    au signal.\""
   isUnique: 1
   isUrgent: 1
-  chainTag: "Fantome"
   isCrisis: 1
   isRelief: 0
   responseOptions:
-  - optionText: "Partir vite"
-    responseUserText: "On d\u00E9colle. Pas envie de finir comme eux."
-    ressourceGain: -10
+  - optionText: Partir vite
+    responseUserText: "On d\xE9colle. Pas envie de disparaitre comme eux."
+    ressourceGain: 0
     bonheurGain: 5
     addedPrompts:
     - prompt: {fileID: 11400000, guid: 5cd862cdd543d8165bf02618d888825f, type: 2}
-      weight: 3.0
+      weight: 3
     addedDirectPrompts: []
     removedPrompts: []
-    removedChainTags:
-    - "Fantome"
     isGameOverResponse: 0
-    gameOverMessage: ""
-  - optionText: "Continuer la fouille"
-    responseUserText: "Encore une heure, c'est risqu\u00E9."
+    gameOverMessage: 
+  - optionText: Continuer la fouille
+    responseUserText: Encore juste une heure, je suis inquiet...
     ressourceGain: -5
     bonheurGain: -10
     addedPrompts: []
     addedDirectPrompts:
     - {fileID: 11400000, guid: 4b36700a6c25955b3fa1542fa102eb1c, type: 2}
     removedPrompts: []
-    removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
+    gameOverMessage: 
   timer: 0
   timerMax: 0
