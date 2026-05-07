@@ -11,36 +11,40 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
   m_Name: pr_chn_Epidemie_02_Propagation
-  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
-  senderName: "Med. Juno"
-  message: "Onze cas. \u00C7a touche surtout les ing\u00E9nieurs. On suspecte l'air recycl\u00E9 du secteur tech."
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  senderName: Med. Juno
+  message: "On a onze cas d'inf\xE9ct\xE9. \xC7a touche surtout les ing\xE9nieurs.
+    On suspecte l'air du secteur tech d'\xEAtre infect\xE9."
   isUnique: 1
   isUrgent: 1
-  chainTag: "Epidemie"
   isCrisis: 1
   isRelief: 0
   responseOptions:
-  - optionText: "Confinement total"
-    responseUserText: "Section technique scell\u00E9e."
+  - optionText: Confinement total
+    responseUserText: "Le secteur technique est scell\xE9."
     ressourceGain: -15
     bonheurGain: 5
     addedPrompts: []
     addedDirectPrompts:
     - {fileID: 11400000, guid: 421b348964d7c19e5cffd4c47e0ca84d, type: 2}
-    removedPrompts: []
-    removedChainTags: []
+    removedPrompts:
+    - {fileID: 11400000, guid: dc510c1b9c4ce97c0754e12f7ae8b5e1, type: 2}
+    - {fileID: 11400000, guid: 11279050537487242fd9ba781d7e0a36, type: 2}
+    - {fileID: 11400000, guid: b6e50755483c223f87c242642c95aa59, type: 2}
     isGameOverResponse: 0
-    gameOverMessage: ""
-  - optionText: "Continuer la prod"
-    responseUserText: "Antibios pour tous. Risqu\u00E9."
+    gameOverMessage: 
+  - optionText: Continuer la prod
+    responseUserText: Ce sera juste des antibios pour tous alors...
     ressourceGain: -10
     bonheurGain: -10
     addedPrompts: []
     addedDirectPrompts:
     - {fileID: 11400000, guid: 421b348964d7c19e5cffd4c47e0ca84d, type: 2}
-    removedPrompts: []
-    removedChainTags: []
+    removedPrompts:
+    - {fileID: 11400000, guid: dc510c1b9c4ce97c0754e12f7ae8b5e1, type: 2}
+    - {fileID: 11400000, guid: 11279050537487242fd9ba781d7e0a36, type: 2}
+    - {fileID: 11400000, guid: b6e50755483c223f87c242642c95aa59, type: 2}
     isGameOverResponse: 0
-    gameOverMessage: ""
+    gameOverMessage: 
   timer: 0
   timerMax: 0
