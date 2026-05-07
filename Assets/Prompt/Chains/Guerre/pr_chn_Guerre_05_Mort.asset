@@ -26,9 +26,10 @@ MonoBehaviour:
     bonheurGain: 5
     addedPrompts: []
     addedDirectPrompts: []
-    removedPrompts: []
+    removedPrompts:
+    - {fileID: 11400000, guid: 6de1f6fe0eb24ffb8084612849d3812a, type: 2}
     isGameOverResponse: 0
-    gameOverMessage: 
+    gameOverMessage:
   - optionText: Effacer traces
     responseUserText: Personne ne saura...
     ressourceGain: -5
@@ -37,8 +38,9 @@ MonoBehaviour:
     - prompt: {fileID: 11400000, guid: 596216ea05a493373a6db619499d2109, type: 2}
       weight: 4
     addedDirectPrompts: []
-    removedPrompts: []
+    removedPrompts:
+    - {fileID: 11400000, guid: 6de1f6fe0eb24ffb8084612849d3812a, type: 2}
     isGameOverResponse: 0
-    gameOverMessage: 
+    gameOverMessage:
   timer: 0
   timerMax: 0

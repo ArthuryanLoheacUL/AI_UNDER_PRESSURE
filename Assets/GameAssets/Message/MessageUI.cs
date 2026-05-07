@@ -34,7 +34,8 @@ public class MessageUI : MonoBehaviour
         {
             animationTime = 0f;
         }
-        this.isUrgent = isUrgent;
+        isUrgent = false;
+        //        this.isUrgent = isUrgent;
         if (timerContainer != null)
             timerContainer.SetActive(isUrgent);
         if (lineContainer != null)
@@ -58,6 +59,7 @@ public class MessageUI : MonoBehaviour
         {
             layoutGroup.padding.bottom = 0;
         }
+        return;
         if (!isUrgent)
             return;
 

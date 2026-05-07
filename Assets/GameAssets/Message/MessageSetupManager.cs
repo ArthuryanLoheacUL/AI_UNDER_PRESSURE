@@ -91,7 +91,7 @@ public class MessageSetupManager : MonoBehaviour
     {
         CreateTimeIndicatorCore(System.DateTime.Now.ToString("HH:mm:ss"));
         CreateOverMessageCore(prompt.senderName);
-        CreateMessageCurrentUserCore(prompt.message, prompt.timer, prompt.isUrgent);
+        CreateMessageCurrentUserCore(prompt.message, prompt.timer, false);//prompt.isUrgent);
     }
 
     void CreateOverMessageCore(string senderName)

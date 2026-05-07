@@ -24,12 +24,15 @@ MonoBehaviour:
     responseUserText: "On continue l'assaut. Allez, courage !"
     ressourceGain: -15
     bonheurGain: -15
-    addedPrompts: []
-    addedDirectPrompts:
-    - {fileID: 11400000, guid: c0c8eaa621330b4ce9add9c7f2ab1a11, type: 2}
+    addedPrompts:
+    - prompt: {fileID: 11400000, guid: c0c8eaa621330b4ce9add9c7f2ab1a11, type: 2}
+      weight: 100
+    - prompt: {fileID: 11400000, guid: 6de1f6fe0eb24ffb8084612849d3812a, type: 2}
+      weight: 100
+    addedDirectPrompts: []
     removedPrompts: []
     isGameOverResponse: 0
-    gameOverMessage: 
+    gameOverMessage:
   - optionText: Cessez-le-feu
     responseUserText: On recule et on parle.
     ressourceGain: 0
@@ -39,6 +42,6 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 0f894f610f9725617578949da7fe47d8, type: 2}
     removedPrompts: []
     isGameOverResponse: 0
-    gameOverMessage: 
+    gameOverMessage:
   timer: 0
   timerMax: 0

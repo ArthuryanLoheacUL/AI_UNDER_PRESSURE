@@ -10,33 +10,32 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
-  m_Name: pr_chn_PaniqueCyber_03_Cameras
+  m_Name: pr_Solo_Recolte_Bonus
   m_EditorClassIdentifier: Assembly-CSharp::Prompt
-  senderName: Sec. Mara
-  message: "Cam\xE9ras down sur tout le pont s\xE9cu !! Je vois plus rien !!"
+  senderName: "Bot. Vale"
+  message: "Le bac d'hydroponie 3 a triplé son rendement ce mois-ci. On a un surplus net inattendu. On le stocke ou on le redistribue ?"
   isUnique: 1
-  isUrgent: 1
+  isUrgent: 0
   isCrisis: 0
-  isRelief: 0
+  isRelief: 1
   responseOptions:
-  - optionText: "Patrouille doubl\xE9e"
-    responseUserText: OK je sors deux gardes en plus.
-    ressourceGain: -5
-    bonheurGain: 5
+  - optionText: "Stocker en réserve"
+    responseUserText: "Au stock, ça nous servira plus tard."
+    ressourceGain: 20
+    bonheurGain: 0
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []
     isGameOverResponse: 0
-    gameOverMessage: 
-  - optionText: Tant pis
-    responseUserText: "On est aveugle alors. Si \xE7a p\xE8te, t'auras \xE9t\xE9
-      pr\xE9venue."
-    ressourceGain: 0
-    bonheurGain: -10
+    gameOverMessage:
+  - optionText: "Redistribuer maintenant"
+    responseUserText: "Redistribue, ça remontera le moral."
+    ressourceGain: 5
+    bonheurGain: 10
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []
     isGameOverResponse: 0
-    gameOverMessage: 
-  timer: -0.0037775014
+    gameOverMessage:
+  timer: 0
   timerMax: 0

@@ -10,32 +10,32 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
-  m_Name: pr_chn_PaniqueCyber_01_Nav
+  m_Name: pr_Solo_Recyclage_Exceptionnel
   m_EditorClassIdentifier: Assembly-CSharp::Prompt
-  senderName: Nav. Eko
-  message: "Syst\xE8me nav compromis !!"
+  senderName: "Ing. Kade"
+  message: "J'ai démonté les modules de l'ancien drone HS. On peut récupérer pas mal de pièces si on lance le tri tout de suite."
   isUnique: 1
-  isUrgent: 1
+  isUrgent: 0
   isCrisis: 0
-  isRelief: 0
+  isRelief: 1
   responseOptions:
-  - optionText: Passer Manuel
-    responseUserText: OK manuel, je tiens le cap.
-    ressourceGain: -5
-    bonheurGain: 5
+  - optionText: "Lancer le tri"
+    responseUserText: "Vas-y, sors tout ce qui est récupérable."
+    ressourceGain: 15
+    bonheurGain: 0
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []
     isGameOverResponse: 0
-    gameOverMessage: 
-  - optionText: Bypass auto
-    responseUserText: "Bon... bypass. Si \xE7a crash je suis pas responsable."
-    ressourceGain: 0
+    gameOverMessage:
+  - optionText: "Tri méticuleux"
+    responseUserText: "Prends ton temps, je veux le maximum."
+    ressourceGain: 20
     bonheurGain: -5
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []
     isGameOverResponse: 0
-    gameOverMessage: 
-  timer: -0.0037775014
+    gameOverMessage:
+  timer: 0
   timerMax: 0

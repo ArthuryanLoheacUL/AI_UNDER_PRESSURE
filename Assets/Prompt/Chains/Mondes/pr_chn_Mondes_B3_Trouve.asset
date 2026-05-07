@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: pr_chn_Mondes_B3_Trouve
   m_EditorClassIdentifier: Assembly-CSharp::Prompt
   senderName: Nav. Eko
-  message: "MOTHER... regarde. L\u00E0. Une plan\u00E8te bleu-vert, l'atmosph\u00E8re est riche, l'eau libre. Personne ne l'avait catalogu\u00E9e mais on l'a trouv\u00E9e. J'y crois pas !"
+  message: "MOTHER... regarde. L\xE0. Une plan\xE8te bleu-vert, l'atmosph\xE8re est
+    riche, l'eau libre. Personne ne l'avait catalogu\xE9e mais on l'a trouv\xE9e.
+    J'y crois pas !"
   isUnique: 1
   isUrgent: 0
   isCrisis: 0
@@ -25,7 +27,8 @@ MonoBehaviour:
     bonheurGain: 15
     addedPrompts: []
     addedDirectPrompts: []
-    removedPrompts: []
+    removedPrompts:
+    - {fileID: 11400000, guid: ed1470fa0f88706409138368934e84a8, type: 2}
     isGameOverResponse: 0
     gameOverMessage: 
   - optionText: "V\xE9rifie d'abord"
@@ -34,7 +37,8 @@ MonoBehaviour:
     bonheurGain: 10
     addedPrompts: []
     addedDirectPrompts: []
-    removedPrompts: []
+    removedPrompts:
+    - {fileID: 11400000, guid: ed1470fa0f88706409138368934e84a8, type: 2}
     isGameOverResponse: 0
     gameOverMessage: 
   timer: 0

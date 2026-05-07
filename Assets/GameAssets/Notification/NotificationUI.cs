@@ -32,11 +32,13 @@ public class NotificationUI : MonoBehaviour
         timer = prompt.timer;
         timerMax = prompt.timerMax;
         timerSlider.value = timer / timerMax;
+        timerSlider.gameObject.SetActive(false);
         if (!prompt.isUrgent)
         {
             timerSlider.gameObject.SetActive(false);
         }
         isUrgent = prompt.isUrgent;
+        isUrgent = false;
 
         string croppedMessage = prompt.message.Length > 17 ? prompt.message.Substring(0, 17) + "..." : prompt.message;
 

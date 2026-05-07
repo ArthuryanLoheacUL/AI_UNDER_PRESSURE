@@ -49,6 +49,8 @@ public class RessourceManager : MonoBehaviour
     {
         ressourceValue = Mathf.Clamp(ressourceValue + amount, 0, 100);
         UpdateRessource();
+        if (amount < 0)
+            ressourceText.transform.parent.parent.GetComponent<ShakeRessourceBar>().TriggerShake();
     }
 
     void UpdateRessource()
@@ -57,8 +59,6 @@ public class RessourceManager : MonoBehaviour
             ressourceText.text = ressourceValue.ToString();
     }
 
-    // Positive amount = gain bonheur (crew happier).
-    // Negative amount = lose bonheur (game over closer).
     public void UpdateBonheur(int amount)
     {
         bonheurValue = Mathf.Clamp(bonheurValue + amount, 0, 100);

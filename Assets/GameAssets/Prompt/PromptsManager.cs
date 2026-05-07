@@ -74,8 +74,8 @@ public class PromptsManager : MonoBehaviour
     void NotifyNewPrompt(Prompt prompt)
     {
         SoundEffectManager.Instance.PlaySoundEffectRandomPitch("Notif");
-        if (prompt.isUrgent)
-            SoundEffectManager.Instance.PlaySoundEffectRandomPitch("TimerClicks");
+        // if (prompt.isUrgent)
+        //     SoundEffectManager.Instance.PlaySoundEffectRandomPitch("TimerClicks");
     }
 
     void ShufflePromptResponseOptions(Prompt prompt)
@@ -265,7 +265,7 @@ public class PromptsManager : MonoBehaviour
 
         // Chance to upgrade a prompt to urgent if the situation is already tense.
         float pressureChance = (100 - RessourceManager.Instance.bonheurValue) / 100f;
-        if (Random.value < pressureChance) instance.isUrgent = true;
+        if (Random.value < pressureChance) instance.isUrgent = false;
 
         ShufflePromptResponseOptions(instance);
         return instance;
@@ -397,17 +397,28 @@ public class PromptsManager : MonoBehaviour
                 if (addedPrompt.prompt != null && !IsContainedInPromptList(removedPrompts, addedPrompt.prompt)) promptsWithWeights.Add(addedPrompt);
             }
         }
+        List<Prompt> promptsAdded = new List<Prompt>();
         if (opt.addedDirectPrompts != null)
         {
             foreach (var addedDirect in opt.addedDirectPrompts)
             {
-                if (addedDirect != null && !IsContainedInPromptList(removedPrompts, addedDirect)) AddPromptToQueue(addedDirect, true);
+                if (addedDirect != null && !IsContainedInPromptList(removedPrompts, addedDirect)) promptsAdded.Add(addedDirect);
             }
         }
 
+        StartCoroutine(delayAddPrompts(promptsAdded));
         if (opt.removedPrompts != null && opt.removedPrompts.Length > 0)
             RemovePrompts(opt.removedPrompts);
         StartCoroutine(NextPromptWithDelay(selectedResponseIndex));
+    }
+
+    IEnumerator delayAddPrompts(List<Prompt> promptsAdded)
+    {
+        foreach (Prompt p in promptsAdded)
+        {
+            AddPromptToQueue(p, true);
+            yield return new WaitForSeconds(.2f);
+        }
     }
 
     IEnumerator NextPromptWithDelay(int selectedResponseIndex = 0)
@@ -440,52 +451,5 @@ public class PromptsManager : MonoBehaviour
         }
     
         NextPrompt();
-    }
-
-    void Update()
-    {
-        if (isGameOver) return;
-        CheckOutdatedPrompts();
-
-        timeNextPrompt -= Time.deltaTime;
-        if (timeNextPrompt <= 0f)
-        {
-            timeNextPrompt = timeBetweenPrompts;
-            Prompt randomPrompt = GetRandomPrompt();
-            if (randomPrompt != null)
-            {
-                AddPromptToQueue(randomPrompt);
-                RefreshNotifications();
-            }
-        }
-    }
-
-    void CheckOutdatedPrompts()
-    {
-        bool edited = false;
-        for (int i = 0; i < queuePrompts.Count; i++)
-        {
-            queuePrompts[i].timer -= Time.deltaTime;
-            if (queuePrompts[i].timer <= 0f && queuePrompts[i].isUrgent)
-            {
-                queuePrompts.RemoveAt(i);
-                // Ignored urgent prompt: small bonheur penalty.
-                RessourceManager.Instance.UpdateBonheur(-15);
-                i--;
-                edited = true;
-            }
-        }
-        if (currentPrompt != null)
-        {
-            currentPrompt.timer -= Time.deltaTime;
-            if (currentPrompt.timer <= 0f && currentPrompt.isUrgent)
-            {
-                currentPrompt = null;
-                RessourceManager.Instance.UpdateBonheur(-10);
-                edited = true;
-            }
-        }
-        if (currentPrompt == null) NextPrompt();
-        if (edited) RefreshNotifications();
     }
 }

@@ -10,33 +10,32 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
-  m_Name: pr_chn_PaniqueCyber_02_Medical
+  m_Name: pr_Solo_Asteroide_Minerai
   m_EditorClassIdentifier: Assembly-CSharp::Prompt
-  senderName: Med. Juno
-  message: "M\xE9dical hors ligne !! J'ai un patient en chirurgie L\xC0, j'ai besoin
-    de tes donn\xE9es !!"
+  senderName: "Nav. Eko"
+  message: "Un astéroïde passe à 0.2 UA. Il a une signature riche en métaux rares. On peut envoyer un drone collecteur si tu valides."
   isUnique: 1
-  isUrgent: 1
+  isUrgent: 0
   isCrisis: 0
-  isRelief: 0
+  isRelief: 1
   responseOptions:
-  - optionText: "D\xE9merde-toi"
-    responseUserText: "...s\xE9rieux ?"
-    ressourceGain: 0
-    bonheurGain: -10
-    addedPrompts: []
-    addedDirectPrompts: []
-    removedPrompts: []
-    isGameOverResponse: 0
-    gameOverMessage: 
-  - optionText: Bypass d'urgence
-    responseUserText: "Donn\xE9es restaur\xE9es. Merci, \xE7a sauve une vie."
-    ressourceGain: -5
+  - optionText: "Envoyer le drone"
+    responseUserText: "Drone collecteur en route. Beau tir Eko."
+    ressourceGain: 20
     bonheurGain: 5
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []
     isGameOverResponse: 0
-    gameOverMessage: 
-  timer: -0.0037775014
+    gameOverMessage:
+  - optionText: "Garder le cap"
+    responseUserText: "Pas le temps de dévier. On continue."
+    ressourceGain: 0
+    bonheurGain: -5
+    addedPrompts: []
+    addedDirectPrompts: []
+    removedPrompts: []
+    isGameOverResponse: 0
+    gameOverMessage:
+  timer: 0
   timerMax: 0

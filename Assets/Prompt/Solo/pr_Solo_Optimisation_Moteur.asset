@@ -10,32 +10,32 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
-  m_Name: pr_chn_PaniqueCyber_04_Logs
+  m_Name: pr_Solo_Optimisation_Moteur
   m_EditorClassIdentifier: Assembly-CSharp::Prompt
-  senderName: Dr. Iven
-  message: "Les logs syst\xE8me sont corrompus !!"
+  senderName: "Mec. Parker"
+  message: "J'ai trouvé une nouvelle calibration des injecteurs. On gagne 8% de rendement carburant si on patche maintenant."
   isUnique: 1
-  isUrgent: 1
+  isUrgent: 0
   isCrisis: 0
-  isRelief: 0
+  isRelief: 1
   responseOptions:
-  - optionText: Reset
-    responseUserText: Bon... on perd tout. Mais c'est plus propre.
-    ressourceGain: -10
-    bonheurGain: -5
-    addedPrompts: []
-    addedDirectPrompts: []
-    removedPrompts: []
-    isGameOverResponse: 0
-    gameOverMessage: 
-  - optionText: Rollback
-    responseUserText: OK je remonte au snapshot d'hier.
-    ressourceGain: -5
+  - optionText: "Patcher tout de suite"
+    responseUserText: "Patche, c'est validé. Beau boulot."
+    ressourceGain: 15
     bonheurGain: 5
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []
     isGameOverResponse: 0
-    gameOverMessage: 
-  timer: -0.0037775014
+    gameOverMessage:
+  - optionText: "Tester d'abord en simulation"
+    responseUserText: "On valide en simu avant. Prudence."
+    ressourceGain: 10
+    bonheurGain: 0
+    addedPrompts: []
+    addedDirectPrompts: []
+    removedPrompts: []
+    isGameOverResponse: 0
+    gameOverMessage:
+  timer: 0
   timerMax: 0
