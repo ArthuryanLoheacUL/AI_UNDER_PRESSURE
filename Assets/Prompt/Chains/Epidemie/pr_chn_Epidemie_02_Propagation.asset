@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: pr_chn_Epidemie_02_Propagation
   m_EditorClassIdentifier: Assembly-CSharp::Prompt
   senderName: Med. Juno
-  message: "On a onze cas d'inf\xE9ct\xE9. \xC7a touche surtout les ing\xE9nieurs.
-    On suspecte l'air du secteur tech d'\xEAtre infect\xE9."
+  message: "On a onze cas d'infect\u00E9s. \u00C7a touche surtout les ing\u00E9nieurs. On suspecte l'air du secteur tech d'\u00EAtre infect\u00E9."
   isUnique: 1
   isUrgent: 1
   isCrisis: 1

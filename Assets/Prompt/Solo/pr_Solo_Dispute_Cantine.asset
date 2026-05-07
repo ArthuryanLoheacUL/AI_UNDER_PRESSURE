@@ -29,7 +29,7 @@ MonoBehaviour:
     isGameOverResponse: 0
     gameOverMessage: 
   - optionText: Laisser faire
-    responseUserText: "Ils sont adultes apr\xE8s tout"
+    responseUserText: "Ils sont adultes apr\u00E8s tout."
     ressourceGain: 0
     bonheurGain: -5
     addedPrompts: []

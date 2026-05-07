@@ -21,7 +21,7 @@ MonoBehaviour:
   isRelief: 0
   responseOptions:
   - optionText: Protocole
-    responseUserText: "OK je pr\xE9pare. C'est couteux mais il le m\xE9rite."
+    responseUserText: "OK, je pr\u00E9pare. C'est co\u00FBteux mais il le m\u00E9rite."
     ressourceGain: -10
     bonheurGain: 10
     addedPrompts: []
@@ -31,8 +31,7 @@ MonoBehaviour:
     isGameOverResponse: 0
     gameOverMessage: 
   - optionText: Laisser
-    responseUserText: "Bien on le laisse g\xE9rer seul. Je suis pas d'accord, mais
-      je respecte."
+    responseUserText: "Bien, on le laisse g\u00E9rer seul. Je ne suis pas d'accord, mais je respecte."
     ressourceGain: 0
     bonheurGain: -5
     addedPrompts: []

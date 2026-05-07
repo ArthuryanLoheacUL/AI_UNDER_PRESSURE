@@ -30,7 +30,7 @@ MonoBehaviour:
     isGameOverResponse: 0
     gameOverMessage: 
   - optionText: Ignorer
-    responseUserText: Okay si tu le souhaites
+    responseUserText: "Okay, si tu le souhaites."
     ressourceGain: 0
     bonheurGain: -5
     addedPrompts: []

@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: pr_chn_Mutinerie_01_Graffiti_Bis
   m_EditorClassIdentifier: Assembly-CSharp::Prompt
   senderName: Sec. Mara
-  message: "Il y a de plus en plus de grafitis contre toi. Trois maintenant, de trois
-    mains diff\xE9rentes."
+  message: "Il y a de plus en plus de graffitis contre toi. Trois maintenant, de trois mains diff\u00E9rentes."
   isUnique: 1
   isUrgent: 0
   isCrisis: 0

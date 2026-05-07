@@ -13,15 +13,14 @@ MonoBehaviour:
   m_Name: pr_chn_Epidemie_04_Apres
   m_EditorClassIdentifier: Assembly-CSharp::Prompt
   senderName: Med. Juno
-  message: "On a identifi\xE9 le vecteur de l'infection: c'est les filtres HEPA qui
-    sont d\xE9faillants. On a pu les remplacer. C'est fini."
+  message: "On a identifi\u00E9 le vecteur de l'infection : ce sont les filtres HEPA qui sont d\u00E9faillants. On a pu les remplacer. C'est fini."
   isUnique: 1
   isUrgent: 0
   isCrisis: 0
   isRelief: 1
   responseOptions:
   - optionText: Hommage Sol
-    responseUserText: "Une minute pour Sol \xE7a fait du bien."
+    responseUserText: "Une minute pour Sol, \u00E7a fait du bien."
     ressourceGain: 0
     bonheurGain: 10
     addedPrompts: []

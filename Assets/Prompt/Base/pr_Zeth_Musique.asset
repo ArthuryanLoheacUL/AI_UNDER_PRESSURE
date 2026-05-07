@@ -21,7 +21,7 @@ MonoBehaviour:
   isRelief: 1
   responseOptions:
   - optionText: "Laisser faire"
-    responseUserText: "Si \u00E7a leur fait plaisir on devrait pouvoir le supporter"
+    responseUserText: "Si \u00E7a leur fait plaisir, on devrait pouvoir le supporter."
     ressourceGain: 0
     bonheurGain: 5
     addedPrompts: []

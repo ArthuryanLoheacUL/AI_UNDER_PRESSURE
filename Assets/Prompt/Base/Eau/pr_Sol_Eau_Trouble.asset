@@ -21,7 +21,7 @@ MonoBehaviour:
   isRelief: 0
   responseOptions:
   - optionText: "Purger"
-    responseUserText: "Je lance la purge"
+    responseUserText: "Je lance la purge."
     ressourceGain: -10
     bonheurGain: 5
     addedPrompts: []
@@ -31,7 +31,7 @@ MonoBehaviour:
     isGameOverResponse: 0
     gameOverMessage: ""
   - optionText: "Minimiser"
-    responseUserText: "je leur dirai que c'est psychologique alors ..."
+    responseUserText: "Je leur dirai que c'est psychologique alors..."
     ressourceGain: 0
     bonheurGain: -10
     addedPrompts: []

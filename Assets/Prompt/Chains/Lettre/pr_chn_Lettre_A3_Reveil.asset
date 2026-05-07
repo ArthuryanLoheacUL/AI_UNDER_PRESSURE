@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: pr_chn_Lettre_A3_Reveil
   m_EditorClassIdentifier: Assembly-CSharp::Prompt
   senderName: Hayes
-  message: "MOTHER... j'ai vu pour L\xE9a dans les logs de la Coalition... Je voulais
-    juste te dire merci de m'avoir pr\xE9venu ..."
+  message: "MOTHER... j'ai vu pour L\u00E9a dans les logs de la Coalition... Je voulais juste te dire merci de m'avoir pr\u00E9venu..."
   isUnique: 1
   isUrgent: 0
   isCrisis: 0
@@ -30,7 +29,7 @@ MonoBehaviour:
     isGameOverResponse: 0
     gameOverMessage: 
   - optionText: "C'\xE9tait ton droit"
-    responseUserText: "Tu as raison m\xEAme si c'est dur"
+    responseUserText: "Tu as raison, m\u00EAme si c'est dur."
     ressourceGain: 0
     bonheurGain: 5
     addedPrompts: []

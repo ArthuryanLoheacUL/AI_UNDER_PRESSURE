@@ -21,7 +21,7 @@ MonoBehaviour:
   isRelief: 0
   responseOptions:
   - optionText: "Sanction"
-    responseUserText: "Il le m\u00E9rite."
+    responseUserText: "Ils le m\u00E9ritent."
     ressourceGain: 5
     bonheurGain: -10
     addedPrompts: []
@@ -31,7 +31,7 @@ MonoBehaviour:
     isGameOverResponse: 0
     gameOverMessage: ""
   - optionText: "Avertir"
-    responseUserText: "Ils ont de la chance"
+    responseUserText: "Ils ont de la chance."
     ressourceGain: -5
     bonheurGain: 5
     addedPrompts: []

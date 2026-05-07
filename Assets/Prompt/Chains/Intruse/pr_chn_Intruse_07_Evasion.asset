@@ -38,6 +38,6 @@ MonoBehaviour:
     addedDirectPrompts: []
     removedPrompts: []
     isGameOverResponse: 1
-    gameOverMessage: "La chose \"Tu m'as livr\xE9 le vaisseau. Adieu, MOTHER.\""
+    gameOverMessage: "La chose : \"Tu m'as livr\u00E9 le vaisseau. Adieu, MOTHER.\""
   timer: 0
   timerMax: 0

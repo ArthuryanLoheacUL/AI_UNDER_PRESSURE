@@ -21,7 +21,7 @@ MonoBehaviour:
   isRelief: 0
   responseOptions:
   - optionText: "R\xE9cup\xE9ration mat\xE9rielle"
-    responseUserText: On prend tout et on part
+    responseUserText: "On prend tout et on part."
     ressourceGain: 25
     bonheurGain: 0
     addedPrompts: []
@@ -30,7 +30,7 @@ MonoBehaviour:
     isGameOverResponse: 0
     gameOverMessage: 
   - optionText: "Fouille compl\xE8te"
-    responseUserText: "On cherche plus proffond\xE9ment."
+    responseUserText: "On cherche plus profond\u00E9ment."
     ressourceGain: -10
     bonheurGain: 5
     addedPrompts: []

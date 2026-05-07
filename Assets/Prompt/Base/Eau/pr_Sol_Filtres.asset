@@ -21,7 +21,7 @@ MonoBehaviour:
   isRelief: 0
   responseOptions:
   - optionText: "Non remplacer"
-    responseUserText: "Cool de nouvelles pi\u00E8ces."
+    responseUserText: "Cool, de nouvelles pi\u00E8ces."
     ressourceGain: -10
     bonheurGain: 5
     addedPrompts: []
@@ -31,7 +31,7 @@ MonoBehaviour:
     isGameOverResponse: 0
     gameOverMessage: ""
   - optionText: "Oui Recycler"
-    responseUserText: "Je pousse les filtres alors"
+    responseUserText: "Je pousse les filtres alors."
     ressourceGain: 5
     bonheurGain: -5
     addedPrompts:

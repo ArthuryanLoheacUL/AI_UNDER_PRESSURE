@@ -30,7 +30,7 @@ MonoBehaviour:
     isGameOverResponse: 0
     gameOverMessage: 
   - optionText: L'abandonner
-    responseUserText: RIP petit rotor ...
+    responseUserText: "RIP petit rotor..."
     ressourceGain: 5
     bonheurGain: -5
     addedPrompts: []

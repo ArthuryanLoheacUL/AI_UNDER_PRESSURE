@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: pr_Rho_Vitamines
   m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
   senderName: "Med. Rho"
-  message: "Une carence en vitamine D est d\u00E9tect\u00E9e chez 14 personnes. je leur donne des compl\u00E9ments ou juste l'exposition UV \u00E9largie ?"
+  message: "Une carence en vitamine D est d\u00E9tect\u00E9e chez 14 personnes. Je leur donne des compl\u00E9ments ou juste l'exposition UV \u00E9largie ?"
   isUnique: 0
   isUrgent: 0
   chainTag: ""

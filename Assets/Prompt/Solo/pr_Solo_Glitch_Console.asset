@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: pr_Solo_Glitch_Console
   m_EditorClassIdentifier: Assembly-CSharp::Prompt
   senderName: Ing. Kade
-  message: "La console de Reyna a flash\xE9 un message bizarre. des mots illisibles,
-    puis plus rien."
+  message: "La console de Reyna a flash\u00E9 un message bizarre. Des mots illisibles, puis plus rien."
   isUnique: 0
   isUrgent: 0
   isCrisis: 0

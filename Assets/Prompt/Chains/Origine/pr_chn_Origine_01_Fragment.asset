@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: pr_chn_Origine_01_Fragment
   m_EditorClassIdentifier: Assembly-CSharp::Prompt
   senderName: Com. Zeth
-  message: Les logs contiennents des informations.
+  message: "Les logs contiennent des informations."
   isUnique: 1
   isUrgent: 0
   isCrisis: 0

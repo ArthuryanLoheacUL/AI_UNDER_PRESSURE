@@ -13,15 +13,14 @@ MonoBehaviour:
   m_Name: pr_PaniqueCyber_00_Entry
   m_EditorClassIdentifier: Assembly-CSharp::Prompt
   senderName: Com. Zeth
-  message: "On a une intrusion massive sur nos syst\xE8mes !! Toutes les sections
-    vont sauter en cascade ! On coupe le r\xE9seau ?"
+  message: "On a une intrusion massive sur nos syst\u00E8mes !! Toutes les sections vont sauter en cascade ! On coupe le r\u00E9seau ?"
   isUnique: 1
   isUrgent: 1
   isCrisis: 1
   isRelief: 0
   responseOptions:
   - optionText: "D\xE9fendre"
-    responseUserText: "OK chacun \xE0 son poste, on tient !"
+    responseUserText: "OK, chacun \u00E0 son poste, on tient !"
     ressourceGain: -5
     bonheurGain: 5
     addedPrompts: []

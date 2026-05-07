@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: pr_chn_Fantome_02_Abordage
   m_EditorClassIdentifier: Assembly-CSharp::Prompt
   senderName: Nav. Eko
-  message: "C'est un vaisseau cargo. Le \"Sir\xE8ne-IV\". Disparu il y a 60 ans.
-    la coque est intacte et aucun signal n'en sort."
+  message: "C'est un vaisseau cargo. Le \"Sir\u00E8ne-IV\". Disparu il y a 60 ans. La coque est intacte et aucun signal n'en sort."
   isUnique: 1
   isUrgent: 0
   isCrisis: 0

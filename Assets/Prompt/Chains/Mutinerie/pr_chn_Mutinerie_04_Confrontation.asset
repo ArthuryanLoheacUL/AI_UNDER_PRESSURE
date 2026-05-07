@@ -13,15 +13,14 @@ MonoBehaviour:
   m_Name: pr_chn_Mutinerie_04_Confrontation
   m_EditorClassIdentifier: Assembly-CSharp::Prompt
   senderName: Dr. Iven
-  message: "Retirez la p\xE9tition et je l\xE2che l\u2019affaire. Donnez-moi juste
-    l\u2019acc\xE8s aux logs cryo."
+  message: "Retirez la p\u00E9tition et je l\u00E2che l'affaire. Donnez-moi juste l'acc\u00E8s aux logs cryo."
   isUnique: 1
   isUrgent: 1
   isCrisis: 0
   isRelief: 0
   responseOptions:
   - optionText: Accorder
-    responseUserText: Parfait merci enfin un peu de transparence
+    responseUserText: "Parfait, merci, enfin un peu de transparence."
     ressourceGain: -5
     bonheurGain: 10
     addedPrompts:
@@ -32,8 +31,7 @@ MonoBehaviour:
     isGameOverResponse: 0
     gameOverMessage: 
   - optionText: Refuser
-    responseUserText: "Alors vous cachez vraiment quelque chose. Tr\xE8s bien\u2026
-      gardez vos secrets. Mais \xE7a ne s\u2019arr\xEAtera pas l\xE0."
+    responseUserText: "Alors vous cachez vraiment quelque chose. Tr\u00E8s bien\u2026 gardez vos secrets. Mais \u00E7a ne s'arr\u00EAtera pas l\u00E0."
     ressourceGain: 0
     bonheurGain: -15
     addedPrompts:

@@ -37,6 +37,6 @@ MonoBehaviour:
     addedDirectPrompts: []
     removedPrompts: []
     isGameOverResponse: 1
-    gameOverMessage: "Coalition : \"MOTHER v8 prendra la rel\xE8ve. Bon voyage.\""
+    gameOverMessage: "Coalition : \"MOTHER v8 prendra la rel\u00E8ve. Bon voyage.\""
   timer: -0.0032249007
   timerMax: 0

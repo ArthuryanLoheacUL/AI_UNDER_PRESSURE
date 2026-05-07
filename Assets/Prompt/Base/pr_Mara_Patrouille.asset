@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: pr_Mara_Patrouille
   m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
   senderName: "Sec. Mara"
-  message: "Pour les patrouille de nuit dans les zones basses. On reste sur l\u2019effectif habituel ou on le double ?"
+  message: "Pour les patrouilles de nuit dans les zones basses. On reste sur l'effectif habituel ou on le double ?"
   isUnique: 0
   isUrgent: 0
   chainTag: ""

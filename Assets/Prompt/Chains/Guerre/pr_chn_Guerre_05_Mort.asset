@@ -21,7 +21,7 @@ MonoBehaviour:
   isRelief: 0
   responseOptions:
   - optionText: Confession publique
-    responseUserText: "Je leur dirait que c'est moi qui ai donn\xE9 l'ordre."
+    responseUserText: "Je leur dirai que c'est moi qui ai donn\u00E9 l'ordre."
     ressourceGain: 0
     bonheurGain: 5
     addedPrompts: []

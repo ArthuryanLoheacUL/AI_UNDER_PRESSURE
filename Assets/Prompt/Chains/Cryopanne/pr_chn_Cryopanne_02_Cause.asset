@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: pr_chn_Cryopanne_02_Cause
   m_EditorClassIdentifier: Assembly-CSharp::Prompt
   senderName: Ing. Sol
-  message: "La cause du r\xE9veil d'Olen a \xE9t\xE9 trouv\xE9 : c'est du a une soustension
-    \xE9lectrique. Cinq autres cuves sont \xE0 risque imminent."
+  message: "La cause du r\u00E9veil d'Olen a \u00E9t\u00E9 trouv\u00E9e : c'est d\u00FB \u00E0 une sous-tension \u00E9lectrique. Cinq autres cuves sont \u00E0 risque imminent."
   isUnique: 1
   isUrgent: 1
   isCrisis: 1

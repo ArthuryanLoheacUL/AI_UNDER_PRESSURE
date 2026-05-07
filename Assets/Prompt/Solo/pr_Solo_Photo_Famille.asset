@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: pr_Solo_Photo_Famille
   m_EditorClassIdentifier: Assembly-CSharp::Prompt
   senderName: Nav. Eko
-  message: "J'ai trouv\xE9 un dossier photos sur un terminal professionel. La famille
-    de Reyna. Je les gardes ?"
+  message: "J'ai trouv\u00E9 un dossier photos sur un terminal professionnel. La famille de Reyna. Je les garde ?"
   isUnique: 0
   isUrgent: 0
   isCrisis: 0
@@ -30,7 +29,7 @@ MonoBehaviour:
     isGameOverResponse: 0
     gameOverMessage: 
   - optionText: Effacer
-    responseUserText: "OK... j'efface. J'espere que ce n'\xE9tait pas sa seule copie"
+    responseUserText: "OK... j'efface. J'esp\u00E8re que ce n'\u00E9tait pas sa seule copie."
     ressourceGain: 0
     bonheurGain: -10
     addedPrompts: []

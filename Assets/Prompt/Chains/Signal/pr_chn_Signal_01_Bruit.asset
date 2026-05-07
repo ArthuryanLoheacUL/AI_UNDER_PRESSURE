@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: pr_chn_Signal_01_Bruit
   m_EditorClassIdentifier: Assembly-CSharp::Prompt
   senderName: Dr. Iven
-  message: "Il y a un signal dans le bruit de fond. Il est r\xE9gulier. des impulsions,
-    une pause, des impulsions, etc. Ca semble venir de l'exterieur."
+  message: "Il y a un signal dans le bruit de fond. Il est r\u00E9gulier. Des impulsions, une pause, des impulsions, etc. \u00C7a semble venir de l'ext\u00E9rieur."
   isUnique: 1
   isUrgent: 1
   isCrisis: 0

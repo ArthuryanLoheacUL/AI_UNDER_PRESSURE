@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: pr_chn_Intruse_01_Approche
   m_EditorClassIdentifier: Assembly-CSharp::Prompt
   senderName: Sec. Mara
-  message: "Quelque chose est pass\xE9 par le sas de maintenance B. La signature
-    n'est dans aucune listes d'\xE9quipage."
+  message: "Quelque chose est pass\u00E9 par le sas de maintenance B. La signature n'est dans aucune liste d'\u00E9quipage."
   isUnique: 1
   isUrgent: 1
   isCrisis: 1

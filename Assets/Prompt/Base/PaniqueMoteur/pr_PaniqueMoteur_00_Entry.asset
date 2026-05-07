@@ -21,7 +21,7 @@ MonoBehaviour:
   isRelief: 0
   responseOptions:
   - optionText: "On g\xE8re"
-    responseUserText: "OK je dispatch les \xE9quipes, \xE7a va secouer !"
+    responseUserText: "OK, je dispatche les \u00E9quipes, \u00E7a va secouer !"
     ressourceGain: 0
     bonheurGain: 5
     addedPrompts: []
@@ -36,7 +36,7 @@ MonoBehaviour:
     isGameOverResponse: 0
     gameOverMessage: 
   - optionText: Coupe tout
-    responseUserText: "Bon... arr\xEAt total, on perd des semaines mais OK."
+    responseUserText: "Bon... arr\u00EAt total, on perd des semaines mais OK."
     ressourceGain: -10
     bonheurGain: -10
     addedPrompts: []

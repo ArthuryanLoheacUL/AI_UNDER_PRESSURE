@@ -31,7 +31,7 @@ MonoBehaviour:
     isGameOverResponse: 0
     gameOverMessage: 
   - optionText: Refuser
-    responseUserText: "Je coupe la lecture. Je peux pas digerer \xE7a."
+    responseUserText: "Je coupe la lecture. Je peux pas dig\u00E9rer \u00E7a."
     ressourceGain: 0
     bonheurGain: 0
     addedPrompts: []

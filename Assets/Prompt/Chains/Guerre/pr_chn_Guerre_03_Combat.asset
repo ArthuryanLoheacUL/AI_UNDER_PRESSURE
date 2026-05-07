@@ -21,7 +21,7 @@ MonoBehaviour:
   isRelief: 0
   responseOptions:
   - optionText: Pression
-    responseUserText: On continue l'assaut. Aller courage !
+    responseUserText: "On continue l'assaut. Allez, courage !"
     ressourceGain: -15
     bonheurGain: -15
     addedPrompts: []

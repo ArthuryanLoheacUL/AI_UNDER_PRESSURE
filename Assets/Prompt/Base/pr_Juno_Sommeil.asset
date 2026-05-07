@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: pr_Juno_Sommeil
   m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
   senderName: "Med. Juno"
-  message: "L'\u00E9quipage dort mal. car les rotation des quarts sont trop serr\u00E9e. Je recommande une semaine all\u00E9g\u00E9e."
+  message: "L'\u00E9quipage dort mal car les rotations des quarts sont trop serr\u00E9es. Je recommande une semaine all\u00E9g\u00E9e."
   isUnique: 0
   isUrgent: 0
   chainTag: ""
@@ -21,7 +21,7 @@ MonoBehaviour:
   isRelief: 1
   responseOptions:
   - optionText: "Accord\u00E9e"
-    responseUserText: "Super \u00E0 nous le repos."
+    responseUserText: "Super, \u00E0 nous le repos."
     ressourceGain: -5
     bonheurGain: 10
     addedPrompts: []
@@ -31,7 +31,7 @@ MonoBehaviour:
     isGameOverResponse: 0
     gameOverMessage: ""
   - optionText: "Refus\u00E9e"
-    responseUserText: "C'\u00E9tait pas grand choses..."
+    responseUserText: "C'\u00E9tait pas grand chose..."
     ressourceGain: 0
     bonheurGain: -10
     addedPrompts: []

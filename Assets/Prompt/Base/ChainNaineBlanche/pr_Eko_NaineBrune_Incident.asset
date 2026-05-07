@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: pr_Eko_NaineBrune_Incident
   m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
   senderName: "Nav. Eko"
-  message: "On est dans la magn\u00E9tosph\u00E8re de la Naine Blanche. Le champ est instable, Les boucliers sont \u00E0 41%."
+  message: "On est dans la magn\u00E9tosph\u00E8re de la Naine Blanche. Le champ est instable. Les boucliers sont \u00E0 41%."
   isUnique: 1
   isUrgent: 1
   chainTag: ""
@@ -21,7 +21,7 @@ MonoBehaviour:
   isRelief: 0
   responseOptions:
   - optionText: "Renforcer Bouclier"
-    responseUserText: "Tout sur les boucliers \u00E7a devrait bien se passer !"
+    responseUserText: "Tout sur les boucliers, \u00E7a devrait bien se passer !"
     ressourceGain: -15
     bonheurGain: 10
     addedPrompts:
@@ -33,7 +33,7 @@ MonoBehaviour:
     isGameOverResponse: 0
     gameOverMessage: ""
   - optionText: "Tennir bon"
-    responseUserText: "On serre les dents ... je suis inquiet ..."
+    responseUserText: "On serre les dents... je suis inquiet..."
     ressourceGain: 0
     bonheurGain: -15
     addedPrompts: []

@@ -13,15 +13,14 @@ MonoBehaviour:
   m_Name: pr_chn_Mondes_A4_Final
   m_EditorClassIdentifier: Assembly-CSharp::Prompt
   senderName: Capt. Voss
-  message: "On y est. Un sol \xE9tranger sous nos bottes. Ca fait bizarre. Mais c'est
-    chez nous maintenant. Tu nous as bien guid\xE9, MOTHER. Vraiment."
+  message: "On y est. Un sol \u00E9tranger sous nos bottes. \u00C7a fait bizarre. Mais c'est chez nous maintenant. Tu nous as bien guid\u00E9s, MOTHER. Vraiment."
   isUnique: 1
   isUrgent: 0
   isCrisis: 0
   isRelief: 1
   responseOptions:
   - optionText: Bienvenue chez nous
-    responseUserText: "\xC9mue. Vraiment. Bonne arriv\xE9e \xE0 toi."
+    responseUserText: "\u00C9mue. Vraiment. Bonne arriv\u00E9e \u00E0 toi."
     ressourceGain: 0
     bonheurGain: 15
     addedPrompts: []

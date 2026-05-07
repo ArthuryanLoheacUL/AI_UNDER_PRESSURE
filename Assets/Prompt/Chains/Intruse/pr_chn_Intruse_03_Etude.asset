@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: pr_chn_Intruse_03_Etude
   m_EditorClassIdentifier: Assembly-CSharp::Prompt
   senderName: Dr. Vale
-  message: "Ce truc respire de l'azote. Mais surtout il apprend. Il a d\xE9j\xE0
-    ouvert un panneau de ventilation pour se deplacer."
+  message: "Ce truc respire de l'azote. Mais surtout, il apprend. Il a d\u00E9j\u00E0 ouvert un panneau de ventilation pour se d\u00E9placer."
   isUnique: 1
   isUrgent: 1
   isCrisis: 1

@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: pr_chn_Epidemie_03_Crise
   m_EditorClassIdentifier: Assembly-CSharp::Prompt
   senderName: Med. Juno
-  message: "Un mort est d\xE9clar\xE9 de l'infection. C'est sol. Les autres sont
-    stabilis\xE9s mais la famille demande \xE0 voir le corps."
+  message: "Un mort est d\u00E9clar\u00E9 de l'infection. C'est Sol. Les autres sont stabilis\u00E9s mais la famille demande \u00E0 voir le corps."
   isUnique: 1
   isUrgent: 1
   isCrisis: 1
@@ -31,7 +30,7 @@ MonoBehaviour:
     isGameOverResponse: 0
     gameOverMessage: 
   - optionText: Refuser
-    responseUserText: On ne veut pas d'autres malades mais c'est dur pour eux
+    responseUserText: "On ne veut pas d'autres malades, mais c'est dur pour eux."
     ressourceGain: 0
     bonheurGain: -15
     addedPrompts: []

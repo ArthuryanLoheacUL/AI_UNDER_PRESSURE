@@ -21,7 +21,7 @@ MonoBehaviour:
   isRelief: 0
   responseOptions:
   - optionText: "R\xE9pondre vrai"
-    responseUserText: "On liste tout les probl\xE8mes, soyons transparence."
+    responseUserText: "On liste tous les probl\u00E8mes, soyons transparents."
     ressourceGain: -5
     bonheurGain: 5
     addedPrompts: []

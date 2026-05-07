@@ -355,6 +355,7 @@ public class PromptsManager : MonoBehaviour
         {
             StartCoroutine(NextPromptWithDelay(prompt));
             currentPrompt = prompt;
+            PlayerPrefs.SetInt(prompt.senderName + prompt.message.Truncate(5) + prompt.message.Count().ToString(), 1);
         }
         RefreshNotifications();
     }

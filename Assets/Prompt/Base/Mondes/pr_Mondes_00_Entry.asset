@@ -13,9 +13,7 @@ MonoBehaviour:
   m_Name: pr_Mondes_00_Entry
   m_EditorClassIdentifier: Assembly-CSharp::Prompt
   senderName: Dr. Iven
-  message: "MOTHER, j'ai fini l'analyse de Kepler-442b. L'atmosph\xE8re est stable.
-    Il n'est cependant pas habitable comme promis: -5\xB0C de moyenne, 80% couvertes
-    pas les mers. On peut y vivre. Mais c'est dur.\n"
+  message: "MOTHER, j'ai fini l'analyse de Kepler-442b. L'atmosph\u00E8re est stable. Elle n'est cependant pas habitable comme promis : -5\u00B0C de moyenne, 80% couverte par les mers. On peut y vivre, mais c'est dur."
   isUnique: 1
   isUrgent: 0
   isCrisis: 0

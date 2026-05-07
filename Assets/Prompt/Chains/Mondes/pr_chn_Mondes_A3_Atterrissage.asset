@@ -13,9 +13,7 @@ MonoBehaviour:
   m_Name: pr_chn_Mondes_A3_Atterrissage
   m_EditorClassIdentifier: Assembly-CSharp::Prompt
   senderName: Nav. Eko
-  message: "Atterrissage dans 6 heures on a trouv\xE9 2 lieux possible: un oc\xE9an
-    glac\xE9 riches en ressources ou un site montagneux et sec, s\xFBr mais pauvre
-    en ressources ?"
+  message: "Atterrissage dans 6 heures, on a trouv\u00E9 2 lieux possibles : un oc\u00E9an glac\u00E9 riche en ressources ou un site montagneux et sec, s\u00FBr mais pauvre en ressources ?"
   isUnique: 1
   isUrgent: 0
   isCrisis: 0

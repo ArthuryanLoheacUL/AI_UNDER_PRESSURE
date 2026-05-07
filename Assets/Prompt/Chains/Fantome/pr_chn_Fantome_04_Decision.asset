@@ -21,7 +21,7 @@ MonoBehaviour:
   isRelief: 0
   responseOptions:
   - optionText: Partir vite
-    responseUserText: "On d\xE9colle. Pas envie de disparaitre comme eux."
+    responseUserText: "On d\u00E9colle. Pas envie de dispara\u00EEtre comme eux."
     ressourceGain: 0
     bonheurGain: 5
     addedPrompts:

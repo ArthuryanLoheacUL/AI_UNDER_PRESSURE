@@ -21,7 +21,7 @@ MonoBehaviour:
   isRelief: 0
   responseOptions:
   - optionText: "Patcher"
-    responseUserText: "Je patche"
+    responseUserText: "Je patche."
     ressourceGain: -5
     bonheurGain: 5
     addedPrompts: []
@@ -31,7 +31,7 @@ MonoBehaviour:
     isGameOverResponse: 0
     gameOverMessage: ""
   - optionText: "Reporter"
-    responseUserText: "Si il y a des pleintes de bugs je les renvoies vers toi."
+    responseUserText: "S'il y a des plaintes de bugs, je les renvoie vers toi."
     ressourceGain: 0
     bonheurGain: -5
     addedPrompts: []

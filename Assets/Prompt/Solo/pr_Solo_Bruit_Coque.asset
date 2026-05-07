@@ -30,7 +30,7 @@ MonoBehaviour:
     isGameOverResponse: 0
     gameOverMessage: 
   - optionText: Ignorer
-    responseUserText: "Si \xE7a casse, je t'aurais pr\xE9venu."
+    responseUserText: "Si \u00E7a casse, je t'aurai pr\u00E9venue."
     ressourceGain: 0
     bonheurGain: -10
     addedPrompts: []

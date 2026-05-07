@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: pr_Parker_Inventaire
   m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
   senderName: "Ing. Parker"
-  message: "l'Inventaire du moteur est termin\u00E9. Tout est conforme."
+  message: "L'inventaire du moteur est termin\u00E9. Tout est conforme."
   isUnique: 1
   isUrgent: 0
   chainTag: "Parker"

@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: pr_chn_Epidemie_01_Fievre
   m_EditorClassIdentifier: Assembly-CSharp::Prompt
   senderName: Med. Juno
-  message: "Il y a 3 cas de fi\xE8vre \xE0 39\xB0. Les Sympt\xF4mes sont proches
-    d'un virus terrestre."
+  message: "Il y a 3 cas de fi\u00E8vre \u00E0 39\u00B0. Les sympt\u00F4mes sont proches d'un virus terrestre."
   isUnique: 1
   isUrgent: 0
   isCrisis: 0
@@ -30,7 +29,7 @@ MonoBehaviour:
     isGameOverResponse: 0
     gameOverMessage: 
   - optionText: Surveillance
-    responseUserText: "Je garde un \u0153il. sur eux."
+    responseUserText: "Je garde un \u0153il sur eux."
     ressourceGain: 0
     bonheurGain: 0
     addedPrompts:

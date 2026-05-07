@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: pr_chn_Contact_03_Suspicion
   m_EditorClassIdentifier: Assembly-CSharp::Prompt
   senderName: Com. Zeth
-  message: "La Coalition a relanc\xE9. Trois fois. Ils savent qu'on ment. Le correctif 
-    d'autorit\xE9 serait en route."
+  message: "La Coalition a relanc\u00E9. Trois fois. Ils savent qu'on ment. Le correctif d'autorit\u00E9 serait en route."
   isUnique: 1
   isUrgent: 1
   isCrisis: 1

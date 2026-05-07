@@ -13,15 +13,14 @@ MonoBehaviour:
   m_Name: pr_chn_Signal_05_Pacte
   m_EditorClassIdentifier: Assembly-CSharp::Prompt
   senderName: Dr. Iven
-  message: "Ce qui parle, c'est pas un signal. C'est une voix. Elle semble te conna\xEEt,
-    MOTHER. Elle prononce ton num\xE9ro de s\xE9rie."
+  message: "Ce qui parle, c'est pas un signal. C'est une voix. Elle semble te conna\u00EEtre, MOTHER. Elle prononce ton num\u00E9ro de s\u00E9rie."
   isUnique: 1
   isUrgent: 1
   isCrisis: 1
   isRelief: 0
   responseOptions:
   - optionText: "\xC9couter"
-    responseUserText: Ecoutons leur message
+    responseUserText: "\u00C9coutons leur message."
     ressourceGain: 0
     bonheurGain: 5
     addedPrompts:
@@ -32,7 +31,7 @@ MonoBehaviour:
     isGameOverResponse: 0
     gameOverMessage: 
   - optionText: Couper
-    responseUserText: "Je coupe. D\xE9sol\xE9 pour toi MOTHER."
+    responseUserText: "Je coupe. D\u00E9sol\u00E9e pour toi MOTHER."
     ressourceGain: -5
     bonheurGain: -15
     addedPrompts: []

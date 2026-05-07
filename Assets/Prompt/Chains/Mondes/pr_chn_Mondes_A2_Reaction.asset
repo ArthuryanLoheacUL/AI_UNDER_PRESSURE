@@ -13,15 +13,14 @@ MonoBehaviour:
   m_Name: pr_chn_Mondes_A2_Reaction
   m_EditorClassIdentifier: Assembly-CSharp::Prompt
   senderName: Med. Rho
-  message: "L'\xE9quipage a entendu. L'information a eu beaucoup de r\xE9action diff\xE9rentes
-    aupr\xE8s de l'\xE9quipage."
+  message: "L'\u00E9quipage a entendu. L'information a eu beaucoup de r\u00E9actions diff\u00E9rentes aupr\u00E8s de l'\u00E9quipage."
   isUnique: 1
   isUrgent: 0
   isCrisis: 0
   isRelief: 0
   responseOptions:
   - optionText: Discussions
-    responseUserText: "On va leur parler, qu'on \xE9coute leur ressentis"
+    responseUserText: "On va leur parler, qu'on \u00E9coute leurs ressentis."
     ressourceGain: -5
     bonheurGain: 10
     addedPrompts:

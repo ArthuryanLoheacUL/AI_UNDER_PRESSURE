@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: pr_Solo_Reve_Cryo
   m_EditorClassIdentifier: Assembly-CSharp::Prompt
   senderName: Dr. Vale
-  message: "Lecture EEG anormale sur trois colons en cryo. Pas de souffrance d\xE9t\xE9ct\xE9."
+  message: "Lecture EEG anormale sur trois colons en cryo. Pas de souffrance d\u00E9tect\u00E9e."
   isUnique: 0
   isUrgent: 0
   isCrisis: 0

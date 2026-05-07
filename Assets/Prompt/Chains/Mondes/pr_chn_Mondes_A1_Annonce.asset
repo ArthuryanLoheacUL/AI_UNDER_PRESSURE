@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: pr_chn_Mondes_A1_Annonce
   m_EditorClassIdentifier: Assembly-CSharp::Prompt
   senderName: Capt. Voss
-  message: "Souhaite tu annoncer \xE0 l'\xE9quipage la nouvelle pour l'atterissage
-    ?"
+  message: "Souhaites-tu annoncer \u00E0 l'\u00E9quipage la nouvelle pour l'atterrissage ?"
   isUnique: 1
   isUrgent: 0
   isCrisis: 0

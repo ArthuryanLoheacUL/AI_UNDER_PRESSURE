@@ -38,6 +38,6 @@ MonoBehaviour:
     addedDirectPrompts: []
     removedPrompts: []
     isGameOverResponse: 1
-    gameOverMessage: Iven "Le silence. Enfin."
+    gameOverMessage: "Iven : \"Le silence. Enfin.\""
   timer: 0
   timerMax: 0

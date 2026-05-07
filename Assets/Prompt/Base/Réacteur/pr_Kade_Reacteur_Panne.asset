@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: pr_Kade_Reacteur_Panne
   m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
   senderName: "Ing. Kade"
-  message: "LE MOTEUR SECOND A LACHE !!! On est sur le primaire uniquement !!!"
+  message: "LE MOTEUR SECOND A L\u00C2CH\u00C9 !!! On est sur le primaire uniquement !!!"
   isUnique: 1
   isUrgent: 1
   chainTag: ""
@@ -31,7 +31,7 @@ MonoBehaviour:
     isGameOverResponse: 0
     gameOverMessage: ""
   - optionText: "Tenir sur le primaire"
-    responseUserText: "On va prier ..."
+    responseUserText: "On va prier..."
     ressourceGain: 0
     bonheurGain: -15
     addedPrompts: []

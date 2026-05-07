@@ -21,7 +21,7 @@ MonoBehaviour:
   isRelief: 0
   responseOptions:
   - optionText: C'est mon poids
-    responseUserText: Je sais. On vis avec.
+    responseUserText: "Je sais. On vit avec."
     ressourceGain: 0
     bonheurGain: -5
     addedPrompts: []

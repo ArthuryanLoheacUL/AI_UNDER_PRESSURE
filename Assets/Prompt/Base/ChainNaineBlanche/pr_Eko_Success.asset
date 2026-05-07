@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: pr_Eko_Success
   m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
   senderName: "Nav. Eko"
-  message: "Parfait on a r\u00E9ussi la manoeuvre on va pouvoir rentrer plus t\u00F4t \u00E0 la maison !"
+  message: "Parfait, on a r\u00E9ussi la man\u0153uvre ! On va pouvoir rentrer plus t\u00F4t \u00E0 la maison !"
   isUnique: 1
   isUrgent: 0
   chainTag: ""

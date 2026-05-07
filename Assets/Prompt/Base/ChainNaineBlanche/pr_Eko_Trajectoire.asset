@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: pr_Eko_Trajectoire
   m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
   senderName: "Nav. Eko"
-  message: "J'ai recalcul\u00E9. On peut gagner 8 mois en rasant une naine brune. Le risque  est estim\u00E9 4%."
+  message: "J'ai recalcul\u00E9. On peut gagner 8 mois en rasant une naine brune. Le risque est estim\u00E9 \u00E0 4%."
   isUnique: 1
   isUrgent: 0
   chainTag: ""
@@ -21,7 +21,7 @@ MonoBehaviour:
   isRelief: 0
   responseOptions:
   - optionText: "GO"
-    responseUserText: "Let's go je lance l'operation !"
+    responseUserText: "Let's go, je lance l'op\u00E9ration !"
     ressourceGain: -10
     bonheurGain: 5
     addedPrompts:
@@ -33,7 +33,7 @@ MonoBehaviour:
     isGameOverResponse: 0
     gameOverMessage: ""
   - optionText: "Trop risqu\u00E9"
-    responseUserText: "On aurait pu r\u00E9duire le trajet de 8 mois dommage."
+    responseUserText: "On aurait pu r\u00E9duire le trajet de 8 mois, dommage."
     ressourceGain: 0
     bonheurGain: -5
     addedPrompts: []

@@ -30,7 +30,7 @@ MonoBehaviour:
     isGameOverResponse: 0
     gameOverMessage: 
   - optionText: Rien faire
-    responseUserText: "On ne saura jamais c'\xE9tait inqui\xE9tant pourtant"
+    responseUserText: "On ne saura jamais, c'\u00E9tait inqui\u00E9tant pourtant."
     ressourceGain: 0
     bonheurGain: -10
     addedPrompts: []

@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: pr_chn_Cryopanne_03_Adaptation
   m_EditorClassIdentifier: Assembly-CSharp::Prompt
   senderName: Med. Rho
-  message: "Olen demande \xE0 voir sa famille. Ils sont tous en cryo, mais l'acces
-    est interdits. Il en pleure."
+  message: "Olen demande \u00E0 voir sa famille. Ils sont tous en cryo, mais l'acc\u00E8s est interdit. Il en pleure."
   isUnique: 1
   isUrgent: 0
   isCrisis: 0
@@ -30,7 +29,7 @@ MonoBehaviour:
     isGameOverResponse: 0
     gameOverMessage: 
   - optionText: Refuser
-    responseUserText: C'est le protocole il n'y a malheuresement pas d'exception.
+    responseUserText: "C'est le protocole, il n'y a malheureusement pas d'exception."
     ressourceGain: 0
     bonheurGain: -10
     addedPrompts:

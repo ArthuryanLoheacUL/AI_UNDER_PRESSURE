@@ -13,16 +13,14 @@ MonoBehaviour:
   m_Name: pr_chn_Verdict_A2_Parker
   m_EditorClassIdentifier: Assembly-CSharp::Prompt
   senderName: Ing. Parker
-  message: "Tu as donc lu le dossier du coup ... Je m'y attendais depuis qu'on est
-    partis j'y pense. J'\xE9cris encore \xE0 la famille de la victime chaque mois
-    depuis dix ans. Tu peux lire les lettres si tu veux..."
+  message: "Tu as donc lu le dossier du coup... Je m'y attendais, depuis qu'on est partis j'y pense. J'\u00E9cris encore \u00E0 la famille de la victime chaque mois depuis dix ans. Tu peux lire les lettres si tu veux..."
   isUnique: 1
   isUrgent: 0
   isCrisis: 0
   isRelief: 0
   responseOptions:
   - optionText: Pas la peine
-    responseUserText: Le dossier suffit je comprends
+    responseUserText: "Le dossier suffit, je comprends."
     ressourceGain: 0
     bonheurGain: -5
     addedPrompts: []
@@ -32,7 +30,7 @@ MonoBehaviour:
     isGameOverResponse: 0
     gameOverMessage: 
   - optionText: Lire les lettres
-    responseUserText: "Tr\xE8s bien je te les envoies"
+    responseUserText: "Tr\u00E8s bien, je te les envoie."
     ressourceGain: 0
     bonheurGain: 5
     addedPrompts: []

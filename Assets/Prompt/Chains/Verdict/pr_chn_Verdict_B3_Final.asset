@@ -13,9 +13,7 @@ MonoBehaviour:
   m_Name: pr_chn_Verdict_B3_Final
   m_EditorClassIdentifier: Assembly-CSharp::Prompt
   senderName: Ing. Parker
-  message: "Je sais que ce que j'ai fait ne s'efface pas. Mais j'ai eu douze ans
-    pour devenir quelqu'un d'autre. Je ferai pas semblant que c'est rien mais j'ai
-    chang\xE9."
+  message: "Je sais que ce que j'ai fait ne s'efface pas. Mais j'ai eu douze ans pour devenir quelqu'un d'autre. Je ferai pas semblant que c'est rien, mais j'ai chang\u00E9."
   isUnique: 1
   isUrgent: 0
   isCrisis: 0

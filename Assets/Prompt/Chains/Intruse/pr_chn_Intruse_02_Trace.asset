@@ -31,7 +31,7 @@ MonoBehaviour:
     isGameOverResponse: 0
     gameOverMessage: 
   - optionText: "Br\xFBler"
-    responseUserText: "Je st\xE9rilise. On sait jamais."
+    responseUserText: "Je st\u00E9rilise. On ne sait jamais."
     ressourceGain: -15
     bonheurGain: -5
     addedPrompts: []

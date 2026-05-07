@@ -21,7 +21,7 @@ MonoBehaviour:
   isRelief: 0
   responseOptions:
   - optionText: "R\u00E9parer"
-    responseUserText: "Tr\u00E8s bien \u00E7a devrait r\u00E9gler l'inqui\u00E9tude."
+    responseUserText: "Tr\u00E8s bien, \u00E7a devrait r\u00E9gler l'inqui\u00E9tude."
     ressourceGain: -10
     bonheurGain: 5
     addedPrompts: []
@@ -31,7 +31,7 @@ MonoBehaviour:
     isGameOverResponse: 0
     gameOverMessage: ""
   - optionText: "Attendre"
-    responseUserText: "On va \u00E9sperer que \u00E7a \u00E9xplose pas ..."
+    responseUserText: "On va esp\u00E9rer que \u00E7a explose pas..."
     ressourceGain: 5
     bonheurGain: -10
     addedPrompts:

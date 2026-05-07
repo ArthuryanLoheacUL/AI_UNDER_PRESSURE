@@ -13,9 +13,7 @@ MonoBehaviour:
   m_Name: pr_chn_Cryopanne_04_Crise_Olen
   m_EditorClassIdentifier: Assembly-CSharp::Prompt
   senderName: Sec. Mara
-  message: "Olen a forc\xE9 une cuve. Celle de sa fille de six ans, elle est dans
-    ses bras. Mais l'arr\xEAt cryo brute comme \xE7a ne lui laisse que 2 minutes
-    avant l'arr\xEAt cardiaque."
+  message: "Olen a forc\u00E9 une cuve. Celle de sa fille de six ans, elle est dans ses bras. Mais l'arr\u00EAt cryo brutal comme \u00E7a ne lui laisse que 2 minutes avant l'arr\u00EAt cardiaque."
   isUnique: 1
   isUrgent: 1
   isCrisis: 1
@@ -31,7 +29,7 @@ MonoBehaviour:
     isGameOverResponse: 0
     gameOverMessage: 
   - optionText: "Arr\xEAter"
-    responseUserText: Olen repentira de ses actes ... mais sa fille ...
+    responseUserText: "Olen se repentira de ses actes... mais sa fille..."
     ressourceGain: -5
     bonheurGain: -15
     addedPrompts: []

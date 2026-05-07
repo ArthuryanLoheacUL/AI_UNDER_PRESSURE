@@ -13,15 +13,14 @@ MonoBehaviour:
   m_Name: pr_chn_Lettre_B1_Effacement
   m_EditorClassIdentifier: Assembly-CSharp::Prompt
   senderName: Com. Zeth
-  message: "C'est effac\xE9. Mais Jean scanne les logs chaque matin. Il va voir qu'un
-    message de la Coalition manque. Il va se poser des questions."
+  message: "C'est effac\u00E9. Mais Jean scanne les logs chaque matin. Il va voir qu'un message de la Coalition manque. Il va se poser des questions."
   isUnique: 1
   isUrgent: 0
   isCrisis: 0
   isRelief: 0
   responseOptions:
   - optionText: Informer Jean
-    responseUserText: "Bon... on est trois maintenant \xE0 savoir"
+    responseUserText: "Bon... on est trois maintenant \u00E0 savoir."
     ressourceGain: 0
     bonheurGain: 0
     addedPrompts: []

@@ -13,10 +13,7 @@ MonoBehaviour:
   m_Name: pr_Lettre_00_Entry
   m_EditorClassIdentifier: Assembly-CSharp::Prompt
   senderName: Com. Zeth
-  message: "Je viens de capter une transmission de la Coalition. La femme de Hayes,
-    qui est colon en cryo 1124, est d\xE9c\xE9d\xE9e il y a trois semaines... Il
-    reste des mois de cryo restants. Quand il se r\xE9veillera, il d\xE9couvrira
-    que personne l'attends \xE0 la maison..."
+  message: "Je viens de capter une transmission de la Coalition. La femme de Hayes, qui est colon en cryo 1124, est d\u00E9c\u00E9d\u00E9e il y a trois semaines... Il reste des mois de cryo restants. Quand il se r\u00E9veillera, il d\u00E9couvrira que personne ne l'attend \u00E0 la maison..."
   isUnique: 1
   isUrgent: 0
   isCrisis: 0

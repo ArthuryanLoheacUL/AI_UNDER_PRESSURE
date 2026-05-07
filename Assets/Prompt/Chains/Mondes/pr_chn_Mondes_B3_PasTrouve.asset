@@ -13,10 +13,7 @@ MonoBehaviour:
   m_Name: pr_chn_Mondes_B3_PasTrouve
   m_EditorClassIdentifier: Assembly-CSharp::Prompt
   senderName: Nav. Eko
-  message: "MOTHER\u2026 il n'y a rien. Encore rien. Pas une seule plan\xE8te habitable,
-    pas d\u2019eau exploitable, rien. Les r\xE9serves sont presque vides\u2026 On
-    n\u2019a plus assez de rations. J\u2019y crois pas\u2026 tout se temps perdu
-    ... et nos familles ..."
+  message: "MOTHER\u2026 il n'y a rien. Encore rien. Pas une seule plan\u00E8te habitable, pas d'eau exploitable, rien. Les r\u00E9serves sont presque vides\u2026 On n'a plus assez de rations. J'y crois pas\u2026 tout ce temps perdu... et nos familles..."
   isUnique: 1
   isUrgent: 0
   isCrisis: 0

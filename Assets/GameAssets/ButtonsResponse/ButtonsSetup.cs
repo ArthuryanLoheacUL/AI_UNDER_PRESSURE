@@ -59,7 +59,7 @@ public class ButtonsSetup : MonoBehaviour
         GameObject buttonGO1 = Instantiate(buttonPrefab, parentButtons);
         ButtonResponseUI buttonResponseUI1 = buttonGO1.GetComponent<ButtonResponseUI>();
         buttonResponseUI1.SetResponse("Menu", 0);
-        buttonGO1.GetComponent<Button>().onClick.AddListener(() => SceneManager.LoadScene("Menu"));
+        buttonGO1.GetComponent<Button>().onClick.AddListener(() => SceneManager.LoadScene("StartMenu"));
     
         // Create a single "Restart" button
         GameObject buttonGO2 = Instantiate(buttonPrefab, parentButtons);

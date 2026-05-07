@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: pr_chn_Fantome_01_Detection
   m_EditorClassIdentifier: Assembly-CSharp::Prompt
   senderName: Nav. Eko
-  message: "On a un \xE9cho radar \xE0 0.8 UA. Il est m\xE9tallique, inerte et pas
-    not\xE9 dans nos cartes. Ca nous ferait un d\xE9tour de 3 mois cependant ..."
+  message: "On a un \u00E9cho radar \u00E0 0.8 UA. Il est m\u00E9tallique, inerte et pas not\u00E9 dans nos cartes. \u00C7a nous ferait un d\u00E9tour de 3 mois cependant..."
   isUnique: 1
   isUrgent: 0
   isCrisis: 0

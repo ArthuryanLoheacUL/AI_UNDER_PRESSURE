@@ -31,7 +31,7 @@ MonoBehaviour:
     isGameOverResponse: 0
     gameOverMessage: 
   - optionText: J'ai bien fait
-    responseUserText: Avancons maintenant
+    responseUserText: "Avan\u00E7ons maintenant."
     ressourceGain: 0
     bonheurGain: 0
     addedPrompts: []

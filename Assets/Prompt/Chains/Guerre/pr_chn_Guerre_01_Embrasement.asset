@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: pr_chn_Guerre_01_Embrasement
   m_EditorClassIdentifier: Assembly-CSharp::Prompt
   senderName: Sec. Mara
-  message: "Iven a forc\xE9 l'armurerie. Il a 2 gardes avec lui. Et Voss est bl\xE9ss\xE9
-    avec eux."
+  message: "Iven a forc\u00E9 l'armurerie. Il a 2 gardes avec lui. Et Voss est bless\u00E9 avec eux."
   isUnique: 1
   isUrgent: 1
   isCrisis: 1
@@ -31,7 +30,7 @@ MonoBehaviour:
     isGameOverResponse: 0
     gameOverMessage: 
   - optionText: Neutraliser
-    responseUserText: "On a le feu vert. C'est malheuresemnt n\xE9cessaire."
+    responseUserText: "On a le feu vert. C'est malheureusement n\u00E9cessaire."
     ressourceGain: -10
     bonheurGain: -10
     addedPrompts: []
