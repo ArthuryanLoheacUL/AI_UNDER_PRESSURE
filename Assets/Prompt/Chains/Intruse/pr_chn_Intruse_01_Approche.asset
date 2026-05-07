@@ -11,36 +11,34 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
   m_Name: pr_chn_Intruse_01_Approche
-  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
-  senderName: "Sec. Mara"
-  message: "Quelque chose est pass\u00E9 par le sas de maintenance B. Pas dans la liste d'\u00E9quipage."
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  senderName: Sec. Mara
+  message: "Quelque chose est pass\xE9 par le sas de maintenance B. La signature
+    n'est dans aucune listes d'\xE9quipage."
   isUnique: 1
   isUrgent: 1
-  chainTag: "Intruse"
   isCrisis: 1
   isRelief: 0
   responseOptions:
-  - optionText: "Confinement secteur"
-    responseUserText: "Scelle B et C."
+  - optionText: Confine le secteur
+    responseUserText: Je scelle B et C tout de suite.
     ressourceGain: -10
     bonheurGain: 5
     addedPrompts: []
     addedDirectPrompts:
     - {fileID: 11400000, guid: 7b4374ab7e2564aa0c72608478bf88cf, type: 2}
     removedPrompts: []
-    removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
-  - optionText: "Patrouille arm\u00E9e"
-    responseUserText: "Mara, prends deux gardes."
+    gameOverMessage: 
+  - optionText: Patrouille
+    responseUserText: "Je prends Korr et Lin et j'envoie la patrouille arm\xE9e."
     ressourceGain: -5
     bonheurGain: -10
     addedPrompts: []
     addedDirectPrompts:
     - {fileID: 11400000, guid: 7b4374ab7e2564aa0c72608478bf88cf, type: 2}
     removedPrompts: []
-    removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
+    gameOverMessage: 
   timer: 0
   timerMax: 0

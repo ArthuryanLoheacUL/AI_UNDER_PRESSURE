@@ -11,37 +11,35 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
   m_Name: pr_chn_Cryopanne_01_Reveil
-  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
-  senderName: "Med. Juno"
-  message: "Cuve 412 \u2014 r\u00E9veil pr\u00E9matur\u00E9. Le colon est conscient depuis trois heures. D\u00E9sorient\u00E9."
-  isUnique: 0
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  senderName: Med. Juno
+  message: "Le patient de la cuve 412 s'est r\xE9veill\xE9 pr\xE9matur\xE9ment. Il
+    est conscient depuis 3 heures. Il s'appelle Olen."
+  isUnique: 1
   isUrgent: 1
-  chainTag: "Cryopanne"
   isCrisis: 0
   isRelief: 0
   responseOptions:
-  - optionText: "Recryog\u00E9niser"
-    responseUserText: "Endors-le."
+  - optionText: "Recryog\xE9niser"
+    responseUserText: "Je l'endors. C'est plus s\xFBr."
     ressourceGain: -10
     bonheurGain: 0
     addedPrompts: []
     addedDirectPrompts:
     - {fileID: 11400000, guid: c93ec52b00d8536dba3d9f2ad062a08e, type: 2}
     removedPrompts: []
-    removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
-  - optionText: "Le garder \u00E9veill\u00E9"
-    responseUserText: "Int\u00E8gre-le \u00E0 l'\u00E9quipage."
+    gameOverMessage: 
+  - optionText: "Le garder \xE9veill\xE9"
+    responseUserText: "On l'int\xE8gre \xE0 l'\xE9quipage !"
     ressourceGain: -5
     bonheurGain: 5
     addedPrompts:
     - prompt: {fileID: 11400000, guid: ac709a15d61d3a1c4498cdc049a37f7e, type: 2}
-      weight: 2.0
+      weight: 2
     addedDirectPrompts: []
     removedPrompts: []
-    removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
+    gameOverMessage: 
   timer: 0
   timerMax: 0

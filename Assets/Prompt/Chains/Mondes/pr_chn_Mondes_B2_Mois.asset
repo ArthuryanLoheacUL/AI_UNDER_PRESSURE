@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
+  m_Name: pr_chn_Mondes_B2_Mois
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  senderName: Med. Juno
+  message: "Six mois plus tard. On a d\xE9plor\xE9 2 suicides. Trois personnes sont
+    repass\xE9s en cryo prolong\xE9e pour \xE9conomiser. L'espoir s'effrite..."
+  isUnique: 1
+  isUrgent: 1
+  isCrisis: 1
+  isRelief: 0
+  responseOptions:
+  - optionText: On continue
+    responseUserText: "On pers\xE9v\xE8re ..."
+    ressourceGain: -10
+    bonheurGain: -5
+    addedPrompts:
+    - prompt: {fileID: 11400000, guid: 0f78a8a28860a39246b1f4c82c98dc46, type: 2}
+      weight: 3
+    - prompt: {fileID: 11400000, guid: ed1470fa0f88706409138368934e84a8, type: 2}
+      weight: 3
+    addedDirectPrompts: []
+    removedPrompts: []
+    isGameOverResponse: 0
+    gameOverMessage: 
+  - optionText: Demi-tour
+    responseUserText: "Bon... On rentre. C'est l'humilit\xE9."
+    ressourceGain: -15
+    bonheurGain: 10
+    addedPrompts: []
+    addedDirectPrompts:
+    - {fileID: 11400000, guid: 2768cf3344892f1334186a08b3c1c3f8, type: 2}
+    removedPrompts: []
+    isGameOverResponse: 0
+    gameOverMessage: 
+  timer: -0.0070076035
+  timerMax: 0

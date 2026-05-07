@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: pr_Reyna_Rapport
   m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
   senderName: "Lt. Reyna"
-  message: "Rapport hebdo pr\u00EAt. Je peux te le r\u00E9sumer en deux minutes ou te l'envoyer brut."
+  message: "Le rapport hebdo est pr\u00EAt. Je peux te le r\u00E9sumer si tu veux."
   isUnique: 0
   isUrgent: 0
   chainTag: ""
@@ -21,7 +21,7 @@ MonoBehaviour:
   isRelief: 1
   responseOptions:
   - optionText: "R\u00E9sum\u00E9"
-    responseUserText: "Vas-y."
+    responseUserText: "Je t'explique alors ... *monologue beaucoup trop long*"
     ressourceGain: 0
     bonheurGain: 5
     addedPrompts: []
@@ -31,7 +31,7 @@ MonoBehaviour:
     isGameOverResponse: 0
     gameOverMessage: ""
   - optionText: "Brut"
-    responseUserText: "Envoie tout."
+    responseUserText: "Je t'envoie tout."
     ressourceGain: 5
     bonheurGain: 0
     addedPrompts: []

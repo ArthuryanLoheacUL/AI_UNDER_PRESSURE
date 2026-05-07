@@ -11,34 +11,32 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
   m_Name: pr_Solo_Mort_Symbolique
-  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
-  senderName: "Capt. Voss"
-  message: "\u00C7a fait un an aujourd'hui que Hayes est mort. L'\u00E9quipage demande une minute."
-  isUnique: 0
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  senderName: Capt. Voss
+  message: "\xC7a fait un an aujourd'hui que Hayes est mort. L'\xE9quipage demande
+    une minute."
+  isUnique: 1
   isUrgent: 0
-  chainTag: ""
   isCrisis: 0
   isRelief: 1
   responseOptions:
-  - optionText: "Accord\u00E9e"
-    responseUserText: "Une minute."
+  - optionText: "Accord\xE9e"
+    responseUserText: "Merci. \xC7a compte vraiment."
     ressourceGain: 0
     bonheurGain: 10
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []
-    removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
-  - optionText: "Refus\u00E9e"
-    responseUserText: "On bosse."
+    gameOverMessage: 
+  - optionText: "Refus\xE9e"
+    responseUserText: ...je sais pas quoi leur dire.
     ressourceGain: 0
     bonheurGain: -15
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []
-    removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
+    gameOverMessage: 
   timer: 0
   timerMax: 0

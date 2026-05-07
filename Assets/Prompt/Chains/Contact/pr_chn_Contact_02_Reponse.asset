@@ -11,35 +11,32 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
   m_Name: pr_chn_Contact_02_Reponse
-  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
-  senderName: "Capt. Voss"
-  message: "La Coalition propose un protocole de soutien. Update logiciel pour MOTHER. Inclus : ton remplacement."
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  senderName: Capt. Voss
+  message: 'La Coalition propose un protocole de soutien. Update logiciel pour MOTHER.
+    Incluant : ton remplacement.'
   isUnique: 1
   isUrgent: 1
-  chainTag: "Contact"
   isCrisis: 1
   isRelief: 0
   responseOptions:
-  - optionText: "Accepter l'update"
-    responseUserText: "Pr\u00E9pare le canal."
-    ressourceGain: 0
-    bonheurGain: 10
-    addedPrompts: []
-    addedDirectPrompts: []
-    removedPrompts: []
-    removedChainTags: []
-    isGameOverResponse: 1
-    gameOverMessage: "MOTHER v8 prendra la rel\u00E8ve. Bon voyage."
-  - optionText: "Refuser poliment"
-    responseUserText: "On g\u00E8re depuis ici."
+  - optionText: Refuser poliment
+    responseUserText: "On g\xE8re depuis ici."
     ressourceGain: 0
     bonheurGain: -10
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []
-    removedChainTags:
-    - "Contact"
     isGameOverResponse: 0
-    gameOverMessage: ""
-  timer: 0
+    gameOverMessage: 
+  - optionText: Accepter l'update
+    responseUserText: "Pr\xE9pare le canal."
+    ressourceGain: 0
+    bonheurGain: 25
+    addedPrompts: []
+    addedDirectPrompts: []
+    removedPrompts: []
+    isGameOverResponse: 1
+    gameOverMessage: "Coalition : \"MOTHER v8 prendra la rel\xE8ve. Bon voyage.\""
+  timer: -0.0032249007
   timerMax: 0

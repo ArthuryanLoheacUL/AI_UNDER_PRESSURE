@@ -11,35 +11,32 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
   m_Name: pr_chn_Signal_Retour_Insistant
-  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
-  senderName: "Com. Zeth"
-  message: "Le signal est revenu. Plus fort. Plus pressant. Il conna\u00EEt notre fr\u00E9quence interne."
-  isUnique: 0
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  senderName: Com. Zeth
+  message: Le signal est revenu. Plus fort cette fois.
+  isUnique: 1
   isUrgent: 1
-  chainTag: "Signal"
   isCrisis: 1
   isRelief: 0
   responseOptions:
-  - optionText: "R\u00E9pondre cette fois"
-    responseUserText: "On parle."
+  - optionText: "R\xE9pondre"
+    responseUserText: OK on parle !
     ressourceGain: -5
     bonheurGain: 5
     addedPrompts: []
     addedDirectPrompts:
     - {fileID: 11400000, guid: aeed4bae6c8c6f5383ccdb814006195f, type: 2}
     removedPrompts: []
-    removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
-  - optionText: "Couper TOUT"
-    responseUserText: "Black out."
-    ressourceGain: -10
+    gameOverMessage: 
+  - optionText: Couper TOUT
+    responseUserText: "Black-out total. \xC7a sent l'erreur mais OK."
+    ressourceGain: 0
     bonheurGain: -10
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []
-    removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
+    gameOverMessage: 
   timer: 0
   timerMax: 0

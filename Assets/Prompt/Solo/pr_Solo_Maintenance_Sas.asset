@@ -11,34 +11,32 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
   m_Name: pr_Solo_Maintenance_Sas
-  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
-  senderName: "Ing. Sol"
-  message: "Le sas de maintenance B grince. Joint qui s\u00E8che. R\u00E9paration ou monitoring ?"
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  senderName: Ing. Sol
+  message: "Sas de maintenance B grince \xE0 chaque ouverture. Ce sont les joints
+    qui s\xE8chent."
   isUnique: 0
   isUrgent: 0
-  chainTag: ""
   isCrisis: 0
   isRelief: 0
   responseOptions:
-  - optionText: "R\u00E9parer"
-    responseUserText: "Joint neuf."
+  - optionText: "R\xE9parer"
+    responseUserText: Joint neuf, c'est parti.
     ressourceGain: -10
     bonheurGain: 5
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []
-    removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
-  - optionText: "Monitorer"
-    responseUserText: "Capteurs en alerte."
+    gameOverMessage: 
+  - optionText: Monitorer
+    responseUserText: Capteurs en alerte.
     ressourceGain: 0
     bonheurGain: -5
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []
-    removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
+    gameOverMessage: 
   timer: 0
   timerMax: 0

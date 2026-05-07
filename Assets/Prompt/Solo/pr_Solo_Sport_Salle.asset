@@ -11,34 +11,31 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
   m_Name: pr_Solo_Sport_Salle
-  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
-  senderName: "Lt. Reyna"
-  message: "L'\u00E9quipage demande l'ouverture nocturne de la salle de sport. \u00C9nergie suppl\u00E9mentaire."
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  senderName: Lt. Reyna
+  message: "L'\xE9quipage demande l'ouverture nocturne de la salle de sport."
   isUnique: 0
   isUrgent: 0
-  chainTag: ""
   isCrisis: 0
   isRelief: 1
   responseOptions:
-  - optionText: "Ouvert"
-    responseUserText: "Salle 24/24."
+  - optionText: Oui
+    responseUserText: "Tout le monde va appr\xE9cier !"
     ressourceGain: -10
     bonheurGain: 10
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []
-    removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
-  - optionText: "Pas la nuit"
-    responseUserText: "Horaires standards."
+    gameOverMessage: 
+  - optionText: Non
+    responseUserText: Bon...on laisse les horaires standards.
     ressourceGain: 0
     bonheurGain: -5
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []
-    removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
+    gameOverMessage: 
   timer: 0
   timerMax: 0

@@ -11,38 +11,37 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
   m_Name: pr_chn_Mutinerie_04_Confrontation
-  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
-  senderName: "Capt. Voss"
-  message: "Iven, devant l'\u00E9quipage. Il accepte de retirer la p\u00E9tition si tu lui donnes acc\u00E8s aux logs cryo."
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  senderName: Dr. Iven
+  message: "Retirez la p\xE9tition et je l\xE2che l\u2019affaire. Donnez-moi juste
+    l\u2019acc\xE8s aux logs cryo."
   isUnique: 1
   isUrgent: 1
-  chainTag: "Mutinerie"
   isCrisis: 0
   isRelief: 0
   responseOptions:
-  - optionText: "Accorder"
-    responseUserText: "Logs ouverts."
+  - optionText: Accorder
+    responseUserText: Parfait merci enfin un peu de transparence
     ressourceGain: -5
     bonheurGain: 10
     addedPrompts:
     - prompt: {fileID: 11400000, guid: 58067a33ab9d62daf2209641f852eb87, type: 2}
-      weight: 2.0
+      weight: 2
     addedDirectPrompts: []
     removedPrompts: []
-    removedChainTags:
-    - "Mutinerie"
     isGameOverResponse: 0
-    gameOverMessage: ""
-  - optionText: "Refuser"
-    responseUserText: "Pas mes logs."
+    gameOverMessage: 
+  - optionText: Refuser
+    responseUserText: "Alors vous cachez vraiment quelque chose. Tr\xE8s bien\u2026
+      gardez vos secrets. Mais \xE7a ne s\u2019arr\xEAtera pas l\xE0."
     ressourceGain: 0
     bonheurGain: -15
-    addedPrompts: []
-    addedDirectPrompts:
-    - {fileID: 11400000, guid: 998497334787314c4c330cf7212625ec, type: 2}
+    addedPrompts:
+    - prompt: {fileID: 11400000, guid: 998497334787314c4c330cf7212625ec, type: 2}
+      weight: 3
+    addedDirectPrompts: []
     removedPrompts: []
-    removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
+    gameOverMessage: 
   timer: 0
   timerMax: 0

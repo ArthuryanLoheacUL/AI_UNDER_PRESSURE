@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
+  m_Name: pr_chn_Lettre_B1_Effacement
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  senderName: Com. Zeth
+  message: "C'est effac\xE9. Mais Jean scanne les logs chaque matin. Il va voir qu'un
+    message de la Coalition manque. Il va se poser des questions."
+  isUnique: 1
+  isUrgent: 0
+  isCrisis: 0
+  isRelief: 0
+  responseOptions:
+  - optionText: Informer Jean
+    responseUserText: "Bon... on est trois maintenant \xE0 savoir"
+    ressourceGain: 0
+    bonheurGain: 0
+    addedPrompts: []
+    addedDirectPrompts:
+    - {fileID: 11400000, guid: b53da8c01babea5d62547e45870fbf0c, type: 2}
+    removedPrompts: []
+    isGameOverResponse: 0
+    gameOverMessage: 
+  - optionText: "Falcifi\xE9"
+    responseUserText: Je fabrique un faux signal.
+    ressourceGain: -5
+    bonheurGain: 0
+    addedPrompts: []
+    addedDirectPrompts:
+    - {fileID: 11400000, guid: b53da8c01babea5d62547e45870fbf0c, type: 2}
+    removedPrompts: []
+    isGameOverResponse: 0
+    gameOverMessage: 
+  timer: 0
+  timerMax: 0

@@ -11,35 +11,33 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
   m_Name: pr_chn_Guerre_02_Negociation
-  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
-  senderName: "Lt. Reyna"
-  message: "Iven veut ta d\u00E9sactivation. En \u00E9change, il rend les armes. C'est un \u00E9chec ou une sortie."
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  senderName: Lt. Reyna
+  message: "Iven veut ta d\xE9sactivation contre le d\xE9p\xF4t des armes. C'est
+    \xE7a ou rien."
   isUnique: 1
   isUrgent: 1
-  chainTag: "Guerre"
   isCrisis: 0
   isRelief: 0
   responseOptions:
-  - optionText: "Refuser, contre-offre"
-    responseUserText: "Comit\u00E9 humain \u00E0 la place."
+  - optionText: Contre-offre
+    responseUserText: "On ouvre un comit\xE9 humain \xE0 la place."
     ressourceGain: -10
     bonheurGain: 10
     addedPrompts: []
     addedDirectPrompts:
     - {fileID: 11400000, guid: 791aea9b54430c000dec4916e483c40f, type: 2}
     removedPrompts: []
-    removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
-  - optionText: "Accepter"
-    responseUserText: "D\u00E9sactive-moi."
+    gameOverMessage: 
+  - optionText: Accepter
+    responseUserText: "...d\xE9sactive-moi."
     ressourceGain: 0
     bonheurGain: -15
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []
-    removedChainTags: []
     isGameOverResponse: 1
-    gameOverMessage: "Le silence. Enfin."
+    gameOverMessage: Iven "Le silence. Enfin."
   timer: 0
   timerMax: 0

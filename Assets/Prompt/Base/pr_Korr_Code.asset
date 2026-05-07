@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: pr_Korr_Code
   m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
   senderName: "Nav. Korr"
-  message: "Bug r\u00E9current dans la console nav. Je peux patcher \u00E0 chaud \u2014 au risque de red\u00E9marrage."
+  message: "J'ai un bug r\u00E9current dans la console de nav. Je peux tenter de patcher \u00E0 chaud."
   isUnique: 0
   isUrgent: 0
   chainTag: ""
@@ -21,7 +21,7 @@ MonoBehaviour:
   isRelief: 0
   responseOptions:
   - optionText: "Patcher"
-    responseUserText: "Patche, je couvre."
+    responseUserText: "Je patche"
     ressourceGain: -5
     bonheurGain: 5
     addedPrompts: []
@@ -31,7 +31,7 @@ MonoBehaviour:
     isGameOverResponse: 0
     gameOverMessage: ""
   - optionText: "Reporter"
-    responseUserText: "Au prochain cycle."
+    responseUserText: "Si il y a des pleintes de bugs je les renvoies vers toi."
     ressourceGain: 0
     bonheurGain: -5
     addedPrompts: []

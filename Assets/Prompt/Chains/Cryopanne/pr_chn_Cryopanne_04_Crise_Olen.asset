@@ -11,36 +11,33 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
   m_Name: pr_chn_Cryopanne_04_Crise_Olen
-  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
-  senderName: "Sec. Mara"
-  message: "Olen a forc\u00E9 une cuve. Il a sa fille dans les bras. Elle est en arr\u00EAt biologique."
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  senderName: Sec. Mara
+  message: "Olen a forc\xE9 une cuve. Celle de sa fille de six ans, elle est dans
+    ses bras. Mais l'arr\xEAt cryo brute comme \xE7a ne lui laisse que 2 minutes
+    avant l'arr\xEAt cardiaque."
   isUnique: 1
   isUrgent: 1
-  chainTag: "Cryopanne"
   isCrisis: 1
   isRelief: 0
   responseOptions:
-  - optionText: "Sauver la fille"
-    responseUserText: "Toute la m\u00E9dicale dessus."
+  - optionText: Sauver la fille
+    responseUserText: "Toute la m\xE9dicale dessus !"
     ressourceGain: -15
     bonheurGain: 5
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []
-    removedChainTags:
-    - "Cryopanne"
     isGameOverResponse: 0
-    gameOverMessage: ""
-  - optionText: "Sauver les autres"
-    responseUserText: "Stabilise les cuves voisines."
-    ressourceGain: -10
-    bonheurGain: -10
+    gameOverMessage: 
+  - optionText: "Arr\xEAter"
+    responseUserText: Olen repentira de ses actes ... mais sa fille ...
+    ressourceGain: -5
+    bonheurGain: -15
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []
-    removedChainTags:
-    - "Cryopanne"
     isGameOverResponse: 0
-    gameOverMessage: ""
+    gameOverMessage: 
   timer: 0
   timerMax: 0

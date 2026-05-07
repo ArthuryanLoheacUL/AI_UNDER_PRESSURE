@@ -11,34 +11,31 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
   m_Name: pr_Solo_Reve_Cryo
-  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
-  senderName: "Dr. Vale"
-  message: "Lecture EEG anormale sur trois colons en cryo. Pas de souffrance \u2014 juste des r\u00EAves."
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  senderName: Dr. Vale
+  message: "Lecture EEG anormale sur trois colons en cryo. Pas de souffrance d\xE9t\xE9ct\xE9."
   isUnique: 0
   isUrgent: 0
-  chainTag: ""
   isCrisis: 0
   isRelief: 1
   responseOptions:
-  - optionText: "Surveiller"
-    responseUserText: "Garde un \u0153il."
+  - optionText: Surveiller
+    responseUserText: "Je garde un \u0153il, c'est fascinant."
     ressourceGain: -5
     bonheurGain: 5
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []
-    removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
-  - optionText: "Ignorer"
-    responseUserText: "Pas notre probl\u00E8me."
+    gameOverMessage: 
+  - optionText: Ignorer
+    responseUserText: Bon, comme tu veux.
     ressourceGain: 0
     bonheurGain: -5
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []
-    removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
+    gameOverMessage: 
   timer: 0
   timerMax: 0

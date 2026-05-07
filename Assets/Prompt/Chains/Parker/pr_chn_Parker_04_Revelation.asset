@@ -11,36 +11,32 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
   m_Name: pr_chn_Parker_04_Revelation
-  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
-  senderName: "Ing. Parker"
-  message: "Le bore-11, c'\u00E9tait pour mes parents. Ils sont en cryo. Une dose de plus, ils tiennent dix ans de plus."
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  senderName: Ing. Parker
+  message: "Le bore-11... c'\xE9tait pour mes parents. Ils sont en cryo et une dose
+    de plus leurs permettrait de tennir dix ans de plus."
   isUnique: 1
   isUrgent: 1
-  chainTag: "Parker"
   isCrisis: 0
   isRelief: 0
   responseOptions:
-  - optionText: "Pardonner"
-    responseUserText: "Tu prends le manque sur ta paye."
+  - optionText: Pardonner
+    responseUserText: "Merci je prendrai le manque sur ma paye en \xE9change promis"
     ressourceGain: -5
     bonheurGain: 15
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []
-    removedChainTags:
-    - "Parker"
     isGameOverResponse: 0
-    gameOverMessage: ""
-  - optionText: "Sanction maximale"
-    responseUserText: "Cour martiale \u00E0 l'arriv\u00E9e."
+    gameOverMessage: 
+  - optionText: Sanction
+    responseUserText: "La cour martiale \xE0 l'arriv\xE9e ?! S\xE9rieux ?!!"
     ressourceGain: 5
     bonheurGain: -15
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []
-    removedChainTags:
-    - "Parker"
     isGameOverResponse: 0
-    gameOverMessage: ""
+    gameOverMessage: 
   timer: 0
   timerMax: 0

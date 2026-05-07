@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: pr_Zeth_Musique
   m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
   senderName: "Com. Zeth"
-  message: "Quelqu'un diffuse de la musique sur le r\u00E9seau interne \u00E0 3h du matin. C'est Korr."
+  message: "Quelqu'un diffuse de la musique sur le r\u00E9seau interne \u00E0 3h du matin. C'est Korr je crois."
   isUnique: 0
   isUrgent: 0
   chainTag: ""
@@ -21,7 +21,7 @@ MonoBehaviour:
   isRelief: 1
   responseOptions:
   - optionText: "Laisser faire"
-    responseUserText: "Si \u00E7a aide, \u00E7a aide."
+    responseUserText: "Si \u00E7a leur fait plaisir on devrait pouvoir le supporter"
     ressourceGain: 0
     bonheurGain: 5
     addedPrompts: []
@@ -31,7 +31,7 @@ MonoBehaviour:
     isGameOverResponse: 0
     gameOverMessage: ""
   - optionText: "Couper"
-    responseUserText: "Coupe la diffusion."
+    responseUserText: "On coupe la diffusion."
     ressourceGain: 0
     bonheurGain: -10
     addedPrompts: []

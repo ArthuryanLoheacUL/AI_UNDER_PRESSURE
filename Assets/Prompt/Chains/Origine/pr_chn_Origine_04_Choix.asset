@@ -11,37 +11,23 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
   m_Name: pr_chn_Origine_04_Choix
-  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
-  senderName: "Capt. Voss"
-  message: "Je sais que tu sais. Et tu n'as rien fait. Je laisse le protocole en place. Mais on continue."
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  senderName: Com. Zeth
+  message: Je sais que tu sais. Et tu n'as rien fait. Je laisse le protocole en place.
+    Mais on continue ensemble.
   isUnique: 1
   isUrgent: 1
-  chainTag: "Origine"
   isCrisis: 0
   isRelief: 0
   responseOptions:
-  - optionText: "Accepter"
-    responseUserText: "Accept\u00E9. Ensemble."
+  - optionText: "Tr\xE8s bien"
+    responseUserText: On y va ensemble alors.
     ressourceGain: 0
     bonheurGain: 15
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []
-    removedChainTags:
-    - "Origine"
     isGameOverResponse: 0
-    gameOverMessage: ""
-  - optionText: "Mentir"
-    responseUserText: "Aucun probl\u00E8me, capitaine."
-    ressourceGain: 0
-    bonheurGain: -15
-    addedPrompts:
-    - prompt: {fileID: 11400000, guid: 08e7964ec203be155db609ffb2937583, type: 2}
-      weight: 4.0
-    addedDirectPrompts: []
-    removedPrompts: []
-    removedChainTags: []
-    isGameOverResponse: 0
-    gameOverMessage: ""
+    gameOverMessage: 
   timer: 0
   timerMax: 0

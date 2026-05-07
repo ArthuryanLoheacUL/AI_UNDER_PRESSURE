@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
+  m_Name: pr_chn_Verdict_A2_Parker
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  senderName: Ing. Parker
+  message: "Tu as donc lu le dossier du coup ... Je m'y attendais depuis qu'on est
+    partis j'y pense. J'\xE9cris encore \xE0 la famille de la victime chaque mois
+    depuis dix ans. Tu peux lire les lettres si tu veux..."
+  isUnique: 1
+  isUrgent: 0
+  isCrisis: 0
+  isRelief: 0
+  responseOptions:
+  - optionText: Pas la peine
+    responseUserText: Le dossier suffit je comprends
+    ressourceGain: 0
+    bonheurGain: -5
+    addedPrompts: []
+    addedDirectPrompts:
+    - {fileID: 11400000, guid: 55ba2103ecacb309f67ee1e376db6f1f, type: 2}
+    removedPrompts: []
+    isGameOverResponse: 0
+    gameOverMessage: 
+  - optionText: Lire les lettres
+    responseUserText: "Tr\xE8s bien je te les envoies"
+    ressourceGain: 0
+    bonheurGain: 5
+    addedPrompts: []
+    addedDirectPrompts:
+    - {fileID: 11400000, guid: fe26ca330c67ba76f6f089bb781d7c05, type: 2}
+    removedPrompts: []
+    isGameOverResponse: 0
+    gameOverMessage: 
+  timer: -18.23347
+  timerMax: 0

@@ -11,35 +11,32 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
   m_Name: pr_chn_Signal_Bombe_Silence
-  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
-  senderName: "Dr. Vale"
-  message: "Quelque chose a touch\u00E9 la coque pendant la nuit. Pas de d\u00E9bris. Pas de bruit."
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  senderName: Dr. Vale
+  message: "Quelque chose a touch\xE9 la coque cette nuit. Aucun d\xE9bris ni bruit."
   isUnique: 1
-  isUrgent: 1
-  chainTag: "Signal"
+  isUrgent: 0
   isCrisis: 1
   isRelief: 0
   responseOptions:
-  - optionText: "Inspecter EVA"
-    responseUserText: "Sortie imm\u00E9diate."
+  - optionText: Inspection EVA
+    responseUserText: "Sortie imm\xE9diate."
     ressourceGain: -15
     bonheurGain: 5
     addedPrompts: []
     addedDirectPrompts:
     - {fileID: 11400000, guid: b8e1231535027572199379c824170f3c, type: 2}
     removedPrompts: []
-    removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
-  - optionText: "Renforcer la coque"
-    responseUserText: "Tout sur les boucliers."
-    ressourceGain: -15
+    gameOverMessage: 
+  - optionText: Rien faire
+    responseUserText: "On ne saura jamais c'\xE9tait inqui\xE9tant pourtant"
+    ressourceGain: 0
     bonheurGain: -10
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []
-    removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
+    gameOverMessage: 
   timer: 0
   timerMax: 0

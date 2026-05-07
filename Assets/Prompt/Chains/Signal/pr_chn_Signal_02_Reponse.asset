@@ -11,40 +11,34 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
   m_Name: pr_chn_Signal_02_Reponse
-  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
-  senderName: "Dr. Iven"
-  message: "Ils ont r\u00E9pondu. Six secondes. Ils sont pr\u00E8s."
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  senderName: Dr. Iven
+  message: "Ils ont r\xE9pondu en six secondes. Ils sont proches."
   isUnique: 1
   isUrgent: 1
-  chainTag: "Signal"
   isCrisis: 0
   isRelief: 0
   responseOptions:
-  - optionText: "Continue le contact"
-    responseUserText: "Garde la ligne."
+  - optionText: Continuer contact
+    responseUserText: Je garde la ligne ouverte.
     ressourceGain: -5
     bonheurGain: 10
     addedPrompts: []
     addedDirectPrompts:
     - {fileID: 11400000, guid: a16e5f73634ab11976b969f227483226, type: 2}
     removedPrompts: []
-    removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
-  - optionText: "Coupe tout"
-    responseUserText: "Coupe. Maintenant."
+    gameOverMessage: 
+  - optionText: Coupe tout
+    responseUserText: "Bon... je coupe. Tu prends ta responsabilit\xE9."
     ressourceGain: 0
-    bonheurGain: -10
+    bonheurGain: 0
     addedPrompts:
     - prompt: {fileID: 11400000, guid: 40304ef52ce956c932962ef386037067, type: 2}
-      weight: 4.0
+      weight: 4
     addedDirectPrompts: []
-    removedPrompts:
-    - {fileID: 11400000, guid: a16e5f73634ab11976b969f227483226, type: 2}
-    - {fileID: 11400000, guid: 62d8363f6c6a98dc25af28613184569c, type: 2}
-    - {fileID: 11400000, guid: f756c38abde3c1a5e14ee2fce1b58b0c, type: 2}
-    removedChainTags: []
+    removedPrompts: []
     isGameOverResponse: 0
-    gameOverMessage: ""
+    gameOverMessage: 
   timer: 0
   timerMax: 0

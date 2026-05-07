@@ -2,6 +2,7 @@ using UnityEngine;
 using System.Collections.Generic;
 using System.Collections;
 using System.Linq;
+using Unity.VisualScripting;
 
 [RequireComponent(typeof(SetupPromptManagement))]
 public class PromptsManager : MonoBehaviour
@@ -40,6 +41,7 @@ public class PromptsManager : MonoBehaviour
 
     private List<Prompt> queuePrompts = new List<Prompt>();
     private List<Prompt> prevPrompts = new List<Prompt>();
+    private List<Prompt> removedPrompts = new List<Prompt>();
 
     // Tracks how many bonheur-negative-only prompts we've stacked in a row,
     // used to inject relief when the player has been hammered too long.
@@ -90,31 +92,30 @@ public class PromptsManager : MonoBehaviour
         }
     }
 
-    // Stable identity: use the ScriptableObject's asset name (carried through
-    // clones in the Prompt copy constructor). Falls back to senderName+message
-    // for safety on any prompt that has lost its name.
     static bool SameIdentity(Prompt a, Prompt b)
     {
         if (a == null || b == null) return false;
-        if (!string.IsNullOrEmpty(a.name) && !string.IsNullOrEmpty(b.name))
-            return a.name == b.name;
         return a.senderName == b.senderName && a.message == b.message;
     }
 
-    public void AddPromptToQueue(Prompt prompt)
+    public bool AddPromptToQueue(Prompt prompt, bool directAdd = false)
     {
-        if (prompt.isUrgent)
+        foreach (Prompt p in removedPrompts)
+        {
+            if (SameIdentity(p, prompt))
+                return false;
+        }
+
+        if (prompt.isUrgent || directAdd)
             queuePrompts.Insert(0, prompt);
         else
             queuePrompts.Add(prompt);
 
-        // A unique prompt is removed from the pool the moment it's queued so
-        // it can never come back through random selection or another addedPrompt.
         if (prompt.isUnique)
+        {
             promptsWithWeights.RemoveAll(p => SameIdentity(p.prompt, prompt));
-
-        if (!string.IsNullOrEmpty(prompt.chainTag))
-            activeChains.Add(prompt.chainTag);
+            removedPrompts.Add(prompt);
+        }
 
         prevPrompts.Add(prompt);
         if (prevPrompts.Count > 5)
@@ -122,6 +123,7 @@ public class PromptsManager : MonoBehaviour
 
         ShufflePromptResponseOptions(prompt);
         NotifyNewPrompt(prompt);
+        return true;
     }
 
     public Prompt PopPromptFromQueue()
@@ -149,21 +151,12 @@ public class PromptsManager : MonoBehaviour
             if (p == null) continue;
             promptsWithWeights.RemoveAll(wp => SameIdentity(wp.prompt, p));
             queuePrompts.RemoveAll(q => SameIdentity(q, p));
+            removedPrompts.Add(p);
         }
     }
 
-    public void RemoveChainByTag(string tag)
-    {
-        if (string.IsNullOrEmpty(tag)) return;
-        promptsWithWeights.RemoveAll(wp =>
-            wp.prompt != null && wp.prompt.chainTag == tag);
-        queuePrompts.RemoveAll(q => q.chainTag == tag);
-        activeChains.Remove(tag);
-    }
-    // ----------------------------------------------------
-
     // Contextual weighting based on the current state of the gauges and
-    // recent pacing. Mirrors the design spec.
+    // recent pacing.
     float GetContextualWeight(WeightedPrompt wp)
     {
         if (wp.prompt == null) return 0f;
@@ -178,10 +171,6 @@ public class PromptsManager : MonoBehaviour
         if (wp.prompt.isUrgent && (ressources < 30 || bonheur < 35))
             weight *= 2.5f;
 
-        // Boost prompts that belong to a chain we're already in.
-        if (!string.IsNullOrEmpty(wp.prompt.chainTag) && activeChains.Contains(wp.prompt.chainTag))
-            weight *= 2f;
-
         // Damp crisis prompts when everything is fine.
         if (wp.prompt.isCrisis && ressources > 60 && bonheur > 55)
             weight *= 0.3f;
@@ -194,17 +183,22 @@ public class PromptsManager : MonoBehaviour
         if (consecutiveDoubleDrainPrompts >= 3 && IsDoubleDrain(wp.prompt))
             weight *= 0.05f;
 
+        // if cant choose an option
+        int doable = wp.prompt.responseOptions.Count();
+        foreach (Prompt.ResponseOption r in wp.prompt.responseOptions)
+            if (ressources < -r.ressourceGain) doable--;
+        if (doable == 0)
+            weight = 0;
+
         return weight;
     }
 
     bool IsDoubleDrain(Prompt p)
     {
         if (p == null || p.responseOptions == null || p.responseOptions.Length == 0) return false;
-        // A "double drain" prompt is one where EVERY response option pushes
-        // both gauges down. We just check if there's any safe option available.
         foreach (var opt in p.responseOptions)
         {
-            if (opt.ressourceGain >= 0 && opt.bonheurGain >= 0)
+            if (opt.ressourceGain >= 0)
                 return false;
         }
         return true;
@@ -270,9 +264,7 @@ public class PromptsManager : MonoBehaviour
         instance.timer = instance.timerMax;
 
         // Chance to upgrade a prompt to urgent if the situation is already tense.
-        // NOTE: this used to read GetFrustration() / 100, which scaled with HOW
-        // BAD things were. Equivalent now: invert bonheur.
-        float pressureChance = (100 - RessourceManager.Instance.GetBonheur()) / 100f;
+        float pressureChance = (100 - RessourceManager.Instance.bonheurValue) / 100f;
         if (Random.value < pressureChance) instance.isUrgent = true;
 
         ShufflePromptResponseOptions(instance);
@@ -361,11 +353,22 @@ public class PromptsManager : MonoBehaviour
 
         if (prompt != null)
         {
-            if (!string.IsNullOrEmpty(prompt.chainTag)) activeChains.Add(prompt.chainTag);
             StartCoroutine(NextPromptWithDelay(prompt));
             currentPrompt = prompt;
         }
         RefreshNotifications();
+    }
+
+    bool IsContainedInPromptList(List<Prompt> l, Prompt p)
+    {
+        foreach(Prompt r in l)
+        {
+            if (SameIdentity(r, p))
+            {
+                return true;
+            }
+        }
+        return false;
     }
 
     public void ResponseToCurrentPrompt(int selectedResponseIndex)
@@ -375,10 +378,6 @@ public class PromptsManager : MonoBehaviour
         RessourceManager.Instance.UpdateRessource(opt.ressourceGain);
         RessourceManager.Instance.UpdateBonheur(opt.bonheurGain);
 
-        // If this prompt spawns ANY follow-up (added to pool or queued direct),
-        // remove the current prompt from the pool defensively. This prevents
-        // a prompt from being re-played and re-injecting its sequel later,
-        // independently of its isUnique flag.
         bool spawnsFollowUp =
             (opt.addedPrompts != null && opt.addedPrompts.Length > 0) ||
             (opt.addedDirectPrompts != null && opt.addedDirectPrompts.Length > 0);
@@ -389,35 +388,24 @@ public class PromptsManager : MonoBehaviour
         if (opt.bonheurGain < 0) consecutiveNegativePrompts++;
         else if (opt.bonheurGain > 0) consecutiveNegativePrompts = 0;
 
-        if (opt.bonheurGain < 0 && opt.ressourceGain < 0) consecutiveDoubleDrainPrompts++;
-        else consecutiveDoubleDrainPrompts = 0;
-
         // Add follow-up prompts.
         if (opt.addedPrompts != null)
         {
             foreach (var addedPrompt in opt.addedPrompts)
             {
-                if (addedPrompt.prompt != null) promptsWithWeights.Add(addedPrompt);
+                if (addedPrompt.prompt != null && !IsContainedInPromptList(removedPrompts, addedPrompt.prompt)) promptsWithWeights.Add(addedPrompt);
             }
         }
         if (opt.addedDirectPrompts != null)
         {
             foreach (var addedDirect in opt.addedDirectPrompts)
             {
-                if (addedDirect != null) AddPromptToQueue(addedDirect);
+                if (addedDirect != null && !IsContainedInPromptList(removedPrompts, addedDirect)) AddPromptToQueue(addedDirect, true);
             }
         }
 
-        // Remove specific prompts (e.g. character death).
         if (opt.removedPrompts != null && opt.removedPrompts.Length > 0)
             RemovePrompts(opt.removedPrompts);
-        // Remove whole chains by tag (e.g. "Parker", "Signal").
-        if (opt.removedChainTags != null)
-        {
-            foreach (var tag in opt.removedChainTags)
-                RemoveChainByTag(tag);
-        }
-
         StartCoroutine(NextPromptWithDelay(selectedResponseIndex));
     }
 
@@ -434,11 +422,6 @@ public class PromptsManager : MonoBehaviour
             setupPrompt.NextAIPrompt(currentPrompt, selectedResponseIndex);
             yield return new WaitForSeconds(_delay - (hasBoth ? 0.4f : 0f));
         }
-        if (hasUserResponse)
-        {
-            setupPrompt.NextUserPrompt(currentPrompt, selectedResponseIndex);
-            yield return new WaitForSeconds(_delay + (hasBoth ? 0.4f : 0f));
-        }
 
         bool gameOverByGauges = RessourceManager.Instance.IsBonheurDead();
         if (gameOverByGauges || currentPrompt.responseOptions[selectedResponseIndex].isGameOverResponse)
@@ -448,16 +431,21 @@ public class PromptsManager : MonoBehaviour
             setupPrompt.SetupGameOverButtons();
             yield break;
         }
-        else
+
+        if (hasUserResponse)
         {
-            NextPrompt();
+            setupPrompt.NextUserPrompt(currentPrompt, selectedResponseIndex);
+            yield return new WaitForSeconds(_delay + (hasBoth ? 0.4f : 0f) + (currentPrompt.responseOptions[selectedResponseIndex].responseUserText.Length >= 20 ? 1 : 0));
         }
+    
+        NextPrompt();
     }
 
     void Update()
     {
         if (isGameOver) return;
         CheckOutdatedPrompts();
+
         timeNextPrompt -= Time.deltaTime;
         if (timeNextPrompt <= 0f)
         {
@@ -481,7 +469,7 @@ public class PromptsManager : MonoBehaviour
             {
                 queuePrompts.RemoveAt(i);
                 // Ignored urgent prompt: small bonheur penalty.
-                RessourceManager.Instance.UpdateBonheur(-10);
+                RessourceManager.Instance.UpdateBonheur(-15);
                 i--;
                 edited = true;
             }
@@ -498,14 +486,5 @@ public class PromptsManager : MonoBehaviour
         }
         if (currentPrompt == null) NextPrompt();
         if (edited) RefreshNotifications();
-    }
-
-    void SetMinimumQueuePrompts(int minimum)
-    {
-        for (int i = queuePrompts.Count; i < minimum; i++)
-        {
-            Prompt randomPrompt = GetRandomPrompt();
-            if (randomPrompt != null) AddPromptToQueue(randomPrompt);
-        }
     }
 }

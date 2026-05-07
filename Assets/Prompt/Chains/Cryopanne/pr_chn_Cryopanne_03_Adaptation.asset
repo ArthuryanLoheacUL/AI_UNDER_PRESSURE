@@ -11,36 +11,34 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
   m_Name: pr_chn_Cryopanne_03_Adaptation
-  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
-  senderName: "Med. Rho"
-  message: "Le r\u00E9veill\u00E9 s'appelle Olen. Il demande \u00E0 voir sa famille \u2014 tous en cryo, tous interdits d'acc\u00E8s."
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  senderName: Med. Rho
+  message: "Olen demande \xE0 voir sa famille. Ils sont tous en cryo, mais l'acces
+    est interdits. Il en pleure."
   isUnique: 1
   isUrgent: 0
-  chainTag: "Cryopanne"
   isCrisis: 0
   isRelief: 0
   responseOptions:
-  - optionText: "Accorder visite"
-    responseUserText: "Trois minutes par parent."
+  - optionText: Accorder visite
+    responseUserText: 5 minutes max !
     ressourceGain: -5
     bonheurGain: 10
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []
-    removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
-  - optionText: "Refuser"
-    responseUserText: "Protocole. Pas d'exception."
+    gameOverMessage: 
+  - optionText: Refuser
+    responseUserText: C'est le protocole il n'y a malheuresement pas d'exception.
     ressourceGain: 0
     bonheurGain: -10
     addedPrompts:
     - prompt: {fileID: 11400000, guid: 9ab559ecc2e5b01f8d32431a3ef27a59, type: 2}
-      weight: 2.0
+      weight: 2
     addedDirectPrompts: []
     removedPrompts: []
-    removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
+    gameOverMessage: 
   timer: 0
   timerMax: 0

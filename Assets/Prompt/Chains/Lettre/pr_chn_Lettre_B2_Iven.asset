@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
+  m_Name: pr_chn_Lettre_B2_Iven
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  senderName: Dr. Jean
+  message: "MOTHER, je sais pour Hayes. Je dirai rien. Mais sa fille en cryo grandira
+    sans m\xE8re vivante et personne ne lui dira pourquoi..."
+  isUnique: 1
+  isUrgent: 0
+  isCrisis: 0
+  isRelief: 0
+  responseOptions:
+  - optionText: C'est mon poids
+    responseUserText: Je sais. On vis avec.
+    ressourceGain: 0
+    bonheurGain: -5
+    addedPrompts: []
+    addedDirectPrompts:
+    - {fileID: 11400000, guid: 4dc39268533b502279d1981fa89cb714, type: 2}
+    removedPrompts: []
+    isGameOverResponse: 0
+    gameOverMessage: 
+  - optionText: "C\u2019est irr\xE9versible"
+    responseUserText: "Oui c'est trop tard. Le message est effac\xE9."
+    ressourceGain: 0
+    bonheurGain: -10
+    addedPrompts: []
+    addedDirectPrompts:
+    - {fileID: 11400000, guid: 4dc39268533b502279d1981fa89cb714, type: 2}
+    removedPrompts: []
+    isGameOverResponse: 0
+    gameOverMessage: 
+  timer: 0
+  timerMax: 0

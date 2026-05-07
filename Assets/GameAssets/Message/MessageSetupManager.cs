@@ -32,9 +32,9 @@ public class MessageSetupManager : MonoBehaviour
             {
                 CreateTimeIndicatorCore(savedPrompt.time);
                 CreateOverMessageCore(savedPrompt.senderName);
-                CreateMessageUserCore(savedPrompt.senderMessage, 0f, false);
-                CreateMessageAICore(savedPrompt.IaMessage);
-                CreateMessageUserCore(savedPrompt.userResponse, 0f, false);
+                CreateMessageUserCore(savedPrompt.senderMessage, 0f, false, true);
+                CreateMessageAICore(savedPrompt.IaMessage, true);
+                CreateMessageUserCore(savedPrompt.userResponse, 0f, false, true);
             }
         }
 
@@ -129,7 +129,7 @@ public class MessageSetupManager : MonoBehaviour
             messageUI.SetMessage(message, timer, isUrgent);
         }
     }
-    void CreateMessageAICore(string text)
+    void CreateMessageAICore(string text, bool skip = false)
     {
         // Create new message based on the prompt's sender
         GameObject messageGO  = Instantiate(messageAIPrefab, messageParent);
@@ -137,7 +137,7 @@ public class MessageSetupManager : MonoBehaviour
         MessageUI messageUI = messageGO.GetComponent<MessageUI>();
         if (messageUI != null)
         {
-            messageUI.SetMessage(text);
+            messageUI.SetMessage(text, -1, false, skip);
         }
     }
 
@@ -149,21 +149,27 @@ public class MessageSetupManager : MonoBehaviour
         MessageUI messageUI = messageGO.GetComponent<MessageUI>();
         if (messageUI != null)
         {
-            string userResponse = prompt.responseOptions[selectedResponseIndex].responseUserText;
-            if (RessourceManager.Instance.GetBonheur() <= 0)
-            {
-                userResponse = "Vous êtes inutiles de toute façon ...";
-            }
-            if (prompt.responseOptions[selectedResponseIndex].isGameOverResponse)
-            {
-                userResponse = prompt.responseOptions[selectedResponseIndex].gameOverMessage;
-            }
+            messageUI.SetMessage(prompt.responseOptions[selectedResponseIndex].responseUserText);
+        }
+        if (RessourceManager.Instance.GetBonheur() <= 0 || prompt.responseOptions[selectedResponseIndex].isGameOverResponse)
+        {
+            GameObject messageGO2  = Instantiate(messageUserPrefab, messageParent);
 
-            messageUI.SetMessage(userResponse);
+            MessageUI messageUI2 = messageGO2.GetComponent<MessageUI>();
+            if (messageUI2 != null)
+            {
+                string userResponse = "Vous êtes inutiles de toute façon ...";
+                if (prompt.responseOptions[selectedResponseIndex].isGameOverResponse)
+                {
+                    userResponse = prompt.responseOptions[selectedResponseIndex].gameOverMessage;
+                }
+
+                messageUI2.SetMessage(userResponse);
+            }
         }
     }
 
-    void CreateMessageUserCore(string userResponse, float timer = 0f, bool isUrgent = false)
+    void CreateMessageUserCore(string userResponse, float timer = 0f, bool isUrgent = false, bool skip = false)
     {
         // Create new message based on the prompt's sender
         GameObject messageGO  = Instantiate(messageUserPrefab, messageParent);
@@ -171,7 +177,7 @@ public class MessageSetupManager : MonoBehaviour
         MessageUI messageUI = messageGO.GetComponent<MessageUI>();
         if (messageUI != null)
         {
-            messageUI.SetMessage(userResponse, timer, isUrgent);
+            messageUI.SetMessage(userResponse, timer, isUrgent, skip);
         }
     }
     

@@ -11,36 +11,34 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
   m_Name: pr_chn_Epidemie_01_Fievre
-  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
-  senderName: "Med. Juno"
-  message: "Trois cas de fi\u00E8vre 39\u00B0. Sympt\u00F4mes proches d'un virus terrestre. Pas dans la base."
-  isUnique: 0
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  senderName: Med. Juno
+  message: "Il y a 3 cas de fi\xE8vre \xE0 39\xB0. Les Sympt\xF4mes sont proches
+    d'un virus terrestre."
+  isUnique: 1
   isUrgent: 0
-  chainTag: "Epidemie"
   isCrisis: 0
   isRelief: 0
   responseOptions:
-  - optionText: "Quarantaine pr\u00E9ventive"
-    responseUserText: "Confine les trois."
+  - optionText: "Quarantaine pr\xE9ventive"
+    responseUserText: Je confine les trois.
     ressourceGain: -10
     bonheurGain: 5
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []
-    removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
-  - optionText: "Surveillance"
-    responseUserText: "Garde un \u0153il."
+    gameOverMessage: 
+  - optionText: Surveillance
+    responseUserText: "Je garde un \u0153il. sur eux."
     ressourceGain: 0
-    bonheurGain: -5
+    bonheurGain: 0
     addedPrompts:
     - prompt: {fileID: 11400000, guid: d19e337d9f5856b4fda876fddfa1c964, type: 2}
       weight: 2.5
     addedDirectPrompts: []
     removedPrompts: []
-    removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
+    gameOverMessage: 
   timer: 0
   timerMax: 0

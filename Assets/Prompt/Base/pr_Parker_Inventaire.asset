@@ -13,15 +13,15 @@ MonoBehaviour:
   m_Name: pr_Parker_Inventaire
   m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
   senderName: "Ing. Parker"
-  message: "Inventaire moteur clos. Tout est nominal."
-  isUnique: 0
+  message: "l'Inventaire du moteur est termin\u00E9. Tout est conforme."
+  isUnique: 1
   isUrgent: 0
   chainTag: "Parker"
   isCrisis: 0
   isRelief: 1
   responseOptions:
   - optionText: "Bien not\u00E9"
-    responseUserText: "Bien re\u00E7u."
+    responseUserText: ""
     ressourceGain: 0
     bonheurGain: 5
     addedPrompts: []
@@ -31,7 +31,7 @@ MonoBehaviour:
     isGameOverResponse: 0
     gameOverMessage: ""
   - optionText: "Audit complet"
-    responseUserText: "Je veux voir ton inventaire moi-m\u00EAme."
+    responseUserText: "pff\u2026"
     ressourceGain: -5
     bonheurGain: -5
     addedPrompts:

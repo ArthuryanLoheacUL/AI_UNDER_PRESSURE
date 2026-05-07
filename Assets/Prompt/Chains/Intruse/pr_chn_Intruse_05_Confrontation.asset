@@ -13,15 +13,15 @@ MonoBehaviour:
   m_Name: pr_chn_Intruse_05_Confrontation
   m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
   senderName: "Capt. Voss"
-  message: "On l'a coinc\u00E9e. Vivante. Sas \u00E9tanche. Vale veut l'\u00E9tudier. Mara veut l'\u00E9jecter."
+  message: "On l'a coinc\u00E9e vivante en sas \u00E9tanche. Vale veut l'\u00E9tudier. Mara veut l'\u00E9jecter."
   isUnique: 1
   isUrgent: 1
   chainTag: "Intruse"
   isCrisis: 1
   isRelief: 0
   responseOptions:
-  - optionText: "\u00C9jecter dans le vide"
-    responseUserText: "Ouvre le sas."
+  - optionText: "\u00C9jecter"
+    responseUserText: "J'ouvre le sas. Adieu monstre."
     ressourceGain: -10
     bonheurGain: 5
     addedPrompts: []
@@ -32,7 +32,7 @@ MonoBehaviour:
     isGameOverResponse: 0
     gameOverMessage: ""
   - optionText: "Garder pour \u00E9tude"
-    responseUserText: "Transfert au labo."
+    responseUserText: "Transfert au labo. C'est risqu\u00E9 mais utile."
     ressourceGain: -5
     bonheurGain: -10
     addedPrompts: []

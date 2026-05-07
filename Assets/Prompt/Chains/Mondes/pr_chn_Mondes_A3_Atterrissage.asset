@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
+  m_Name: pr_chn_Mondes_A3_Atterrissage
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  senderName: Nav. Eko
+  message: "Atterrissage dans 6 heures on a trouv\xE9 2 lieux possible: un oc\xE9an
+    glac\xE9 riches en ressources ou un site montagneux et sec, s\xFBr mais pauvre
+    en ressources ?"
+  isUnique: 1
+  isUrgent: 0
+  isCrisis: 0
+  isRelief: 0
+  responseOptions:
+  - optionText: "Oc\xE9an"
+    responseUserText: Audacieux. Je calcule la trajectoire.
+    ressourceGain: -10
+    bonheurGain: 5
+    addedPrompts:
+    - prompt: {fileID: 11400000, guid: 9fdbd574d9e99ee24bf04e08fe9948fd, type: 2}
+      weight: 3
+    addedDirectPrompts: []
+    removedPrompts: []
+    isGameOverResponse: 0
+    gameOverMessage: 
+  - optionText: Montagne
+    responseUserText: "Prudent. C'est valid\xE9."
+    ressourceGain: -5
+    bonheurGain: 0
+    addedPrompts: []
+    addedDirectPrompts:
+    - {fileID: 11400000, guid: 9fdbd574d9e99ee24bf04e08fe9948fd, type: 2}
+    removedPrompts: []
+    isGameOverResponse: 0
+    gameOverMessage: 
+  timer: 0
+  timerMax: 0

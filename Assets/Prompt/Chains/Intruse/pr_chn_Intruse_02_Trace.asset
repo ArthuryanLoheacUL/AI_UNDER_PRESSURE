@@ -11,28 +11,27 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
   m_Name: pr_chn_Intruse_02_Trace
-  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
-  senderName: "Sec. Mara"
-  message: "Trace organique sur la grille de ventilation 4. Pas humain. Pas connu."
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  senderName: Sec. Mara
+  message: Il y a des traces organiques sur la grille de ventilation 4. Ce n'est
+    pas humain.
   isUnique: 1
   isUrgent: 1
-  chainTag: "Intruse"
   isCrisis: 0
   isRelief: 0
   responseOptions:
-  - optionText: "Faire venir Vale"
-    responseUserText: "Vale, \u00E9chantillon."
+  - optionText: Aide
+    responseUserText: Vale est en route pour donner un coup de main.
     ressourceGain: -5
     bonheurGain: 5
     addedPrompts: []
     addedDirectPrompts:
     - {fileID: 11400000, guid: c8f9d169730c1edbca51ccc544870a57, type: 2}
     removedPrompts: []
-    removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
-  - optionText: "Br\u00FBler la zone"
-    responseUserText: "St\u00E9rilise."
+    gameOverMessage: 
+  - optionText: "Br\xFBler"
+    responseUserText: "Je st\xE9rilise. On sait jamais."
     ressourceGain: -15
     bonheurGain: -5
     addedPrompts: []
@@ -40,8 +39,7 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 63e01e1aebffcdaaf39e8fb016f120e3, type: 2}
     removedPrompts:
     - {fileID: 11400000, guid: c8f9d169730c1edbca51ccc544870a57, type: 2}
-    removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
-  timer: 0
+    gameOverMessage: 
+  timer: -0.0111455005
   timerMax: 0

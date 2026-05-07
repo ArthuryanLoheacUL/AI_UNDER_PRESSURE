@@ -11,36 +11,34 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
   m_Name: pr_chn_Intruse_03_Etude
-  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
-  senderName: "Dr. Vale"
-  message: "Ce truc respire l'azote. Et il apprend. Il a d\u00E9j\u00E0 ouvert un panneau pour passer."
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  senderName: Dr. Vale
+  message: "Ce truc respire de l'azote. Mais surtout il apprend. Il a d\xE9j\xE0
+    ouvert un panneau de ventilation pour se deplacer."
   isUnique: 1
   isUrgent: 1
-  chainTag: "Intruse"
   isCrisis: 1
   isRelief: 0
   responseOptions:
-  - optionText: "Capturer vivant"
-    responseUserText: "Prends un sas \u00E9tanche."
+  - optionText: Capturer vivant
+    responseUserText: "Je sors un sas \xE9tanche !"
     ressourceGain: -10
     bonheurGain: 5
     addedPrompts: []
     addedDirectPrompts:
     - {fileID: 11400000, guid: 63e01e1aebffcdaaf39e8fb016f120e3, type: 2}
     removedPrompts: []
-    removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
-  - optionText: "Tuer"
-    responseUserText: "Mara, feu vert."
+    gameOverMessage: 
+  - optionText: Tuer
+    responseUserText: Feu vert pour Mara.
     ressourceGain: -5
     bonheurGain: -10
     addedPrompts: []
     addedDirectPrompts:
     - {fileID: 11400000, guid: 40a7c4bf09f7a650408240d3cfd9608c, type: 2}
     removedPrompts: []
-    removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
+    gameOverMessage: 
   timer: 0
   timerMax: 0

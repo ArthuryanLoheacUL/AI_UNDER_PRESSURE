@@ -11,36 +11,34 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
   m_Name: pr_chn_Guerre_03_Combat
-  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
-  senderName: "Sec. Mara"
-  message: "Combat dans la coursive C. Deux bless\u00E9s graves. Iven retranch\u00E9 en navigation."
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  senderName: Sec. Mara
+  message: "Le combat continue dans la coursive C. Deux bless\xE9s graves. Iven est
+    retranch\xE9 en navigation."
   isUnique: 1
   isUrgent: 1
-  chainTag: "Guerre"
   isCrisis: 1
   isRelief: 0
   responseOptions:
-  - optionText: "Pression maximale"
-    responseUserText: "Continue l'assaut."
+  - optionText: Pression
+    responseUserText: On continue l'assaut. Aller courage !
     ressourceGain: -15
     bonheurGain: -15
     addedPrompts: []
     addedDirectPrompts:
     - {fileID: 11400000, guid: c0c8eaa621330b4ce9add9c7f2ab1a11, type: 2}
     removedPrompts: []
-    removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
-  - optionText: "Cessez-le-feu"
-    responseUserText: "Recul. On parle."
-    ressourceGain: -5
+    gameOverMessage: 
+  - optionText: Cessez-le-feu
+    responseUserText: On recule et on parle.
+    ressourceGain: 0
     bonheurGain: 5
     addedPrompts: []
     addedDirectPrompts:
     - {fileID: 11400000, guid: 0f894f610f9725617578949da7fe47d8, type: 2}
     removedPrompts: []
-    removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
+    gameOverMessage: 
   timer: 0
   timerMax: 0

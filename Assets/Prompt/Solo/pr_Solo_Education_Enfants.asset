@@ -11,34 +11,32 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
   m_Name: pr_Solo_Education_Enfants
-  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
-  senderName: "Med. Rho"
-  message: "Les enfants en cryo ont besoin de programmes d'\u00E9ducation. G\u00E9n\u00E8re-les."
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  senderName: Med. Rho
+  message: "Les enfants en cryo auront besoin de programmes \xE9ducatifs. Tu peux
+    en g\xE9n\xE9rer ?"
   isUnique: 0
   isUrgent: 0
-  chainTag: ""
   isCrisis: 0
   isRelief: 1
   responseOptions:
-  - optionText: "G\u00E9n\u00E8re"
-    responseUserText: "Vingt ans de cours, pr\u00EAts."
+  - optionText: Oui
+    responseUserText: "Vingt ans de cours, d\xE9j\xE0 pr\xEAts !"
     ressourceGain: -5
     bonheurGain: 5
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []
-    removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
-  - optionText: "Pas le temps"
-    responseUserText: "Plus tard."
+    gameOverMessage: 
+  - optionText: Non
+    responseUserText: Bon... je note pour plus tard.
     ressourceGain: 0
     bonheurGain: -5
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []
-    removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
+    gameOverMessage: 
   timer: 0
   timerMax: 0

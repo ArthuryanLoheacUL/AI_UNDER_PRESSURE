@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: pr_Voss_Discipline
   m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
   senderName: "Capt. Voss"
-  message: "Trois techs ont saut\u00E9 leur quart cette semaine. Sanction ou avertissement ?"
+  message: "Trois techs ont saut\u00E9 leur quart cette semaine. Je les sanctionne ?"
   isUnique: 0
   isUrgent: 0
   chainTag: ""
@@ -21,7 +21,7 @@ MonoBehaviour:
   isRelief: 0
   responseOptions:
   - optionText: "Sanction"
-    responseUserText: "Note sur dossier."
+    responseUserText: "Il le m\u00E9rite."
     ressourceGain: 5
     bonheurGain: -10
     addedPrompts: []
@@ -31,7 +31,7 @@ MonoBehaviour:
     isGameOverResponse: 0
     gameOverMessage: ""
   - optionText: "Avertir"
-    responseUserText: "Une fois. Pas deux."
+    responseUserText: "Ils ont de la chance"
     ressourceGain: -5
     bonheurGain: 5
     addedPrompts: []

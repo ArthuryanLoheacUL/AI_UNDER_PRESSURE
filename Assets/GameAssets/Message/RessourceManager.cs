@@ -8,15 +8,15 @@ public class RessourceManager : MonoBehaviour
     public static RessourceManager Instance { get; private set; }
 
     [Header("Starting Values")]
-    public int startingRessource = 60;
-    public int startingBonheur = 60;
+    public int startingRessource = 30;
+    public int startingBonheur = 50;
 
-    [HideInInspector] public int ressourceValue = 60;
+    [HideInInspector] public int ressourceValue = 30;
 
     // bonheurValue: 0..100. Game over when it drops to 0.
     [HideInInspector]
     [FormerlySerializedAs("frustrationValue")]
-    public int bonheurValue = 60;
+    public int bonheurValue = 50;
 
     [Header("UI Refs")]
     [FormerlySerializedAs("frustrationSlider")]

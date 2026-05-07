@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
+  m_Name: pr_Lettre_00_Entry
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  senderName: Com. Zeth
+  message: "Je viens de capter une transmission de la Coalition. La femme de Hayes,
+    qui est colon en cryo 1124, est d\xE9c\xE9d\xE9e il y a trois semaines... Il
+    reste des mois de cryo restants. Quand il se r\xE9veillera, il d\xE9couvrira
+    que personne l'attends \xE0 la maison..."
+  isUnique: 1
+  isUrgent: 0
+  isCrisis: 0
+  isRelief: 0
+  responseOptions:
+  - optionText: "Pr\xE9parer l'annonce"
+    responseUserText: Bien. Je vais m'organiser avec Rho.
+    ressourceGain: 0
+    bonheurGain: 0
+    addedPrompts: []
+    addedDirectPrompts:
+    - {fileID: 11400000, guid: f0273fc9fd0179bc7ebed774ce92526b, type: 2}
+    removedPrompts: []
+    isGameOverResponse: 0
+    gameOverMessage: 
+  - optionText: Cacher le message
+    responseUserText: "Bon... je l'efface il restera efficace. Tu portes \xE7a avec
+      moi maintenant."
+    ressourceGain: 0
+    bonheurGain: 0
+    addedPrompts: []
+    addedDirectPrompts:
+    - {fileID: 11400000, guid: a1e43d0991526fccc541c01cf8eb7460, type: 2}
+    removedPrompts: []
+    isGameOverResponse: 0
+    gameOverMessage: 
+  timer: 0
+  timerMax: 0

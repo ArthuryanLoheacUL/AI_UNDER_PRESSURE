@@ -11,38 +11,32 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
   m_Name: pr_chn_Guerre_04_Resolution
-  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
-  senderName: "Capt. Voss"
-  message: "Iven a accept\u00E9 le comit\u00E9. Tout le monde d\u00E9pose les armes. On a deux bless\u00E9s \u00E0 soigner. Pas de morts."
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  senderName: Capt. Voss
+  message: "Iven a accept\xE9 le comit\xE9. Tout le monde a d\xE9pos\xE9 les armes.
+    Au total uniquement 2 bless\xE9s."
   isUnique: 1
   isUrgent: 0
-  chainTag: "Guerre"
   isCrisis: 0
   isRelief: 1
   responseOptions:
-  - optionText: "Hommage"
-    responseUserText: "Reconnaissance publique de Voss."
+  - optionText: Annonce
+    responseUserText: "Reconnaissance publique pour le danger que Voss a travers\xE9."
     ressourceGain: 0
     bonheurGain: 15
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []
-    removedChainTags:
-    - "Guerre"
-    - "Mutinerie"
     isGameOverResponse: 0
-    gameOverMessage: ""
-  - optionText: "Pas de c\u00E9r\u00E9monie"
-    responseUserText: "On reprend."
+    gameOverMessage: 
+  - optionText: "Pas de c\xE9r\xE9monie"
+    responseUserText: On reprend. Dommage.
     ressourceGain: 5
     bonheurGain: 0
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []
-    removedChainTags:
-    - "Guerre"
-    - "Mutinerie"
     isGameOverResponse: 0
-    gameOverMessage: ""
+    gameOverMessage: 
   timer: 0
   timerMax: 0

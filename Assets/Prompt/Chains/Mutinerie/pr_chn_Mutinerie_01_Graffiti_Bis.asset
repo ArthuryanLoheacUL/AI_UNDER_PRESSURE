@@ -11,34 +11,32 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
   m_Name: pr_chn_Mutinerie_01_Graffiti_Bis
-  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
-  senderName: "Sec. Mara"
-  message: "Un autre. Trois maintenant. Diff\u00E9rentes mains."
-  isUnique: 0
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  senderName: Sec. Mara
+  message: "Il y a de plus en plus de grafitis contre toi. Trois maintenant, de trois
+    mains diff\xE9rentes."
+  isUnique: 1
   isUrgent: 0
-  chainTag: "Mutinerie"
   isCrisis: 0
   isRelief: 0
   responseOptions:
-  - optionText: "R\u00E9union d'\u00E9quipage"
-    responseUserText: "Mets-les face \u00E0 toi."
+  - optionText: "R\xE9union d'\xE9quipage"
+    responseUserText: "Je les mets face \xE0 toi."
     ressourceGain: -5
     bonheurGain: 5
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []
-    removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
-  - optionText: "Renforcer la surveillance"
-    responseUserText: "Cam\u00E9ras partout."
+    gameOverMessage: 
+  - optionText: Renforcer surveillance
+    responseUserText: "Cam\xE9ras partout. \xC7a va peser."
     ressourceGain: -5
     bonheurGain: -10
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []
-    removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
+    gameOverMessage: 
   timer: 0
   timerMax: 0

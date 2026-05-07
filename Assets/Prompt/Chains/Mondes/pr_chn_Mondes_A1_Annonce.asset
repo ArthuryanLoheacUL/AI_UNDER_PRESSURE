@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
+  m_Name: pr_chn_Mondes_A1_Annonce
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  senderName: Capt. Voss
+  message: "Souhaite tu annoncer \xE0 l'\xE9quipage la nouvelle pour l'atterissage
+    ?"
+  isUnique: 1
+  isUrgent: 0
+  isCrisis: 0
+  isRelief: 0
+  responseOptions:
+  - optionText: "V\xE9rit\xE9"
+    responseUserText: "OK, je leur dis tout. \xC7a va piquer."
+    ressourceGain: 0
+    bonheurGain: -10
+    addedPrompts: []
+    addedDirectPrompts:
+    - {fileID: 11400000, guid: e055f95157c5828e4f2cd91996077861, type: 2}
+    removedPrompts: []
+    isGameOverResponse: 0
+    gameOverMessage: 
+  - optionText: Vendable
+    responseUserText: Compris. J'arrondis les angles.
+    ressourceGain: 0
+    bonheurGain: 5
+    addedPrompts: []
+    addedDirectPrompts:
+    - {fileID: 11400000, guid: e055f95157c5828e4f2cd91996077861, type: 2}
+    removedPrompts: []
+    isGameOverResponse: 0
+    gameOverMessage: 
+  timer: 0
+  timerMax: 0

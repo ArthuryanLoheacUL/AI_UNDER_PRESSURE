@@ -11,37 +11,35 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
   m_Name: pr_chn_Contact_01_Coalition
-  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
-  senderName: "Com. Zeth"
-  message: "Message re\u00E7u. La Coalition Stellaire. Ils veulent un check-in. Premi\u00E8re fois en vingt ans."
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  senderName: Com. Zeth
+  message: "Message re\xE7u de la Coalition Stellaire. Ils veulent un check-in. C'est
+    la premi\xE8re fois en vingt ans."
   isUnique: 1
   isUrgent: 0
-  chainTag: "Contact"
   isCrisis: 0
   isRelief: 0
   responseOptions:
-  - optionText: "R\u00E9pondre vrai"
-    responseUserText: "Rapport int\u00E9gral."
+  - optionText: "R\xE9pondre vrai"
+    responseUserText: "On liste tout les probl\xE8mes, soyons transparence."
     ressourceGain: -5
     bonheurGain: 5
     addedPrompts: []
     addedDirectPrompts:
     - {fileID: 11400000, guid: 99ab0bdfa79fd493bd5443d45092d4cb, type: 2}
     removedPrompts: []
-    removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
-  - optionText: "Mentir"
-    responseUserText: "Tout va bien."
+    gameOverMessage: 
+  - optionText: Mentir
+    responseUserText: Tout va bien. (Sauf que c'est faux.)
     ressourceGain: 5
     bonheurGain: -5
     addedPrompts:
     - prompt: {fileID: 11400000, guid: 619041fe2c98c9a5f03d35e89a0282e5, type: 2}
-      weight: 2.0
+      weight: 2
     addedDirectPrompts: []
     removedPrompts: []
-    removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
+    gameOverMessage: 
   timer: 0
   timerMax: 0

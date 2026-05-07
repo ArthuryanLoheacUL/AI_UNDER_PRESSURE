@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: pr_Iven_Etoile
   m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
   senderName: "Dr. Iven"
-  message: "Spectre anormal sur l'\u00E9toile \u00E0 0.6 UA b\u00E2bord. Probablement un transit. Probablement."
+  message: "Spectre anormal sur l'\u00E9toile \u00E0 0.6 UA \u00E0 b\u00E2bord. C'est probablement rien de sp\u00E9cial."
   isUnique: 0
   isUrgent: 0
   chainTag: ""
@@ -21,7 +21,7 @@ MonoBehaviour:
   isRelief: 0
   responseOptions:
   - optionText: "Investiguer"
-    responseUserText: "Capteurs braqu\u00E9s."
+    responseUserText: "Je pars analyser \u00E7a !"
     ressourceGain: -5
     bonheurGain: 5
     addedPrompts: []
@@ -33,7 +33,7 @@ MonoBehaviour:
   - optionText: "Plus tard"
     responseUserText: "On a mieux \u00E0 faire."
     ressourceGain: 0
-    bonheurGain: -5
+    bonheurGain: 0
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []

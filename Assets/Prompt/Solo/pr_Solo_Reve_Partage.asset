@@ -11,34 +11,32 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
   m_Name: pr_Solo_Reve_Partage
-  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
-  senderName: "Med. Juno"
-  message: "Quatre personnes ont fait le m\u00EAme r\u00EAve cette nuit. Probablement co\u00EFncidence."
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  senderName: Med. Juno
+  message: "4 personnes ont fait exactement le m\xEAme r\xEAve cette nuit. C'est
+    probablement une co\xEFncidence... ?"
   isUnique: 0
   isUrgent: 0
-  chainTag: ""
   isCrisis: 0
   isRelief: 0
   responseOptions:
-  - optionText: "Logger"
-    responseUserText: "Note dans le journal m\u00E9dical."
+  - optionText: Logger
+    responseUserText: Je note dans le journal.
     ressourceGain: 0
-    bonheurGain: 0
+    bonheurGain: 5
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []
-    removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
-  - optionText: "Ne pas en parler"
-    responseUserText: "Garde \u00E7a entre nous."
+    gameOverMessage: 
+  - optionText: Ignorer
+    responseUserText: Okay si tu le souhaites
     ressourceGain: 0
     bonheurGain: -5
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []
-    removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
+    gameOverMessage: 
   timer: 0
   timerMax: 0
