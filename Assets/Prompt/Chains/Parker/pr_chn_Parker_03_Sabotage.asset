@@ -11,36 +11,33 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
   m_Name: pr_chn_Parker_03_Sabotage
-  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
-  senderName: "Ing. Kade"
-  message: "Quelqu'un a sabot\u00E9 le vase d'expansion du moteur 2. C'est Parker. Cam\u00E9ras le confirment."
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  senderName: Ing. Kade
+  message: "Quelqu'un a sabot\xE9 le vase d'expansion du moteur 2. C'est Parker les
+    cam\xE9ras le confirment."
   isUnique: 1
   isUrgent: 1
-  chainTag: "Parker"
   isCrisis: 1
   isRelief: 0
   responseOptions:
-  - optionText: "Arr\u00EAter Parker"
-    responseUserText: "Mara va le chercher."
+  - optionText: "Arr\xEAter Parker"
+    responseUserText: Mara va s'occuper d'aller le chercher.
     ressourceGain: -5
     bonheurGain: -10
     addedPrompts: []
     addedDirectPrompts:
     - {fileID: 11400000, guid: 7d16cf100fed965c33cb7b44eacc1e9c, type: 2}
     removedPrompts: []
-    removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
-  - optionText: "Le tuer"
-    responseUserText: "Ouvre son sas. ...t'es s\u00FBre ?"
+    gameOverMessage: 
+  - optionText: Tuer Parker
+    responseUserText: "Ouvrir son sas. ...t'es s\xFBre ?"
     ressourceGain: 0
     bonheurGain: -15
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []
-    removedChainTags:
-    - "Parker"
     isGameOverResponse: 0
-    gameOverMessage: ""
+    gameOverMessage: 
   timer: 0
   timerMax: 0

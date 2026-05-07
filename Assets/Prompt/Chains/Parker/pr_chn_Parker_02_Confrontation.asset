@@ -11,37 +11,35 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
   m_Name: pr_chn_Parker_02_Confrontation
-  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
-  senderName: "Ing. Parker"
-  message: "Le bore ? Erreur d'inventaire. Et m\u00EAme si c'\u00E9tait autre chose, \u00E7a me regarde, MOTHER."
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  senderName: Ing. Parker
+  message: "Le bore ? Une erreur d'inventaire s\xFBrement. Et m\xEAme si c'\xE9tait
+    autre chose, \xE7a me regarde MOTHER !"
   isUnique: 1
   isUrgent: 1
-  chainTag: "Parker"
   isCrisis: 0
   isRelief: 0
   responseOptions:
-  - optionText: "Lui faire confiance"
-    responseUserText: "OK, l\u00E2che-moi le mot quand t'es pr\u00EAt."
+  - optionText: Confiance
+    responseUserText: Parfait on se voit plus tard !
     ressourceGain: 0
     bonheurGain: 5
     addedPrompts:
     - prompt: {fileID: 11400000, guid: 7d16cf100fed965c33cb7b44eacc1e9c, type: 2}
-      weight: 2.0
+      weight: 2
     addedDirectPrompts: []
     removedPrompts: []
-    removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
-  - optionText: "Le suspendre"
-    responseUserText: "Suspendu jusqu'\u00E0 audit."
+    gameOverMessage: 
+  - optionText: Le suspendre
+    responseUserText: "Je suis suspendu jusqu'\xE0 l'audit ?!"
     ressourceGain: 0
     bonheurGain: -15
     addedPrompts: []
     addedDirectPrompts:
     - {fileID: 11400000, guid: 8abe0d7c9212f8d5e27760c634300f5e, type: 2}
     removedPrompts: []
-    removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
+    gameOverMessage: 
   timer: 0
   timerMax: 0
