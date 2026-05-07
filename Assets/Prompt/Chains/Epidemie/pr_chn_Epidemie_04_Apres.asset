@@ -11,36 +11,32 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
   m_Name: pr_chn_Epidemie_04_Apres
-  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
-  senderName: "Med. Juno"
-  message: "Vecteur identifi\u00E9 : filtre HEPA d\u00E9faillant. Remplac\u00E9. C'est fini."
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  senderName: Med. Juno
+  message: "On a identifi\xE9 le vecteur de l'infection: c'est les filtres HEPA qui
+    sont d\xE9faillants. On a pu les remplacer. C'est fini."
   isUnique: 1
   isUrgent: 0
-  chainTag: "Epidemie"
   isCrisis: 0
   isRelief: 1
   responseOptions:
-  - optionText: "Hommage"
-    responseUserText: "Une minute pour Sol."
+  - optionText: Hommage Sol
+    responseUserText: "Une minute pour Sol \xE7a fait du bien."
     ressourceGain: 0
     bonheurGain: 10
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []
-    removedChainTags:
-    - "Epidemie"
     isGameOverResponse: 0
-    gameOverMessage: ""
-  - optionText: "On continue"
-    responseUserText: "Rapport final. On tourne la page."
+    gameOverMessage: 
+  - optionText: Continuer
+    responseUserText: Rapport final et on tourne la page.
     ressourceGain: 5
     bonheurGain: -5
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []
-    removedChainTags:
-    - "Epidemie"
     isGameOverResponse: 0
-    gameOverMessage: ""
+    gameOverMessage: 
   timer: 0
   timerMax: 0

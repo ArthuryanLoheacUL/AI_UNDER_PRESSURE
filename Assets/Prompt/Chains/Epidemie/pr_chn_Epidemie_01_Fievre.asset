@@ -30,9 +30,9 @@ MonoBehaviour:
     isGameOverResponse: 0
     gameOverMessage: 
   - optionText: Surveillance
-    responseUserText: "Je garde un \u0153il. Risqu\xE9."
+    responseUserText: "Je garde un \u0153il. sur eux."
     ressourceGain: 0
-    bonheurGain: -5
+    bonheurGain: 0
     addedPrompts:
     - prompt: {fileID: 11400000, guid: d19e337d9f5856b4fda876fddfa1c964, type: 2}
       weight: 2.5
