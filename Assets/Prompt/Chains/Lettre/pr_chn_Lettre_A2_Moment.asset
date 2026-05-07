@@ -11,36 +11,33 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
   m_Name: pr_chn_Lettre_A2_Moment
-  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
-  senderName: "Med. Juno"
-  message: "Question de timing. Tu lui dis d\u00E8s le r\u00E9veil ou tu attends qu'il soit stable, deux semaines plus tard ? Aucune des deux n'est anodine."
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  senderName: Med. Juno
+  message: "Tu veux lui annoncer d\xE9s son r\xE9veil ?"
   isUnique: 1
   isUrgent: 0
-  chainTag: "Lettre"
   isCrisis: 0
   isRelief: 0
   responseOptions:
-  - optionText: "Au r\u00E9veil sans attendre"
-    responseUserText: "Brut, mais propre. Je le note."
+  - optionText: "Au r\xE9veil sans attendre"
+    responseUserText: "Tr\xE8s bien on perd pas de temps"
     ressourceGain: 0
-    bonheurGain: -5
+    bonheurGain: 0
     addedPrompts: []
     addedDirectPrompts:
     - {fileID: 11400000, guid: fe26ca330c67ba76f6f089bb781d7c05, type: 2}
     removedPrompts: []
-    removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
-  - optionText: "Quand il est stable"
-    responseUserText: "Compris. C'est plus humain je crois."
+    gameOverMessage: 
+  - optionText: Quand il est stable
+    responseUserText: Compris. C'est plus humain je comprends.
     ressourceGain: 0
-    bonheurGain: 5
+    bonheurGain: 10
     addedPrompts: []
     addedDirectPrompts:
     - {fileID: 11400000, guid: fe26ca330c67ba76f6f089bb781d7c05, type: 2}
     removedPrompts: []
-    removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
+    gameOverMessage: 
   timer: 0
   timerMax: 0

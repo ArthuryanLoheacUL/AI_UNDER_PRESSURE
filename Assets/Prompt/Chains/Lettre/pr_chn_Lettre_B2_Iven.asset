@@ -11,36 +11,34 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
   m_Name: pr_chn_Lettre_B2_Iven
-  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
-  senderName: "Dr. Iven"
-  message: "MOTHER, je sais pour Hayes. Je dirai rien. Mais sa fille en cryo grandira sans grand-m\u00E8re vivante et personne ne lui dira pourquoi. Tu as fabriqu\u00E9 cette absence."
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  senderName: Dr. Jean
+  message: "MOTHER, je sais pour Hayes. Je dirai rien. Mais sa fille en cryo grandira
+    sans m\xE8re vivante et personne ne lui dira pourquoi..."
   isUnique: 1
   isUrgent: 0
-  chainTag: "Lettre"
   isCrisis: 0
   isRelief: 0
   responseOptions:
-  - optionText: "C'est mon poids"
-    responseUserText: "Je sais. Je vis avec."
+  - optionText: C'est mon poids
+    responseUserText: Je sais. On vis avec.
     ressourceGain: 0
     bonheurGain: -5
     addedPrompts: []
     addedDirectPrompts:
     - {fileID: 11400000, guid: 4dc39268533b502279d1981fa89cb714, type: 2}
     removedPrompts: []
-    removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
-  - optionText: "On ne peut plus revenir"
-    responseUserText: "Trop tard. Le message est effac\u00E9. D\u00E9sol\u00E9e."
+    gameOverMessage: 
+  - optionText: "C\u2019est irr\xE9versible"
+    responseUserText: "Oui c'est trop tard. Le message est effac\xE9."
     ressourceGain: 0
     bonheurGain: -10
     addedPrompts: []
     addedDirectPrompts:
     - {fileID: 11400000, guid: 4dc39268533b502279d1981fa89cb714, type: 2}
     removedPrompts: []
-    removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
+    gameOverMessage: 
   timer: 0
   timerMax: 0

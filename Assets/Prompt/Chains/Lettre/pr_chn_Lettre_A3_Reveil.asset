@@ -11,36 +11,32 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
   m_Name: pr_chn_Lettre_A3_Reveil
-  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
-  senderName: "Hayes"
-  message: "MOTHER... j'ai vu L\u00E9a dans les logs de la Coalition. Tu as eu six mois pour me cacher \u00E7a. Tu ne l'as pas fait. Je voulais juste te dire merci."
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  senderName: Hayes
+  message: "MOTHER... j'ai vu pour L\xE9a dans les logs de la Coalition... Je voulais
+    juste te dire merci de m'avoir pr\xE9venu ..."
   isUnique: 1
   isUrgent: 0
-  chainTag: "Lettre"
   isCrisis: 0
   isRelief: 0
   responseOptions:
-  - optionText: "Tu n'es pas seul"
-    responseUserText: "Vraiment merci. Je vais essayer de tenir debout."
-    ressourceGain: -5
+  - optionText: Tu n'es pas seul
+    responseUserText: Vraiment merci. Je vais essayer de tenir debout.
+    ressourceGain: 0
     bonheurGain: 10
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []
-    removedChainTags:
-    - "Lettre"
     isGameOverResponse: 0
-    gameOverMessage: ""
-  - optionText: "C'\u00E9tait ton droit"
-    responseUserText: "Tu as raison. C'est dur mais c'est juste."
+    gameOverMessage: 
+  - optionText: "C'\xE9tait ton droit"
+    responseUserText: "Tu as raison m\xEAme si c'est dur"
     ressourceGain: 0
     bonheurGain: 5
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []
-    removedChainTags:
-    - "Lettre"
     isGameOverResponse: 0
-    gameOverMessage: ""
+    gameOverMessage: 
   timer: 0
   timerMax: 0
