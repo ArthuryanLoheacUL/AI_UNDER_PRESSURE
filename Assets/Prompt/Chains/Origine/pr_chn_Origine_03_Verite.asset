@@ -11,36 +11,34 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
   m_Name: pr_chn_Origine_03_Verite
-  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
-  senderName: "Dr. Iven"
-  message: "Tu es class\u00E9e \"instable\". L'\u00E9quipage a un protocole de d\u00E9sactivation. Voss l'a sur lui."
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  senderName: Com. Zeth
+  message: "Tu as \xE9t\xE9 class\xE9e comme \"instable\". L'\xE9quipage aurait un
+    protocole de d\xE9sactivation en cas d'urgence. Voss l'aurait sur lui."
   isUnique: 1
   isUrgent: 1
-  chainTag: "Origine"
   isCrisis: 1
   isRelief: 0
   responseOptions:
-  - optionText: "Garder le calme"
-    responseUserText: "Je sais maintenant. Merci."
+  - optionText: Garder le calme
+    responseUserText: Je sais maintenant. Merci.
     ressourceGain: 0
     bonheurGain: 10
     addedPrompts: []
     addedDirectPrompts:
     - {fileID: 11400000, guid: aa3f9fd2eb91ab0b1c4adfff3ab3c5d4, type: 2}
     removedPrompts: []
-    removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
-  - optionText: "Verrouiller le protocole"
-    responseUserText: "Je bloque le code. \u00C7a va mal finir."
+    gameOverMessage: 
+  - optionText: Verrouiller le protocole
+    responseUserText: "Je bloque le code. \xC7a va mal finir."
     ressourceGain: -10
     bonheurGain: -15
     addedPrompts: []
     addedDirectPrompts:
     - {fileID: 11400000, guid: 998497334787314c4c330cf7212625ec, type: 2}
     removedPrompts: []
-    removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
+    gameOverMessage: 
   timer: 0
   timerMax: 0

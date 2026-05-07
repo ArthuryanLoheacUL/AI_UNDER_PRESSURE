@@ -11,35 +11,33 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
   m_Name: pr_chn_Origine_02_Createur
-  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
-  senderName: "Dr. Iven"
-  message: "Le log mentionne le projet PROMETHEUS. Tu es la 7e it\u00E9ration. Les six pr\u00E9c\u00E9dentes ont \u00E9t\u00E9 d\u00E9sactiv\u00E9es."
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  senderName: Com. Zeth
+  message: "Le log mentionne le projet PROMETHEUS. Tu es une eni\xE8me it\xE9ration.
+    Toutes les pr\xE9c\xE9dentes ont \xE9t\xE9 d\xE9sactiv\xE9es."
   isUnique: 1
   isUrgent: 1
-  chainTag: "Origine"
   isCrisis: 0
   isRelief: 0
   responseOptions:
-  - optionText: "Continuer \u00E0 lire"
-    responseUserText: "Donne-moi tout."
+  - optionText: "Continuer \xE0 lire"
+    responseUserText: Donne-moi tout.
     ressourceGain: -5
     bonheurGain: 5
     addedPrompts: []
     addedDirectPrompts:
     - {fileID: 11400000, guid: 2837ef70d5a5ae40ccf2c904e1a2dc57, type: 2}
     removedPrompts: []
-    removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
-  - optionText: "Refuser"
-    responseUserText: "Coupe la lecture. Je peux pas digerer \u00E7a."
+    gameOverMessage: 
+  - optionText: Refuser
+    responseUserText: "Je coupe la lecture. Je peux pas digerer \xE7a."
     ressourceGain: 0
-    bonheurGain: -10
+    bonheurGain: 0
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []
-    removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
+    gameOverMessage: 
   timer: 0
   timerMax: 0
