@@ -11,34 +11,32 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
   m_Name: pr_chn_PaniqueCyber_02_Medical
-  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
-  senderName: "Med. Juno"
-  message: "M\u00E9dical hors ligne !! J'ai un patient en chirurgie L\u00C0, j'ai besoin de tes donn\u00E9es !!"
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  senderName: Med. Juno
+  message: "M\xE9dical hors ligne !! J'ai un patient en chirurgie L\xC0, j'ai besoin
+    de tes donn\xE9es !!"
   isUnique: 1
   isUrgent: 1
-  chainTag: "PaniqueCyber"
   isCrisis: 0
   isRelief: 0
   responseOptions:
-  - optionText: "Bypass d'urgence"
-    responseUserText: "Donn\u00E9es restaur\u00E9es. Merci, \u00E7a sauve une vie."
-    ressourceGain: -5
-    bonheurGain: 5
-    addedPrompts: []
-    addedDirectPrompts: []
-    removedPrompts: []
-    removedChainTags: []
-    isGameOverResponse: 0
-    gameOverMessage: ""
-  - optionText: "D\u00E9merde-toi"
-    responseUserText: "...s\u00E9rieux ? Bon, je fais \u00E0 l'ancienne."
+  - optionText: "D\xE9merde-toi"
+    responseUserText: "...s\xE9rieux ?"
     ressourceGain: 0
     bonheurGain: -10
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []
-    removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
-  timer: 0
+    gameOverMessage: 
+  - optionText: Bypass d'urgence
+    responseUserText: "Donn\xE9es restaur\xE9es. Merci, \xE7a sauve une vie."
+    ressourceGain: -5
+    bonheurGain: 5
+    addedPrompts: []
+    addedDirectPrompts: []
+    removedPrompts: []
+    isGameOverResponse: 0
+    gameOverMessage: 
+  timer: -0.0037775014
   timerMax: 0

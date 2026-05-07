@@ -11,34 +11,31 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
   m_Name: pr_chn_PaniqueCyber_01_Nav
-  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
-  senderName: "Nav. Eko"
-  message: "Syst\u00E8me nav compromis !! Je passe en manuel ou je tente le bypass ?!"
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  senderName: Nav. Eko
+  message: "Syst\xE8me nav compromis !!"
   isUnique: 1
   isUrgent: 1
-  chainTag: "PaniqueCyber"
   isCrisis: 0
   isRelief: 0
   responseOptions:
-  - optionText: "Manuel"
-    responseUserText: "OK manuel, je tiens le cap."
+  - optionText: Passer Manuel
+    responseUserText: OK manuel, je tiens le cap.
     ressourceGain: -5
     bonheurGain: 5
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []
-    removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
-  - optionText: "Bypass auto"
-    responseUserText: "Bon... bypass. Si \u00E7a crash je suis pas responsable."
+    gameOverMessage: 
+  - optionText: Bypass auto
+    responseUserText: "Bon... bypass. Si \xE7a crash je suis pas responsable."
     ressourceGain: 0
-    bonheurGain: -10
+    bonheurGain: -5
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []
-    removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
-  timer: 0
+    gameOverMessage: 
+  timer: -0.0037775014
   timerMax: 0

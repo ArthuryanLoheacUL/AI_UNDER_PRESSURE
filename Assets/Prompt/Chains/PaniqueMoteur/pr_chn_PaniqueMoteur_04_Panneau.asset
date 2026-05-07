@@ -11,34 +11,31 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
   m_Name: pr_chn_PaniqueMoteur_04_Panneau
-  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
-  senderName: "Ing. Parker"
-  message: "J'atteins pas le panneau de purge, ouvre-moi \u00E0 distance MOTHER !!"
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  senderName: Ing. Parker
+  message: "J'atteins pas le panneau de purge, ouvre-moi \xE0 distance MOTHER !!"
   isUnique: 1
   isUrgent: 1
-  chainTag: "PaniqueMoteur"
   isCrisis: 0
   isRelief: 0
   responseOptions:
-  - optionText: "Ouvrir"
-    responseUserText: "Panneau ouvert, j'encha\u00EEne."
+  - optionText: Ouvrir
+    responseUserText: "Panneau ouvert, j'encha\xEEne."
     ressourceGain: 0
     bonheurGain: 5
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []
-    removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
-  - optionText: "Pas confiance"
-    responseUserText: "...non ? S\u00E9rieux ?"
+    gameOverMessage: 
+  - optionText: Non
+    responseUserText: "...non ? S\xE9rieux ?"
     ressourceGain: 0
     bonheurGain: -10
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []
-    removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
+    gameOverMessage: 
   timer: 0
   timerMax: 0

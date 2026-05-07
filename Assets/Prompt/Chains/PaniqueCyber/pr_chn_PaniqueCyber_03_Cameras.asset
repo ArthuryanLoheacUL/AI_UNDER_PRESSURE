@@ -11,34 +11,32 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
   m_Name: pr_chn_PaniqueCyber_03_Cameras
-  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
-  senderName: "Sec. Mara"
-  message: "Cam\u00E9ras down sur tout le pont s\u00E9cu !! Je vois plus rien !!"
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  senderName: Sec. Mara
+  message: "Cam\xE9ras down sur tout le pont s\xE9cu !! Je vois plus rien !!"
   isUnique: 1
   isUrgent: 1
-  chainTag: "PaniqueCyber"
   isCrisis: 0
   isRelief: 0
   responseOptions:
-  - optionText: "Patrouille doubl\u00E9e"
-    responseUserText: "OK je sors deux gardes en plus."
+  - optionText: "Patrouille doubl\xE9e"
+    responseUserText: OK je sors deux gardes en plus.
     ressourceGain: -5
     bonheurGain: 5
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []
-    removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
-  - optionText: "Tant pis"
-    responseUserText: "Aveugle alors. Si \u00E7a p\u00E8te, t'auras \u00E9t\u00E9 pr\u00E9venue."
+    gameOverMessage: 
+  - optionText: Tant pis
+    responseUserText: "On est aveugle alors. Si \xE7a p\xE8te, t'auras \xE9t\xE9
+      pr\xE9venue."
     ressourceGain: 0
     bonheurGain: -10
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []
-    removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
-  timer: 0
+    gameOverMessage: 
+  timer: -0.0037775014
   timerMax: 0
