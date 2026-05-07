@@ -11,36 +11,33 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
   m_Name: pr_chn_Mondes_B3_Trouve
-  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
-  senderName: "Nav. Eko"
-  message: "MOTHER... regarde. L\u00E0. Une plan\u00E8te bleu-vert, atmosph\u00E8re riche, eau libre. Personne ne l'avait catalogu\u00E9e. On l'a trouv\u00E9e. Tu y crois ?"
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  senderName: Nav. Eko
+  message: "MOTHER... regarde. L\xE0. Une plan\xE8te bleu-vert, l'atmosph\xE8re est
+    riche, l'eau libre. Personne ne l'avait catalogu\xE9e mais on l'a trouv\xE9e.
+    J'y crois pas !"
   isUnique: 1
   isUrgent: 0
-  chainTag: "Mondes"
   isCrisis: 0
   isRelief: 1
   responseOptions:
-  - optionText: "On y va"
-    responseUserText: "Pleine puissance ! On l'a trouv\u00E9e."
+  - optionText: On y va
+    responseUserText: "Pleine puissance ! On l'a trouv\xE9e."
     ressourceGain: -5
     bonheurGain: 15
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []
-    removedChainTags:
-    - "Mondes"
     isGameOverResponse: 0
-    gameOverMessage: ""
-  - optionText: "V\u00E9rifie d'abord"
-    responseUserText: "Bien. On scanne avant de r\u00EAver. Mais c'est beau."
+    gameOverMessage: 
+  - optionText: "V\xE9rifie d'abord"
+    responseUserText: "Bien. On scanne avant de r\xEAver. Mais c'est beau."
     ressourceGain: 0
     bonheurGain: 10
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []
-    removedChainTags:
-    - "Mondes"
     isGameOverResponse: 0
-    gameOverMessage: ""
+    gameOverMessage: 
   timer: 0
   timerMax: 0

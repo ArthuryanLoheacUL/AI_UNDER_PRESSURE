@@ -10,33 +10,35 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
-  m_Name: pr_chn_Mondes_A4_Final
+  m_Name: pr_chn_Mondes_B3_PasTrouve
   m_EditorClassIdentifier: Assembly-CSharp::Prompt
-  senderName: Capt. Voss
-  message: "On y est. Un sol \xE9tranger sous nos bottes. Ca fait bizarre. Mais c'est
-    chez nous maintenant. Tu nous as bien guid\xE9, MOTHER. Vraiment."
+  senderName: Nav. Eko
+  message: "MOTHER\u2026 il n'y a rien. Encore rien. Pas une seule plan\xE8te habitable,
+    pas d\u2019eau exploitable, rien. Les r\xE9serves sont presque vides\u2026 On
+    n\u2019a plus assez de rations. J\u2019y crois pas\u2026 tout se temps perdu
+    ... et nos familles ..."
   isUnique: 1
   isUrgent: 0
   isCrisis: 0
   isRelief: 1
   responseOptions:
-  - optionText: Bienvenue chez nous
-    responseUserText: "\xC9mue. Vraiment. Bonne arriv\xE9e \xE0 toi."
-    ressourceGain: 0
+  - optionText: Je ...
+    responseUserText: ...
+    ressourceGain: -5
     bonheurGain: 15
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []
-    isGameOverResponse: 0
-    gameOverMessage: 
-  - optionText: "Mission termin\xE9e"
-    responseUserText: "Standard. Voyage achev\xE9."
+    isGameOverResponse: 1
+    gameOverMessage: Adieu
+  - optionText: Mais ...
+    responseUserText: ...
     ressourceGain: 0
-    bonheurGain: 0
+    bonheurGain: 10
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []
-    isGameOverResponse: 0
-    gameOverMessage: 
+    isGameOverResponse: 1
+    gameOverMessage: Adieu
   timer: 0
   timerMax: 0

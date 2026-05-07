@@ -11,36 +11,35 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
   m_Name: pr_chn_Mondes_A2_Reaction
-  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
-  senderName: "Med. Rho"
-  message: "L'\u00E9quipage a entendu. Trois personnes pleurent. Cinq applaudissent. Sept demandent \u00E0 retourner en cryo. Tu m'aides \u00E0 g\u00E9rer ?"
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  senderName: Med. Rho
+  message: "L'\xE9quipage a entendu. L'information a eu beaucoup de r\xE9action diff\xE9rentes
+    aupr\xE8s de l'\xE9quipage."
   isUnique: 1
   isUrgent: 0
-  chainTag: "Mondes"
   isCrisis: 0
   isRelief: 0
   responseOptions:
-  - optionText: "R\u00E9union ouverte"
-    responseUserText: "Cool. On parle, on \u00E9coute, on d\u00E9cide ensemble."
+  - optionText: Discussions
+    responseUserText: "On va leur parler, qu'on \xE9coute leur ressentis"
     ressourceGain: -5
     bonheurGain: 10
-    addedPrompts: []
-    addedDirectPrompts:
-    - {fileID: 11400000, guid: 3c72b26dd377ed0bd6e4954a1e23388e, type: 2}
+    addedPrompts:
+    - prompt: {fileID: 11400000, guid: 3c72b26dd377ed0bd6e4954a1e23388e, type: 2}
+      weight: 0
+    addedDirectPrompts: []
     removedPrompts: []
-    removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
-  - optionText: "Discipline"
-    responseUserText: "Compris. Tout le monde au poste, point."
+    gameOverMessage: 
+  - optionText: Au travail
+    responseUserText: Compris. Tout le monde au poste, point.
     ressourceGain: 0
     bonheurGain: -15
     addedPrompts: []
     addedDirectPrompts:
     - {fileID: 11400000, guid: 3c72b26dd377ed0bd6e4954a1e23388e, type: 2}
     removedPrompts: []
-    removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
+    gameOverMessage: 
   timer: 0
   timerMax: 0

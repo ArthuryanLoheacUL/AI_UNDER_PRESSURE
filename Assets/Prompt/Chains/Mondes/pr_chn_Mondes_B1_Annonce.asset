@@ -11,36 +11,36 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
   m_Name: pr_chn_Mondes_B1_Annonce
-  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
-  senderName: "Capt. Voss"
-  message: "On continue. Mais les r\u00E9serves \u00E9taient calcul\u00E9es pour s'arr\u00EAter ici. Repartir veut dire rationner s\u00E9v\u00E8rement, deux ans de plus, peut-\u00EAtre trois. Et tu n'es pas s\u00FBre qu'on trouve mieux."
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  senderName: Capt. Voss
+  message: "On continue. Mais les r\xE9serves \xE9taient calcul\xE9es pour s'arr\xEAter
+    ici. Repartir veut dire rationner s\xE9v\xE8rement, deux ans de plus, peut-\xEAtre
+    trois. Et on n'es pas s\xFBre qu'on trouve mieux."
   isUnique: 1
   isUrgent: 0
-  chainTag: "Mondes"
   isCrisis: 0
   isRelief: 0
   responseOptions:
-  - optionText: "On y croit"
-    responseUserText: "OK. Cap sur Kepler-186f. \u00C7a va \u00EAtre long."
+  - optionText: On y croit
+    responseUserText: "OK. Cap sur Kepler-186f. \xC7a va \xEAtre long."
     ressourceGain: -15
     bonheurGain: 5
-    addedPrompts: []
-    addedDirectPrompts:
-    - {fileID: 11400000, guid: 104c3eeb1f20269041848f86ca8ac875, type: 2}
+    addedPrompts:
+    - prompt: {fileID: 11400000, guid: 104c3eeb1f20269041848f86ca8ac875, type: 2}
+      weight: 3
+    addedDirectPrompts: []
     removedPrompts: []
-    removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
-  - optionText: "Rationnement strict"
-    responseUserText: "Je serre les vis. L'\u00E9quipage va souffrir."
+    gameOverMessage: 
+  - optionText: Rationnement strict
+    responseUserText: "Je serre les vis. L'\xE9quipage va souffrir."
     ressourceGain: 5
     bonheurGain: -10
     addedPrompts: []
     addedDirectPrompts:
     - {fileID: 11400000, guid: 104c3eeb1f20269041848f86ca8ac875, type: 2}
     removedPrompts: []
-    removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
-  timer: 0
+    gameOverMessage: 
+  timer: -29.039017
   timerMax: 0

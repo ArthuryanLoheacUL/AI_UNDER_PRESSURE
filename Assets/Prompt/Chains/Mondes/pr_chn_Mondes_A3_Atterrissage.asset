@@ -11,36 +11,36 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
   m_Name: pr_chn_Mondes_A3_Atterrissage
-  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
-  senderName: "Nav. Eko"
-  message: "Atterrissage dans 6 heures. Site nord (oc\u00E9an glac\u00E9, ressources riches mais dangereux) ou site sud (montagnes s\u00E8ches, s\u00FBr mais pauvre) ?"
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  senderName: Nav. Eko
+  message: "Atterrissage dans 6 heures on a trouv\xE9 2 lieux possible: un oc\xE9an
+    glac\xE9 riches en ressources ou un site montagneux et sec, s\xFBr mais pauvre
+    en ressources ?"
   isUnique: 1
   isUrgent: 0
-  chainTag: "Mondes"
   isCrisis: 0
   isRelief: 0
   responseOptions:
-  - optionText: "Nord"
-    responseUserText: "Audacieux. Je calcule la trajectoire."
+  - optionText: "Oc\xE9an"
+    responseUserText: Audacieux. Je calcule la trajectoire.
     ressourceGain: -10
     bonheurGain: 5
-    addedPrompts: []
-    addedDirectPrompts:
-    - {fileID: 11400000, guid: 9fdbd574d9e99ee24bf04e08fe9948fd, type: 2}
+    addedPrompts:
+    - prompt: {fileID: 11400000, guid: 9fdbd574d9e99ee24bf04e08fe9948fd, type: 2}
+      weight: 3
+    addedDirectPrompts: []
     removedPrompts: []
-    removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
-  - optionText: "Sud"
-    responseUserText: "Prudent. C'est valid\u00E9."
+    gameOverMessage: 
+  - optionText: Montagne
+    responseUserText: "Prudent. C'est valid\xE9."
     ressourceGain: -5
     bonheurGain: 0
     addedPrompts: []
     addedDirectPrompts:
     - {fileID: 11400000, guid: 9fdbd574d9e99ee24bf04e08fe9948fd, type: 2}
     removedPrompts: []
-    removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
+    gameOverMessage: 
   timer: 0
   timerMax: 0
