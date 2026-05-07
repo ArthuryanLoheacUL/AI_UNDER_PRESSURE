@@ -2861,8 +2861,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c731435fe3117b489cb3c8f91fb6722, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  startingRessource: 60
-  startingBonheur: 60
+  startingRessource: 30
+  startingBonheur: 50
   ressourceValue: 60
   bonheurValue: 60
   bonheurSlider: {fileID: 948705132}

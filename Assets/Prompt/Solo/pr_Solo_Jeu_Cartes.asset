@@ -11,34 +11,32 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
   m_Name: pr_Solo_Jeu_Cartes
-  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
-  senderName: "Ing. Kade"
-  message: "On organise un tournoi de cartes ce soir. Tu peux nous filer une heure de r\u00E9seau ?"
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  senderName: Ing. Kade
+  message: "On organise un tournoi de cartes ce soir. Tu peux nous filer une heure
+    de r\xE9seau ?"
   isUnique: 0
   isUrgent: 0
-  chainTag: ""
   isCrisis: 0
   isRelief: 1
   responseOptions:
-  - optionText: "Accord\u00E9"
-    responseUserText: "Tout le monde va kiffer !"
+  - optionText: "Accord\xE9"
+    responseUserText: Tout le monde va adorer !
     ressourceGain: -5
     bonheurGain: 10
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []
-    removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
-  - optionText: "Refus\u00E9"
-    responseUserText: "Bof. C'est moyen MOTHER."
+    gameOverMessage: 
+  - optionText: "Refus\xE9"
+    responseUserText: roooh ... pas fun
     ressourceGain: 0
     bonheurGain: -5
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []
-    removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
+    gameOverMessage: 
   timer: 0
   timerMax: 0

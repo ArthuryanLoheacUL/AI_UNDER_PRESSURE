@@ -11,34 +11,31 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
   m_Name: pr_Solo_Reserves_Eau
-  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
-  senderName: "Ing. Sol"
-  message: "R\u00E9serves d'eau \u00E0 78%. Rationnement pr\u00E9ventif ou attendre ?"
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  senderName: Ing. Sol
+  message: "Les r\xE9serves d'eau sont \xE0 78%. On rationne ?"
   isUnique: 0
   isUrgent: 0
-  chainTag: ""
   isCrisis: 0
   isRelief: 0
   responseOptions:
-  - optionText: "Rationnement"
-    responseUserText: "Douches un jour sur deux. \u00C7a va r\u00E2ler."
+  - optionText: Rationnement
+    responseUserText: "Douches un jour sur deux. \xC7a va r\xE2ler."
     ressourceGain: 10
     bonheurGain: -10
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []
-    removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
-  - optionText: "Attendre"
-    responseUserText: "On verra plus tard."
+    gameOverMessage: 
+  - optionText: Attendre
+    responseUserText: On verra plus tard.
     ressourceGain: 0
     bonheurGain: 0
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []
-    removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
+    gameOverMessage: 
   timer: 0
   timerMax: 0

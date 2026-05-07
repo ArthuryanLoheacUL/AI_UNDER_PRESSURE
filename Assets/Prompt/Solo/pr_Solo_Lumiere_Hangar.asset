@@ -11,34 +11,32 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
   m_Name: pr_Solo_Lumiere_Hangar
-  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
-  senderName: "Ing. Kade"
-  message: "Hangar 3 \u00E0 30% d'\u00E9clairage. \u00C9conomie ou r\u00E9paration ?"
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  senderName: Ing. Kade
+  message: "Le Hangar 3 est \xE0 30% d'\xE9clairage. On peut r\xE9parer s'il faut
+    ?"
   isUnique: 0
   isUrgent: 0
-  chainTag: ""
   isCrisis: 0
   isRelief: 0
   responseOptions:
-  - optionText: "R\u00E9parer"
-    responseUserText: "Pleine lumi\u00E8re, les techs vont remercier."
+  - optionText: "R\xE9parer"
+    responseUserText: "Pleine lumi\xE8re, les techs vont remercier."
     ressourceGain: -10
     bonheurGain: 5
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []
-    removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
-  - optionText: "Garder bas"
-    responseUserText: "Bon... on \u00E9conomise."
+    gameOverMessage: 
+  - optionText: Economiser
+    responseUserText: "Bon... on \xE9conomise."
     ressourceGain: 5
     bonheurGain: -5
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []
-    removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
+    gameOverMessage: 
   timer: 0
   timerMax: 0
