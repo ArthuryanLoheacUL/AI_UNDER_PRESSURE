@@ -11,35 +11,33 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
   m_Name: pr_chn_Intruse_07_Evasion
-  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
-  senderName: "Sec. Mara"
-  message: "Elle s'est \u00E9chapp\u00E9e du sas. Du sang sur la porte. Quelqu'un l'a ouverte de l'int\u00E9rieur."
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  senderName: Sec. Mara
+  message: "Elle s'est \xE9chapp\xE9e du sas. Du sang est sur la porte. Quelqu'un
+    l'a ouverte de l'int\xE9rieur."
   isUnique: 1
   isUrgent: 1
-  chainTag: "Intruse"
   isCrisis: 1
   isRelief: 0
   responseOptions:
-  - optionText: "Reconfinement total"
-    responseUserText: "Vaisseau en cloisonnement."
+  - optionText: Reconfinement total
+    responseUserText: Vaisseau en cloisonnement.
     ressourceGain: -15
     bonheurGain: -5
     addedPrompts: []
     addedDirectPrompts:
     - {fileID: 11400000, guid: 40a7c4bf09f7a650408240d3cfd9608c, type: 2}
     removedPrompts: []
-    removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
-  - optionText: "Pacte tactique"
-    responseUserText: "...t'es s\u00E9rieuse MOTHER ? Non."
+    gameOverMessage: 
+  - optionText: Laisser
+    responseUserText: "...t'es s\xE9rieuse MOTHER ? Non."
     ressourceGain: 0
     bonheurGain: -15
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []
-    removedChainTags: []
     isGameOverResponse: 1
-    gameOverMessage: "Tu m'as livr\u00E9 le vaisseau. Adieu, MOTHER."
+    gameOverMessage: "La chose \"Tu m'as livr\xE9 le vaisseau. Adieu, MOTHER.\""
   timer: 0
   timerMax: 0

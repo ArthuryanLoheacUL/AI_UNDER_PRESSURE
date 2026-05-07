@@ -11,36 +11,35 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
   m_Name: pr_chn_Intruse_04_Cache
-  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
-  senderName: "Sec. Mara"
-  message: "On l'a coinc\u00E9e dans le couloir m\u00E9dical. Vale est dans la salle. Si je scelle, elle reste avec."
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  senderName: Sec. Mara
+  message: "On l'a coinc\xE9e dans le couloir m\xE9dical. Vale est dans la salle
+    avec la chose. Si je scelle, elle reste coinc\xE9e avec."
   isUnique: 1
   isUrgent: 1
-  chainTag: "Intruse"
   isCrisis: 1
   isRelief: 0
   responseOptions:
-  - optionText: "Scelle le secteur"
-    responseUserText: "...je scelle. D\u00E9sol\u00E9e Vale."
+  - optionText: Scelle le secteur
+    responseUserText: "...je scelle. D\xE9sol\xE9e Vale."
     ressourceGain: 0
     bonheurGain: -15
     addedPrompts: []
     addedDirectPrompts:
     - {fileID: 11400000, guid: 715540ab7bf68a800f26022aed86d85e, type: 2}
-    removedPrompts: []
-    removedChainTags: []
+    removedPrompts:
+    - {fileID: 11400000, guid: 7d078df2674d60b527943235c78c469c, type: 2}
     isGameOverResponse: 0
-    gameOverMessage: ""
-  - optionText: "Trouve une autre solution"
-    responseUserText: "OK j'improvise vite !"
+    gameOverMessage: 
+  - optionText: Trouve une autre solution
+    responseUserText: OK j'improvise vite !
     ressourceGain: -15
     bonheurGain: 10
     addedPrompts: []
     addedDirectPrompts:
     - {fileID: 11400000, guid: 40a7c4bf09f7a650408240d3cfd9608c, type: 2}
     removedPrompts: []
-    removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
+    gameOverMessage: 
   timer: 0
   timerMax: 0
