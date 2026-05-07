@@ -11,36 +11,35 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
   m_Name: pr_Verdict_00_Entry
-  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
-  senderName: "Com. Zeth"
-  message: "MOTHER, j'ai trouv\u00E9 un dossier scell\u00E9 dans tes archives. Parker a tu\u00E9 quelqu'un sur Terre il y a douze ans. Acquitt\u00E9 faute de preuves, mais le rapport interne dit le contraire. C'est verrouill\u00E9. Sauf pour toi."
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  senderName: Com. Zeth
+  message: "MOTHER, j'ai trouv\xE9 un dossier scell\xE9 dans tes archives. Parker
+    aurait tu\xE9 quelqu'un sur Terre il y a douze ans. Il a \xE9t\xE9 acquitt\xE9
+    faute de preuves, mais le rapport interne dit le contraire..."
   isUnique: 1
   isUrgent: 0
-  chainTag: "Verdict"
   isCrisis: 0
   isRelief: 0
   responseOptions:
-  - optionText: "R\u00E9v\u00E9ler \u00E0 Voss"
-    responseUserText: "Bien. C'est lourd \u00E0 porter, mais c'est juste."
+  - optionText: "R\xE9v\xE9ler \xE0 Voss"
+    responseUserText: "Bien. C'est lourd \xE0 porter, mais c'est juste."
     ressourceGain: 0
     bonheurGain: 0
     addedPrompts: []
     addedDirectPrompts:
     - {fileID: 11400000, guid: cb340a26bd93f8a358414bc6453e64dc, type: 2}
     removedPrompts: []
-    removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
-  - optionText: "Sceller \u00E0 nouveau"
-    responseUserText: "Compris. On enterre. C'est ton appel."
+    gameOverMessage: 
+  - optionText: Sceller
+    responseUserText: Compris. On enterre. C'est ton appel.
     ressourceGain: 0
     bonheurGain: 0
     addedPrompts: []
     addedDirectPrompts:
     - {fileID: 11400000, guid: 6f8bba92eb6f4ca61876ea39b92f9c1b, type: 2}
     removedPrompts: []
-    removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
+    gameOverMessage: 
   timer: 0
   timerMax: 0

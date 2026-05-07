@@ -11,18 +11,18 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
   m_Name: pr_PaniqueMoteur_00_Entry
-  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
-  senderName: "Ing. Sol"
-  message: "Tout part en cascade c\u00F4t\u00E9 moteur 2 ! Surchauffe, fuite, alarmes partout en m\u00EAme temps ! Tu prends ou je coupe tout ?"
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  senderName: Ing. Sol
+  message: "Tout part en cascade c\xF4t\xE9 moteur 2 ! Surchauffe, fuite, alarmes
+    partout en m\xEAme temps !"
   isUnique: 1
   isUrgent: 1
-  chainTag: "PaniqueMoteur"
   isCrisis: 1
   isRelief: 0
   responseOptions:
-  - optionText: "On g\u00E8re"
-    responseUserText: "OK je dispatch les \u00E9quipes, \u00E7a va secouer !"
-    ressourceGain: -5
+  - optionText: "On g\xE8re"
+    responseUserText: "OK je dispatch les \xE9quipes, \xE7a va secouer !"
+    ressourceGain: 0
     bonheurGain: 5
     addedPrompts: []
     addedDirectPrompts:
@@ -33,19 +33,16 @@ MonoBehaviour:
     - {fileID: 11400000, guid: cab505601f1ee147c5358ff6b7ec13ba, type: 2}
     - {fileID: 11400000, guid: b1f5c623981e0bc857e71d38232fb13f, type: 2}
     removedPrompts: []
-    removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
-  - optionText: "Coupe tout"
-    responseUserText: "Bon... arr\u00EAt total, on perd des semaines mais OK."
-    ressourceGain: -15
-    bonheurGain: -5
+    gameOverMessage: 
+  - optionText: Coupe tout
+    responseUserText: "Bon... arr\xEAt total, on perd des semaines mais OK."
+    ressourceGain: -10
+    bonheurGain: -10
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []
-    removedChainTags:
-    - "PaniqueMoteur"
     isGameOverResponse: 0
-    gameOverMessage: ""
+    gameOverMessage: 
   timer: 0
   timerMax: 0

@@ -11,36 +11,35 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
   m_Name: pr_chn_Verdict_A1_Voss
-  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
-  senderName: "Capt. Voss"
-  message: "Parker. Douze ans. Je l'aurais jamais cru. Le protocole dit confinement imm\u00E9diat et proc\u00E8s \u00E0 l'arriv\u00E9e. Je peux aussi le voir d'abord, en t\u00EAte-\u00E0-t\u00EAte. Lequel ?"
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  senderName: Capt. Voss
+  message: "Parker. Douze ans. Je l'aurais jamais cru. Le protocole dit confinement
+    imm\xE9diat et proc\xE8s \xE0 l'arriv\xE9e. Je peux aussi le voir d'abord, en
+    t\xEAte-\xE0-t\xEAte. Lequel ?"
   isUnique: 1
   isUrgent: 0
-  chainTag: "Verdict"
   isCrisis: 0
   isRelief: 0
   responseOptions:
-  - optionText: "Confinement imm\u00E9diat"
-    responseUserText: "Proc\u00E9dure. Je l'enferme tout de suite."
+  - optionText: "Confinement imm\xE9diat"
+    responseUserText: "Proc\xE9dure. Je l'enferme tout de suite."
     ressourceGain: 0
-    bonheurGain: -10
+    bonheurGain: 0
     addedPrompts: []
     addedDirectPrompts:
     - {fileID: 11400000, guid: c7a86cabfcf1bfbfbc07843a69b67df8, type: 2}
     removedPrompts: []
-    removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
-  - optionText: "T\u00EAte-\u00E0-t\u00EAte d'abord"
-    responseUserText: "OK, je lui parle ce soir. C'est plus humain."
+    gameOverMessage: 
+  - optionText: "T\xEAte-\xE0-t\xEAte d'abord"
+    responseUserText: OK, je lui parle ce soir. C'est plus humain.
     ressourceGain: -5
     bonheurGain: 5
     addedPrompts: []
     addedDirectPrompts:
     - {fileID: 11400000, guid: c7a86cabfcf1bfbfbc07843a69b67df8, type: 2}
     removedPrompts: []
-    removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
-  timer: 0
+    gameOverMessage: 
+  timer: -28.199831
   timerMax: 0

@@ -11,17 +11,17 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
   m_Name: pr_PaniqueCyber_00_Entry
-  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
-  senderName: "Com. Zeth"
-  message: "Intrusion massive sur nos syst\u00E8mes !! Toutes les sections vont sauter en cascade ! On d\u00E9fend ou on coupe le r\u00E9seau ?"
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  senderName: Com. Zeth
+  message: "On a une intrusion massive sur nos syst\xE8mes !! Toutes les sections
+    vont sauter en cascade ! On coupe le r\xE9seau ?"
   isUnique: 1
   isUrgent: 1
-  chainTag: "PaniqueCyber"
   isCrisis: 1
   isRelief: 0
   responseOptions:
-  - optionText: "D\u00E9fendre"
-    responseUserText: "OK chacun \u00E0 son poste, on tient !"
+  - optionText: "D\xE9fendre"
+    responseUserText: "OK chacun \xE0 son poste, on tient !"
     ressourceGain: -5
     bonheurGain: 5
     addedPrompts: []
@@ -33,19 +33,17 @@ MonoBehaviour:
     - {fileID: 11400000, guid: a4e420fc3b14ae158e951cbf73c07540, type: 2}
     - {fileID: 11400000, guid: e55c09c1c3c657031106f4433b09cb99, type: 2}
     removedPrompts: []
-    removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
-  - optionText: "Couper le r\u00E9seau"
-    responseUserText: "Bon... black-out total. C'est lourd mais s\u00FBr."
+    gameOverMessage: 
+  - optionText: Couper
+    responseUserText: "Bon... black-out total. On va perdre des ressources mais on
+      est en s\xE9curit\xE9."
     ressourceGain: -15
     bonheurGain: -5
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []
-    removedChainTags:
-    - "PaniqueCyber"
     isGameOverResponse: 0
-    gameOverMessage: ""
+    gameOverMessage: 
   timer: 0
   timerMax: 0

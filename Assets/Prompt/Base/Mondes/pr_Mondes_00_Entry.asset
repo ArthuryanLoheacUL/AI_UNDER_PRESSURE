@@ -11,36 +11,35 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
   m_Name: pr_Mondes_00_Entry
-  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
-  senderName: "Dr. Iven"
-  message: "MOTHER, j'ai fini l'analyse de Kepler-442b. Atmosph\u00E8re stable \u2014 oui. Habitable comme promis \u2014 pas vraiment. -5\u00B0C de moyenne, 80% mers couvertes. On peut y vivre. C'est dur. Soit on s'y pose, soit on continue chercher."
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  senderName: Dr. Iven
+  message: "MOTHER, j'ai fini l'analyse de Kepler-442b. L'atmosph\xE8re est stable.
+    Il n'est cependant pas habitable comme promis: -5\xB0C de moyenne, 80% couvertes
+    pas les mers. On peut y vivre. Mais c'est dur.\n"
   isUnique: 1
   isUrgent: 0
-  chainTag: "Mondes"
   isCrisis: 0
   isRelief: 0
   responseOptions:
-  - optionText: "On se pose ici"
-    responseUserText: "OK. C'est moche mais c'est chez nous."
+  - optionText: Se Poser
+    responseUserText: OK. C'est moche mais ce sera chez nous, on s'habituera.
     ressourceGain: 0
     bonheurGain: 0
     addedPrompts: []
     addedDirectPrompts:
     - {fileID: 11400000, guid: 2768cf3344892f1334186a08b3c1c3f8, type: 2}
     removedPrompts: []
-    removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
-  - optionText: "On continue"
-    responseUserText: "Compris. On part vers l'inconnu."
+    gameOverMessage: 
+  - optionText: On continue
+    responseUserText: Compris. On part vers l'inconnu.
     ressourceGain: 0
     bonheurGain: 0
     addedPrompts: []
     addedDirectPrompts:
     - {fileID: 11400000, guid: c3178c6542fbc57d43f469a3b2e3d6cb, type: 2}
     removedPrompts: []
-    removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
+    gameOverMessage: 
   timer: 0
   timerMax: 0
