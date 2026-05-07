@@ -11,36 +11,35 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
   m_Name: pr_chn_Verdict_B2_Annee
-  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
-  senderName: "Ing. Parker"
-  message: "MOTHER... je dois te dire un truc. Sur Terre, il y a longtemps, quelqu'un est mort par ma faute. Je sens dans ta fa\u00E7on de me parler que tu sais. Je voulais te le dire moi-m\u00EAme."
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  senderName: Ing. Parker
+  message: "MOTHER... je dois te dire un truc. Sur Terre, il y a longtemps, quelqu'un
+    est mort par ma faute. Je sens dans ta fa\xE7on de me parler que tu sais. Je
+    voulais te le dire moi-m\xEAme."
   isUnique: 1
   isUrgent: 0
-  chainTag: "Verdict"
   isCrisis: 0
   isRelief: 0
   responseOptions:
-  - optionText: "Je sais. Je n'ai rien dit."
-    responseUserText: "Merci. Je peux pas dire pourquoi mais merci."
+  - optionText: Je sais.
+    responseUserText: Merci. Je peux pas dire pourquoi mais merci.
     ressourceGain: 0
     bonheurGain: 10
     addedPrompts: []
     addedDirectPrompts:
     - {fileID: 11400000, guid: 69a91d9eb7dc76962decc6cafe377ea9, type: 2}
     removedPrompts: []
-    removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
-  - optionText: "Je ne savais rien."
-    responseUserText: "...d'accord. Bon. Je rentre dans ma cabine."
+    gameOverMessage: 
+  - optionText: Je ne savais rien.
+    responseUserText: Ah... d'accord... Bon. Je rentre dans ma cabine.
     ressourceGain: 0
-    bonheurGain: -15
+    bonheurGain: -10
     addedPrompts: []
     addedDirectPrompts:
     - {fileID: 11400000, guid: 69a91d9eb7dc76962decc6cafe377ea9, type: 2}
     removedPrompts: []
-    removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
+    gameOverMessage: 
   timer: 0
   timerMax: 0

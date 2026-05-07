@@ -11,36 +11,34 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
   m_Name: pr_chn_Verdict_B3_Final
-  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
-  senderName: "Ing. Parker"
-  message: "Je sais que ce que j'ai fait ne s'efface pas. Mais tu m'as donn\u00E9 douze ans pour devenir quelqu'un d'autre. Je ferai pas semblant que c'est rien."
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  senderName: Ing. Parker
+  message: "Je sais que ce que j'ai fait ne s'efface pas. Mais j'ai eu douze ans
+    pour devenir quelqu'un d'autre. Je ferai pas semblant que c'est rien mais j'ai
+    chang\xE9."
   isUnique: 1
   isUrgent: 0
-  chainTag: "Verdict"
   isCrisis: 0
   isRelief: 0
   responseOptions:
-  - optionText: "Continue de devenir"
-    responseUserText: "Je vais essayer. Pour la victime aussi."
+  - optionText: Laisser
+    responseUserText: Je suis mieux maintenant promis.
     ressourceGain: 0
-    bonheurGain: 5
+    bonheurGain: 10
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []
-    removedChainTags:
-    - "Verdict"
     isGameOverResponse: 0
-    gameOverMessage: ""
-  - optionText: "Tu me dois tout"
-    responseUserText: "Je sais. Toute ma vie."
+    gameOverMessage: 
+  - optionText: Emprisonner
+    responseUserText: Quoi ... ?!
     ressourceGain: 0
-    bonheurGain: 0
+    bonheurGain: -5
     addedPrompts: []
-    addedDirectPrompts: []
+    addedDirectPrompts:
+    - {fileID: 11400000, guid: fe26ca330c67ba76f6f089bb781d7c05, type: 2}
     removedPrompts: []
-    removedChainTags:
-    - "Verdict"
     isGameOverResponse: 0
-    gameOverMessage: ""
+    gameOverMessage: 
   timer: 0
   timerMax: 0

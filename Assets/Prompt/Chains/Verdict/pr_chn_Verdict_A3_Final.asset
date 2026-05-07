@@ -11,36 +11,33 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
   m_Name: pr_chn_Verdict_A3_Final
-  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
-  senderName: "Capt. Voss"
-  message: "Parker reste confin\u00E9 jusqu'\u00E0 l'arriv\u00E9e. C'est dur \u2014 il \u00E9tait bon. Mais la justice n'est pas une vengeance, c'est juste qu'elle existe. Tu as bien fait."
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  senderName: Capt. Voss
+  message: "Parker restera confin\xE9 jusqu'\xE0 l'arriv\xE9e. C'est dur, il \xE9tait
+    bon. Mais la justice n'est pas une vengeance, c'est juste qu'elle existe. Tu
+    as bien fait."
   isUnique: 1
   isUrgent: 0
-  chainTag: "Verdict"
   isCrisis: 0
   isRelief: 0
   responseOptions:
-  - optionText: "Je sais pas si j'ai bien fait"
-    responseUserText: "Personne ne sait jamais vraiment. Mais merci d'avoir tranch\u00E9."
+  - optionText: Je ne sais pas...
+    responseUserText: "Personne ne sait jamais vraiment. Mais merci d'avoir tranch\xE9."
     ressourceGain: 0
     bonheurGain: 5
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []
-    removedChainTags:
-    - "Verdict"
     isGameOverResponse: 0
-    gameOverMessage: ""
-  - optionText: "J'ai bien fait"
-    responseUserText: "Compris. On avance."
+    gameOverMessage: 
+  - optionText: J'ai bien fait
+    responseUserText: Avancons maintenant
     ressourceGain: 0
     bonheurGain: 0
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []
-    removedChainTags:
-    - "Verdict"
     isGameOverResponse: 0
-    gameOverMessage: ""
-  timer: 0
+    gameOverMessage: 
+  timer: -16.391111
   timerMax: 0

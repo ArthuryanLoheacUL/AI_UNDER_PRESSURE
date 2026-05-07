@@ -11,36 +11,34 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
   m_Name: pr_chn_Verdict_B1_Sceller
-  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
-  senderName: "Com. Zeth"
-  message: "C'est rescell\u00E9. Mais MOTHER... j'ai lu, moi. Je vis avec ce que je sais maintenant. Je ne sais pas combien de temps je peux porter \u00E7a seul."
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  senderName: Com. Zeth
+  message: "C'est rescell\xE9. Mais MOTHER... je l'ai lu, moi. Je vis avec ce que
+    je sais maintenant. Je ne sais pas combien de temps je peux porter \xE7a seul."
   isUnique: 1
   isUrgent: 0
-  chainTag: "Verdict"
   isCrisis: 0
   isRelief: 0
   responseOptions:
-  - optionText: "On le porte ensemble"
-    responseUserText: "\u00C7a aide. Vraiment. Merci."
+  - optionText: On est ensemble
+    responseUserText: Tu m'aideras alors
     ressourceGain: 0
     bonheurGain: 5
     addedPrompts: []
     addedDirectPrompts:
     - {fileID: 11400000, guid: 755c4bfa8f21664304b13caa7045ac14, type: 2}
     removedPrompts: []
-    removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
-  - optionText: "Apprends \u00E0 oublier"
-    responseUserText: "...je vais essayer. C'est dur ce que tu me demandes."
+    gameOverMessage: 
+  - optionText: "Apprends \xE0 oublier"
+    responseUserText: ...je vais essayer. C'est dur ce que tu me demandes.
     ressourceGain: 0
     bonheurGain: -10
     addedPrompts: []
     addedDirectPrompts:
     - {fileID: 11400000, guid: 755c4bfa8f21664304b13caa7045ac14, type: 2}
     removedPrompts: []
-    removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
+    gameOverMessage: 
   timer: 0
   timerMax: 0
