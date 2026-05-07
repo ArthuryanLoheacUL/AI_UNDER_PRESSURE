@@ -11,29 +11,28 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
   m_Name: pr_chn_Mutinerie_01_Graffiti
-  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
-  senderName: "Sec. Mara"
-  message: "\"MOTHER MENT\" \u00E9crit au stylo dans le couloir tribord. Effac\u00E9 en cinq minutes."
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  senderName: Sec. Mara
+  message: "\"MOTHER MENT\" a \xE9t\xE9 \xE9crit au stylo dans le couloir tribord.
+    J'ai pu l'\xE9ffac\xE9 en cinq minutes."
   isUnique: 1
   isUrgent: 0
-  chainTag: "Mutinerie"
   isCrisis: 0
   isRelief: 0
   responseOptions:
-  - optionText: "Trouver l'auteur"
-    responseUserText: "Je sors les cam\u00E9ras."
+  - optionText: Trouver l'auteur
+    responseUserText: "Je sors les cam\xE9ras pour guetter"
     ressourceGain: -5
     bonheurGain: -5
     addedPrompts:
     - prompt: {fileID: 11400000, guid: abd955a725a54d904d9be6649f689ba4, type: 2}
-      weight: 2.0
+      weight: 2
     addedDirectPrompts: []
     removedPrompts: []
-    removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
-  - optionText: "Ignorer"
-    responseUserText: "Bon, je laisse pisser."
+    gameOverMessage: 
+  - optionText: Ignorer
+    responseUserText: Bon, je laisse couler.
     ressourceGain: 0
     bonheurGain: -5
     addedPrompts:
@@ -43,8 +42,7 @@ MonoBehaviour:
       weight: 1.5
     addedDirectPrompts: []
     removedPrompts: []
-    removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
+    gameOverMessage: 
   timer: 0
   timerMax: 0

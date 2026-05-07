@@ -11,36 +11,34 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
   m_Name: pr_chn_Mutinerie_02_Petition
-  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
-  senderName: "Lt. Reyna"
-  message: "Une p\u00E9tition circule. Sept signatures. Ils demandent une revue de tes d\u00E9cisions par un comit\u00E9 humain."
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  senderName: Lt. Reyna
+  message: "Une p\xE9tition circule. Ils ont d\xE9j\xE0 7 signatures. Ils demandent
+    une revue de tes d\xE9cisions par un comit\xE9 humain."
   isUnique: 1
   isUrgent: 0
-  chainTag: "Mutinerie"
   isCrisis: 0
   isRelief: 0
   responseOptions:
-  - optionText: "Accepter le comit\u00E9"
-    responseUserText: "Bonne d\u00E9cision, on va respirer."
+  - optionText: "Accepter le comit\xE9"
+    responseUserText: "Bonne d\xE9cision, on va respirer."
     ressourceGain: -10
     bonheurGain: 10
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []
-    removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
-  - optionText: "Refuser"
-    responseUserText: "Mince... \u00E7a sent l'orage."
+    gameOverMessage: 
+  - optionText: Refuser
+    responseUserText: "Mince... \xE7a sent l'orage."
     ressourceGain: 0
     bonheurGain: -10
     addedPrompts:
     - prompt: {fileID: 11400000, guid: 08e7964ec203be155db609ffb2937583, type: 2}
-      weight: 3.0
+      weight: 3
     addedDirectPrompts: []
     removedPrompts: []
-    removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
+    gameOverMessage: 
   timer: 0
   timerMax: 0

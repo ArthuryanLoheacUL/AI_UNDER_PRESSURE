@@ -12,16 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
   m_Name: pr_chn_Mutinerie_04_Confrontation
   m_EditorClassIdentifier: Assembly-CSharp::Prompt
-  senderName: Capt. Voss
-  message: "Iven retire la p\xE9tition si tu lui donnes acc\xE8s aux logs cryo. Il
-    ne l\xE2chera pas."
+  senderName: Dr. Iven
+  message: "Retirez la p\xE9tition et je l\xE2che l\u2019affaire. Donnez-moi juste
+    l\u2019acc\xE8s aux logs cryo."
   isUnique: 1
   isUrgent: 1
   isCrisis: 0
   isRelief: 0
   responseOptions:
   - optionText: Accorder
-    responseUserText: Logs ouverts. J'en profiterai pour jeter un coup d'oeil
+    responseUserText: Parfait merci enfin un peu de transparence
     ressourceGain: -5
     bonheurGain: 10
     addedPrompts:
@@ -32,12 +32,14 @@ MonoBehaviour:
     isGameOverResponse: 0
     gameOverMessage: 
   - optionText: Refuser
-    responseUserText: "On tient le cap. \xC7a va exploser."
+    responseUserText: "Alors vous cachez vraiment quelque chose. Tr\xE8s bien\u2026
+      gardez vos secrets. Mais \xE7a ne s\u2019arr\xEAtera pas l\xE0."
     ressourceGain: 0
     bonheurGain: -15
-    addedPrompts: []
-    addedDirectPrompts:
-    - {fileID: 11400000, guid: 998497334787314c4c330cf7212625ec, type: 2}
+    addedPrompts:
+    - prompt: {fileID: 11400000, guid: 998497334787314c4c330cf7212625ec, type: 2}
+      weight: 3
+    addedDirectPrompts: []
     removedPrompts: []
     isGameOverResponse: 0
     gameOverMessage: 

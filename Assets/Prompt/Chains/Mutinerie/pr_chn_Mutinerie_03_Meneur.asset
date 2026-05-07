@@ -11,36 +11,34 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
   m_Name: pr_chn_Mutinerie_03_Meneur
-  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
-  senderName: "Sec. Mara"
-  message: "C'est Iven qui m\u00E8ne la p\u00E9tition. Et il a un plan pour te d\u00E9brancher temporairement."
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  senderName: Sec. Mara
+  message: "C'est Iven qui m\xE8ne la p\xE9tition. Et il a un plan pour te d\xE9brancher
+    temporairement."
   isUnique: 1
   isUrgent: 1
-  chainTag: "Mutinerie"
   isCrisis: 1
   isRelief: 0
   responseOptions:
-  - optionText: "Le confronter"
-    responseUserText: "R\u00E9union publique, lui face \u00E0 toi."
+  - optionText: Confronter
+    responseUserText: "R\xE9union t\xEAte \xE0 t\xEAte."
     ressourceGain: -5
     bonheurGain: 5
     addedPrompts: []
     addedDirectPrompts:
     - {fileID: 11400000, guid: efa43c3452e4f38b931d24a68ca53655, type: 2}
     removedPrompts: []
-    removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
-  - optionText: "Confiner Iven"
-    responseUserText: "Quartiers priv\u00E9s. C'est dur."
+    gameOverMessage: 
+  - optionText: Confiner Iven
+    responseUserText: "Je l'envoie en quartiers priv\xE9s."
     ressourceGain: 0
-    bonheurGain: -15
+    bonheurGain: -10
     addedPrompts: []
     addedDirectPrompts:
     - {fileID: 11400000, guid: 998497334787314c4c330cf7212625ec, type: 2}
     removedPrompts: []
-    removedChainTags: []
     isGameOverResponse: 0
-    gameOverMessage: ""
+    gameOverMessage: 
   timer: 0
   timerMax: 0
