@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Collections;
 using System.Linq;
 using Unity.VisualScripting;
+using UnityEngine.SocialPlatforms.Impl;
 
 [RequireComponent(typeof(SetupPromptManagement))]
 public class PromptsManager : MonoBehaviour
@@ -59,8 +60,10 @@ public class PromptsManager : MonoBehaviour
     public GameObject loadingScreen;
     public float loadingScreenDuration = 1f;
 
-    private float timeNextPrompt = 0f;
-    private bool isGameOver = false;
+    public ScoreBar scoreBar;
+
+    private int totalPrompt = 0;
+    bool gameOver = false;
 
     void Awake()
     {
@@ -74,8 +77,6 @@ public class PromptsManager : MonoBehaviour
     void NotifyNewPrompt(Prompt prompt)
     {
         SoundEffectManager.Instance.PlaySoundEffectRandomPitch("Notif");
-        // if (prompt.isUrgent)
-        //     SoundEffectManager.Instance.PlaySoundEffectRandomPitch("TimerClicks");
     }
 
     void ShufflePromptResponseOptions(Prompt prompt)
@@ -286,7 +287,6 @@ public class PromptsManager : MonoBehaviour
             if (randomPrompt != null) AddPromptToQueue(randomPrompt);
         }
         NextPrompt();
-        timeNextPrompt = timeBetweenPrompts;
     }
 
     void RefreshNotifications()
@@ -340,6 +340,7 @@ public class PromptsManager : MonoBehaviour
 
     void NextPrompt()
     {
+        if (gameOver) return;
         SaveCurrentPrompt();
 
         if (currentPrompt != null)
@@ -353,6 +354,27 @@ public class PromptsManager : MonoBehaviour
 
         if (prompt != null)
         {
+            int minId = 0;
+            int min = -99999;
+            bool affordableOne = false;
+
+            for (int u = 0; u < prompt.responseOptions.Count(); u++)
+            {
+                if (prompt.responseOptions[u].ressourceGain > min)
+                {
+                    minId = u;
+                    min = prompt.responseOptions[u].ressourceGain;
+                    if (-prompt.responseOptions[u].ressourceGain <= RessourceManager.Instance.GetRessource())
+                    {
+                        affordableOne = true;
+                    }
+                }
+            }
+            if (!affordableOne)
+            {
+                prompt.responseOptions[minId].ressourceGain = 0;
+            }
+
             StartCoroutine(NextPromptWithDelay(prompt));
             currentPrompt = prompt;
             PlayerPrefs.SetInt(prompt.senderName + prompt.message.Truncate(5) + prompt.message.Count().ToString(), 1);
@@ -374,6 +396,13 @@ public class PromptsManager : MonoBehaviour
 
     public void ResponseToCurrentPrompt(int selectedResponseIndex)
     {
+        totalPrompt++;
+        scoreBar.setScore(totalPrompt);
+        if (PlayerPrefs.GetInt("HighScore", 0) < totalPrompt)
+        {
+            PlayerPrefs.SetInt("HighScore", totalPrompt);
+            scoreBar.GetComponent<HighScore>().SetHighScore();
+        }
         var opt = currentPrompt.responseOptions[selectedResponseIndex];
 
         RessourceManager.Instance.UpdateRessource(opt.ressourceGain);
@@ -397,29 +426,19 @@ public class PromptsManager : MonoBehaviour
                 if (addedPrompt.prompt != null && !IsContainedInPromptList(removedPrompts, addedPrompt.prompt)) promptsWithWeights.Add(addedPrompt);
             }
         }
-        List<Prompt> promptsAdded = new List<Prompt>();
         if (opt.addedDirectPrompts != null)
         {
             foreach (var addedDirect in opt.addedDirectPrompts)
             {
-                if (addedDirect != null && !IsContainedInPromptList(removedPrompts, addedDirect)) promptsAdded.Add(addedDirect);
+                if (addedDirect != null && !IsContainedInPromptList(removedPrompts, addedDirect)) AddPromptToQueue(addedDirect, true);
             }
         }
 
-        StartCoroutine(delayAddPrompts(promptsAdded));
         if (opt.removedPrompts != null && opt.removedPrompts.Length > 0)
             RemovePrompts(opt.removedPrompts);
         StartCoroutine(NextPromptWithDelay(selectedResponseIndex));
     }
 
-    IEnumerator delayAddPrompts(List<Prompt> promptsAdded)
-    {
-        foreach (Prompt p in promptsAdded)
-        {
-            AddPromptToQueue(p, true);
-            yield return new WaitForSeconds(.2f);
-        }
-    }
 
     IEnumerator NextPromptWithDelay(int selectedResponseIndex = 0)
     {
@@ -436,18 +455,17 @@ public class PromptsManager : MonoBehaviour
         }
 
         bool gameOverByGauges = RessourceManager.Instance.IsBonheurDead();
-        if (gameOverByGauges || currentPrompt.responseOptions[selectedResponseIndex].isGameOverResponse)
-        {
-            isGameOver = true;
-            Time.timeScale = 0f;
-            setupPrompt.SetupGameOverButtons();
-            yield break;
-        }
-
+        
         if (hasUserResponse)
         {
             setupPrompt.NextUserPrompt(currentPrompt, selectedResponseIndex);
-            yield return new WaitForSeconds(_delay + (hasBoth ? 0.4f : 0f) + (currentPrompt.responseOptions[selectedResponseIndex].responseUserText.Length >= 20 ? 1 : 0));
+            yield return new WaitForSeconds(_delay + (hasBoth ? 0.4f : 0f) + (currentPrompt.responseOptions[selectedResponseIndex].responseUserText.Length >= 30 ? 1 : 0));
+        }
+        if (gameOverByGauges || currentPrompt.responseOptions[selectedResponseIndex].isGameOverResponse)
+        {
+            setupPrompt.SetupGameOverButtons();
+            gameOver = true;
+            yield return new WaitForSeconds(_delay - (hasBoth ? 0.4f : 0f));
         }
     
         NextPrompt();

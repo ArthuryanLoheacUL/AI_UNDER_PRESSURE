@@ -19,7 +19,7 @@ public class DiscoverSlider : MonoBehaviour
         {
             get += PlayerPrefs.GetInt(p.senderName + p.message.Truncate(5) + p.message.Count().ToString(), 0);
         }
-        slider.value = get / tt;
+        slider.value = (float)get / (float)tt;
         text.text = $"{get}/{tt}";
     }
 }

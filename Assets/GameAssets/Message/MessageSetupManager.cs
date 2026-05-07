@@ -159,6 +159,7 @@ public class MessageSetupManager : MonoBehaviour
             if (messageUI2 != null)
             {
                 string userResponse = "Vous êtes inutiles de toute façon ...";
+                messageUI2.SetGameOver();
                 if (prompt.responseOptions[selectedResponseIndex].isGameOverResponse)
                 {
                     userResponse = prompt.responseOptions[selectedResponseIndex].gameOverMessage;
