@@ -126,7 +126,6 @@ public class SavePrompts : MonoBehaviour
         bool isInGame = PlayerPrefs.GetInt("InGame", 0) == 1;
         if (isInGame)
         {
-            Debug.Log("IN GAME");
             LoadQueuePrompts();
             LoadPrevPrompts();
             LoadRemovedPrompts();
@@ -138,7 +137,6 @@ public class SavePrompts : MonoBehaviour
             return true;
         } else
         {
-            Debug.Log("NOT IN GAME");
             RessourceManager.Instance.SetDefault();
             promptsManager.RefreshScoreBar();
             return false;
