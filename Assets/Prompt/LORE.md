@@ -72,7 +72,6 @@ Assets/Prompt/
 |------|-------------|-----------|---------------|
 | Mineur | broutilles | -5 / -5 | +5 / +5 |
 | Standard | requête classique | -10 / -5 | +5 / +10 |
-| Urgent (isUrgent) | demande pressante | -10 / -10 | +5 / +15 |
 | Critique | survie du vaisseau | -15 / -10 | +10 / +15 |
 
 **Variations** d'options encouragées :

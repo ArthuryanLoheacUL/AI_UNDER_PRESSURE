@@ -26,18 +26,17 @@ public class MessageUI : MonoBehaviour
         animationMax = animationTime;
     }
 
-    public void SetMessage(string message, float time = -1f, bool isUrgent = false, bool skipAnimation = false)
+    public void SetMessage(string message, float time = -1f, bool skipAnimation = false)
     {
         messageText.text = message;
         if (skipAnimation)
         {
             animationTime = 0f;
         }
-        isUrgent = false;
         if (timerContainer != null)
-            timerContainer.SetActive(isUrgent);
+            timerContainer.SetActive(false);
         if (lineContainer != null)
-            lineContainer.SetActive(isUrgent);
+            lineContainer.SetActive(false);
     }
 
     public void SetGameOver()

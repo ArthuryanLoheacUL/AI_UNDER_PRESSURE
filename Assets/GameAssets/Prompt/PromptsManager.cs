@@ -151,7 +151,7 @@ public class PromptsManager : MonoBehaviour
                 return false;
         }
 
-        if (prompt.isUrgent || directAdd)
+        if (directAdd)
             queuePrompts.Insert(0, prompt);
         else
             queuePrompts.Add(prompt);
@@ -225,16 +225,20 @@ public class PromptsManager : MonoBehaviour
         if (wp.prompt.gainForceIfLowR && ressources < 25)
             weight *= 3f;
 
-        // Boost urgent prompts when something is on fire.
-        if (wp.prompt.isUrgent && (ressources < 30 || bonheur < 35))
-            weight *= 2.5f;
+        bool isCrisis = true;
+        foreach (Prompt.ResponseOption r in wp.prompt.responseOptions)
+            if (r.bonheurGain >= 0 && r.ressourceGain >= 0) isCrisis = false;
 
         // Damp crisis prompts when everything is fine.
-        if (wp.prompt.isCrisis && ressources > 60 && bonheur > 55)
+        if (isCrisis && ressources > 60 && bonheur > 55)
             weight *= 0.3f;
 
+        bool isRelief = false;
+        foreach (Prompt.ResponseOption r in wp.prompt.responseOptions)
+            if (r.bonheurGain >= 0 || r.ressourceGain >= 0) isRelief = true;
+
         // After three consecutive negative prompts, push relief HARD.
-        if (consecutiveNegativePrompts >= 3 && wp.prompt.isRelief)
+        if (consecutiveNegativePrompts >= 5 && isRelief)
             weight *= 3f;
 
         // Hard cap: never serve a 4th double-drain in a row.
@@ -320,10 +324,6 @@ public class PromptsManager : MonoBehaviour
         Prompt instance = new Prompt(picked);
         instance.timerMax = 30f + Random.Range(-5f, 10f);
         instance.timer = instance.timerMax;
-
-        // Chance to upgrade a prompt to urgent if the situation is already tense.
-        float pressureChance = (100 - RessourceManager.Instance.bonheurValue) / 100f;
-        if (Random.value < pressureChance) instance.isUrgent = false;
 
         ShufflePromptResponseOptions(instance);
         return instance;

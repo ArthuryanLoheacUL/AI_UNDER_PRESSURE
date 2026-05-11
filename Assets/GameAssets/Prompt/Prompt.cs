@@ -5,10 +5,10 @@ using UnityEngine.Serialization;
 public class Prompt : ScriptableObject
 {
     // The four balancing archetypes from the design spec.
-    // DILEMME : OUI = R cost, NON = F cost. No safe path.
-    // DOUBLE_PEINE : both options drain (R, F, or both).
-    // GAIN_MASQUE : OUI pays R to reduce F slightly. Conscious investment.
-    // FAUSSE_RESP : OUI gains R but raises F. NON neutral.
+    // DILEMME : OUI = R cost, NON = B cost. No safe path.
+    // DOUBLE_PEINE : both options drain (R, B, or both).
+    // GAIN_MASQUE : OUI pays R to reduce B slightly. Conscious investment.
+    // FAUSSE_RESP : OUI gains R but raises B. NON neutral.
     // NARRATIF : pivot scene with 0/0 costs, excluded from quota balancing.
     public enum Archetype { DILEMME, DOUBLE_PEINE, GAIN_MASQUE, FAUSSE_RESP, NARRATIF }
 
@@ -44,11 +44,6 @@ public class Prompt : ScriptableObject
 
     [Header("Behavior Flags")]
     public bool isUnique; // If true, this prompt will be removed from the pool of possible prompts after being picked
-    public bool isUrgent; // If true, this prompt will be added to the front of the queue and have a timer
-
-    [Header("Tags & Pacing")]
-    public bool isCrisis;       // Crisis prompt - usually drains both gauges, escalates pressure
-    public bool isRelief;       // Relief prompt - boosts bonheur or ressources, used to break tension after crisis runs
 
     [Header("Balance Archetype")]
     public Archetype archetype = Archetype.DILEMME; // Balancing class - drives garde-fou logic below
@@ -67,9 +62,6 @@ public class Prompt : ScriptableObject
 
     public Prompt(Prompt other)
     {
-        // Carry the asset name through clones so duplicate detection in
-        // PromptsManager can compare on a stable identity, not the message
-        // text (which can drift with rewrites).
         name = other.name;
         senderName = other.senderName;
         message = other.message;
@@ -86,9 +78,6 @@ public class Prompt : ScriptableObject
         timer = 0f;
         timerMax = 0f;
         isUnique = other.isUnique;
-        isUrgent = other.isUrgent;
-        isCrisis = other.isCrisis;
-        isRelief = other.isRelief;
         archetype = other.archetype;
         gainBlockIfHighR = other.gainBlockIfHighR;
         gainForceIfLowR = other.gainForceIfLowR;

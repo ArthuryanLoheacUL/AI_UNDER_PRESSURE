@@ -12,30 +12,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
   m_Name: pr_Solo_Optimisation_Moteur
   m_EditorClassIdentifier: Assembly-CSharp::Prompt
-  senderName: "Mec. Parker"
-  message: "J'ai trouvé une nouvelle calibration des injecteurs. On gagne 8% de rendement carburant si on patche maintenant."
+  senderName: Mec. Parker
+  message: "J'ai trouv\xE9 une nouvelle calibration des injecteurs. On gagne 8% de
+    rendement carburant si on patche maintenant."
   isUnique: 1
   isUrgent: 0
   isCrisis: 0
   isRelief: 1
+  archetype: 0
+  gainBlockIfHighR: 0
+  gainForceIfLowR: 0
+  fausseBlockIfHighF: 0
+  doubleBlockIfHighF: 0
   responseOptions:
-  - optionText: "Patcher tout de suite"
-    responseUserText: "Patche, c'est validé. Beau boulot."
+  - optionText: Patcher
+    responseUserText: "Patche, c'est valid\xE9. Beau boulot."
     ressourceGain: 15
     bonheurGain: -5
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []
     isGameOverResponse: 0
-    gameOverMessage:
-  - optionText: "Tester d'abord en simulation"
-    responseUserText: "On valide en simu avant. Prudence."
+    gameOverMessage: 
+  - optionText: Simuler
+    responseUserText: On valide en simulation avant. Prudence.
     ressourceGain: 5
     bonheurGain: 0
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []
     isGameOverResponse: 0
-    gameOverMessage:
+    gameOverMessage: 
   timer: 0
   timerMax: 0

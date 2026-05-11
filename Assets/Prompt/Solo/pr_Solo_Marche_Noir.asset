@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
   m_Name: pr_Solo_Marche_Noir
   m_EditorClassIdentifier: Assembly-CSharp::Prompt
-  senderName: "Iven"
-  message: "J'ai un contact qui peut filer des modules de rechange contre du silence. C'est gris, pas noir. Mais c'est gris quand même."
+  senderName: Iven
+  message: "J\u2019ai un contact pr\xEAt \xE0 fournir des modules de rechange en
+    \xE9change de discr\xE9tion. Ce n\u2019est pas totalement l\xE9gal\u2026 mais
+    \xE7a pourrait nous aider."
   isUnique: 1
   isUrgent: 0
   isCrisis: 0
@@ -24,23 +26,24 @@ MonoBehaviour:
   fausseBlockIfHighF: 1
   doubleBlockIfHighF: 0
   responseOptions:
-  - optionText: "Conclure le troc"
-    responseUserText: "Vas-y. Mais qu'aucun nom ne sorte de cette pièce."
+  - optionText: "Accepter l\u2019\xE9change"
+    responseUserText: "D\u2019accord. Promis cette discussion ne quitte jamais cette
+      pi\xE8ce."
     ressourceGain: 15
     bonheurGain: -5
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []
     isGameOverResponse: 0
-    gameOverMessage:
-  - optionText: "Refuser"
-    responseUserText: "Non. Pas par ce canal là."
+    gameOverMessage: 
+  - optionText: Refuser
+    responseUserText: "Okay. On ne passe pas par ce genre de r\xE9seau."
     ressourceGain: 0
     bonheurGain: 0
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []
     isGameOverResponse: 0
-    gameOverMessage:
+    gameOverMessage: 
   timer: 0
   timerMax: 0

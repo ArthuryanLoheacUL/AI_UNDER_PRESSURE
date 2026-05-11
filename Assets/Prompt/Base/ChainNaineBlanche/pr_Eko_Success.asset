@@ -11,17 +11,22 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
   m_Name: pr_Eko_Success
-  m_EditorClassIdentifier: 'Assembly-CSharp::Prompt'
-  senderName: "Nav. Eko"
-  message: "Parfait, on a r\u00E9ussi la man\u0153uvre ! On va pouvoir rentrer plus t\u00F4t \u00E0 la maison !"
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  senderName: Nav. Eko
+  message: "Parfait, on a r\xE9ussi la man\u0153uvre ! On va pouvoir rentrer plus
+    t\xF4t \xE0 la maison !"
   isUnique: 1
   isUrgent: 0
-  chainTag: ""
   isCrisis: 0
   isRelief: 1
+  archetype: 0
+  gainBlockIfHighR: 0
+  gainForceIfLowR: 0
+  fausseBlockIfHighF: 0
+  doubleBlockIfHighF: 0
   responseOptions:
-  - optionText: "COOL"
-    responseUserText: ""
+  - optionText: COOL
+    responseUserText: 
     ressourceGain: 0
     bonheurGain: 15
     addedPrompts: []
@@ -29,9 +34,8 @@ MonoBehaviour:
     removedPrompts:
     - {fileID: 11400000, guid: 37d04354f82409d6a1a22567b3f0c692, type: 2}
     - {fileID: 11400000, guid: 3670bf81ac7f0304f4ad06f0aa02279b, type: 2}
-    removedChainTags:
-    - "NaineBlanche"
+    - {fileID: 11400000}
     isGameOverResponse: 0
-    gameOverMessage: ""
+    gameOverMessage: 
   timer: 0
   timerMax: 0

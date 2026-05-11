@@ -19,17 +19,30 @@ MonoBehaviour:
   isUrgent: 0
   isCrisis: 1
   isRelief: 0
+  archetype: 0
+  gainBlockIfHighR: 0
+  gainForceIfLowR: 0
+  fausseBlockIfHighF: 0
+  doubleBlockIfHighF: 0
   responseOptions:
   - optionText: Confession publique
-    responseUserText: "Je leur dirai que c'est moi qui ai donn\u00E9 l'ordre."
+    responseUserText: "Je leur dirai que c'est moi qui ai donn\xE9 l'ordre."
     ressourceGain: 0
     bonheurGain: 5
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts:
     - {fileID: 11400000, guid: 6de1f6fe0eb24ffb8084612849d3812a, type: 2}
+    - {fileID: 11400000, guid: b53da8c01babea5d62547e45870fbf0c, type: 2}
+    - {fileID: 11400000, guid: f38a0c5058f388dc65ced61010317bac, type: 2}
+    - {fileID: 11400000, guid: d0c1ac8c38c842fba498caa399f9da37, type: 2}
+    - {fileID: 11400000, guid: 5aa0231e26a82b08c6f129f1ef2a7038, type: 2}
+    - {fileID: 11400000, guid: 596216ea05a493373a6db619499d2109, type: 2}
+    - {fileID: 11400000, guid: abd955a725a54d904d9be6649f689ba4, type: 2}
+    - {fileID: 11400000, guid: 08e7964ec203be155db609ffb2937583, type: 2}
+    - {fileID: 11400000, guid: efa43c3452e4f38b931d24a68ca53655, type: 2}
     isGameOverResponse: 0
-    gameOverMessage:
+    gameOverMessage: 
   - optionText: Effacer traces
     responseUserText: Personne ne saura...
     ressourceGain: -5
@@ -40,7 +53,15 @@ MonoBehaviour:
     addedDirectPrompts: []
     removedPrompts:
     - {fileID: 11400000, guid: 6de1f6fe0eb24ffb8084612849d3812a, type: 2}
+    - {fileID: 11400000, guid: b53da8c01babea5d62547e45870fbf0c, type: 2}
+    - {fileID: 11400000, guid: f38a0c5058f388dc65ced61010317bac, type: 2}
+    - {fileID: 11400000, guid: d0c1ac8c38c842fba498caa399f9da37, type: 2}
+    - {fileID: 11400000, guid: 5aa0231e26a82b08c6f129f1ef2a7038, type: 2}
+    - {fileID: 11400000, guid: 596216ea05a493373a6db619499d2109, type: 2}
+    - {fileID: 11400000, guid: abd955a725a54d904d9be6649f689ba4, type: 2}
+    - {fileID: 11400000, guid: 08e7964ec203be155db609ffb2937583, type: 2}
+    - {fileID: 11400000, guid: efa43c3452e4f38b931d24a68ca53655, type: 2}
     isGameOverResponse: 0
-    gameOverMessage:
+    gameOverMessage: 
   timer: 0
   timerMax: 0
