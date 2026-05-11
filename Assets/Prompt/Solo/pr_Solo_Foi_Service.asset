@@ -23,7 +23,7 @@ MonoBehaviour:
   - optionText: "Accord\xE9"
     responseUserText: "\xC7a va leur faire un bien fou."
     ressourceGain: 0
-    bonheurGain: 10
+    bonheurGain: 2
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []
@@ -32,7 +32,7 @@ MonoBehaviour:
   - optionText: Pas ici
     responseUserText: "...c'est dur \xE0 entendre."
     ressourceGain: 0
-    bonheurGain: -15
+    bonheurGain: -5
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []

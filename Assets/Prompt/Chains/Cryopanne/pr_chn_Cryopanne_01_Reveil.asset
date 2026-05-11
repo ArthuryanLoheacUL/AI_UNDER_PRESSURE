@@ -23,7 +23,7 @@ MonoBehaviour:
   - optionText: "Recryog\xE9niser"
     responseUserText: "Je l'endors. C'est plus s\xFBr."
     ressourceGain: -10
-    bonheurGain: 0
+    bonheurGain: -3
     addedPrompts: []
     addedDirectPrompts:
     - {fileID: 11400000, guid: c93ec52b00d8536dba3d9f2ad062a08e, type: 2}
@@ -33,7 +33,7 @@ MonoBehaviour:
   - optionText: "Le garder \xE9veill\xE9"
     responseUserText: "On l'int\xE8gre \xE0 l'\xE9quipage !"
     ressourceGain: -5
-    bonheurGain: 5
+    bonheurGain: -5
     addedPrompts:
     - prompt: {fileID: 11400000, guid: ac709a15d61d3a1c4498cdc049a37f7e, type: 2}
       weight: 2

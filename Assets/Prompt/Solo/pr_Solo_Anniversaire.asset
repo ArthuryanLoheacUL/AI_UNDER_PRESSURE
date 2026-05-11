@@ -23,7 +23,7 @@ MonoBehaviour:
   - optionText: "Petite f\u00EAte"
     responseUserText: "Je r\u00E9quisitionne la cantine !"
     ressourceGain: -5
-    bonheurGain: 10
+    bonheurGain: 2
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []

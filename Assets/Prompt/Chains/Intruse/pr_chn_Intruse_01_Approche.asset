@@ -22,7 +22,7 @@ MonoBehaviour:
   - optionText: Confine le secteur
     responseUserText: Je scelle B et C tout de suite.
     ressourceGain: -10
-    bonheurGain: 5
+    bonheurGain: 0
     addedPrompts: []
     addedDirectPrompts:
     - {fileID: 11400000, guid: 7b4374ab7e2564aa0c72608478bf88cf, type: 2}
@@ -32,7 +32,7 @@ MonoBehaviour:
   - optionText: Patrouille
     responseUserText: "Je prends Korr et Lin et j'envoie la patrouille arm\xE9e."
     ressourceGain: -5
-    bonheurGain: -10
+    bonheurGain: -5
     addedPrompts: []
     addedDirectPrompts:
     - {fileID: 11400000, guid: 7b4374ab7e2564aa0c72608478bf88cf, type: 2}

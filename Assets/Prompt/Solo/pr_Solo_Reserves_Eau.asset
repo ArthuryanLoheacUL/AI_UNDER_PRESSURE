@@ -21,8 +21,8 @@ MonoBehaviour:
   responseOptions:
   - optionText: Rationnement
     responseUserText: "Douches un jour sur deux. \xC7a va r\xE2ler."
-    ressourceGain: 10
-    bonheurGain: -10
+    ressourceGain: -5
+    bonheurGain: -5
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []
@@ -31,7 +31,7 @@ MonoBehaviour:
   - optionText: Attendre
     responseUserText: On verra plus tard.
     ressourceGain: 0
-    bonheurGain: 0
+    bonheurGain: -5
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []

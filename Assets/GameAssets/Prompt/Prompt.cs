@@ -4,6 +4,14 @@ using UnityEngine.Serialization;
 [CreateAssetMenu(fileName = "Prompt", menuName = "Scriptable Objects/Prompt")]
 public class Prompt : ScriptableObject
 {
+    // The four balancing archetypes from the design spec.
+    // DILEMME : OUI = R cost, NON = F cost. No safe path.
+    // DOUBLE_PEINE : both options drain (R, F, or both).
+    // GAIN_MASQUE : OUI pays R to reduce F slightly. Conscious investment.
+    // FAUSSE_RESP : OUI gains R but raises F. NON neutral.
+    // NARRATIF : pivot scene with 0/0 costs, excluded from quota balancing.
+    public enum Archetype { DILEMME, DOUBLE_PEINE, GAIN_MASQUE, FAUSSE_RESP, NARRATIF }
+
     [System.Serializable]
     public struct ResponseOption
     {
@@ -42,6 +50,15 @@ public class Prompt : ScriptableObject
     public bool isCrisis;       // Crisis prompt - usually drains both gauges, escalates pressure
     public bool isRelief;       // Relief prompt - boosts bonheur or ressources, used to break tension after crisis runs
 
+    [Header("Balance Archetype")]
+    public Archetype archetype = Archetype.DILEMME; // Balancing class - drives garde-fou logic below
+
+    [Header("Garde-fous (contextual gating)")]
+    public bool gainBlockIfHighR;   // [GAIN_BLOCK]  - do not spawn if R > 70 (typically GAIN_MASQUE)
+    public bool gainForceIfLowR;    // [GAIN_FORCE]  - priority boost if R < 25
+    public bool fausseBlockIfHighF; // [FAUSSE_BLOCK]- do not spawn if F > 65 (typically FAUSSE_RESP)
+    public bool doubleBlockIfHighF; // [DOUBLE_BLOCK]- do not spawn if F > 80 (typically DOUBLE_PEINE)
+
     [Header("Response Options")]
     public ResponseOption[] responseOptions; // Array of response options for this prompt, displayed as buttons in the UI
 
@@ -72,5 +89,10 @@ public class Prompt : ScriptableObject
         isUrgent = other.isUrgent;
         isCrisis = other.isCrisis;
         isRelief = other.isRelief;
+        archetype = other.archetype;
+        gainBlockIfHighR = other.gainBlockIfHighR;
+        gainForceIfLowR = other.gainForceIfLowR;
+        fausseBlockIfHighF = other.fausseBlockIfHighF;
+        doubleBlockIfHighF = other.doubleBlockIfHighF;
     }
 }

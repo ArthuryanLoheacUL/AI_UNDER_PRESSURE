@@ -23,7 +23,7 @@ MonoBehaviour:
   - optionText: "Exterminer"
     responseUserText: "Bon... j'extermine."
     ressourceGain: -5
-    bonheurGain: -5
+    bonheurGain: -3
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []
@@ -33,7 +33,7 @@ MonoBehaviour:
   - optionText: "\u00C9tudier"
     responseUserText: "Yes, je le capture vivant !"
     ressourceGain: -10
-    bonheurGain: 5
+    bonheurGain: 0
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []

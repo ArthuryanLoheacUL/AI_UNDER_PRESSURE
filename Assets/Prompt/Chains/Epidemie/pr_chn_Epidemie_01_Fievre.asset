@@ -22,7 +22,7 @@ MonoBehaviour:
   - optionText: "Quarantaine pr\xE9ventive"
     responseUserText: Je confine les trois.
     ressourceGain: -10
-    bonheurGain: 5
+    bonheurGain: 0
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []
@@ -31,7 +31,7 @@ MonoBehaviour:
   - optionText: Surveillance
     responseUserText: "Je garde un \u0153il sur eux."
     ressourceGain: 0
-    bonheurGain: 0
+    bonheurGain: -5
     addedPrompts:
     - prompt: {fileID: 11400000, guid: d19e337d9f5856b4fda876fddfa1c964, type: 2}
       weight: 2.5

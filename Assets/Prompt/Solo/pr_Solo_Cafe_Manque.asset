@@ -23,7 +23,7 @@ MonoBehaviour:
   - optionText: Lance la prod
     responseUserText: "Tu sauves la journ\xE9e !"
     ressourceGain: -5
-    bonheurGain: 10
+    bonheurGain: 2
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []
@@ -31,7 +31,7 @@ MonoBehaviour:
     gameOverMessage: 
   - optionText: Rationner
     responseUserText: Une dose par jour, je sais pas si on tiendra.
-    ressourceGain: 5
+    ressourceGain: 0
     bonheurGain: -5
     addedPrompts: []
     addedDirectPrompts: []

@@ -23,7 +23,7 @@ MonoBehaviour:
   - optionText: "Accord\xE9"
     responseUserText: Tout le monde va adorer !
     ressourceGain: -5
-    bonheurGain: 10
+    bonheurGain: 2
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []

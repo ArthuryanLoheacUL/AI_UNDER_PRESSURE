@@ -22,8 +22,8 @@ MonoBehaviour:
   responseOptions:
   - optionText: "Investiguer"
     responseUserText: "Je pars analyser \u00E7a !"
-    ressourceGain: -5
-    bonheurGain: 5
+    ressourceGain: 15
+    bonheurGain: -5
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []

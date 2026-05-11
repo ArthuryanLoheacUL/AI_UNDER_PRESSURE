@@ -23,7 +23,7 @@ MonoBehaviour:
   - optionText: "Accord\xE9"
     responseUserText: On va respirer un peu, merci !
     ressourceGain: -10
-    bonheurGain: 10
+    bonheurGain: 2
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []
@@ -32,7 +32,7 @@ MonoBehaviour:
   - optionText: "Refus\xE9"
     responseUserText: "S\xE9rieux ?!"
     ressourceGain: 0
-    bonheurGain: -15
+    bonheurGain: -5
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []

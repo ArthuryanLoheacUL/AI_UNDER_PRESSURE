@@ -21,8 +21,8 @@ MonoBehaviour:
   responseOptions:
   - optionText: Approcher
     responseUserText: Cap dessus, on va voir !
-    ressourceGain: -5
-    bonheurGain: 5
+    ressourceGain: -10
+    bonheurGain: 0
     addedPrompts: []
     addedDirectPrompts:
     - {fileID: 11400000, guid: ed4a754cbfa11569527a5b56cf14b672, type: 2}

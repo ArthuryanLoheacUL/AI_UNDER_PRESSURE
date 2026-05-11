@@ -23,7 +23,7 @@ MonoBehaviour:
   - optionText: "Non remplacer"
     responseUserText: "Cool, de nouvelles pi\u00E8ces."
     ressourceGain: -10
-    bonheurGain: 5
+    bonheurGain: 0
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []
@@ -32,7 +32,7 @@ MonoBehaviour:
     gameOverMessage: ""
   - optionText: "Oui Recycler"
     responseUserText: "Je pousse les filtres alors."
-    ressourceGain: 5
+    ressourceGain: 0
     bonheurGain: -5
     addedPrompts:
     - prompt: {fileID: 11400000, guid: dc510c1b9c4ce97c0754e12f7ae8b5e1, type: 2}

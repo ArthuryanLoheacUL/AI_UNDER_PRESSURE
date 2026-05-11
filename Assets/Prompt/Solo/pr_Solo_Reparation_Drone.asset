@@ -22,8 +22,8 @@ MonoBehaviour:
   responseOptions:
   - optionText: "R\xE9cup\xE9rer"
     responseUserText: Sortie EVA, c'est parti !
-    ressourceGain: -15
-    bonheurGain: 5
+    ressourceGain: -10
+    bonheurGain: 0
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []
@@ -31,7 +31,7 @@ MonoBehaviour:
     gameOverMessage: 
   - optionText: L'abandonner
     responseUserText: "RIP petit rotor..."
-    ressourceGain: 5
+    ressourceGain: 0
     bonheurGain: -5
     addedPrompts: []
     addedDirectPrompts: []

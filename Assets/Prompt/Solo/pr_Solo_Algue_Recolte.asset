@@ -22,8 +22,8 @@ MonoBehaviour:
   responseOptions:
   - optionText: "Distribuer"
     responseUserText: "Bonus pour tout le monde !"
-    ressourceGain: -5
-    bonheurGain: 10
+    ressourceGain: 0
+    bonheurGain: 0
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []
@@ -32,7 +32,7 @@ MonoBehaviour:
     gameOverMessage: ""
   - optionText: "Stocker"
     responseUserText: "On garde au frais pour les coups durs."
-    ressourceGain: 10
+    ressourceGain: 15
     bonheurGain: -5
     addedPrompts: []
     addedDirectPrompts: []

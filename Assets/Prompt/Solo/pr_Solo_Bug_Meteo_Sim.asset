@@ -23,7 +23,7 @@ MonoBehaviour:
   - optionText: "R\xE9parer"
     responseUserText: "Je patche \xE7a ce soir."
     ressourceGain: -5
-    bonheurGain: 5
+    bonheurGain: 2
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []

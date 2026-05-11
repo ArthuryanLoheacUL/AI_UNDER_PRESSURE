@@ -23,7 +23,7 @@ MonoBehaviour:
   - optionText: Accepter
     responseUserText: "Je pr\xE9pare la cuve pour lui."
     ressourceGain: -10
-    bonheurGain: 5
+    bonheurGain: 0
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []
@@ -31,8 +31,8 @@ MonoBehaviour:
     gameOverMessage: 
   - optionText: Refuser
     responseUserText: "On a besoin de lui... mais \xE7a fera mal \xE0 son moral."
-    ressourceGain: 5
-    bonheurGain: -10
+    ressourceGain: 0
+    bonheurGain: -5
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []

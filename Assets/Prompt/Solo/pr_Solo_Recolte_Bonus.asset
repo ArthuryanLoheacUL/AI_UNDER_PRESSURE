@@ -21,8 +21,8 @@ MonoBehaviour:
   responseOptions:
   - optionText: "Stocker en réserve"
     responseUserText: "Au stock, ça nous servira plus tard."
-    ressourceGain: 20
-    bonheurGain: 0
+    ressourceGain: 15
+    bonheurGain: -5
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []
@@ -31,7 +31,7 @@ MonoBehaviour:
   - optionText: "Redistribuer maintenant"
     responseUserText: "Redistribue, ça remontera le moral."
     ressourceGain: 5
-    bonheurGain: 10
+    bonheurGain: 0
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []

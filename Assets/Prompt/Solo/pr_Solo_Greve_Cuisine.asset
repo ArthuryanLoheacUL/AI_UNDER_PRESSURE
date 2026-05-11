@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
+  m_Name: pr_Solo_Greve_Cuisine
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  senderName: "Bot. Vale"
+  message: "L'équipe de cuisine menace de cesser le service. Trois cuisiniers pour 200 colons, c'est intenable. On envoie du renfort ou on encaisse la grève ?"
+  isUnique: 1
+  isUrgent: 1
+  isCrisis: 1
+  isRelief: 0
+  archetype: 1
+  gainBlockIfHighR: 0
+  gainForceIfLowR: 0
+  fausseBlockIfHighF: 0
+  doubleBlockIfHighF: 1
+  responseOptions:
+  - optionText: "Envoyer du renfort"
+    responseUserText: "Je détache deux techs en cuisine. Faut tenir."
+    ressourceGain: -10
+    bonheurGain: 0
+    addedPrompts: []
+    addedDirectPrompts: []
+    removedPrompts: []
+    isGameOverResponse: 0
+    gameOverMessage:
+  - optionText: "Laisser la grève"
+    responseUserText: "Tant pis. Ils reprendront quand ils auront faim."
+    ressourceGain: -5
+    bonheurGain: -5
+    addedPrompts: []
+    addedDirectPrompts: []
+    removedPrompts: []
+    isGameOverResponse: 0
+    gameOverMessage:
+  timer: 0
+  timerMax: 0

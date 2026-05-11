@@ -22,7 +22,7 @@ MonoBehaviour:
   - optionText: Aller voir
     responseUserText: "Je passe les voir s\xE9par\xE9ment."
     ressourceGain: 0
-    bonheurGain: 5
+    bonheurGain: 0
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []

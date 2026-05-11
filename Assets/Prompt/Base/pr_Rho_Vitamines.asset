@@ -23,7 +23,7 @@ MonoBehaviour:
   - optionText: "Compl\u00E9ments"
     responseUserText: "Je distribue les doses."
     ressourceGain: -10
-    bonheurGain: 5
+    bonheurGain: 0
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []
@@ -33,7 +33,7 @@ MonoBehaviour:
   - optionText: "UV \u00E9largie"
     responseUserText: "J'ouvre les salles UV."
     ressourceGain: -5
-    bonheurGain: 5
+    bonheurGain: -5
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []

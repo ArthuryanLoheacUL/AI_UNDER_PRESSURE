@@ -22,7 +22,7 @@ MonoBehaviour:
   - optionText: "Enqu\xEAte discr\xE8te"
     responseUserText: Je trouverai l'origine.
     ressourceGain: -5
-    bonheurGain: 0
+    bonheurGain: -3
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []
@@ -32,7 +32,7 @@ MonoBehaviour:
     responseUserText: "Je lance l'annonce g\xE9n\xE9rale. \xC7a va jeter un froid
       pour si peu."
     ressourceGain: 0
-    bonheurGain: -10
+    bonheurGain: -5
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []

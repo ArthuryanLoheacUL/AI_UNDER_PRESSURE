@@ -23,7 +23,7 @@ MonoBehaviour:
   - optionText: Lui parler
     responseUserText: "Je programme une session t\xEAte \xE0 t\xEAte."
     ressourceGain: -5
-    bonheurGain: 5
+    bonheurGain: 2
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []

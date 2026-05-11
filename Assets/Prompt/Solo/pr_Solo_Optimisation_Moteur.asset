@@ -22,7 +22,7 @@ MonoBehaviour:
   - optionText: "Patcher tout de suite"
     responseUserText: "Patche, c'est validé. Beau boulot."
     ressourceGain: 15
-    bonheurGain: 5
+    bonheurGain: -5
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []
@@ -30,7 +30,7 @@ MonoBehaviour:
     gameOverMessage:
   - optionText: "Tester d'abord en simulation"
     responseUserText: "On valide en simu avant. Prudence."
-    ressourceGain: 10
+    ressourceGain: 5
     bonheurGain: 0
     addedPrompts: []
     addedDirectPrompts: []

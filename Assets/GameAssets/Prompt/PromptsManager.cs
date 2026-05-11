@@ -167,6 +167,19 @@ public class PromptsManager : MonoBehaviour
             ? RessourceManager.Instance.GetRessource() : 60;
         int bonheur = RessourceManager.Instance != null
             ? RessourceManager.Instance.GetBonheur() : 60;
+        // F is the inverse of bonheur in design notation (0 = calm, 100 = defeat).
+        int frustration = 100 - bonheur;
+
+        // Garde-fous: hard gating based on archetype + current gauges.
+        // [GAIN_BLOCK]   - GAIN_MASQUE prompts are wasteful when R is already high.
+        if (wp.prompt.gainBlockIfHighR && ressources > 70) return 0f;
+        // [FAUSSE_BLOCK] - never push a fausse-respiration when F is already critical.
+        if (wp.prompt.fausseBlockIfHighF && frustration > 65) return 0f;
+        // [DOUBLE_BLOCK] - never push a double-drain when F is near defeat.
+        if (wp.prompt.doubleBlockIfHighF && frustration > 80) return 0f;
+        // [GAIN_FORCE]   - priority boost when R is critically low.
+        if (wp.prompt.gainForceIfLowR && ressources < 25)
+            weight *= 3f;
 
         // Boost urgent prompts when something is on fire.
         if (wp.prompt.isUrgent && (ressources < 30 || bonheur < 35))

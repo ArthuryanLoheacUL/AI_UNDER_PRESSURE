@@ -23,7 +23,7 @@ MonoBehaviour:
   - optionText: "Double"
     responseUserText: "On double les rondes, on se sentira mieux merci !"
     ressourceGain: -10
-    bonheurGain: 5
+    bonheurGain: 0
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []
@@ -33,7 +33,7 @@ MonoBehaviour:
   - optionText: "Habituel"
     responseUserText: "Comme d'habitude."
     ressourceGain: 0
-    bonheurGain: 0
+    bonheurGain: -3
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []

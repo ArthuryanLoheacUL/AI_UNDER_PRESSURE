@@ -23,7 +23,7 @@ MonoBehaviour:
   - optionText: "GO"
     responseUserText: "Let's go, je lance l'op\u00E9ration !"
     ressourceGain: -10
-    bonheurGain: 5
+    bonheurGain: 0
     addedPrompts:
     - prompt: {fileID: 11400000, guid: 3670bf81ac7f0304f4ad06f0aa02279b, type: 2}
       weight: 10.0

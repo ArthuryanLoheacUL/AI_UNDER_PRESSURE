@@ -22,7 +22,7 @@ MonoBehaviour:
   - optionText: "Envoyer le drone"
     responseUserText: "Drone collecteur en route. Beau tir Eko."
     ressourceGain: 20
-    bonheurGain: 5
+    bonheurGain: -5
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []
@@ -31,7 +31,7 @@ MonoBehaviour:
   - optionText: "Garder le cap"
     responseUserText: "Pas le temps de dévier. On continue."
     ressourceGain: 0
-    bonheurGain: -5
+    bonheurGain: 0
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []

@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
+  m_Name: pr_Solo_Pari_Equipage
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  senderName: "Com. Zeth"
+  message: "Une cagnotte clandestine s'est montée autour des paris sur les patrouilles. Ils proposent qu'on prélève 10% pour les coffres communs. Légal, mais ça crée des camps."
+  isUnique: 1
+  isUrgent: 0
+  isCrisis: 0
+  isRelief: 1
+  archetype: 3
+  gainBlockIfHighR: 1
+  gainForceIfLowR: 0
+  fausseBlockIfHighF: 1
+  doubleBlockIfHighF: 0
+  responseOptions:
+  - optionText: "Prélever les 10%"
+    responseUserText: "Validé. Le pot commun s'enrichit, on ferme les yeux sur le reste."
+    ressourceGain: 15
+    bonheurGain: -5
+    addedPrompts: []
+    addedDirectPrompts: []
+    removedPrompts: []
+    isGameOverResponse: 0
+    gameOverMessage:
+  - optionText: "Refuser le prélèvement"
+    responseUserText: "Non. Le pot reste à eux. Pas de mélange."
+    ressourceGain: 0
+    bonheurGain: 0
+    addedPrompts: []
+    addedDirectPrompts: []
+    removedPrompts: []
+    isGameOverResponse: 0
+    gameOverMessage:
+  timer: 0
+  timerMax: 0

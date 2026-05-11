@@ -22,7 +22,7 @@ MonoBehaviour:
   - optionText: Surveiller
     responseUserText: "Je garde un \u0153il, c'est fascinant."
     ressourceGain: -5
-    bonheurGain: 5
+    bonheurGain: 2
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []

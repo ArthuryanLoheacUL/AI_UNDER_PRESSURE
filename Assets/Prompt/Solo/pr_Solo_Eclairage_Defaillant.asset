@@ -31,7 +31,7 @@ MonoBehaviour:
   - optionText: Maintenir
     responseUserText: Ils s'habitueront. Mais c'est moche.
     ressourceGain: 0
-    bonheurGain: -10
+    bonheurGain: -5
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []

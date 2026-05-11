@@ -22,7 +22,7 @@ MonoBehaviour:
   - optionText: Parler
     responseUserText: "Je vais leur parler s\xE9par\xE9ment."
     ressourceGain: 0
-    bonheurGain: 5
+    bonheurGain: 0
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []

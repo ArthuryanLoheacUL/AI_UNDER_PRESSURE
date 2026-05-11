@@ -23,7 +23,7 @@ MonoBehaviour:
   - optionText: "R\u00E9parer"
     responseUserText: "Tr\u00E8s bien, \u00E7a devrait r\u00E9gler l'inqui\u00E9tude."
     ressourceGain: -10
-    bonheurGain: 5
+    bonheurGain: 0
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []
@@ -32,8 +32,8 @@ MonoBehaviour:
     gameOverMessage: ""
   - optionText: "Attendre"
     responseUserText: "On va esp\u00E9rer que \u00E7a explose pas..."
-    ressourceGain: 5
-    bonheurGain: -10
+    ressourceGain: 0
+    bonheurGain: -5
     addedPrompts:
     - prompt: {fileID: 11400000, guid: e2bb0120a752d27da610f19c9dbad27c, type: 2}
       weight: 2.0

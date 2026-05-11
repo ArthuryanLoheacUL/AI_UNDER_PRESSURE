@@ -22,7 +22,7 @@ MonoBehaviour:
   - optionText: "R\xE9pondre"
     responseUserText: "Je tente une r\xE9ponse courte !"
     ressourceGain: -5
-    bonheurGain: 10
+    bonheurGain: 2
     addedPrompts: []
     addedDirectPrompts:
     - {fileID: 11400000, guid: aeed4bae6c8c6f5383ccdb814006195f, type: 2}

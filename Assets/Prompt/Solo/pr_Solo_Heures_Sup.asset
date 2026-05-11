@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
+  m_Name: pr_Solo_Heures_Sup
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  senderName: "Mec. Parker"
+  message: "On a deux semaines de retard sur la maintenance moteur. Je peux lancer des heures sup la nuit pour rattraper, mais l'équipage va râler."
+  isUnique: 1
+  isUrgent: 0
+  isCrisis: 0
+  isRelief: 1
+  responseOptions:
+  - optionText: "Heures sup"
+    responseUserText: "OK lance, on rattrape. Préviens que c'est exceptionnel."
+    ressourceGain: 15
+    bonheurGain: -5
+    addedPrompts: []
+    addedDirectPrompts: []
+    removedPrompts: []
+    isGameOverResponse: 0
+    gameOverMessage:
+  - optionText: "Calendrier normal"
+    responseUserText: "Pas d'heures sup. On rattrapera plus tard."
+    ressourceGain: 0
+    bonheurGain: -3
+    addedPrompts: []
+    addedDirectPrompts: []
+    removedPrompts: []
+    isGameOverResponse: 0
+    gameOverMessage:
+  timer: 0
+  timerMax: 0

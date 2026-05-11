@@ -22,7 +22,7 @@ MonoBehaviour:
   responseOptions:
   - optionText: Inclure Iven
     responseUserText: "Je convoque la r\xE9union."
-    ressourceGain: 0
+    ressourceGain: -5
     bonheurGain: 0
     addedPrompts: []
     addedDirectPrompts: []
@@ -32,7 +32,7 @@ MonoBehaviour:
   - optionText: Soutenir Voss
     responseUserText: "C'est sa cha\xEEne de commandement."
     ressourceGain: 0
-    bonheurGain: 0
+    bonheurGain: -5
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []

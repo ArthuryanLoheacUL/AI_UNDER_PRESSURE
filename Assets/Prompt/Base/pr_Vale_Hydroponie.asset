@@ -23,7 +23,7 @@ MonoBehaviour:
   - optionText: "\u00C9tudier"
     responseUserText: "C'est super la science."
     ressourceGain: -5
-    bonheurGain: 5
+    bonheurGain: -3
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []

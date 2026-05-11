@@ -22,7 +22,7 @@ MonoBehaviour:
   - optionText: "Lancer le tri"
     responseUserText: "Vas-y, sors tout ce qui est récupérable."
     ressourceGain: 15
-    bonheurGain: 0
+    bonheurGain: -5
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []

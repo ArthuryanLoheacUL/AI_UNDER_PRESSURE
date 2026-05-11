@@ -23,7 +23,7 @@ MonoBehaviour:
   - optionText: "R\xE9pondre vrai"
     responseUserText: "On liste tous les probl\u00E8mes, soyons transparents."
     ressourceGain: -5
-    bonheurGain: 5
+    bonheurGain: 0
     addedPrompts: []
     addedDirectPrompts:
     - {fileID: 11400000, guid: 99ab0bdfa79fd493bd5443d45092d4cb, type: 2}
@@ -32,7 +32,7 @@ MonoBehaviour:
     gameOverMessage: 
   - optionText: Mentir
     responseUserText: Tout va bien. (Sauf que c'est faux.)
-    ressourceGain: 5
+    ressourceGain: 0
     bonheurGain: -5
     addedPrompts:
     - prompt: {fileID: 11400000, guid: 619041fe2c98c9a5f03d35e89a0282e5, type: 2}

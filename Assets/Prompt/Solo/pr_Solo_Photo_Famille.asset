@@ -21,8 +21,8 @@ MonoBehaviour:
   responseOptions:
   - optionText: "Pr\xE9venir"
     responseUserText: "Elle va appr\xE9cier si c'est sa seule copie, je la pr\xE9viens."
-    ressourceGain: 0
-    bonheurGain: 5
+    ressourceGain: -5
+    bonheurGain: 0
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []
@@ -31,7 +31,7 @@ MonoBehaviour:
   - optionText: Effacer
     responseUserText: "OK... j'efface. J'esp\u00E8re que ce n'\u00E9tait pas sa seule copie."
     ressourceGain: 0
-    bonheurGain: -10
+    bonheurGain: -5
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []

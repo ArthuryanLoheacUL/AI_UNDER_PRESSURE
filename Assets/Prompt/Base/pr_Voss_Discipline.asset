@@ -22,8 +22,8 @@ MonoBehaviour:
   responseOptions:
   - optionText: "Sanction"
     responseUserText: "Ils le m\u00E9ritent."
-    ressourceGain: 5
-    bonheurGain: -10
+    ressourceGain: 15
+    bonheurGain: -5
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []
@@ -33,7 +33,7 @@ MonoBehaviour:
   - optionText: "Avertir"
     responseUserText: "Ils ont de la chance."
     ressourceGain: -5
-    bonheurGain: 5
+    bonheurGain: 0
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []

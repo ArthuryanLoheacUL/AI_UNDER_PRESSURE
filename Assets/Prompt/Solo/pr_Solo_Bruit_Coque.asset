@@ -23,7 +23,7 @@ MonoBehaviour:
   - optionText: Inspecter
     responseUserText: "J'envoie une \xE9quipe."
     ressourceGain: -10
-    bonheurGain: 5
+    bonheurGain: 0
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []
@@ -32,7 +32,7 @@ MonoBehaviour:
   - optionText: Ignorer
     responseUserText: "Si \u00E7a casse, je t'aurai pr\u00E9venue."
     ressourceGain: 0
-    bonheurGain: -10
+    bonheurGain: -5
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []

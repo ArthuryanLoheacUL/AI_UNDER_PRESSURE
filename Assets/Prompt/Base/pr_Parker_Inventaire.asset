@@ -23,7 +23,7 @@ MonoBehaviour:
   - optionText: "Bien not\u00E9"
     responseUserText: ""
     ressourceGain: 0
-    bonheurGain: 5
+    bonheurGain: 2
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []

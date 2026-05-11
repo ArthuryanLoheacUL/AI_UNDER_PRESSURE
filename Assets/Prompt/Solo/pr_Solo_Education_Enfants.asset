@@ -23,7 +23,7 @@ MonoBehaviour:
   - optionText: Oui
     responseUserText: "Vingt ans de cours, d\xE9j\xE0 pr\xEAts !"
     ressourceGain: -5
-    bonheurGain: 5
+    bonheurGain: 2
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []

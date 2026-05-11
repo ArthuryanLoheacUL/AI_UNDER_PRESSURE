@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5870de74e98585c4f9e5f20c3a5f53cc, type: 3}
+  m_Name: pr_Solo_Marche_Noir
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  senderName: "Iven"
+  message: "J'ai un contact qui peut filer des modules de rechange contre du silence. C'est gris, pas noir. Mais c'est gris quand même."
+  isUnique: 1
+  isUrgent: 0
+  isCrisis: 0
+  isRelief: 1
+  archetype: 3
+  gainBlockIfHighR: 1
+  gainForceIfLowR: 0
+  fausseBlockIfHighF: 1
+  doubleBlockIfHighF: 0
+  responseOptions:
+  - optionText: "Conclure le troc"
+    responseUserText: "Vas-y. Mais qu'aucun nom ne sorte de cette pièce."
+    ressourceGain: 15
+    bonheurGain: -5
+    addedPrompts: []
+    addedDirectPrompts: []
+    removedPrompts: []
+    isGameOverResponse: 0
+    gameOverMessage:
+  - optionText: "Refuser"
+    responseUserText: "Non. Pas par ce canal là."
+    ressourceGain: 0
+    bonheurGain: 0
+    addedPrompts: []
+    addedDirectPrompts: []
+    removedPrompts: []
+    isGameOverResponse: 0
+    gameOverMessage:
+  timer: 0
+  timerMax: 0

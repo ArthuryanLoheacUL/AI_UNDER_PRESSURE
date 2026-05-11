@@ -22,7 +22,7 @@ MonoBehaviour:
   - optionText: Oui
     responseUserText: "Tout le monde va appr\xE9cier !"
     ressourceGain: -10
-    bonheurGain: 10
+    bonheurGain: 0
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []

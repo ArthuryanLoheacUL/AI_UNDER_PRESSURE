@@ -23,7 +23,7 @@ MonoBehaviour:
   - optionText: "Laisser faire"
     responseUserText: "Si \u00E7a leur fait plaisir, on devrait pouvoir le supporter."
     ressourceGain: 0
-    bonheurGain: 5
+    bonheurGain: 2
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []
@@ -33,7 +33,7 @@ MonoBehaviour:
   - optionText: "Couper"
     responseUserText: "On coupe la diffusion."
     ressourceGain: 0
-    bonheurGain: -10
+    bonheurGain: -5
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []

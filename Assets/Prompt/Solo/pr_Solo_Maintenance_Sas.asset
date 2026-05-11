@@ -23,7 +23,7 @@ MonoBehaviour:
   - optionText: "R\xE9parer"
     responseUserText: Joint neuf, c'est parti.
     ressourceGain: -10
-    bonheurGain: 5
+    bonheurGain: 0
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []

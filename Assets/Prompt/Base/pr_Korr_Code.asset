@@ -22,8 +22,8 @@ MonoBehaviour:
   responseOptions:
   - optionText: "Patcher"
     responseUserText: "Je patche."
-    ressourceGain: -5
-    bonheurGain: 5
+    ressourceGain: -10
+    bonheurGain: 2
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []

@@ -22,8 +22,8 @@ MonoBehaviour:
   responseOptions:
   - optionText: "R\u00E9sum\u00E9"
     responseUserText: "Je t'explique alors ... *monologue beaucoup trop long*"
-    ressourceGain: 0
-    bonheurGain: 5
+    ressourceGain: -5
+    bonheurGain: 0
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []
@@ -32,8 +32,8 @@ MonoBehaviour:
     gameOverMessage: ""
   - optionText: "Brut"
     responseUserText: "Je t'envoie tout."
-    ressourceGain: 5
-    bonheurGain: 0
+    ressourceGain: 0
+    bonheurGain: -5
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []

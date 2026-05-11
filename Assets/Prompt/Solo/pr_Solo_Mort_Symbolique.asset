@@ -23,7 +23,7 @@ MonoBehaviour:
   - optionText: "Accord\xE9e"
     responseUserText: "Merci. \xC7a compte vraiment."
     ressourceGain: 0
-    bonheurGain: 10
+    bonheurGain: 2
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []
@@ -32,7 +32,7 @@ MonoBehaviour:
   - optionText: "Refus\xE9e"
     responseUserText: ...je sais pas quoi leur dire.
     ressourceGain: 0
-    bonheurGain: -15
+    bonheurGain: -5
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []

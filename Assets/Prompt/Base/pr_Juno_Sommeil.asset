@@ -22,8 +22,8 @@ MonoBehaviour:
   responseOptions:
   - optionText: "Accord\u00E9e"
     responseUserText: "Super, \u00E0 nous le repos."
-    ressourceGain: -5
-    bonheurGain: 10
+    ressourceGain: -10
+    bonheurGain: 2
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []
@@ -33,7 +33,7 @@ MonoBehaviour:
   - optionText: "Refus\u00E9e"
     responseUserText: "C'\u00E9tait pas grand chose..."
     ressourceGain: 0
-    bonheurGain: -10
+    bonheurGain: -5
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []

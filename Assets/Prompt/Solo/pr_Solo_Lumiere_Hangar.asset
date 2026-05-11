@@ -23,7 +23,7 @@ MonoBehaviour:
   - optionText: "R\xE9parer"
     responseUserText: "Pleine lumi\xE8re, les techs vont remercier."
     ressourceGain: -10
-    bonheurGain: 5
+    bonheurGain: 0
     addedPrompts: []
     addedDirectPrompts: []
     removedPrompts: []
@@ -31,7 +31,7 @@ MonoBehaviour:
     gameOverMessage: 
   - optionText: Economiser
     responseUserText: "Bon... on \xE9conomise."
-    ressourceGain: 5
+    ressourceGain: 0
     bonheurGain: -5
     addedPrompts: []
     addedDirectPrompts: []

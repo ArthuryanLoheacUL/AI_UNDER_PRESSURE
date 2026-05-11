@@ -655,6 +655,16 @@ MonoBehaviour:
   - {fileID: 11400000, guid: d4f74894df9f4ac19ad238c09e099de5, type: 2}
   - {fileID: 11400000, guid: eb6b593277f142d6b4bcbe16e2de70bb, type: 2}
   - {fileID: 11400000, guid: 9ebfd59746544b8ea28a2912ce52ad83, type: 2}
+  - {fileID: 11400000, guid: ac3c6758086e40a8bfefb49d875916ba, type: 2}
+  - {fileID: 11400000, guid: c95af7284a184c6c98ffb30d2de029e4, type: 2}
+  - {fileID: 11400000, guid: 13ad101ef0a94b1b9fe4438a9db3fa8e, type: 2}
+  - {fileID: 11400000, guid: 902d47552f3042b98ab9f44f41b03356, type: 2}
+  - {fileID: 11400000, guid: b5045fe5065f41bf8bc3d092f894555f, type: 2}
+  - {fileID: 11400000, guid: 50e08cacb58e423a9f596908d095f1c0, type: 2}
+  - {fileID: 11400000, guid: 971bbd49f3ba406ab32312fff8d47578, type: 2}
+  - {fileID: 11400000, guid: d0c1ac8c38c842fba498caa399f9da37, type: 2}
+  - {fileID: 11400000, guid: e677f889ecbc4548b117d74183e9dd84, type: 2}
+  - {fileID: 11400000, guid: cfddfbdcf8f24c58a4a988eec88d1018, type: 2}
   startPrompts: 1
   timeBetweenPrompts: 10
   loadingScreen: {fileID: 432413944}
@@ -1547,8 +1557,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -187.28003}
-  m_SizeDelta: {x: 0, y: -373.71002}
+  m_AnchoredPosition: {x: 0, y: -133.2}
+  m_SizeDelta: {x: 0, y: -265.54}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &604196316
 MonoBehaviour:
@@ -3317,8 +3327,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be726f84c42de1747bc268e56dc11afc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  looseFX: {fileID: 0}
-  winFX: {fileID: 0}
+  looseFX: {fileID: 8115143179631778242, guid: 37fc682d209c74048be1ca862e7e57b3, type: 3}
+  looseColor: {r: 0.735849, g: 0.12842648, b: 0.13320933, a: 1}
+  winFX: {fileID: 8115143179631778242, guid: 37fc682d209c74048be1ca862e7e57b3, type: 3}
+  winColor: {r: 0.3372549, g: 0.60784316, b: 0.10980393, a: 1}
 --- !u!1 &1364542359
 GameObject:
   m_ObjectHideFlags: 0
