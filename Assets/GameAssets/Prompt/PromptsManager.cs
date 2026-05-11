@@ -34,8 +34,7 @@ public class PromptsManager : MonoBehaviour
     public List<Prompt> prompts;
 
     [Header("Pacing")]
-    public int startPrompts = 1;
-    public float timeBetweenPrompts = 10f;
+    public int startPrompts = 1;    
 
     private List<WeightedPrompt> promptsWithWeights = new List<WeightedPrompt>();
     private Dictionary<string, List<PromptSaved>> savedPrompts = new Dictionary<string, List<PromptSaved>>();
@@ -50,9 +49,6 @@ public class PromptsManager : MonoBehaviour
     // Cap on consecutive prompts that drain BOTH gauges (rule: never > 3 in a row).
     private int consecutiveDoubleDrainPrompts = 0;
 
-    // Active narrative arcs - prompts whose chainTag has been pulled at least once.
-    private HashSet<string> activeChains = new HashSet<string>();
-
     private Prompt currentPrompt;
     private NotificationsManager notificationBar;
     private SetupPromptManagement setupPrompt;
@@ -63,7 +59,55 @@ public class PromptsManager : MonoBehaviour
     public ScoreBar scoreBar;
 
     private int totalPrompt = 0;
-    bool gameOver = false;
+    [HideInInspector] public bool gameOver = false;
+
+    #region GET_PROMPTS
+
+    public List<Prompt> getPrompts()
+    {
+        return prompts;
+    }
+
+    public List<WeightedPrompt> GetPromptsWithWeights()
+    {
+        return promptsWithWeights;
+    }
+    public List<Prompt> GetQueuePrompts()
+    {
+        return queuePrompts;
+    }
+    public List<Prompt> GetPrevPrompts()
+    {
+        return prevPrompts;
+    }
+    public List<Prompt> GetRemovedPrompts()
+    {
+        return removedPrompts;
+    }
+
+    public int GetTotalPrompts()
+    {
+        return totalPrompt;
+    }
+    public void SetTotalPrompts(int t)
+    {
+        totalPrompt = t;
+        scoreBar.setScore(totalPrompt);
+    }
+
+    public void RefreshScoreBar()
+    {
+        scoreBar.setScore(totalPrompt);
+    }
+
+    public Prompt GetCurrentPrompt()
+    {
+        return currentPrompt;
+    }
+
+    #endregion
+
+
 
     void Awake()
     {
@@ -287,19 +331,47 @@ public class PromptsManager : MonoBehaviour
 
     void Start()
     {
-        promptsWithWeights.Clear();
-        foreach (var prompt in prompts)
+        if (!GetComponent<SavePrompts>().LoadPrompts())
         {
-            if (prompt == null) continue;
-            promptsWithWeights.Add(new WeightedPrompt(prompt, 1));
-        }
+            promptsWithWeights.Clear();
 
-        for (int i = 0; i < startPrompts; i++)
+            foreach (var prompt in prompts)
+            {
+                if (prompt == null) continue;
+                promptsWithWeights.Add(new WeightedPrompt(prompt, 1));
+            }
+
+            for (int i = 0; i < startPrompts; i++)
+            {
+                Prompt randomPrompt = GetRandomPrompt();
+                if (randomPrompt != null) AddPromptToQueue(randomPrompt);
+            }
+            NextPrompt();
+        } else
         {
-            Prompt randomPrompt = GetRandomPrompt();
-            if (randomPrompt != null) AddPromptToQueue(randomPrompt);
+            if (promptsWithWeights.Count == 0)
+            {
+                foreach (var prompt in prompts)
+                {
+                    if (prompt == null) continue;
+                    promptsWithWeights.Add(new WeightedPrompt(prompt, 1));
+                }
+            }
+
+            if (queuePrompts.Count == 0)
+            {
+                for (int i = 0; i < startPrompts; i++)
+                {
+                    Prompt randomPrompt = GetRandomPrompt();
+                    if (randomPrompt != null) AddPromptToQueue(randomPrompt);
+                }
+            }
+
+            if (currentPrompt == null)
+            {
+                NextPrompt();        
+            }
         }
-        NextPrompt();
     }
 
     void RefreshNotifications()

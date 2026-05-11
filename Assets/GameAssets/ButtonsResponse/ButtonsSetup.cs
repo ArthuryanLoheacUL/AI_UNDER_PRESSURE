@@ -65,6 +65,9 @@ public class ButtonsSetup : MonoBehaviour
         GameObject buttonGO2 = Instantiate(buttonPrefab, parentButtons);
         ButtonResponseUI buttonResponseUI2 = buttonGO2.GetComponent<ButtonResponseUI>();
         buttonResponseUI2.SetResponse("Rejouer", 0);
-        buttonGO2.GetComponent<Button>().onClick.AddListener(() => SceneManager.LoadScene("Game"));
+        buttonGO2.GetComponent<Button>().onClick.AddListener(() => {
+            PlayerPrefs.SetInt("InGame", 0);
+            SceneManager.LoadScene("Game");
+        });
     }
 }

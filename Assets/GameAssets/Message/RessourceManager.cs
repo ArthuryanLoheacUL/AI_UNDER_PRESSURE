@@ -37,10 +37,16 @@ public class RessourceManager : MonoBehaviour
         }
     }
 
+    public void SetDefault()
+    {
+        bonheurValue = startingBonheur;
+        ressourceValue = startingRessource;
+        UpdateRessource();
+        UpdateBonheur();
+    }
+
     void Start()
     {
-        ressourceValue = startingRessource;
-        bonheurValue = startingBonheur;
         UpdateRessource();
         UpdateBonheur();
     }
@@ -72,16 +78,11 @@ public class RessourceManager : MonoBehaviour
             bonheurText.text = bonheurValue.ToString() + "%";
     }
 
-    // -- Compatibility shim so older code paths don't immediately break.
-    // GetFrustration() now mirrors the inverted value (100 - bonheur), so any
-    // legacy reference that "boosts on high frustration" still behaves the same.
     public int GetFrustration()
     {
         return 100 - bonheurValue;
     }
 
-    // Same idea for legacy frustration writers: a positive frustration delta
-    // is interpreted as a bonheur LOSS.
     public void UpdateFrustration(int amount)
     {
         UpdateBonheur(-amount);
@@ -95,6 +96,18 @@ public class RessourceManager : MonoBehaviour
     public int GetRessource()
     {
         return ressourceValue;
+    }
+
+    public void SetBonheur(int b)
+    {
+        bonheurValue = b;
+        UpdateBonheur();
+    }
+
+    public void SetRessource(int r)
+    {
+        ressourceValue = r;
+        UpdateRessource();
     }
 
     public bool IsBonheurDead()

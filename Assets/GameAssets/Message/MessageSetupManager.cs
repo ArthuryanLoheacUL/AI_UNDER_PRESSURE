@@ -158,7 +158,7 @@ public class MessageSetupManager : MonoBehaviour
             MessageUI messageUI2 = messageGO2.GetComponent<MessageUI>();
             if (messageUI2 != null)
             {
-                string userResponse = "Vous êtes inutiles de toute façon ...";
+                string userResponse = "A cause de vos résultats médiocres l'équipage à décidé de vous débrancher ...";
                 messageUI2.SetGameOver();
                 if (prompt.responseOptions[selectedResponseIndex].isGameOverResponse)
                 {
