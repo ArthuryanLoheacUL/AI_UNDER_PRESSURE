@@ -49,8 +49,7 @@ public class RessourceManager : MonoBehaviour
     {
         ressourceValue = Mathf.Clamp(ressourceValue + amount, 0, 100);
         UpdateRessource();
-        if (amount < 0)
-            ressourceText.transform.parent.parent.GetComponent<ShakeRessourceBar>().TriggerShake();
+        ressourceText.transform.parent.parent.GetComponent<ShakeRessourceBar>().TriggerShake(amount);
     }
 
     void UpdateRessource()

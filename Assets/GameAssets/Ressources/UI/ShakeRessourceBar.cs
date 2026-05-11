@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 
 public class ShakeRessourceBar : MonoBehaviour
@@ -8,10 +9,28 @@ public class ShakeRessourceBar : MonoBehaviour
     private float shakeIntensity = 5f;
     private float shakeTimer = 0f;
     private Vector3 originalPosition;
-    public void TriggerShake()
+
+    public GameObject looseFX;
+    public Color looseColor;
+    public GameObject winFX;
+    public Color winColor;
+
+    public void TriggerShake(int value)
     {
-        isShaking = true;
-        shakeTimer = shakeDuration;
+        if (value < 0)
+        {
+            isShaking = true;
+            shakeTimer = shakeDuration;
+            GameObject gm = Instantiate(looseFX, transform);
+            gm.GetComponent<TMP_Text>().text = value.ToString();
+            gm.GetComponent<TMP_Text>().color = looseColor;
+            Destroy(gm, 1f);
+        } else if (value > 0) {
+            GameObject gm = Instantiate(winFX, transform);
+            gm.GetComponent<TMP_Text>().text = "+" + value.ToString();
+            gm.GetComponent<TMP_Text>().color = winColor;
+            Destroy(gm, 1f);
+        }
     }
 
     void Start()
